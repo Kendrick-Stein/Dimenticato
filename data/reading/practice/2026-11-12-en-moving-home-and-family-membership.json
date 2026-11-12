@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-12-en-moving-home-and-family-membership",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "p1",
+      "sentenceId": "s1",
+      "start": 83,
+      "answer": "membership",
+      "options": [
+        "employment",
+        "ownership",
+        "membership",
+        "leadership"
+      ],
+      "explanation": "membership是不可数名词，指会员资格；credit union membership指信用合作社会员资格，不是就业、所有权或领导地位。"
+    },
+    {
+      "id": "p2",
+      "sentenceId": "s2",
+      "start": 93,
+      "answer": "savings",
+      "options": [
+        "meeting",
+        "travel",
+        "checking",
+        "savings"
+      ],
+      "explanation": "savings在此用复数形式表示存下来的钱；accounts for easy access to savings指方便存取储蓄的账户，不是会议、旅行或checking。"
+    },
+    {
+      "id": "p3",
+      "sentenceId": "s4",
+      "start": 65,
+      "answer": "employer",
+      "options": [
+        "employer",
+        "customer",
+        "neighbour",
+        "visitor"
+      ],
+      "explanation": "employer是可数单数名词；the same employer指同一雇主，是文中列出的入会共同联系之一。"
+    },
+    {
+      "id": "p4",
+      "sentenceId": "s6",
+      "start": 34,
+      "answer": "relative",
+      "options": [
+        "manager",
+        "relative",
+        "stranger",
+        "teacher"
+      ],
+      "explanation": "relative在a后用可数单数形式，指一位亲属，是提议中的一类可被引荐者；不是经理、陌生人或老师。"
+    },
+    {
+      "id": "p5",
+      "sentenceId": "s10",
+      "start": 84,
+      "answer": "limit",
+      "options": [
+        "price",
+        "address",
+        "limit",
+        "purpose"
+      ],
+      "explanation": "limit是可数单数名词；the limit on their membership numbers指会员人数上限，不是价格、地址或用途。"
+    }
+  ]
+}

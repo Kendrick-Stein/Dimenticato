@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-12-it-produzione-e-confronti",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Come si possono riassumere i dati presentati?",
+      "options": [
+        "La produzione cresce sul mese precedente, ma cala sul trimestre precedente e sull'anno precedente.",
+        "La produzione cala sul mese precedente, ma cresce sul trimestre precedente e sull'anno precedente.",
+        "La produzione cresce sul mese e sul trimestre precedenti, ma cala sull'anno precedente.",
+        "La produzione cala sul mese e sul trimestre precedenti, ma cresce sull'anno precedente."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s3",
+        "s6",
+        "s8"
+      ],
+      "explanationZh": "环比月度增长1.2%，季度比较下降0.4%，同比下降0.1%；三个比较对象不能混用。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "A quale periodo si riferisce il confronto con i tre mesi precedenti?",
+      "options": [
+        "Da gennaio a marzo.",
+        "Da aprile a giugno.",
+        "Da luglio a settembre.",
+        "Da ottobre a dicembre."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s6"
+      ],
+      "explanationZh": "第6句明确说明比较的是7月至9月的平均生产水平。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Rispetto a settembre 2025, quale risultato riguarda l'energia?",
+      "options": [
+        "Una diminuzione del 3,0%.",
+        "Un aumento del 4,7%.",
+        "Un aumento dell’1,2%.",
+        "Una diminuzione dello 0,4%."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s11"
+      ],
+      "explanationZh": "能源同比增长4.7%；3.0%是消费品降幅，另外两个数字对应整体指数的其他时间比较。"
+    }
+  ]
+}

@@ -1,0 +1,390 @@
+{
+  "schema": 1,
+  "id": "2026-11-12-en-shopping-and-forests-abroad",
+  "storyId": "defra-illegal-deforestation-consultation-2026-11-11",
+  "lang": "en",
+  "date": "2026-11-12",
+  "category": "environment",
+  "topics": [
+    "日常消费",
+    "森林保护"
+  ],
+  "title": "Everyday shopping and forests abroad",
+  "titleZh": "日常购物与海外森林",
+  "summaryZh": "从巧克力到化妆品，英国就商品供应链与非法毁林的关系征求意见，同时区分大不列颠和北爱尔兰的制度安排。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：以日常商品连接环境问题，使用原因、对比、被动语态及政策条件；专门词汇配中文释义。不是官方分级。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Department for Environment, Food & Rural Affairs",
+    "title": "Government to stamp illegal deforestation out of UK supply chains",
+    "url": "https://www.gov.uk/government/news/government-to-stamp-illegal-deforestation-out-of-uk-supply-chains",
+    "publishedAt": "2026-11-11",
+    "lang": "en",
+    "author": "Department for Environment, Food & Rural Affairs"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. Department for Environment, Food & Rural Affairs; original publication 11 November 2026; source linked above.",
+  "adaptation": "2026-11-12整理：依据机构英文新闻稿同语言分级改写并添加中文翻译、词义及原创练习。不是原文、官方课程或机构认可的材料。只使用机构叙述，不转载引语、图片、标志或第三方材料。保留拟议措施与已经实行措施的区别。s17末句为根据措施范围作出的编辑解释；保留2023年数据与2026年报道日期的区别。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "A chocolate bar or a bottle of cooking oil may seem far removed from a forest overseas.",
+      "zh": "一块巧克力或一瓶食用油，看起来可能与海外的森林相距甚远。",
+      "glosses": [
+        {
+          "surface": "overseas",
+          "lemma": "overseas",
+          "zh": "在海外的"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "However, ingredients such as soy and palm oil connect everyday shopping with the way land is used.",
+      "zh": "然而，大豆和棕榈油等原料将日常购物与土地使用方式联系起来。",
+      "glosses": [
+        {
+          "surface": "ingredients",
+          "lemma": "ingredient",
+          "zh": "原料"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "On 11 November 2026, the UK government opened a consultation on proposals to address illegal deforestation linked to supply chains.",
+      "zh": "2026年11月11日，英国政府启动公众征询，讨论应对与供应链相关的非法毁林的提议。",
+      "glosses": [
+        {
+          "surface": "consultation",
+          "lemma": "consultation",
+          "zh": "征求意见"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "The proposals concern products sold in Great Britain and materials including soy, palm oil, cattle, cocoa, timber, coffee and rubber.",
+      "zh": "提议涉及在大不列颠销售的产品，以及大豆、棕榈油、牛、可可、木材、咖啡和橡胶等商品。",
+      "glosses": [
+        {
+          "surface": "timber",
+          "lemma": "timber",
+          "zh": "木材"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Forested land can be illegally taken or cleared to create space for producing these goods.",
+      "zh": "覆盖着森林的土地可能被非法侵占或清理，为生产这些商品腾出空间。",
+      "glosses": [
+        {
+          "surface": "cleared",
+          "lemma": "clear",
+          "zh": "被清理；被砍除"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "That risk reaches beyond food, because these materials also appear in toiletries and cosmetics.",
+      "zh": "这种风险不只涉及食品，因为这些原料也用于洗护用品和化妆品。",
+      "glosses": [
+        {
+          "surface": "cosmetics",
+          "lemma": "cosmetic",
+          "zh": "化妆品"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Healthy forests support a stable climate, food security and the livelihoods of communities.",
+      "zh": "健康的森林有助于气候稳定、粮食安全和社区居民的生计。",
+      "glosses": [
+        {
+          "surface": "livelihoods",
+          "lemma": "livelihood",
+          "zh": "生计"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "According to the announcement, UK consumption of goods associated with deforestation was linked to about 29,000 hectares of forest loss worldwide in 2023.",
+      "zh": "根据公告，2023年英国对与毁林有关商品的消费，与全球约2.9万公顷的森林损失相关。",
+      "glosses": [
+        {
+          "surface": "consumption",
+          "lemma": "consumption",
+          "zh": "消费"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "That figure describes an earlier year, rather than the amount of forest lost when the new proposals were announced.",
+      "zh": "这一数字描述的是较早年份的情况，并非新提议公布时的森林损失量。",
+      "glosses": [
+        {
+          "surface": "figure",
+          "lemma": "figure",
+          "zh": "数字"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Many British businesses have already tried to reduce the risk voluntarily, while major retailers have called for stronger rules.",
+      "zh": "许多英国企业已自愿尝试降低这一风险，而主要零售商呼吁制定更有力的规则。",
+      "glosses": [
+        {
+          "surface": "voluntarily",
+          "lemma": "voluntarily",
+          "zh": "自愿地"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "The consultation asks businesses, environmental organisations and international stakeholders for their views.",
+      "zh": "这次征询向企业、环保组织和国际利益相关方征求意见。",
+      "glosses": [
+        {
+          "surface": "stakeholders",
+          "lemma": "stakeholder",
+          "zh": "利益相关方"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "It includes proposals for compulsory checks on supply chains, using existing legal powers, and for stronger timber regulations.",
+      "zh": "其中包括利用现有法律权限对供应链进行强制核查，以及加强木材监管的提议。",
+      "glosses": [
+        {
+          "surface": "compulsory",
+          "lemma": "compulsory",
+          "zh": "强制性的"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "The government also wants the Great Britain system to work alongside the arrangements in Northern Ireland, reducing unnecessary administrative work.",
+      "zh": "政府还希望大不列颠的制度与北爱尔兰的安排相互配合，减少不必要的行政工作。",
+      "glosses": [
+        {
+          "surface": "administrative",
+          "lemma": "administrative",
+          "zh": "行政方面的"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "In Northern Ireland, the EU regulation on deforestation-free products is due to start applying in stages from 30 December 2026.",
+      "zh": "在北爱尔兰，欧盟无毁林产品法规预计从2026年12月30日起分阶段适用。",
+      "glosses": [
+        {
+          "surface": "stages",
+          "lemma": "stage",
+          "zh": "阶段"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "Businesses there are being encouraged to prepare their supply chains before those rules apply.",
+      "zh": "当地企业正被鼓励在这些规则适用前做好供应链方面的准备。",
+      "glosses": [
+        {
+          "surface": "prepare",
+          "lemma": "prepare",
+          "zh": "准备"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "The longer-term ambition is to move towards a deforestation-free standard.",
+      "zh": "更长远的目标是迈向无毁林标准。",
+      "glosses": [
+        {
+          "surface": "ambition",
+          "lemma": "ambition",
+          "zh": "目标；志向"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "For now, the consultation focuses on illegal deforestation, so it should not be read as a promise that every product is already free from forest loss.",
+      "zh": "目前，征询的重点是非法毁林，因此不应把它理解为每件产品都已不涉及森林损失的承诺。",
+      "glosses": [
+        {
+          "surface": "promise",
+          "lemma": "promise",
+          "zh": "承诺"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "overseas",
+        "lemma": "overseas",
+        "zh": "在海外的",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "ingredients",
+        "lemma": "ingredient",
+        "zh": "原料",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "consultation",
+        "lemma": "consultation",
+        "zh": "征求意见",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "timber",
+        "lemma": "timber",
+        "zh": "木材",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "cleared",
+        "lemma": "clear",
+        "zh": "被清理；被砍除",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "cosmetics",
+        "lemma": "cosmetic",
+        "zh": "化妆品",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "livelihoods",
+        "lemma": "livelihood",
+        "zh": "生计",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "consumption",
+        "lemma": "consumption",
+        "zh": "消费",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "figure",
+        "lemma": "figure",
+        "zh": "数字",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "voluntarily",
+        "lemma": "voluntarily",
+        "zh": "自愿地",
+        "sentenceId": "s10"
+      },
+      {
+        "text": "stakeholders",
+        "lemma": "stakeholder",
+        "zh": "利益相关方",
+        "sentenceId": "s11"
+      },
+      {
+        "text": "compulsory",
+        "lemma": "compulsory",
+        "zh": "强制性的",
+        "sentenceId": "s12"
+      },
+      {
+        "text": "administrative",
+        "lemma": "administrative",
+        "zh": "行政方面的",
+        "sentenceId": "s13"
+      },
+      {
+        "text": "stages",
+        "lemma": "stage",
+        "zh": "阶段",
+        "sentenceId": "s14"
+      },
+      {
+        "text": "prepare",
+        "lemma": "prepare",
+        "zh": "准备",
+        "sentenceId": "s15"
+      },
+      {
+        "text": "ambition",
+        "lemma": "ambition",
+        "zh": "目标；志向",
+        "sentenceId": "s16"
+      },
+      {
+        "text": "promise",
+        "lemma": "promise",
+        "zh": "承诺",
+        "sentenceId": "s17"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "linked to",
+        "zh": "与……相关",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "rather than",
+        "zh": "而不是",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "in stages",
+        "zh": "分阶段",
+        "sentenceId": "s14"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s10",
+        "note": "have already tried与have called for并列，while对比已自愿开展的行动和进一步规则诉求。"
+      },
+      {
+        "sentenceId": "s17",
+        "note": "should not be read as表示不应将某事解读为……，用于限制结论范围。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Which information would help you understand where everyday products come from?",
+        "zh": "哪些信息能帮助你了解日常商品的来源？"
+      },
+      {
+        "text": "What are the advantages and limits of voluntary action by businesses?",
+        "zh": "企业自愿行动有哪些优点和局限？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "One advantage would be …",
+        "zh": "一个好处会是……",
+        "note": "原创讨论表达；would可表达设想的效果。"
+      }
+    ]
+  }
+}

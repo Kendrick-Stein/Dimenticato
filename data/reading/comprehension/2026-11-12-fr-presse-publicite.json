@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-12-fr-presse-publicite",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Quel lien le texte établit-il entre les difficultés des médias et la mesure proposée ?",
+      "options": [
+        "La baisse du nombre de lecteurs justifierait une limitation des abonnements.",
+        "La concurrence publicitaire justifierait une orientation de certains budgets vers la presse.",
+        "La hausse des coûts de diffusion justifierait un financement des plateformes.",
+        "La transformation numérique justifierait une réduction des budgets publicitaires."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s2",
+        "s3",
+        "s8",
+        "s9"
+      ],
+      "explanationZh": "传统媒体的广告收入下降，平台份额扩大；提案因此希望将部分广告预算引向新闻媒体，而不是限制订阅或减少广告总预算。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Quels annonceurs seraient concernés par la mesure décrite ?",
+      "options": [
+        "Les annonceurs privés qui investissent au moins dix pour cent dans la presse.",
+        "Les annonceurs publics dont le budget numérique dépasse un million d’euros.",
+        "Les annonceurs publics et privés dont les dépenses publicitaires annuelles dépassent un million d’euros.",
+        "Les annonceurs publics et privés dont les revenus annuels dépassent un million d’euros."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s8"
+      ],
+      "explanationZh": "门槛针对公共和私人广告主的年度广告支出，不是营业收入，也不是仅针对数字广告预算。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Comment la proportion à consacrer à la presse serait-elle déterminée ?",
+      "options": [
+        "Un décret fixerait une proportion dans la limite de dix pour cent.",
+        "Chaque annonceur choisirait sa proportion au-dessus de dix pour cent.",
+        "Le projet fixerait directement une proportion de dix pour cent.",
+        "Les plateformes fixeraient une proportion selon leurs revenus."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s10",
+        "s11"
+      ],
+      "explanationZh": "确切比例由法令规定，法案给出10%的上限；10%不是已经确定的统一比例。"
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": "Que peut-on conclure sur la situation au moment du communiqué ?",
+      "options": [
+        "Le suivi annoncé a déjà démontré une hausse des revenus.",
+        "Les journaux ont déjà terminé leur transformation numérique.",
+        "Les annonceurs appliquent déjà la nouvelle obligation.",
+        "Le soutien décrit dépend encore de la mise en place du projet."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s12",
+        "s13",
+        "s14"
+      ],
+      "explanationZh": "文章明确说这仍是法案，不是已生效义务；增加收入和跟踪实施是预期与计划，不能当作已经实现。"
+    }
+  ]
+}

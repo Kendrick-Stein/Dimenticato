@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-12-it-produzione-e-confronti",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s1",
+      "start": 11,
+      "answer": "pubblicato",
+      "options": [
+        "venduto",
+        "pubblicato",
+        "chiuso",
+        "comprato"
+      ],
+      "explanation": "pubblicato表示“发布”，是pubblicare的过去分词，与ha构成近过去时；这里没有需要使分词配合的前置直接宾语。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s3",
+      "start": 46,
+      "answer": "aumenta",
+      "options": [
+        "dorme",
+        "parte",
+        "aumenta",
+        "ascolta"
+      ],
+      "explanation": "aumenta表示“增长”，是aumentare的直陈式现在时第三人称单数，与单数主语indice一致。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s6",
+      "start": 86,
+      "answer": "precedenti",
+      "options": [
+        "rumorosi",
+        "vuoti",
+        "dolci",
+        "precedenti"
+      ],
+      "explanation": "precedenti表示“之前的”，是precedente的复数形式，修饰阳性复数名词mesi。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s9",
+      "start": 42,
+      "answer": "lavorativi",
+      "options": [
+        "lavorativi",
+        "lontani",
+        "affamati",
+        "costosi"
+      ],
+      "explanation": "lavorativi表示“工作的”，为阳性复数形容词，与giorni一致；giorni lavorativi即工作日。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s11",
+      "start": 29,
+      "answer": "energia",
+      "options": [
+        "memoria",
+        "energia",
+        "vacanza",
+        "paura"
+      ],
+      "explanation": "energia表示“能源”，为阴性单数名词，前面的l’来自定冠词la的省音形式。"
+    }
+  ]
+}

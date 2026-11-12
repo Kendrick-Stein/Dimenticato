@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-12-it-meteo-clima-e-voli",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Come vengono messi in relazione passato e futuro nel lavoro descritto?",
+      "options": [
+        "Le condizioni del passato servono a correggere le segnalazioni dei piloti prima di stimare la frequenza dei temporali.",
+        "Le condizioni del passato vengono confrontate con quelle previste per riconoscere situazioni favorevoli alla turbolenza.",
+        "Le condizioni del passato servono a calcolare valori medi di pioggia da usare come previsioni per gli aeroporti.",
+        "Le condizioni del passato vengono confrontate con le rotte programmate per stimare la durata dei prossimi voli."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s6",
+        "s9",
+        "s10"
+      ],
+      "explanationZh": "研究先比较不同时期的相似天气，预报版本再将未来预报与过去相似状况比较，以识别有利于湍流的条件；不是修正飞行员报告以估算雷暴频率，也不是用历史平均降雨量作预报或估算航程时长。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Quali episodi sono stati studiati attraverso le segnalazioni dei piloti?",
+      "options": [
+        "Episodi di pioggia debole osservati durante il decollo.",
+        "Episodi di nebbia registrati nei soli aeroporti europei.",
+        "Episodi di vento forte misurati esclusivamente a terra.",
+        "Episodi di turbolenza di intensità almeno moderata."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s4",
+        "s5"
+      ],
+      "explanationZh": "研究分析的是至少中等强度的湍流报告，覆盖四大航空交通区域，不局限欧洲机场。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Qual è lo stato di TurboMeter Live secondo il testo?",
+      "options": [
+        "È ancora in sviluppo e ha già superato la fase di test.",
+        "È stato proposto, ma la fase di test deve ancora iniziare.",
+        "È stato ritirato dopo la conclusione della fase di test.",
+        "È già concluso e non prevede ulteriori sviluppi."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s8"
+      ],
+      "explanationZh": "第8句同时保留两个事实：仍在开发中，而且已经通过测试。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "Quali informazioni aggiunge l'analisi delle aree aeroportuali a quelle sulla turbolenza in quota?",
+      "options": [
+        "Pioggia, visibilità sulle piste, numero di voli e temperature in cabina.",
+        "Vento, traffico sulle piste, temperatura e orari previsti per il decollo.",
+        "Vento, raffiche, pioggia, temperatura e condizioni favorevoli ai temporali a terra.",
+        "Raffiche, copertura nuvolosa, consumo di carburante e durata delle soste."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s11"
+      ],
+      "explanationZh": "第11句列出的地面天气因素是风、阵风、雨、温度和有利于雷暴形成的条件。其他选项混入了本篇未列为机场分析指标的交通、时刻、客舱温度、油耗或停留时长。"
+    }
+  ]
+}

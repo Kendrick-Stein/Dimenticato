@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-12-en-moving-home-and-family-membership",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "What is the main change described in the article?",
+      "options": [
+        "Members could introduce relatives only after moving away.",
+        "Members who move away could introduce family members.",
+        "Relatives could join only after moving into the same home.",
+        "Members could stay only if relatives lived in the area."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s5",
+        "s6",
+        "s7"
+      ],
+      "explanationZh": "拟议调整让搬离原地区的会员也能介绍亲属或同住者入会；目前仍住在地区的会员已能引荐，并非只有搬家后才可引荐，也没有要求亲属先同住或留在原地区。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "What must a member currently do to introduce a relative?",
+      "options": [
+        "Work for the relative’s employer.",
+        "Keep a small loan with the credit union.",
+        "Live in the credit union’s area.",
+        "Share a savings account with the relative."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s7"
+      ],
+      "explanationZh": "s7明确说明目前需要仍住在该地区；其他条件未被列为这项引荐的要求。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "What does the figure of over 50,000 describe?",
+      "options": [
+        "People who could make introductions after the change.",
+        "Students who have recently opened savings accounts.",
+        "Relatives who have already joined a credit union.",
+        "Workers who are moving to another part of Britain."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s8"
+      ],
+      "explanationZh": "超过五万指调整后能够作出引荐的人数，不是已入会亲属、学生或正在搬家者的数量。"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-12-en-shopping-and-forests-abroad",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "p1",
+      "sentenceId": "s2",
+      "start": 9,
+      "answer": "ingredients",
+      "options": [
+        "instructions",
+        "customers",
+        "ingredients",
+        "containers"
+      ],
+      "explanation": "ingredients是可数复数名词，指大豆和棕榈油这样的原料；不是指令、顾客或容器。"
+    },
+    {
+      "id": "p2",
+      "sentenceId": "s3",
+      "start": 48,
+      "answer": "consultation",
+      "options": [
+        "celebration",
+        "competition",
+        "exhibition",
+        "consultation"
+      ],
+      "explanation": "consultation是本句a后面的单数名词；opened a consultation表示启动征求意见，不是庆祝、竞赛或展览。"
+    },
+    {
+      "id": "p3",
+      "sentenceId": "s7",
+      "start": 64,
+      "answer": "livelihoods",
+      "options": [
+        "livelihoods",
+        "holidays",
+        "timetables",
+        "passwords"
+      ],
+      "explanation": "livelihoods是livelihood的复数，指社区居民赖以生活的生计；不是假期、时间表或密码。"
+    },
+    {
+      "id": "p4",
+      "sentenceId": "s10",
+      "start": 62,
+      "answer": "voluntarily",
+      "options": [
+        "accidentally",
+        "voluntarily",
+        "secretly",
+        "temporarily"
+      ],
+      "explanation": "voluntarily是修饰tried to reduce的副词，强调企业自愿行动，与呼吁更强规则形成对比；不是意外、秘密或暂时行动。"
+    },
+    {
+      "id": "p5",
+      "sentenceId": "s14",
+      "start": 98,
+      "answer": "stages",
+      "options": [
+        "shops",
+        "forests",
+        "stages",
+        "bottles"
+      ],
+      "explanation": "stages是stage的复数；in stages表示分阶段适用，是原句的时间安排，不是商店、森林或瓶子。"
+    }
+  ]
+}

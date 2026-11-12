@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-12-fr-villes-bioressources",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 14,
+      "answer": "croissants",
+      "options": [
+        "constants",
+        "croissants",
+        "limités",
+        "saisonniers"
+      ],
+      "explanation": "原文 croissants 表示“不断增长的”，修饰阳性复数名词 besoins，因此用阳性复数形式 croissants。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s9",
+      "start": 50,
+      "answer": "tri",
+      "options": [
+        "stockage",
+        "transport",
+        "tri",
+        "brûlage"
+      ],
+      "explanation": "原文 tri 表示“分类”，是阳性单数名词，此处为 le tri des biodéchets。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s12",
+      "start": 14,
+      "answer": "coûteuses",
+      "options": [
+        "gratuites",
+        "anciennes",
+        "simples",
+        "coûteuses"
+      ],
+      "explanation": "原文 coûteuses 表示“成本高的”，修饰阴性复数名词 solutions，因此用阴性复数形式 coûteuses。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s15",
+      "start": 23,
+      "answer": "débouchés",
+      "options": [
+        "débouchés",
+        "obstacles",
+        "déchets",
+        "risques"
+      ],
+      "explanation": "原文 débouchés 表示“销路、市场”，是阳性复数名词，与前面的 des 搭配；不是动词变位。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s19",
+      "start": 68,
+      "answer": "coexister",
+      "options": [
+        "disparaître",
+        "coexister",
+        "fusionner",
+        "reculer"
+      ],
+      "explanation": "原文 coexister 表示“共存”，跟在 pourraient 后使用不定式；pourraient coexister 表示“可能并存”，不是已经发生的事实。"
+    }
+  ]
+}

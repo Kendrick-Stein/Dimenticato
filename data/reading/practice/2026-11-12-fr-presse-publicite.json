@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-12-fr-presse-publicite",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s3",
+      "start": 35,
+      "answer": "diminuent",
+      "options": [
+        "augmentent",
+        "diminuent",
+        "disparaissent",
+        "stagnent"
+      ],
+      "explanation": "原文 diminuent 表示“减少”，是 diminuer 的直陈式现在时第三人称复数，与主语 ces ressources 一致；depuis 引出的持续时段与现在时连用。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s8",
+      "start": 107,
+      "answer": "dépassent",
+      "options": [
+        "réduisent",
+        "atteignent",
+        "dépassent",
+        "limitent"
+      ],
+      "explanation": "原文 dépassent 表示“超过”，是 dépasser 的直陈式现在时第三人称复数，与主语 les dépenses publicitaires annuelles 一致。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s9",
+      "start": 25,
+      "answer": "consacrer",
+      "options": [
+        "consacrer",
+        "retirer",
+        "emprunter",
+        "économiser"
+      ],
+      "explanation": "原文 consacrer 表示“将……用于”，在条件式助动情态表达 devraient 后使用不定式；consacrer une partie ... à ... 表示将一部分用于某事。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s11",
+      "start": 33,
+      "answer": "plafond",
+      "options": [
+        "minimum",
+        "revenu",
+        "budget",
+        "plafond"
+      ],
+      "explanation": "原文 plafond 表示“上限”，是阳性单数名词，前面用 le，后面的 annoncé 也为阳性单数。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s14",
+      "start": 33,
+      "answer": "suivi",
+      "options": [
+        "suivi",
+        "retrait",
+        "abandon",
+        "remplacement"
+      ],
+      "explanation": "原文 suivi 表示“跟踪、监测”，此处是阳性单数名词，前面用 un；不是动词的变位形式。"
+    }
+  ]
+}

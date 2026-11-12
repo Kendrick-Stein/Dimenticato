@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-12-it-meteo-clima-e-voli",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s4",
+      "start": 45,
+      "answer": "segnalazioni",
+      "options": [
+        "valigie",
+        "vacanze",
+        "segnalazioni",
+        "tariffe"
+      ],
+      "explanation": "segnalazioni表示“报告”，为阴性复数名词，与后面的形容词automatiche一致。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s6",
+      "start": 44,
+      "answer": "confrontato",
+      "options": [
+        "confrontato",
+        "venduto",
+        "cucinato",
+        "dimenticato"
+      ],
+      "explanation": "confrontato表示“比较”，为confrontare的过去分词，与ha组成近过去时；此处没有需要使分词配合的前置直接宾语。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s8",
+      "start": 64,
+      "answer": "sviluppo",
+      "options": [
+        "riposo",
+        "sviluppo",
+        "silenzio",
+        "ritardo"
+      ],
+      "explanation": "sviluppo表示“开发”，为阳性单数名词；in sviluppo表示“处于开发中”。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s10",
+      "start": 94,
+      "answer": "mappe",
+      "options": [
+        "piste",
+        "ali",
+        "valigie",
+        "mappe"
+      ],
+      "explanation": "mappe表示“地图”，是mappa的阴性复数形式，与定冠词le及复数谓语mostrano一致。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s11",
+      "start": 99,
+      "answer": "raffiche",
+      "options": [
+        "tariffe",
+        "raffiche",
+        "sedie",
+        "valigie"
+      ],
+      "explanation": "raffiche表示“阵风”，是raffica的阴性复数形式；此处列举天气因素，不是指费用tariffe。"
+    }
+  ]
+}

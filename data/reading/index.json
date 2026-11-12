@@ -2,6 +2,110 @@
   "schema": 1,
   "articles": [
     {
+      "id": "2026-11-12-en-moving-home-and-family-membership",
+      "lang": "en",
+      "date": "2026-11-12",
+      "title": "Moving home and family membership",
+      "titleZh": "搬家后，还能介绍家人入会吗？",
+      "summaryZh": "英国提出信用合作社入会新安排：已经搬离原地区的会员，也有望介绍亲属或同住者加入。",
+      "level": "A2",
+      "category": "society",
+      "topics": [
+        "社区金融",
+        "家庭生活"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-11-11",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-12-en-shopping-and-forests-abroad",
+      "lang": "en",
+      "date": "2026-11-12",
+      "title": "Everyday shopping and forests abroad",
+      "titleZh": "日常购物与海外森林",
+      "summaryZh": "从巧克力到化妆品，英国就商品供应链与非法毁林的关系征求意见，同时区分大不列颠和北爱尔兰的制度安排。",
+      "level": "B1",
+      "category": "environment",
+      "topics": [
+        "日常消费",
+        "森林保护"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-11-11",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-12-it-meteo-clima-e-voli",
+      "lang": "it",
+      "date": "2026-11-12",
+      "title": "Preparare i voli con due prospettive",
+      "titleZh": "从天气与气候两个角度准备飞行",
+      "summaryZh": "研究人员比较相似天气在不同时期的表现，并将方法用于航线与机场的预报分析。",
+      "level": "B1",
+      "category": "environment",
+      "topics": [
+        "航空",
+        "天气",
+        "气候"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-11-11",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-12-it-produzione-e-confronti",
+      "lang": "it",
+      "date": "2026-11-12",
+      "title": "Un mese, diversi confronti",
+      "titleZh": "一个月份，不同的比较",
+      "summaryZh": "同一份工业生产报告为何能同时出现增长与下降？先分清比较的时间范围。",
+      "level": "A2",
+      "category": "work-economy",
+      "topics": [
+        "统计",
+        "生产",
+        "时间比较"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-11-11",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-12-de-gemeinsam-offene-bildung-gestalten",
+      "lang": "de",
+      "date": "2026-11-12",
+      "title": "Gemeinsam offene Bildung gestalten",
+      "titleZh": "一起推动开放教育",
+      "summaryZh": "项目经验显示，技术平台之外，交流与持续联系同样有助于开放教育的发展。",
+      "level": "B1",
+      "category": "education",
+      "topics": [
+        "开放教育",
+        "合作与交流"
+      ],
+      "sourceLang": "de",
+      "sourcePublishedAt": "2026-11-10",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-12-fr-presse-publicite",
+      "lang": "fr",
+      "date": "2026-11-12",
+      "title": "Financer la presse à l’heure du numérique",
+      "titleZh": "数字时代，如何为新闻媒体提供资金？",
+      "summaryZh": "一项法国法案希望把部分网络广告预算引向新闻媒体。读懂适用门槛与比例上限，并区分提案和已经生效的规则。",
+      "level": "B1",
+      "category": "society",
+      "topics": [
+        "媒体经济",
+        "数字转型"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-11-10",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-11-11-it-imprese-tra-scambi-e-costi",
       "lang": "it",
       "date": "2026-11-11",
@@ -17,6 +121,23 @@
       ],
       "sourceLang": "it",
       "sourcePublishedAt": "2026-11-10",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-12-fr-villes-bioressources",
+      "lang": "fr",
+      "date": "2026-11-12",
+      "title": "Quatre chemins possibles pour les ressources des villes",
+      "titleZh": "城市资源利用的四条可能路径",
+      "summaryZh": "INRAE以2050年为远景，比较四种城市生物资源利用情景。政策、资金以及城乡关系，会让不同城市走上不同道路。",
+      "level": "B2",
+      "category": "environment",
+      "topics": [
+        "城市生活",
+        "资源循环"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-11-09",
       "contentType": "native-adaptation"
     },
     {

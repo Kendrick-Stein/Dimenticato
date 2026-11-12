@@ -1,0 +1,223 @@
+{
+  "schema": 1,
+  "id": "2026-11-12-fr-presse-publicite",
+  "storyId": "culture-investissement-publicitaire-projet-2026-11-10",
+  "lang": "fr",
+  "date": "2026-11-12",
+  "title": "Financer la presse à l’heure du numérique",
+  "titleZh": "数字时代，如何为新闻媒体提供资金？",
+  "summaryZh": "一项法国法案希望把部分网络广告预算引向新闻媒体。读懂适用门槛与比例上限，并区分提案和已经生效的规则。",
+  "level": "B1",
+  "levelReason": "编辑估计：用连接词说明经济问题、提案机制与限制，需区分拟议措施和现行规则。",
+  "category": "society",
+  "topics": [
+    "媒体经济",
+    "数字转型"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Ministère de la Culture",
+    "title": "Le Gouvernement présente un projet de loi visant à renforcer l’investissement publicitaire dans les services de presse d’information politique et générale en ligne.",
+    "url": "https://www.culture.gouv.fr/presse/communiques-de-presse/le-gouvernement-presente-un-projet-de-loi-visant-a-renforcer-l-investissement-publicitaire-dans-les-services-de-presse-d-information-politique-et-g",
+    "publishedAt": "2026-11-10",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "CC BY-SA 3.0 FR",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/"
+  },
+  "attribution": "Ministère de la Culture；原文：Le Gouvernement présente un projet de loi visant à renforcer l’investissement publicitaire dans les services de presse d’information politique et générale en ligne.（2026-11-10），https://www.culture.gouv.fr/presse/communiques-de-presse/le-gouvernement-presente-un-projet-de-loi-visant-a-renforcer-l-investissement-publicitaire-dans-les-services-de-presse-d-information-politique-et-g。依照 CC BY-SA 3.0 FR 使用机构正文；不含图片、视频、第三方引语或外部报告。",
+  "adaptation": "本站同语言教学改写并配中文翻译、词义与原创练习；非官方原文或官方分级，不代表来源机构认可。本改写及教学补充依 CC BY-SA 3.0 FR 发布。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Le 10 novembre 2026, le ministère de la Culture a présenté un projet de loi concernant le financement de la presse en ligne.",
+      "zh": "2026年11月10日，法国文化部介绍了一项涉及网络新闻媒体资金来源的法案。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Pour comprendre cette proposition, il faut regarder comment évoluent les revenus publicitaires des médias historiques, comme la presse écrite, la radio et la télévision.",
+      "zh": "要理解这项提案，需要看看报刊、广播和电视等传统媒体的广告收入如何变化。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Selon le ministère, ces ressources diminuent depuis plus de dix ans, alors que les plateformes numériques prennent une place croissante sur le marché publicitaire.",
+      "zh": "据文化部介绍，这些收入已经下降了十多年，而数字平台在广告市场中的份额不断扩大。",
+      "glosses": [
+        {
+          "surface": "diminuent",
+          "lemma": "diminuer",
+          "zh": "减少；这里是第三人称复数现在时"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Ces plateformes diffusent de l’information, mais le gouvernement estime qu’elles ne participent pas suffisamment à son financement.",
+      "zh": "这些平台传播信息，但政府认为它们对信息生产的资金支持还不够。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Dans ce contexte, les médias ont besoin de moyens pour investir et adapter leurs activités aux nouveaux usages numériques de leur public.",
+      "zh": "在这种背景下，媒体需要资金来投资，并让自身业务适应受众新的数字使用习惯。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Le projet s’intéresse plus précisément à la presse d’information politique et générale, qui contribue à informer les citoyens et à nourrir le débat public.",
+      "zh": "这项法案更具体地关注政治和综合新闻媒体，它们为公民提供信息，并为公共讨论提供内容。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Le gouvernement veut soutenir cette presse, aussi bien pour le débat national que pour la vie démocratique locale.",
+      "zh": "政府希望支持这类新闻媒体，既服务于全国性的讨论，也服务于地方民主生活。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "La mesure proposée concernerait les annonceurs publics et privés dont les dépenses publicitaires annuelles dépassent un million d’euros.",
+      "zh": "拟议措施将适用于年度广告支出超过一百万欧元的公共和私人广告主。",
+      "glosses": [
+        {
+          "surface": "dépassent",
+          "lemma": "dépasser",
+          "zh": "超过"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Ces annonceurs devraient consacrer une partie de leurs investissements publicitaires numériques aux sites de cette presse.",
+      "zh": "这些广告主将需要把一部分数字广告投入用于这类新闻媒体的网站。",
+      "glosses": [
+        {
+          "surface": "consacrer",
+          "lemma": "consacrer",
+          "zh": "将……用于"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "La proportion exacte serait fixée par décret, mais le projet prévoit qu’elle ne pourrait pas dépasser dix pour cent.",
+      "zh": "确切比例将由法令规定，但法案规定这一比例不得超过百分之十。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Il ne faut donc pas confondre le plafond annoncé avec un taux déjà fixé pour tous les annonceurs.",
+      "zh": "因此，不能把所公布的上限当成已经为所有广告主确定的比例。",
+      "glosses": [
+        {
+          "surface": "plafond",
+          "lemma": "plafond",
+          "zh": "上限"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "De plus, le communiqué présente un projet de loi, et non une obligation déjà entrée en vigueur.",
+      "zh": "此外，这份公报介绍的是一项法案，而不是已经生效的义务。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "Les ressources supplémentaires devraient aider les journaux à poursuivre leur transformation numérique et à mieux attirer les revenus de la publicité.",
+      "zh": "增加的资金预计将帮助报刊继续数字转型，并更好地吸引广告收入。",
+      "glosses": []
+    },
+    {
+      "id": "s14",
+      "text": "Le gouvernement annonce aussi un suivi des mesures afin de vérifier leur mise en œuvre dans un secteur qui change rapidement.",
+      "zh": "政府还宣布将跟踪这些措施，以核查它们在一个快速变化的行业中的实施情况。",
+      "glosses": [
+        {
+          "surface": "suivi",
+          "lemma": "suivi",
+          "zh": "跟踪、监测"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "diminuent",
+        "lemma": "diminuer",
+        "zh": "减少；这里是第三人称复数现在时",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "dépassent",
+        "lemma": "dépasser",
+        "zh": "超过",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "consacrer",
+        "lemma": "consacrer",
+        "zh": "将……用于",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "plafond",
+        "lemma": "plafond",
+        "zh": "上限",
+        "sentenceId": "s11"
+      },
+      {
+        "text": "suivi",
+        "lemma": "suivi",
+        "zh": "跟踪、监测",
+        "sentenceId": "s14"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "depuis plus de dix ans",
+        "zh": "十多年来",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "par décret",
+        "zh": "通过法令",
+        "sentenceId": "s10"
+      },
+      {
+        "text": "entrée en vigueur",
+        "zh": "已经生效",
+        "sentenceId": "s12"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s3",
+        "note": "depuis plus de dix ans 与现在时 diminuent 连用，表示十多年前开始、至今仍持续的变化；alors que 在此连接对照：传统媒体收入下降，而数字平台份额扩大。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Comment choisissez-vous les médias que vous lisez en ligne ?",
+        "zh": "你如何选择在网上阅读的新闻媒体？"
+      },
+      {
+        "text": "Quels avantages et quelles difficultés voyez-vous dans ce projet ?",
+        "zh": "你认为这项法案有哪些优点与困难？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "À mon avis, il faudrait comparer les différentes possibilités.",
+        "zh": "我认为，应该比较不同的可能方案。",
+        "note": "il faudrait + 不定式，用来提出建议；这是教学补充，不是来源引语。"
+      }
+    ]
+  }
+}

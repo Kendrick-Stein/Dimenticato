@@ -1,0 +1,262 @@
+{
+  "schema": 1,
+  "editionDate": "2026-11-12",
+  "contentReview": "approved",
+  "publicationScope": "Seven independent native-language readings and two original outbound listening guides. Existing reading files and listening entries remain unchanged.",
+  "readings": [
+    {
+      "id": "2026-11-12-it-produzione-e-confronti",
+      "storyId": "istat-industrial-production-september-2026-11-11",
+      "lang": "it",
+      "level": "A2",
+      "bodyWords": 165,
+      "source": {
+        "name": "Istat",
+        "title": "Produzione industriale – Settembre 2026",
+        "url": "https://www.istat.it/comunicato-stampa/produzione-industriale-settembre-2026/",
+        "publishedAt": "2026-11-11",
+        "lang": "it",
+        "author": "Istat（机构署名）"
+      },
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "finalSha256": {
+        "article": "89bdf1d33c575a19baae5c9d6698eff3125076f9c74d4a831ff8d9692d3ea753",
+        "practice": "f8aab483a7ac2b2244e57943a77696f148c9d2740238f951ba16235602907e6a",
+        "comprehension": "d279e186cd822683f88fdb4db97e98bb455993b05fa50502e76a6db7d394c400"
+      },
+      "practiceQuestions": 5,
+      "comprehensionQuestions": 3
+    },
+    {
+      "id": "2026-11-12-it-meteo-clima-e-voli",
+      "storyId": "ingv-turbometer-2026-11-11",
+      "lang": "it",
+      "level": "B1",
+      "bodyWords": 285,
+      "source": {
+        "name": "INGV Ufficio Stampa",
+        "title": "CLIMA E AVIAZIONE | TurboMeter integra previsioni meteorologiche e analisi climatica per studiare la turbolenza aerea e gli impatti su aeroporti e traffico aereo",
+        "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/clima-e-aviazione-turbometer-integra-previsioni-meteorologiche-e-analisi-climatica-per-studiare-la-turbolenza-aerea-e-gli-impatti-su-aeroporti-e-traffico-aereo",
+        "publishedAt": "2026-11-11",
+        "lang": "it",
+        "author": "INGV Ufficio Stampa（机构署名）"
+      },
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "finalSha256": {
+        "article": "a1da0129c76cb1e0e0293e462f467ca2099eef44e9138b7272021d402153d2c0",
+        "practice": "0ad49b0d88f3fee3e9e78ee4905c05a5afb7df4b8cf4d72643f2d1ed175505bc",
+        "comprehension": "a92f9fa84510ca66bbb76b2e28f565f909173e58fd08524850f2642f6af8f98a"
+      },
+      "practiceQuestions": 5,
+      "comprehensionQuestions": 4
+    },
+    {
+      "id": "2026-11-12-fr-villes-bioressources",
+      "storyId": "inrae-better-villes-scenarios-2026-11-09",
+      "lang": "fr",
+      "level": "B2",
+      "bodyWords": 538,
+      "source": {
+        "name": "Service médias et opinion INRAE",
+        "title": "Quelle place pour la bioéconomie et les bioressources dans les villes françaises ? Élaboration de 4 scénarios à l’horizon 2050",
+        "url": "https://www.inrae.fr/actualites/quelle-place-bioeconomie-bioressources-villes-francaises-elaboration-4-scenarios-lhorizon-2050",
+        "publishedAt": "2026-11-09",
+        "lang": "fr"
+      },
+      "license": {
+        "name": "Licence Ouverte / Open Licence Etalab 2.0",
+        "url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0"
+      },
+      "finalSha256": {
+        "article": "b50c0671b6919c26651ed2705c6a4533c0f157fc1929f5b58d1bd2319faa52a7",
+        "practice": "fa27673d7794b1c8c374242e5c7f3d9cf0ede25d39be1b87d456daee765a7d51",
+        "comprehension": "2876a399601935ed99a9150cf53f16f1e60105e970ced80e404e4d4952249570"
+      },
+      "practiceQuestions": 5,
+      "comprehensionQuestions": 5
+    },
+    {
+      "id": "2026-11-12-fr-presse-publicite",
+      "storyId": "culture-investissement-publicitaire-projet-2026-11-10",
+      "lang": "fr",
+      "level": "B1",
+      "bodyWords": 282,
+      "source": {
+        "name": "Ministère de la Culture",
+        "title": "Le Gouvernement présente un projet de loi visant à renforcer l’investissement publicitaire dans les services de presse d’information politique et générale en ligne.",
+        "url": "https://www.culture.gouv.fr/presse/communiques-de-presse/le-gouvernement-presente-un-projet-de-loi-visant-a-renforcer-l-investissement-publicitaire-dans-les-services-de-presse-d-information-politique-et-g",
+        "publishedAt": "2026-11-10",
+        "lang": "fr"
+      },
+      "license": {
+        "name": "CC BY-SA 3.0 FR",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/"
+      },
+      "finalSha256": {
+        "article": "ca53d47b286c1fc6c92394d5a32ab4c29b781424ac874119d18ecfc816578a95",
+        "practice": "a1345fc7a3605d7127d56b6deb1d7063f9aa5c594613dc370dcb79df8335391b",
+        "comprehension": "4b9919e152623da1c1ae4a1802b26e1cd51767c94bf81abbaa9af6613aad47e4"
+      },
+      "practiceQuestions": 5,
+      "comprehensionQuestions": 4
+    },
+    {
+      "id": "2026-11-12-de-gemeinsam-offene-bildung-gestalten",
+      "storyId": "oerinfo-hackathoern-oekosystem-2026-11-10",
+      "lang": "de",
+      "level": "B1",
+      "bodyWords": 291,
+      "source": {
+        "name": "OERinfo – Die Informationsstelle OER",
+        "title": "Von offenen Infrastrukturen zu einem offenen Ökosystem – Beobachtungen aus zwei Jahren HackathOERn",
+        "url": "https://open-educational-resources.de/von-offenen-infrastrukturen-zu-einem-offenen-oekosystem-beobachtungen-aus-zwei-jahren-hackathoern/",
+        "publishedAt": "2026-11-10",
+        "lang": "de",
+        "author": "Kathrin Rabsch, edu-sharing für OERinfo"
+      },
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "finalSha256": {
+        "article": "2a78945d759c753af06dc92709b873081f55b63f16481071b81702310adc9614",
+        "practice": "36a1e840459fbe589dadeefaf06d6e70971d60889d19b8dfc4453bacff1acf95",
+        "comprehension": "c0450278ddd5d058ad068c0fdfc9d0acf644fae473f4edd8e02cb6351636a33c"
+      },
+      "practiceQuestions": 5,
+      "comprehensionQuestions": 4
+    },
+    {
+      "id": "2026-11-12-en-shopping-and-forests-abroad",
+      "storyId": "defra-illegal-deforestation-consultation-2026-11-11",
+      "lang": "en",
+      "level": "B1",
+      "bodyWords": 297,
+      "source": {
+        "name": "Department for Environment, Food & Rural Affairs",
+        "title": "Government to stamp illegal deforestation out of UK supply chains",
+        "url": "https://www.gov.uk/government/news/government-to-stamp-illegal-deforestation-out-of-uk-supply-chains",
+        "publishedAt": "2026-11-11",
+        "lang": "en",
+        "author": "Department for Environment, Food & Rural Affairs"
+      },
+      "license": {
+        "name": "Open Government Licence v3.0",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      },
+      "finalSha256": {
+        "article": "a6bfecae2f0c47bb9268750f4c4ae5672b26f1b9070008c1aa78d628c59c93a2",
+        "practice": "cb182824e2d7f1e7854818a9c3e7ad07997f1e5bafdede0e46f9fb9045b38985",
+        "comprehension": "4bf18fb72ccbbb60a76f10d649e01fb748199367c7a152b26dfd82264d4f3c0e"
+      },
+      "practiceQuestions": 5,
+      "comprehensionQuestions": 4
+    },
+    {
+      "id": "2026-11-12-en-moving-home-and-family-membership",
+      "storyId": "hm-treasury-credit-union-referrals-2026-11-11",
+      "lang": "en",
+      "level": "A2",
+      "bodyWords": 154,
+      "source": {
+        "name": "HM Treasury",
+        "title": "Affordable finance access for tens of thousands more people",
+        "url": "https://www.gov.uk/government/news/affordable-finance-access-for-tens-of-thousands-more-people",
+        "publishedAt": "2026-11-11",
+        "lang": "en",
+        "author": "HM Treasury"
+      },
+      "license": {
+        "name": "Open Government Licence v3.0",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      },
+      "finalSha256": {
+        "article": "ec9bbefd43cfa70e43192808a4c7068c20e48b8051f32eeb0c225447787eb2ba",
+        "practice": "797a2e0f92811491f2653320f7c9eea8a62dac533989262525449b5f1e0fab67",
+        "comprehension": "445634de3dfae1bdfedf96b43ac386317f2443c54262caf06617fea544fed35e"
+      },
+      "practiceQuestions": 5,
+      "comprehensionQuestions": 3
+    }
+  ],
+  "listening": [
+    {
+      "id": "de-logo-2026-11-11",
+      "lang": "de",
+      "url": "https://www.logo.de/logo-vom-mittwoch-11-november-2026-102.html",
+      "level": "未分级",
+      "levelLabel": "母语儿童内容 · 非 CEFR 分级",
+      "sourcePublishedAt": "2026-11-11",
+      "questions": 0,
+      "audioQualityVerified": false
+    },
+    {
+      "id": "en-bc-lets-eat-2026-11-10",
+      "lang": "en",
+      "url": "https://learnenglish.britishcouncil.org/free-resources/learning-hub/events/grammar-lesson-lets-eat",
+      "level": "B1",
+      "levelLabel": "B1–C1 · 官方适用范围",
+      "sourcePublishedAt": "2026-11-10",
+      "questions": 0,
+      "audioQualityVerified": false
+    }
+  ],
+  "verification": {
+    "blindComprehension": "All initial article-plus-options packets were independently answered before keys. Revisions to distractors and option order were checked again with keys available; no second blind test is claimed. All 27 final questions, evidence references and Chinese explanations approved.",
+    "cloze": "All 35 exact contextual forms, UTF-16 offsets, alternatives and Chinese morphology explanations independently reviewed.",
+    "sourceReview": "Complete institutional text, language provenance, first-publication evidence, permissions, third-party exclusions, factual claims, Chinese translations and editorial level estimates independently reviewed. No images, audio, video, full transcripts or linked third-party reports reproduced.",
+    "dateAndIdentityNotes": [
+      "Seven distinct complete works were first published November 9–11. Source dates are separate from edition dates and historical statistical periods.",
+      "The German OER anniversary essay has matching November 10 publication dates in the official page, RSS and institutional index. Its modification date is November 3, an unresolved metadata anomaly. Independent comparison with the June event report confirms distinct authorship and complete work, not a reissued fragment.",
+      "The INRAE article was previously an explicitly unadapted reserve entry. The known reserve and recovered final publication packet were reconciled before conversion. The Culture bill announcement previously appeared only as a press-listing link.",
+      "Missing historical inventories remain missing. Clearance applies only to these verified new works, not unknown older candidates."
+    ],
+    "rightsNotes": [
+      "Culture institutional text and all adapted teaching remain CC BY-SA 3.0 FR under the specific text clause. INRAE public institutional text is under Etalab 2.0.",
+      "Istat, INGV and the specifically licensed OERinfo text are CC BY 4.0 with required attribution. Treasury and Defra institutional prose are under OGL v3.0; third-party quotations are excluded."
+    ],
+    "protectedTarget": "The unresolved historical write to editorial/reading/candidates.json was not retried, referenced, overwritten or included in this update.",
+    "fullTests": {
+      "harnesses": 45,
+      "passed": 487280,
+      "failed": 0,
+      "knownIssues": 0,
+      "finalCatalogAmendmentRetested": true
+    },
+    "privateBrowser": {
+      "status": "passed-with-explicit-scope",
+      "environment": "Supported private managed-cloud preview serving exact final content files",
+      "reading": "All 27 comprehension, 35 cloze-choice and 35 cloze-spelling answers submitted through actual UI. Translation, glossary, learning summary, wrong-answer locking, evidence focus, redo isolation, navigation/reload and legacy fallback checked.",
+      "narrowLayout": "Real desktop Chromium at 300% zoom: all seven readings and both listening details had 393 CSS-pixel viewport, 388-pixel client and scroll widths, without horizontal overflow. Not a physical mobile-device test.",
+      "listening": "Both catalog/detail pages, language switching, original-site new-tab links and back/forward checked. Explicit Germany-only warning verified after final amendment.",
+      "limits": "No acoustic-quality verification, full game completion per article, fault injection or exhaustive race testing. Cloud browser Today grouping still selected November 11; all November 12 catalog and detail links were accessible. Clock/timezone not modified."
+    }
+  },
+  "missingReadingSlots": {
+    "it": [
+      "B2/C1"
+    ],
+    "fr": [
+      "A2"
+    ],
+    "de": [
+      "A2",
+      "B2/C1"
+    ],
+    "en": [
+      "B2/C1"
+    ]
+  },
+  "listeningGaps": [
+    "it",
+    "fr"
+  ],
+  "listeningLimits": "Two official outbound guides, no new listening questions. No acoustic-quality verification claimed. The German original player explicitly restricts the episode to Germany; the guide visibly warns of this. The English lesson shows the provider range B1–C1; a play request exposed 48:56 duration but playback progression was not verified.",
+  "scopeLimits": "No unrelated code, existing historical content or global learning records changed. Discovery and rejected candidates are not counted as published readings."
+}

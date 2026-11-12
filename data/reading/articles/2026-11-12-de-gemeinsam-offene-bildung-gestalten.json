@@ -1,0 +1,282 @@
+{
+  "schema": 1,
+  "id": "2026-11-12-de-gemeinsam-offene-bildung-gestalten",
+  "storyId": "oerinfo-hackathoern-oekosystem-2026-11-10",
+  "lang": "de",
+  "date": "2026-11-12",
+  "category": "education",
+  "topics": [
+    "开放教育",
+    "合作与交流"
+  ],
+  "title": "Gemeinsam offene Bildung gestalten",
+  "titleZh": "一起推动开放教育",
+  "summaryZh": "项目经验显示，技术平台之外，交流与持续联系同样有助于开放教育的发展。",
+  "level": "B1",
+  "levelReason": "编辑估计：用项目经验解释合作的作用，包含原因、条件、让步及对比；专业词汇配中文注释。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "OERinfo – Die Informationsstelle OER",
+    "title": "Von offenen Infrastrukturen zu einem offenen Ökosystem – Beobachtungen aus zwei Jahren HackathOERn",
+    "url": "https://open-educational-resources.de/von-offenen-infrastrukturen-zu-einem-offenen-oekosystem-beobachtungen-aus-zwei-jahren-hackathoern/",
+    "publishedAt": "2026-11-10",
+    "lang": "de",
+    "author": "Kathrin Rabsch, edu-sharing für OERinfo"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "原文：Kathrin Rabsch, edu-sharing für OERinfo – Die Informationsstelle OER，2026-11-10，CC BY 4.0。保留原文链接与许可。",
+  "adaptation": "德语同语言教学改写、逐句中文翻译及原创学习补充；不是原文逐字转载，不代表原作者认可。未使用图片、评论或第三方材料。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Offene Bildungsressourcen können im Internet gefunden, genutzt und weiterentwickelt werden.",
+      "zh": "人们可以在网上找到、使用并继续开发开放教育资源。",
+      "glosses": [
+        {
+          "surface": "Bildungsressourcen",
+          "lemma": "Bildungsressource",
+          "zh": "教育资源",
+          "note": "复数；单数die Bildungsressource。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Dafür sind Plattformen, Suchwerkzeuge und andere technische Angebote wichtig.",
+      "zh": "为此，平台、搜索工具和其他技术服务很重要。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Doch Technik allein reicht nicht aus: Auch die Menschen hinter diesen Angeboten müssen miteinander in Kontakt kommen.",
+      "zh": "但仅靠技术还不够：这些服务背后的人也必须相互建立联系。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "Das beschreibt Kathrin Rabsch in einem Beitrag für OERinfo, der am 10. November 2026 veröffentlicht wurde.",
+      "zh": "Kathrin Rabsch在一篇2026年11月10日发表于OERinfo的文章中阐述了这一点。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Sie berichtet über Erfahrungen aus zwei Jahren Arbeit im Projekt HackathOERn.",
+      "zh": "她介绍了HackathOERn项目两年工作中的经验。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Das Projekt bringt Menschen aus verschiedenen Bereichen zusammen, damit sie gemeinsam an Fragen zur offenen Bildung arbeiten können.",
+      "zh": "该项目把不同领域的人聚在一起，让他们能够共同处理开放教育方面的问题。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Eine Person kennt den Alltag an einer Hochschule, eine andere versteht viel von Technik.",
+      "zh": "一个人了解高校的日常工作，另一个人很懂技术。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Wieder andere haben Erfahrung damit, wie man Lernangebote sinnvoll gestaltet.",
+      "zh": "还有一些人有合理设计学习服务的经验。",
+      "glosses": [
+        {
+          "surface": "Erfahrung",
+          "lemma": "Erfahrung",
+          "zh": "经验",
+          "note": "die Erfahrung；haben Erfahrung damit表示在某事方面有经验。"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Wenn diese Menschen miteinander sprechen, entdecken sie Verbindungen zwischen Problemen, die zunächst getrennt erscheinen.",
+      "zh": "当这些人相互交谈时，就会发现看似彼此独立的问题之间的联系。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Nach Rabschs Erfahrung entsteht der Nutzen eines Treffens deshalb nicht erst, wenn am Ende eine fertige Lösung vorliegt.",
+      "zh": "因此，按照Rabsch的经验，一次聚会的价值并不是直到最后出现完整解决方案时才产生。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Schon eine gemeinsame Frage kann helfen, das eigentliche Problem besser zu verstehen.",
+      "zh": "仅仅一个共同的问题，就可能帮助人们更好地理解真正的问题所在。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Manchmal wird auch deutlich, welche Bedürfnisse bisher noch nicht berücksichtigt wurden.",
+      "zh": "有时也会发现，此前有哪些需求尚未被考虑。",
+      "glosses": [
+        {
+          "surface": "Bedürfnisse",
+          "lemma": "Bedürfnis",
+          "zh": "需求",
+          "note": "复数；单数das Bedürfnis。"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Für den Beginn einer Zusammenarbeit brauchen die Teilnehmenden also nicht unbedingt einen fertigen Projektplan.",
+      "zh": "因此，参与者在开始合作时，并不一定需要一份完整的项目计划。",
+      "glosses": []
+    },
+    {
+      "id": "s14",
+      "text": "Ein gemeinsames Interesse und Zeit für den Austausch können ein Anfang sein.",
+      "zh": "共同的兴趣和交流的时间可以成为起点。",
+      "glosses": []
+    },
+    {
+      "id": "s15",
+      "text": "Dabei müssen nicht alle dieselben Kenntnisse haben oder am Ende dasselbe Ziel verfolgen.",
+      "zh": "在这个过程中，并非所有人都必须拥有相同的知识，或最终追求相同的目标。",
+      "glosses": []
+    },
+    {
+      "id": "s16",
+      "text": "Wichtig ist vielmehr, dass unterschiedliche Beiträge willkommen sind und sich ergänzen können.",
+      "zh": "更重要的是，不同的贡献受到欢迎，并且能够相互补充。",
+      "glosses": []
+    },
+    {
+      "id": "s17",
+      "text": "Auch nach einer Veranstaltung kann eine Idee weiterleben: Andere greifen sie auf, verändern sie oder entwickeln daraus ein neues Vorhaben.",
+      "zh": "一项想法在活动结束后也能继续发展：其他人可以接过这个想法、改变它，或由此发展出新的计划。",
+      "glosses": []
+    },
+    {
+      "id": "s18",
+      "text": "Allerdings führt nicht jede Begegnung zu einer langfristigen Kooperation, und solche Entwicklungen lassen sich nicht immer sofort messen.",
+      "zh": "不过，并非每一次相遇都会带来长期合作，而且这些发展也并非总能立即被衡量。",
+      "glosses": [
+        {
+          "surface": "Begegnung",
+          "lemma": "Begegnung",
+          "zh": "相遇",
+          "note": "die Begegnung，单数主语。"
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "text": "Rabsch möchte deshalb Gelegenheiten schaffen, bei denen Kontakte bestehen bleiben und weitere Gespräche möglich werden.",
+      "zh": "因此，Rabsch希望创造机会，让联系得以维持，让后续对话成为可能。",
+      "glosses": []
+    },
+    {
+      "id": "s20",
+      "text": "Die Beziehungen zwischen Menschen ersetzen die technische Infrastruktur nicht.",
+      "zh": "人与人之间的联系并不取代技术基础设施。",
+      "glosses": [
+        {
+          "surface": "ersetzen",
+          "lemma": "ersetzen",
+          "zh": "取代",
+          "note": "主语Beziehungen为复数，现在时用ersetzen。"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "text": "Vielmehr ergänzen sich beide Seiten: Gute Technik erleichtert die Zusammenarbeit, während Gespräche zeigen können, was Menschen tatsächlich brauchen.",
+      "zh": "相反，这两方面相互补充：好的技术让合作更容易，而交谈能够显示人们真正需要什么。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "Bildungsressourcen",
+        "lemma": "Bildungsressource",
+        "zh": "教育资源",
+        "note": "复数；单数die Bildungsressource。",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "Erfahrung",
+        "lemma": "Erfahrung",
+        "zh": "经验",
+        "note": "die Erfahrung；haben Erfahrung damit表示在某事方面有经验。",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "Bedürfnisse",
+        "lemma": "Bedürfnis",
+        "zh": "需求",
+        "note": "复数；单数das Bedürfnis。",
+        "sentenceId": "s12"
+      },
+      {
+        "text": "Begegnung",
+        "lemma": "Begegnung",
+        "zh": "相遇",
+        "note": "die Begegnung，单数主语。",
+        "sentenceId": "s18"
+      },
+      {
+        "text": "ersetzen",
+        "lemma": "ersetzen",
+        "zh": "取代",
+        "note": "主语Beziehungen为复数，现在时用ersetzen。",
+        "sentenceId": "s20"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "in Kontakt kommen",
+        "zh": "建立联系",
+        "sentenceId": "s3",
+        "note": "mit jemandem in Kontakt kommen：与某人取得联系。"
+      },
+      {
+        "text": "nicht unbedingt",
+        "zh": "不一定",
+        "sentenceId": "s13",
+        "note": "表示不必然，保留可能性，而非完全否定。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s18",
+        "note": "nicht jede表示并非每一次；lassen sich + 不定式表达能否被进行某种操作。"
+      },
+      {
+        "sentenceId": "s21",
+        "note": "während在此连接两方面的作用，突出技术和交流的互补关系。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Welche unterschiedlichen Erfahrungen könnten bei einem gemeinsamen Lernprojekt helfen?",
+        "zh": "共同开展学习项目时，不同的哪些经验可能有帮助？"
+      },
+      {
+        "text": "Wann war ein Gespräch für dich nützlich, obwohl noch keine Lösung gefunden wurde?",
+        "zh": "你是否经历过尚未找到答案、但交谈本身就有帮助的情况？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Aus meiner Erfahrung ist es hilfreich, …",
+        "zh": "根据我的经验，……是有帮助的。",
+        "note": "原创讨论表达，后接带zu的不定式短语。"
+      },
+      {
+        "text": "Wir könnten unsere Kenntnisse ergänzen.",
+        "zh": "我们可以让彼此的知识互相补充。",
+        "note": "原创建议句；könnten让建议较为委婉。"
+      }
+    ]
+  }
+}

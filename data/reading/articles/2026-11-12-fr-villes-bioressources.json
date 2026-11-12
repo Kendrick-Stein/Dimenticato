@@ -1,0 +1,271 @@
+{
+  "schema": 1,
+  "id": "2026-11-12-fr-villes-bioressources",
+  "storyId": "inrae-better-villes-scenarios-2026-11-09",
+  "lang": "fr",
+  "date": "2026-11-12",
+  "title": "Quatre chemins possibles pour les ressources des villes",
+  "titleZh": "城市资源利用的四条可能路径",
+  "summaryZh": "INRAE以2050年为远景，比较四种城市生物资源利用情景。政策、资金以及城乡关系，会让不同城市走上不同道路。",
+  "level": "B2",
+  "levelReason": "编辑估计：比较四种假设路径，理解条件、让步、因果与制度层面的抽象词汇；情景并非预测。",
+  "category": "environment",
+  "topics": [
+    "城市生活",
+    "资源循环"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Service médias et opinion INRAE",
+    "title": "Quelle place pour la bioéconomie et les bioressources dans les villes françaises ? Élaboration de 4 scénarios à l’horizon 2050",
+    "url": "https://www.inrae.fr/actualites/quelle-place-bioeconomie-bioressources-villes-francaises-elaboration-4-scenarios-lhorizon-2050",
+    "publishedAt": "2026-11-09",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "Licence Ouverte / Open Licence Etalab 2.0",
+    "url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0"
+  },
+  "attribution": "Service médias et opinion INRAE；原文：Quelle place pour la bioéconomie et les bioressources dans les villes françaises ? Élaboration de 4 scénarios à l’horizon 2050（2026-11-09），https://www.inrae.fr/actualites/quelle-place-bioeconomie-bioressources-villes-francaises-elaboration-4-scenarios-lhorizon-2050。依照 Licence Ouverte / Open Licence Etalab 2.0 使用机构正文；不含图片、视频、第三方引语或外部报告。",
+  "adaptation": "本站同语言教学改写并配中文翻译、词义与原创练习；非官方原文或官方分级，不代表来源机构认可。仅根据机构新闻稿，未转载其链接的研究报告。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Les villes absorbent de grandes quantités de ressources biologiques, notamment pour nourrir leurs habitants, mais elles produisent aussi beaucoup de déchets et de gaz à effet de serre.",
+      "zh": "城市消耗大量生物资源，尤其用于居民饮食，但也产生大量废弃物和温室气体。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Leurs besoins croissants en eau peuvent, en outre, entrer en concurrence avec ceux des territoires ruraux voisins.",
+      "zh": "此外，城市不断增长的用水需求可能与邻近乡村地区的需求形成竞争。",
+      "glosses": [
+        {
+          "surface": "croissants",
+          "lemma": "croissant",
+          "zh": "不断增长的；阳性复数"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Dans un communiqué publié le 9 novembre 2026, INRAE présente une étude prospective qui explore la place possible de la bioéconomie dans les villes françaises à l’horizon 2050.",
+      "zh": "在2026年11月9日发布的一份新闻稿中，INRAE介绍了一项前瞻研究，探索到2050年生物经济可能在法国城市中发挥的作用。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "Il s’agit de réfléchir à la production, à l’utilisation et à la valorisation des bioressources, des déchets et des effluents organiques, plutôt que de prévoir un avenir unique.",
+      "zh": "研究着眼于生物资源、废弃物和有机排出物的生产、使用及资源化利用，而不是预测唯一的未来。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Les chercheurs ont construit quatre scénarios contrastés pour les villes de plus de 50 000 habitants, afin d’aider les acteurs locaux à élaborer leurs propres stratégies.",
+      "zh": "研究人员为人口超过五万的城市构建了四种对比鲜明的情景，以帮助地方参与者制定自己的战略。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Certaines évolutions, comme les objectifs d’économie circulaire ou les règles sur le traitement des déchets, favorisent déjà la bioéconomie.",
+      "zh": "一些变化，例如循环经济目标或废弃物处理规则，已经有利于生物经济的发展。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Pourtant, selon l’étude, il n’existe pas de stratégie nationale ou européenne spécifiquement consacrée à son développement urbain, ce qui laisse une grande place aux choix locaux.",
+      "zh": "但据这项研究，目前不存在专门针对城市生物经济发展的国家或欧洲战略，这给地方选择留下了很大空间。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Dans le scénario Valo-biodéchets, le contexte réglementaire est peu favorable et aucune stratégie globale de bioéconomie urbaine ne se met en place.",
+      "zh": "在“生物废弃物资源化”情景中，监管环境不太有利，也没有形成城市生物经济的整体战略。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Les villes concentrent alors leurs efforts sur le tri des biodéchets et leur transformation en énergie et en fertilisants, principalement destinés à des usages urbains.",
+      "zh": "城市于是集中力量对生物废弃物进行分类，并将其转化为能源和肥料，主要供城市使用。",
+      "glosses": [
+        {
+          "surface": "tri",
+          "lemma": "tri",
+          "zh": "分类"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Elles s’appuient sur des infrastructures centralisées et de grands opérateurs privés, qui cherchent surtout à améliorer les performances des équipements existants sans engager de transformations profondes.",
+      "zh": "它们依靠集中化的基础设施和大型私营运营商，后者主要寻求改善现有设备的性能，而不进行深层转型。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Le scénario High-tech repose, au contraire, sur des innovations ambitieuses et de nouveaux circuits logistiques dans quelques grandes villes disposant de solides moyens financiers et techniques.",
+      "zh": "相反，“高科技”情景依托少数资金和技术实力雄厚的大城市，推动雄心勃勃的创新和新的物流体系。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Ces solutions coûteuses, dont les fermes urbaines verticales constituent un exemple, se développent principalement dans les quartiers favorisés.",
+      "zh": "这些成本高昂的方案主要在条件优越的街区发展，垂直城市农场就是其中一个例子。",
+      "glosses": [
+        {
+          "surface": "coûteuses",
+          "lemma": "coûteux",
+          "zh": "昂贵的；阴性复数"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "La bioéconomie devient ainsi une vitrine de l’engagement écologique de ces villes et un moyen de renforcer leur attractivité, sans se diffuser partout de manière homogène.",
+      "zh": "生物经济因此成为这些城市展示环保投入、增强吸引力的方式，但并不会在各地均匀推广。",
+      "glosses": []
+    },
+    {
+      "id": "s14",
+      "text": "Dans le scénario Indus-biosourcée, les conditions économiques et réglementaires européennes encouragent de nouvelles filières industrielles utilisant notamment le bois ou des ressources agricoles et marines.",
+      "zh": "在“生物基工业”情景中，欧洲经济与监管条件鼓励发展新的工业产业链，尤其利用木材以及农业和海洋资源。",
+      "glosses": []
+    },
+    {
+      "id": "s15",
+      "text": "Les villes offrent des débouchés aux matériaux et aux molécules produits, mais elles ne sont pas les moteurs de cette évolution.",
+      "zh": "城市为所生产的材料和分子产品提供市场，但并不是这一变化的推动者。",
+      "glosses": [
+        {
+          "surface": "débouchés",
+          "lemma": "débouché",
+          "zh": "市场、销路"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "Elles délaissent progressivement la valorisation des biodéchets urbains et la végétalisation, jugées coûteuses et peu rentables dans ce scénario.",
+      "zh": "在这一情景中，城市逐渐放弃被视为成本高、收益低的城市生物废弃物资源化与绿化。",
+      "glosses": []
+    },
+    {
+      "id": "s17",
+      "text": "Enfin, le scénario Écologie territoriale suppose un cadre réglementaire très favorable à la transition écologique et énergétique, ainsi que des habitants sensibles aux solutions fondées sur la nature.",
+      "zh": "最后，“区域生态”情景假设存在非常有利于生态和能源转型的监管框架，同时居民重视基于自然的解决方案。",
+      "glosses": []
+    },
+    {
+      "id": "s18",
+      "text": "Les projets associent villes et campagnes, privilégient une gouvernance partagée et renforcent les échanges de proximité, par exemple en ramenant vers les champs des ressources issues des biodéchets urbains.",
+      "zh": "项目把城市和乡村结合起来，优先采用共同治理并加强周边交流，例如把来自城市生物废弃物的资源送回田间。",
+      "glosses": []
+    },
+    {
+      "id": "s19",
+      "text": "Ces chemins ne s’excluent pas nécessairement : plusieurs pourraient coexister selon les capacités des collectivités, leur économie et leurs relations avec les espaces ruraux.",
+      "zh": "这些路径并不一定相互排斥：根据地方政府的能力、当地经济及其与乡村空间的关系，多条路径可能并存。",
+      "glosses": [
+        {
+          "surface": "coexister",
+          "lemma": "coexister",
+          "zh": "共存"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "text": "Les deux premiers scénarios dépendent davantage des initiatives locales, tandis que les deux autres reposent davantage sur des impulsions nationales et européennes.",
+      "zh": "前两种情景更依赖地方行动，而后两种则更依赖国家和欧洲层面的推动。",
+      "glosses": []
+    },
+    {
+      "id": "s21",
+      "text": "Pour accompagner ces transitions, l’étude appelle à mieux comprendre les flux urbains de matière et d’énergie, à expérimenter des projets avec les acteurs locaux et à construire des modèles socialement justes.",
+      "zh": "为了支持这些转型，研究呼吁更好地理解城市物质和能量流，与地方参与者共同试验项目，并构建社会公平的模式。",
+      "glosses": []
+    },
+    {
+      "id": "s22",
+      "text": "L’enjeu est donc de discuter collectivement d’une trajectoire adaptée au territoire, plutôt que de considérer l’un de ces scénarios comme une solution universelle déjà prête.",
+      "zh": "因此，关键是共同讨论一条适合当地的路径，而不是把其中某种情景视为现成的普适方案。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "croissants",
+        "lemma": "croissant",
+        "zh": "不断增长的；阳性复数",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "tri",
+        "lemma": "tri",
+        "zh": "分类",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "coûteuses",
+        "lemma": "coûteux",
+        "zh": "昂贵的；阴性复数",
+        "sentenceId": "s12"
+      },
+      {
+        "text": "débouchés",
+        "lemma": "débouché",
+        "zh": "市场、销路",
+        "sentenceId": "s15"
+      },
+      {
+        "text": "coexister",
+        "lemma": "coexister",
+        "zh": "共存",
+        "sentenceId": "s19"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "ce qui laisse",
+        "zh": "这使得……",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "au contraire",
+        "zh": "相反",
+        "sentenceId": "s11"
+      },
+      {
+        "text": "plutôt que de",
+        "zh": "而不是……",
+        "sentenceId": "s22"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s7",
+        "note": "ce qui 的先行内容是前面整件事：缺少专门的国家或欧洲城市生物经济战略。ce qui 在后面的从句中作主语，说明这一情况带来的结果，而不是单独指 stratégie 这个名词。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quelles relations entre votre ville et les campagnes voisines pourraient être renforcées ?",
+        "zh": "你所在的城市与周边乡村可以加强哪些联系？"
+      },
+      {
+        "text": "Quels critères utiliseriez-vous pour comparer ces quatre scénarios ?",
+        "zh": "你会用哪些标准比较这四种情景？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "À mon avis, il faudrait comparer les différentes possibilités.",
+        "zh": "我认为，应该比较不同的可能方案。",
+        "note": "il faudrait + 不定式，用来提出建议；这是教学补充，不是来源引语。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-12-en-shopping-and-forests-abroad",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Which description best matches the government action discussed in the article?",
+      "options": [
+        "It presents compulsory checks already operating on goods throughout the United Kingdom.",
+        "It proposes voluntary checks to replace the existing rules for timber products.",
+        "It announces a single new system starting across the United Kingdom in December.",
+        "It proposes checks in Great Britain alongside separate arrangements in Northern Ireland."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s3",
+        "s4",
+        "s12",
+        "s13",
+        "s14"
+      ],
+      "explanationZh": "大不列颠正征询强制核查提议，并希望与北爱尔兰安排配合；不是全英国已经实行，也不是以自愿措施取代木材规则，12月日期只涉及北爱尔兰欧盟法规的分阶段适用。"
+    },
+    {
+      "id": "q2",
+      "kind": "cause",
+      "prompt": "Why does the article mention toiletries and cosmetics?",
+      "options": [
+        "To show that the forest risk extends beyond things people eat.",
+        "To explain why food companies need different regulations from shops.",
+        "To show that these products cause more forest loss than chocolate.",
+        "To explain why the government is changing product labels."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s5",
+        "s6"
+      ],
+      "explanationZh": "s6说明相关原料也用于洗护用品和化妆品，风险不局限于食品；并未作数量比较或讨论标签。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "What does the article say about the 29,000 hectares?",
+      "options": [
+        "It is the forest area that businesses expect to restore by 2030.",
+        "It is forest loss linked to UK consumption during 2023.",
+        "It is the area covered by new rules in Northern Ireland.",
+        "It is the forest loss recorded since the consultation opened."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s8",
+        "s9"
+      ],
+      "explanationZh": "这是与2023年英国消费相关的全球森林损失，不是恢复目标、法规面积或征询以来的损失。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "What difference between the two areas is described?",
+      "options": [
+        "Great Britain has completed its changes, while Northern Ireland is consulting.",
+        "Both areas will introduce the same new regulations on 30 December.",
+        "Great Britain is consulting, while EU rules will start applying in Northern Ireland.",
+        "Northern Ireland has voluntary checks, while Great Britain has ended them."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s3",
+        "s4",
+        "s13",
+        "s14"
+      ],
+      "explanationZh": "大不列颠正在征询提议，北爱尔兰的欧盟法规将从12月30日起分阶段适用；不能将两套安排说成同一制度或已经完成。"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-12-de-gemeinsam-offene-bildung-gestalten",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Wie beschreibt der Beitrag die Entwicklung offener Bildung?",
+      "options": [
+        "Technische Angebote und menschlicher Austausch wirken zusammen.",
+        "Ein gemeinsamer Projektplan ist die Voraussetzung jedes Treffens.",
+        "Persönliche Beziehungen sollen digitale Plattformen ersetzen.",
+        "Neue Suchwerkzeuge machen weitere Gespräche weniger wichtig."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s3",
+        "s20",
+        "s21"
+      ],
+      "explanationZh": "文章既保留技术的作用，也强调人与人交流；s20否定取代关系，s21明确二者互补。"
+    },
+    {
+      "id": "q2",
+      "kind": "cause",
+      "prompt": "Warum kann ein Treffen schon vor einer fertigen Lösung nützlich sein?",
+      "options": [
+        "Weil danach alle Teilnehmenden dasselbe Wissen besitzen.",
+        "Weil dadurch ein langfristiger Erfolg bereits messbar wird.",
+        "Weil gemeinsame Fragen bisher übersehene Bedürfnisse zeigen können.",
+        "Weil dabei die technischen Aufgaben an andere abgegeben werden."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s10",
+        "s11",
+        "s12"
+      ],
+      "explanationZh": "s10至s12说明价值可以在形成解决方案之前出现：共同问题有助于理解，也能显露此前未被考虑的需求。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Was sagt der Text über die Voraussetzungen der Zusammenarbeit?",
+      "options": [
+        "Die Teilnehmenden müssen zunächst ein einheitliches Ziel festlegen.",
+        "Ein gemeinsames Interesse kann auch ohne fertigen Plan genügen.",
+        "Technisches Fachwissen wird von allen Beteiligten erwartet.",
+        "Ein fertiger Plan wird bei der ersten Begegnung gemeinsam geprüft."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s13",
+        "s14",
+        "s15"
+      ],
+      "explanationZh": "s13说开始合作不一定需要完整计划，s14提出共同兴趣和交流时间可成为起点，s15不要求相同知识或目标。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "Welche mögliche Folge eines Treffens wird im Text beschrieben?",
+      "options": [
+        "Die Beteiligten können ihre Kontakte durch eine neue Suchplattform ersetzen.",
+        "Die Beteiligten können nach dem Treffen einen gemeinsamen Kenntnisstand prüfen.",
+        "Andere können den Erfolg des Treffens anhand sofort messbarer Ergebnisse vergleichen.",
+        "Andere können eine Idee später aufgreifen und daraus ein neues Vorhaben entwickeln."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s17"
+      ],
+      "explanationZh": "s17明确说活动后其他人可以接过、改变一个想法，或由此发展新的计划。其他三项是主题相关但正文没有提出的后续做法。"
+    }
+  ]
+}

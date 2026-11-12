@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-12-de-gemeinsam-offene-bildung-gestalten",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s1",
+      "start": 7,
+      "answer": "Bildungsressourcen",
+      "options": [
+        "Bildungsressourcen",
+        "Bildungsabschlüsse",
+        "Bildungskosten",
+        "Bildungsreisen"
+      ],
+      "explanation": "中文句意要求“教育资源”，还原原文为Bildungsressourcen。复数；单数die Bildungsressource。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s8",
+      "start": 20,
+      "answer": "Erfahrung",
+      "options": [
+        "Erlaubnis",
+        "Erholung",
+        "Erfahrung",
+        "Erwartung"
+      ],
+      "explanation": "中文句意要求“经验”，还原原文为Erfahrung。die Erfahrung；haben Erfahrung damit表示在某事方面有经验。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s12",
+      "start": 36,
+      "answer": "Bedürfnisse",
+      "options": [
+        "Beschlüsse",
+        "Bedürfnisse",
+        "Bewerbungen",
+        "Bedingungen"
+      ],
+      "explanation": "中文句意要求“需求”，还原原文为Bedürfnisse。复数；单数das Bedürfnis。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s18",
+      "start": 28,
+      "answer": "Begegnung",
+      "options": [
+        "Beschreibung",
+        "Berechnung",
+        "Bezahlung",
+        "Begegnung"
+      ],
+      "explanation": "中文句意要求“相遇”，还原原文为Begegnung。die Begegnung，单数主语。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s20",
+      "start": 34,
+      "answer": "ersetzen",
+      "options": [
+        "ersetzen",
+        "erwarten",
+        "erzählen",
+        "erlauben"
+      ],
+      "explanation": "中文句意要求“取代”，还原原文为ersetzen。主语Beziehungen为复数，现在时用ersetzen。"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-12-fr-villes-bioressources",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Pourquoi l’étude propose-t-elle plusieurs scénarios plutôt qu’une seule trajectoire ?",
+      "options": [
+        "Les villes ont déjà adopté quatre réglementations incompatibles.",
+        "Les chercheurs veulent classer les villes selon leur population.",
+        "Les contextes et les capacités locales peuvent conduire à des évolutions différentes.",
+        "Les ressources biologiques doivent être réparties entre quatre secteurs."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s5",
+        "s7",
+        "s19"
+      ],
+      "explanationZh": "研究反映地方能力、经济和城乡联系的差异，以多种情景帮助制定地方战略；不是既定法规或人口排名。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Dans Valo-biodéchets, quel changement est principalement recherché ?",
+      "options": [
+        "Améliorer le tri et valoriser les déchets avec les infrastructures existantes.",
+        "Remplacer les grands opérateurs par des réseaux agricoles autonomes.",
+        "Installer des fermes verticales dans les quartiers favorisés.",
+        "Créer de nouvelles industries de matériaux à partir de ressources marines."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s8",
+        "s9",
+        "s10"
+      ],
+      "explanationZh": "该情景着重分类与资源化，并依靠集中设施和大型运营商改善现有系统，而不是另三种路径。"
+    },
+    {
+      "id": "q3",
+      "kind": "cause",
+      "prompt": "Pourquoi le scénario High-tech risque-t-il de se développer de façon inégale ?",
+      "options": [
+        "Il impose aux villes de limiter les échanges avec les campagnes.",
+        "Il réserve les investissements aux équipements déjà en place.",
+        "Il dépend du recul des réglementations européennes sur les déchets.",
+        "Il mobilise des moyens importants et des solutions surtout accessibles aux quartiers favorisés."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s11",
+        "s12",
+        "s13"
+      ],
+      "explanationZh": "资金技术条件与高成本使方案主要出现在有实力的城市和较富裕的街区，因此推广不均匀。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "Quelle différence oppose Indus-biosourcée et Écologie territoriale dans le texte ?",
+      "options": [
+        "La première privilégie les initiatives citoyennes, la seconde les investissements des grands opérateurs privés.",
+        "La première privilégie les débouchés industriels, la seconde les liens territoriaux et la gouvernance partagée.",
+        "La première privilégie la végétalisation urbaine, la seconde les technologies des fermes verticales.",
+        "La première privilégie les circuits alimentaires locaux, la seconde les marchés des nouveaux matériaux."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s14",
+        "s15",
+        "s16",
+        "s17",
+        "s18"
+      ],
+      "explanationZh": "生物基工业情景中城市提供工业产品市场且逐渐忽视部分城市资源化；区域生态强调城乡关联和共同治理。"
+    },
+    {
+      "id": "q5",
+      "kind": "inference",
+      "prompt": "Quel projet réunirait le mieux les trois priorités de recherche présentées ?",
+      "options": [
+        "Comparer les performances des fermes verticales pour sélectionner les équipements les plus productifs.",
+        "Étudier les débouchés commerciaux des matériaux biosourcés pour orienter les investissements industriels.",
+        "Expérimenter avec les acteurs locaux en étudiant les flux de ressources et les effets sociaux.",
+        "Analyser les réglementations européennes pour anticiper les obligations des grandes villes françaises."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s21",
+        "s22"
+      ],
+      "explanationZh": "第21句同时提出三项方向：理解城市物质与能量流、与地方参与者共同试验、构建社会公平模式。正确选项把三者结合起来；其他选项各侧重技术性能、商业市场或法规，未同时涵盖这三项优先任务。"
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "schema": 1,
+  "id": "2026-11-12-it-produzione-e-confronti",
+  "storyId": "istat-industrial-production-september-2026-11-11",
+  "lang": "it",
+  "date": "2026-11-12",
+  "title": "Un mese, diversi confronti",
+  "titleZh": "一个月份，不同的比较",
+  "summaryZh": "同一份工业生产报告为何能同时出现增长与下降？先分清比较的时间范围。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：短句与明确时间比较为主；经济词汇提供中文辅助，重点练习月份、增减与比较。",
+  "category": "work-economy",
+  "topics": [
+    "统计",
+    "生产",
+    "时间比较"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Istat",
+    "title": "Produzione industriale – Settembre 2026",
+    "url": "https://www.istat.it/comunicato-stampa/produzione-industriale-settembre-2026/",
+    "publishedAt": "2026-11-11",
+    "lang": "it",
+    "author": "Istat（机构署名）"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "来源：Istat，2026-11-11，Produzione industriale – Settembre 2026。原文按CC BY 4.0使用，保留原链接及许可链接；原机构不为本教学改编背书。",
+  "adaptation": "根据意大利语机构原文进行同语言教学改写，并添加中文对照、词汇与原创练习；不是原文照录。不使用图片、标志、音视频或外部论文。原发表日期与本站整理日期分别保留。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "L'Istat ha pubblicato nuovi dati sulla produzione industriale italiana l'11 novembre 2026.",
+      "zh": "意大利国家统计局于2026年11月11日发布了意大利工业生产的新数据。",
+      "glosses": [
+        {
+          "surface": "pubblicato",
+          "lemma": "pubblicare",
+          "zh": "发布"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "I dati, ancora provvisori, riguardano settembre: non descrivono quindi la produzione del mese di novembre.",
+      "zh": "这些仍属初步统计的数据涉及9月，因此并不是在描述11月的生产情况。",
+      "glosses": [
+        {
+          "surface": "provvisori",
+          "lemma": "provvisorio",
+          "zh": "初步的、尚可能修订的",
+          "note": "阳性复数，与dati一致。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Rispetto ad agosto, l'indice della produzione aumenta dell'1,2%, dopo il calo del mese precedente.",
+      "zh": "与8月相比，生产指数在上个月下降后增长了1.2%。",
+      "glosses": [
+        {
+          "surface": "aumenta",
+          "lemma": "aumentare",
+          "zh": "增长"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Questo indice tiene conto delle differenze legate alle stagioni, per confrontare meglio i mesi.",
+      "zh": "这一指数考虑了季节带来的差异，以便更好地比较各个月份。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Ma un solo mese non racconta tutta la situazione: anche il periodo scelto è importante.",
+      "zh": "但仅仅一个月不能说明全部情况：所选择的时期也很重要。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Da luglio a settembre, la produzione media diminuisce dello 0,4% rispetto ai tre mesi precedenti.",
+      "zh": "7月至9月的平均生产水平比之前三个月下降了0.4%。",
+      "glosses": [
+        {
+          "surface": "precedenti",
+          "lemma": "precedente",
+          "zh": "之前的"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "C'è poi un altro confronto: quello tra settembre 2026 e lo stesso mese del 2025.",
+      "zh": "此外还有另一种比较：将2026年9月与2025年的同一个月进行比较。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "In questo caso, l'indice corretto per gli effetti di calendario scende dello 0,1%.",
+      "zh": "在这种比较中，经过日历效应调整后的指数下降了0.1%。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "I due mesi hanno entrambi ventidue giorni lavorativi.",
+      "zh": "这两个月都各有22个工作日。",
+      "glosses": [
+        {
+          "surface": "lavorativi",
+          "lemma": "lavorativo",
+          "zh": "工作日的"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Anche i risultati dei diversi gruppi di prodotti sono differenti.",
+      "zh": "不同产品类别的结果也有所不同。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Rispetto a settembre 2025, l'energia cresce del 4,7%, mentre i beni di consumo diminuiscono del 3,0%.",
+      "zh": "与2025年9月相比，能源增长了4.7%，而消费品下降了3.0%。",
+      "glosses": [
+        {
+          "surface": "energia",
+          "lemma": "energia",
+          "zh": "能源"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Il rapporto presenta quindi un recupero sul mese precedente, ma una piccola diminuzione sullo stesso mese dell'anno prima.",
+      "zh": "因此，这份报告显示，与前一个月相比有所回升，但与前一年同月相比略有下降。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "pubblicato",
+        "lemma": "pubblicare",
+        "zh": "发布",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "aumenta",
+        "lemma": "aumentare",
+        "zh": "增长",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "precedenti",
+        "lemma": "precedente",
+        "zh": "之前的",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "lavorativi",
+        "lemma": "lavorativo",
+        "zh": "工作日的",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "energia",
+        "lemma": "energia",
+        "zh": "能源",
+        "sentenceId": "s11"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "Rispetto ad agosto",
+        "zh": "与8月相比",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "lo stesso mese",
+        "zh": "同一个月",
+        "sentenceId": "s7"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s3",
+        "note": "留意比较对象和时间范围，使用同一结构表达自己的观察。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quando leggi una percentuale, quali informazioni cerchi per capire il confronto?",
+        "zh": "阅读百分比时，你会寻找哪些信息来弄清比较对象？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Rispetto a…",
+        "zh": "与……相比",
+        "note": "用于引出比较对象；后面接名词或时间。"
+      }
+    ]
+  }
+}

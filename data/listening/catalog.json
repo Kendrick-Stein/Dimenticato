@@ -2668,6 +2668,70 @@
         }
       ],
       "questions": []
+    },
+    {
+      "id": "de-logo-2026-11-11",
+      "lang": "de",
+      "title": "logo! vom Mittwoch, 11. November 2026",
+      "titleZh": "11月11日儿童新闻：图瓦卢、操行评分与节日创意",
+      "provider": "ZDF logo!",
+      "url": "https://www.logo.de/logo-vom-mittwoch-11-november-2026-102.html",
+      "level": "未分级",
+      "levelBasis": "editorial",
+      "levelLabel": "母语儿童内容 · 非 CEFR 分级",
+      "kind": "news",
+      "addedAt": "2026-11-12",
+      "sourcePublishedAt": "2026-11-11",
+      "duration": "10:29",
+      "evidenceStatus": "metadata_only",
+      "summaryZh": "从官方节目入口选听图瓦卢、学校操行评分与降临节日历等话题。",
+      "guideZh": "先选一个感兴趣的段落，记下听清的主题词。第二遍留意人物遇到的问题或提出的想法，再用一句德语概括；不必一次听懂整集。 该集仅限在德国播放。",
+      "verificationZh": "已核对官方完整节目页、节目单、视频上传日期及10:29时长。官方播放器明确显示该集仅限德国境内，本轮云端无法播放；未绕过地区限制，未核验音质，未取得完整对应文字稿，仅提供原站导听，不设理解题。",
+      "vocabularyLabel": "主题预习词（不保证全部出现在音频中）",
+      "vocabulary": [
+        {
+          "text": "die Insel",
+          "zh": "岛屿"
+        },
+        {
+          "text": "die Kopfnote",
+          "zh": "操行评分，涉及学习或社会行为等方面"
+        },
+        {
+          "text": "der Adventskalender",
+          "zh": "降临节日历，用于圣诞节前逐日倒数"
+        }
+      ],
+      "questions": []
+    },
+    {
+      "id": "en-bc-lets-eat-2026-11-10",
+      "lang": "en",
+      "title": "Grammar lesson: Let's eat!",
+      "titleZh": "谈食物，练习短语动词",
+      "provider": "British Council LearnEnglish",
+      "url": "https://learnenglish.britishcouncil.org/free-resources/learning-hub/events/grammar-lesson-lets-eat",
+      "level": "B1",
+      "levelBasis": "provider",
+      "levelLabel": "B1–C1 · 官方适用范围",
+      "kind": "lesson",
+      "addedAt": "2026-11-12",
+      "sourcePublishedAt": "2026-11-10",
+      "evidenceStatus": "official_metadata",
+      "summaryZh": "英国文化教育协会的食物主题直播课回放，围绕短语动词练习表达。",
+      "guideZh": "先打开原站回放，留意老师如何围绕食物使用短语动词。复听时挑两个你听到的表达，各造一句自己的句子。官方将课程标为B1、B2和C1，可按自己的理解程度分段观看。",
+      "verificationZh": "已核对官方课程页、2026年11月10日日期、B1/B2/C1标签及回放入口。仅提供原站导听；未验证实际音视频内容或音质，因此不编理解题、不提供逐字稿。",
+      "vocabulary": [
+        {
+          "text": "phrasal verb",
+          "zh": "短语动词（本课主题）"
+        },
+        {
+          "text": "food",
+          "zh": "食物（本课主题）"
+        }
+      ],
+      "questions": []
     }
   ],
   "schema": 1

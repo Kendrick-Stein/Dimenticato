@@ -1,0 +1,256 @@
+{
+  "schema": 1,
+  "id": "2026-11-12-en-moving-home-and-family-membership",
+  "storyId": "hm-treasury-credit-union-referrals-2026-11-11",
+  "lang": "en",
+  "date": "2026-11-12",
+  "category": "society",
+  "topics": [
+    "社区金融",
+    "家庭生活"
+  ],
+  "title": "Moving home and family membership",
+  "titleZh": "搬家后，还能介绍家人入会吗？",
+  "summaryZh": "英国提出信用合作社入会新安排：已经搬离原地区的会员，也有望介绍亲属或同住者加入。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：短句解释会员、搬家与家庭关系，少量金融词汇配中文释义；不是官方分级。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "HM Treasury",
+    "title": "Affordable finance access for tens of thousands more people",
+    "url": "https://www.gov.uk/government/news/affordable-finance-access-for-tens-of-thousands-more-people",
+    "publishedAt": "2026-11-11",
+    "lang": "en",
+    "author": "HM Treasury"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. HM Treasury; original publication 11 November 2026; source linked above.",
+  "adaptation": "2026-11-12整理：依据机构英文新闻稿同语言分级改写并添加中文翻译、词义及原创练习。不是原文、官方课程或机构认可的材料。只使用机构叙述，不转载引语、图片、标志或第三方材料。保留拟议措施与已经实行措施的区别。不构成个人金融建议。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "On 11 November 2026, the UK government announced a proposed change to credit union membership.",
+      "zh": "2026年11月11日，英国政府宣布一项拟议的信用合作社会员制度调整。",
+      "glosses": [
+        {
+          "surface": "membership",
+          "lemma": "membership",
+          "zh": "会员资格"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Credit unions offer financial services in communities, including accounts for easy access to savings and small loans at lower interest rates.",
+      "zh": "信用合作社在社区提供金融服务，包括方便存取储蓄的账户和利率较低的小额贷款。",
+      "glosses": [
+        {
+          "surface": "savings",
+          "lemma": "saving",
+          "zh": "储蓄"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "To join, people need a connection with the other members.",
+      "zh": "要加入，人们需要与其他会员具有某种联系。",
+      "glosses": [
+        {
+          "surface": "connection",
+          "lemma": "connection",
+          "zh": "联系"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "For example, they may live in the same area or work for the same employer.",
+      "zh": "例如，他们可能住在同一地区，或为同一雇主工作。",
+      "glosses": [
+        {
+          "surface": "employer",
+          "lemma": "employer",
+          "zh": "雇主"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "The new proposal concerns members who move away from their credit union’s area.",
+      "zh": "这项新提议涉及搬离其信用合作社所在地区的会员。",
+      "glosses": [
+        {
+          "surface": "proposal",
+          "lemma": "proposal",
+          "zh": "提议"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "They would be able to introduce a relative or someone in their household as a new member.",
+      "zh": "他们将能够介绍一位亲属或同住者成为新会员。",
+      "glosses": [
+        {
+          "surface": "relative",
+          "lemma": "relative",
+          "zh": "亲属"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "At present, a member must still live in the area to do this.",
+      "zh": "目前，会员仍须居住在该地区才能这样做。",
+      "glosses": [
+        {
+          "surface": "present",
+          "lemma": "present",
+          "zh": "现在；目前"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "According to Bank of England data, the change would let over 50,000 people in Great Britain make these introductions.",
+      "zh": "根据英格兰银行的数据，这项调整将让大不列颠超过五万人能够作出这样的入会介绍。",
+      "glosses": [
+        {
+          "surface": "introductions",
+          "lemma": "introduction",
+          "zh": "介绍；引荐"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "This is one of several reforms to help more people use credit unions.",
+      "zh": "这是帮助更多人使用信用合作社服务的多项改革之一。",
+      "glosses": [
+        {
+          "surface": "reforms",
+          "lemma": "reform",
+          "zh": "改革"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Other changes include allowing students to join local credit unions and raising the limit on their membership numbers.",
+      "zh": "其他调整包括允许学生加入当地信用合作社，以及提高这些机构的会员人数上限。",
+      "glosses": [
+        {
+          "surface": "limit",
+          "lemma": "limit",
+          "zh": "上限"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "membership",
+        "lemma": "membership",
+        "zh": "会员资格",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "savings",
+        "lemma": "saving",
+        "zh": "储蓄",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "connection",
+        "lemma": "connection",
+        "zh": "联系",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "employer",
+        "lemma": "employer",
+        "zh": "雇主",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "proposal",
+        "lemma": "proposal",
+        "zh": "提议",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "relative",
+        "lemma": "relative",
+        "zh": "亲属",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "present",
+        "lemma": "present",
+        "zh": "现在；目前",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "introductions",
+        "lemma": "introduction",
+        "zh": "介绍；引荐",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "reforms",
+        "lemma": "reform",
+        "zh": "改革",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "limit",
+        "lemma": "limit",
+        "zh": "上限",
+        "sentenceId": "s10"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "move away from",
+        "zh": "搬离……",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "At present",
+        "zh": "目前",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "According to",
+        "zh": "根据……",
+        "sentenceId": "s8"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s6",
+        "note": "would be able to表示拟议安排实施后将具备的能力，不能理解为已经生效。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "What local services would you want to keep using after moving home?",
+        "zh": "搬家后，你希望继续使用哪些本地服务？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "One advantage would be …",
+        "zh": "一个好处会是……",
+        "note": "原创讨论表达；would可表达设想的效果。"
+      }
+    ]
+  }
+}

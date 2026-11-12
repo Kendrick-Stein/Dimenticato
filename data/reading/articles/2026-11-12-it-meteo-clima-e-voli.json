@@ -1,0 +1,210 @@
+{
+  "schema": 1,
+  "id": "2026-11-12-it-meteo-clima-e-voli",
+  "storyId": "ingv-turbometer-2026-11-11",
+  "lang": "it",
+  "date": "2026-11-12",
+  "title": "Preparare i voli con due prospettive",
+  "titleZh": "从天气与气候两个角度准备飞行",
+  "summaryZh": "研究人员比较相似天气在不同时期的表现，并将方法用于航线与机场的预报分析。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：连贯说明研究与预测的区别，练习比较、目的与因果表达；专业词提供中文辅助。",
+  "category": "environment",
+  "topics": [
+    "航空",
+    "天气",
+    "气候"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "INGV Ufficio Stampa",
+    "title": "CLIMA E AVIAZIONE | TurboMeter integra previsioni meteorologiche e analisi climatica per studiare la turbolenza aerea e gli impatti su aeroporti e traffico aereo",
+    "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/clima-e-aviazione-turbometer-integra-previsioni-meteorologiche-e-analisi-climatica-per-studiare-la-turbolenza-aerea-e-gli-impatti-su-aeroporti-e-traffico-aereo",
+    "publishedAt": "2026-11-11",
+    "lang": "it",
+    "author": "INGV Ufficio Stampa（机构署名）"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "来源：INGV Ufficio Stampa，2026-11-11，CLIMA E AVIAZIONE | TurboMeter integra previsioni meteorologiche e analisi climatica per studiare la turbolenza aerea e gli impatti su aeroporti e traffico aereo。原文按CC BY 4.0使用，保留原链接及许可链接；原机构不为本教学改编背书。",
+  "adaptation": "根据意大利语机构原文进行同语言教学改写，并添加中文对照、词汇与原创练习；不是原文照录。不使用图片、标志、音视频或外部论文。原发表日期与本站整理日期分别保留。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Quando si prepara un viaggio in aereo, il tempo può influenzare sia il volo sia le attività dell'aeroporto.",
+      "zh": "准备乘飞机出行时，天气既可能影响飞行，也可能影响机场的运作。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Un comunicato dell'INGV, pubblicato l'11 novembre 2026, presenta TurboMeter, un metodo che collega lo studio del clima alle condizioni favorevoli alla turbolenza.",
+      "zh": "意大利国家地球物理与火山学研究所2026年11月11日的一则公告介绍了TurboMeter，一种将气候研究与有利于形成湍流的条件联系起来的方法。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "La ricerca è stata guidata dall'istituto italiano insieme a diversi partner internazionali ed è stata pubblicata sulla rivista Weather and Climate Dynamics.",
+      "zh": "这项研究由意大利的该研究所牵头，多个国际合作伙伴参与，并发表于《天气与气候动力学》期刊。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "I ricercatori hanno analizzato oltre tremila segnalazioni automatiche di piloti di aerei di linea, relative a episodi di turbolenza almeno moderata.",
+      "zh": "研究人员分析了来自民航飞行员的三千多条自动报告，内容涉及至少为中等强度的湍流事件。",
+      "glosses": [
+        {
+          "surface": "segnalazioni",
+          "lemma": "segnalazione",
+          "zh": "报告"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Le segnalazioni riguardavano quattro aree molto importanti per il traffico aereo: Atlantico settentrionale, Pacifico settentrionale, Asia orientale e Stati Uniti continentali.",
+      "zh": "这些报告涉及对航空交通十分重要的四个地区：北大西洋、北太平洋、东亚和美国本土。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Per capire il ruolo del clima, il gruppo ha confrontato situazioni meteorologiche simili in periodi più freddi e in periodi più caldi.",
+      "zh": "为了了解气候的作用，研究团队比较了较冷时期和较暖时期中相似的天气状况。",
+      "glosses": [
+        {
+          "surface": "confrontato",
+          "lemma": "confrontare",
+          "zh": "比较"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Secondo lo studio, con condizioni meteorologiche simili, il clima attuale può rendere l'atmosfera più favorevole alla formazione di turbolenza rispetto al passato.",
+      "zh": "根据这项研究，在相似的天气条件下，与过去相比，如今的气候可能使大气更有利于湍流的形成。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "La versione previsionale, chiamata TurboMeter Live, è ancora in sviluppo, ma ha già superato la fase di test.",
+      "zh": "名为TurboMeter Live的预报版本仍在开发中，但已经通过了测试阶段。",
+      "glosses": [
+        {
+          "surface": "sviluppo",
+          "lemma": "sviluppo",
+          "zh": "开发"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Utilizza le previsioni del Centro europeo per le previsioni meteorologiche a medio termine e le confronta con situazioni simili del passato.",
+      "zh": "它利用欧洲中期天气预报中心的预报，并将其与过去相似的状况进行比较。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Il sistema guarda alle condizioni previste per il giorno successivo e per quelli seguenti; le mappe mostrano aree favorevoli alla turbolenza e livelli di pericolosità rispetto al clima locale.",
+      "zh": "系统关注次日及随后几天的预报条件；地图显示有利于湍流形成的区域，以及相对于当地气候的危险程度。",
+      "glosses": [
+        {
+          "surface": "mappe",
+          "lemma": "mappa",
+          "zh": "地图"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "C'è inoltre un'analisi dedicata agli aeroporti: accanto alla turbolenza in quota, considera vento, raffiche, pioggia, temperatura e condizioni favorevoli ai temporali a terra.",
+      "zh": "此外，还有一项专门针对机场的分析：除高空湍流外，它还考虑地面的风、阵风、降雨、温度和有利于雷暴形成的条件。",
+      "glosses": [
+        {
+          "surface": "raffiche",
+          "lemma": "raffica",
+          "zh": "阵风"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "In questo modo, la ricerca mette in relazione ciò che può accadere lungo le rotte con le esigenze di chi organizza le attività aeroportuali.",
+      "zh": "这样，研究将航线上可能发生的情况与组织机场运作的人员的需求联系起来。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "L'obiettivo è aiutare a preparare le operazioni: descrivere condizioni favorevoli a un fenomeno non significa annunciare che ogni volo incontrerà quel fenomeno.",
+      "zh": "目的是帮助做好运行准备：描述有利于某种现象形成的条件，并不意味着宣布每一次航班都会遇到该现象。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "segnalazioni",
+        "lemma": "segnalazione",
+        "zh": "报告",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "confrontato",
+        "lemma": "confrontare",
+        "zh": "比较",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "sviluppo",
+        "lemma": "sviluppo",
+        "zh": "开发",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "mappe",
+        "lemma": "mappa",
+        "zh": "地图",
+        "sentenceId": "s10"
+      },
+      {
+        "text": "raffiche",
+        "lemma": "raffica",
+        "zh": "阵风",
+        "sentenceId": "s11"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "rispetto al passato",
+        "zh": "与过去相比",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "mette in relazione",
+        "zh": "将……联系起来",
+        "sentenceId": "s12"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s7",
+        "note": "留意比较对象和时间范围，使用同一结构表达自己的观察。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quali informazioni sul tempo vorresti conoscere prima di un viaggio?",
+        "zh": "出发旅行前，你希望了解哪些天气信息？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Rispetto a…",
+        "zh": "与……相比",
+        "note": "用于引出比较对象；后面接名词或时间。"
+      }
+    ]
+  }
+}
