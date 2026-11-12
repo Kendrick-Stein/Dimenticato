@@ -7,7 +7,7 @@
  *
  * *.html 测试页在 Node 的 vm + tests/dom-shim.js 里执行（顺序等同浏览器：
  * 先按 <script src> 依次加载，再跑内联脚本），*.js 测试直接子进程运行。
- * 任何 FAIL / 抛错 / 缺少汇总行都会让退出码非 0。
+ * 已选文件缺失、筛选无匹配、FAIL / 抛错 / HTML 缺少汇总行都会让退出码非 0。
  */
 'use strict';
 
@@ -21,7 +21,7 @@ const TESTS_DIR = __dirname;
 const ROOT = path.resolve(TESTS_DIR, '..');
 
 const HTML_HARNESSES = ['test-quiz-engine.html', 'test-spaced-repetition.html'];
-const NODE_HARNESSES = ['test-reading-original-learning.js', 'test-quiz-auto-audio.js', 'test-listening.js', 'test-reading-comprehension-loading.js', 'test-reading-comprehension.js', 'test-reading-tier-selection.js', 'test-reading-practice.js', 'test-reading-candidates.js', 'test-reading-catalog.js', 'test-reading-route.js', 'test-pronunciation-lessons.js', 'test-reading.js', 'check-icons.js', 'check-contrast.js', 'check-data-modules.js', 'test-french-data.js', 'test-german-course-data.js', 'test-storage.js', 'test-typing-game.js', 'test-typing-game-app.js', 'test-conjugation-app.js', 'test-shell-router.js', 'test-wordbooks.js', 'test-community-wordbooks.js', 'test-paths.js'];
+const NODE_HARNESSES = ['test-headless-runner.js', 'test-reading-original-learning.js', 'test-quiz-auto-audio.js', 'test-listening.js', 'test-reading-comprehension-loading.js', 'test-reading-comprehension.js', 'test-reading-tier-selection.js', 'test-reading-practice.js', 'test-reading-candidates.js', 'test-reading-catalog.js', 'test-reading-route.js', 'test-pronunciation-lessons.js', 'test-reading.js', 'check-icons.js', 'check-contrast.js', 'check-data-modules.js', 'test-french-data.js', 'test-german-course-data.js', 'test-storage.js', 'test-typing-game.js', 'test-typing-game-app.js', 'test-conjugation-app.js', 'test-shell-router.js', 'test-wordbooks.js', 'test-community-wordbooks.js', 'test-paths.js'];
 
 // 数据集校验器。上面的 harness 一个都不 require data/<code>-*.js / data/vocab/*.js，
 // 生成数据和它的输入分头改动时（语法树重命名、词库重建）不会有任何测试变红——
@@ -122,7 +122,6 @@ function parseCounts(line) {
 
 function runNodeHarness(file, baseDir) {
   const abs = path.join(baseDir || TESTS_DIR, file);
-  if (!fs.existsSync(abs)) return null;
   try {
     const stdout = execFileSync(process.execPath, [abs], { cwd: ROOT, encoding: 'utf8' });
     const summary = stdout.trim().split('\n').pop().trim();
@@ -137,17 +136,31 @@ function runNodeHarness(file, baseDir) {
 function main() {
   const filter = process.argv[2];
   const pick = (name) => !filter || name.indexOf(filter) !== -1;
-  const reports = [];
+  const selected = [
+    ...HTML_HARNESSES.map(file => ({ file, baseDir: TESTS_DIR, html: true })),
+    ...NODE_HARNESSES.map(file => ({ file, baseDir: TESTS_DIR })),
+    ...VALIDATORS.map(file => ({ file, baseDir: ROOT }))
+  ].filter(test => pick(test.file));
 
-  HTML_HARNESSES.filter(pick).forEach(f => reports.push(runHtmlHarness(f)));
-  NODE_HARNESSES.filter(pick).forEach(f => {
-    const r = runNodeHarness(f);
-    if (r) reports.push(r);
+  if (!selected.length) {
+    console.error('FAIL 没有匹配的测试：' + JSON.stringify(filter));
+    process.exit(1);
+  }
+
+  // 先检查全部已选入口，避免文件被误删 / 改名后仍得到一份绿色的部分结果。
+  // 有筛选时只要求本次选中的文件；不改动合法的局部测试工作流。
+  const unavailable = selected.filter(test => {
+    try { return !fs.statSync(path.join(test.baseDir, test.file)).isFile(); }
+    catch (e) { return true; }
   });
-  VALIDATORS.filter(pick).forEach(f => {
-    const r = runNodeHarness(f, ROOT);
-    if (r) reports.push(r);
-  });
+  if (unavailable.length) {
+    unavailable.forEach(test => console.error('FAIL 测试入口不存在或不可读：' + test.file));
+    process.exit(1);
+  }
+
+  const reports = selected.map(test => test.html
+    ? runHtmlHarness(test.file)
+    : runNodeHarness(test.file, test.baseDir));
 
   let bad = 0;
   reports.forEach(r => {

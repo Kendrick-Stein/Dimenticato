@@ -446,13 +446,13 @@ shell / lang-loader / storage / srs / quiz-engine / boot / app 的语言列表�
 
 ### 6.15 `tests/` — 无头测试
 
-入口 `node tests/run-headless.js [filter]`（`npm test` 同义；CI `.github/workflows/ci.yml` 在 push / PR 到 main 时跑）。共 29 个 harness：
+入口 `node tests/run-headless.js [filter]`（`npm test` 同义；CI `.github/workflows/ci.yml` 在 push / PR 到 main 时跑）。完整注册表以入口脚本的 `HTML_HARNESSES`、`NODE_HARNESSES`、`VALIDATORS` 为准；`filter` 按文件名子串筛选。主要分组：
 
 - HTML（在 Node `vm` + `tests/dom-shim.js` 里按 `<script src>` 顺序执行）：`test-quiz-engine.html`、`test-spaced-repetition.html`
-- Node：`check-icons.js`、`check-data-modules.js`、`test-french-data.js`、`test-german-course-data.js`、`test-storage.js`、`test-typing-game.js`、`test-typing-game-app.js`、`test-conjugation-app.js`、`check-contrast.js`（配色对比度）、`test-shell-router.js`、`test-wordbooks.js`、`test-community-wordbooks.js`、`test-paths.js`（index.html / languages / lang-loader 引用的本地文件都存在）
+- Node：`test-headless-runner.js`（入口文件完整性、筛选与退出码回归）、`check-icons.js`、`check-data-modules.js`、`test-french-data.js`、`test-german-course-data.js`、`test-storage.js`、`test-typing-game.js`、`test-typing-game-app.js`、`test-conjugation-app.js`、`check-contrast.js`（配色对比度）、`test-shell-router.js`、`test-wordbooks.js`、`test-community-wordbooks.js`、`test-paths.js`（index.html / languages / lang-loader 引用的本地文件都存在）
 - 数据校验器（阻断项）：`scripts/validate_vocab.js`、`validate_modules.js`（全部模块数据对 `docs/data-schema.md`）、`validate_french_extras.js`、`validate_french_conjugations.js`、`validate_english_conjugations.js`、`validate_german_conjugations.js`、`validate_french_grammar.js`、`validate_german_extras.js`、`validate_german_grammar.js`、`validate_english_grammar.js`、`validate_english_collocations.js`；内容质量回归：`validate_fr_quality.js`、`validate_de_en_quality.js`、`validate_it_quality.js`
 
-任何 FAIL / 抛错 / 缺汇总行都让退出码非 0。
+运行前检查所有已选入口均为文件；缺失、改名或筛选无匹配都以非零退出码失败，不再静默跳过。有效的局部筛选只要求已选文件。任何 FAIL / 抛错 / HTML 缺汇总行都让退出码非 0；部分 Node 数据校验器以成功退出和文字摘要报告结果。`test-headless-runner.js` 在临时目录运行真实 CLI 复核上述约定，不删除或改写仓库内的测试。
 
 测试**不覆盖** `app.js` 的 DOM 行为（`lib/shell.js` 路由由 `test-shell-router.js` 覆盖）；UI 改动需要在浏览器里实测（静态服务器 + headless Chrome 截图亦可）。
 
@@ -858,3 +858,9 @@ Supabase key 失效、bucket 或表结构不匹配时，社区上传 / 浏览 / 
 ### 2026-10-20 听力页面精简
 
 听力仅使用全站语言切换器；移除目录内重复语言按钮和流程说明。详情页练习方法、来源信息折叠，等级筛选改为紧凑布局。原站链接、导听、题目及答题重置保持不变。
+
+### 2026-11-12：测试入口完整性检查
+
+- `tests/run-headless.js` 在执行前核对已选 HTML / Node / 数据校验入口；测试缺失或筛选名无匹配直接失败，避免绿色的部分结果。
+- 新增 `tests/test-headless-runner.js` 并纳入完整套件，覆盖缺失文件、目录冒充文件、空筛选结果、正常局部运行、原有失败报告和完整运行前置检查。
+- 只调整测试基础设施，不改变页面、数据格式或学习进度存储。
