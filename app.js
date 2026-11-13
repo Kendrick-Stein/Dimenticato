@@ -211,9 +211,9 @@
     if (!manual && (!quizAutoAudio || s.spokenIndex === s.quizIndex)) return;
     s.spokenIndex = s.quizIndex;
     var index = s.quizIndex;
-    Speaker.speak(global.Vocab.headword(s.currentWord), s.lang, function () {
+    Speaker.speak(global.Vocab.headword(s.currentWord), s.lang, function (error) {
       if (session === s && s.quizIndex === index && Shell().current() === 'quizScreen') {
-        toast('暂时无法自动朗读，请点扬声器重试');
+        toast(Speaker.errorMessage(error));
       }
     });
   }
@@ -952,10 +952,31 @@
       '<p class="muted small">以下两项只对' + esc(p.cn) + '生效。</p>' +
       global.QuizEngine.renderDifficultyToggle(l, '选择题难度') +
       global.QuizEngine.renderDirectionToggle(l, '出题方向') +
+      '<div class="pref-row"><label class="pref-label" for="settingsVoice">' + esc(p.cn) + '朗读语音</label>' +
+        '<select id="settingsVoice" aria-describedby="settingsVoiceStatus settingsVoiceHelp"></select>' +
+        '<button type="button" class="btn" id="settingsVoicePreview">试听</button>' +
+        '<p id="settingsVoiceStatus" class="muted small" role="status" aria-live="polite"></p>' +
+        '<p id="settingsVoiceHelp" class="muted small">自动按语言与语音名称标记排序，不代表音质保证；部分声音需要联网。</p></div>' +
       '<div class="pref-row"><span class="pref-label">外观</span><div class="segmented" role="group" aria-label="外观">' +
         '<button type="button" class="seg' + (theme === 'light' ? ' active' : '') + '" data-theme-set="light">纸张</button>' +
         '<button type="button" class="seg' + (theme === 'dark' ? ' active' : '') + '" data-theme-set="dark">墨色</button>' +
       '</div></div>';
+    renderVoiceSettings();
+  }
+
+  function renderVoiceSettings() {
+    var select = $('settingsVoice');
+    if (!select) return;
+    var selected = Speaker.selection(lang());
+    var options = '<option value="">自动选择</option>' + selected.voices.map(function (voice) {
+      return '<option value="' + escAttr(Speaker.id(voice)) + '">' + esc(voice.name || voice.lang) + ' · ' + esc(voice.lang) + '</option>';
+    }).join('');
+    if (select._voiceOptions !== options) { select.innerHTML = options; select._voiceOptions = options; }
+    select.value = selected.missing ? '' : selected.saved;
+    select.disabled = selected.voices.length === 0;
+    $('settingsVoicePreview').disabled = !selected.voice;
+    $('settingsVoiceStatus').textContent = !Speaker.supported() ? Speaker.errorMessage('unsupported') : !selected.voice ? Speaker.errorMessage('no-voice') :
+      (selected.missing ? '原选语音不可用，暂用同语种声音。' : '') + '当前：' + (selected.voice.name || selected.voice.lang) + '（' + selected.voice.lang + '）。';
   }
 
   // ==================== 主题 ====================
@@ -1360,6 +1381,21 @@
     }, 160);
     $('browseSearch').addEventListener('input', onSearch);
     $('browseMore').addEventListener('click', function () { browse.limit += BROWSE_PAGE; renderBrowseList(); });
+
+    // 声音列表延迟到达时只更新原控件，不重建设置页或抢走焦点。
+    Speaker.subscribe(function () { if (Shell().current() === 'settingsScreen') renderVoiceSettings(); });
+    $('settingsPrefs').addEventListener('change', function (event) {
+      if (event.target.id !== 'settingsVoice') return;
+      var saved = Speaker.setPreference(lang(), event.target.value);
+      renderVoiceSettings();
+      if (!saved) $('settingsVoiceStatus').textContent = '语音选择未能保存，原设置保持不变。请检查存储空间后重试。';
+    });
+    $('settingsPrefs').addEventListener('click', function (event) {
+      if (!event.target.closest('#settingsVoicePreview')) return;
+      Speaker.speak(profile().motto, lang(), function (error) {
+        if (Shell().current() === 'settingsScreen') $('settingsVoiceStatus').textContent = Speaker.errorMessage(error);
+      });
+    });
 
     // 设置
     $('settingsExportBtn').addEventListener('click', exportAllData);

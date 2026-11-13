@@ -30,7 +30,7 @@
 - **本地存储**：`localStorage`（唯一出入口 `lib/storage.js > DimStorage`）
 - **远程能力**：Supabase（仅社区词书需要）
 - **CDN**：Chart.js 4.4.0、marked 9.1.6、Supabase JS 2.39.0——页面里**没有**它们的 `<script>` 标签，由 `index.html` 内联的 `CdnFallback.load(name)` 按需注入（带 SRI，主 CDN 失败时换备用源）：进度页图表用 chart、语法书用 marked、社区词书用 supabase；Google Fonts（Fraunces / IBM Plex / Noto SC / Material Symbols Rounded）
-- **语音**：Web Speech API（`App.speak`，语言档案里的 `tts` / `voice`）
+- **语音**：Web Speech API（`Speaker` / `App.speak`）；按语言/地区与名称标记自动排序，设置页可选择同语种声音及试听。名称标记仅是启发式，不是音质保证。
 
 ### 1.2 设计取向
 
@@ -381,6 +381,7 @@ shell / lang-loader / storage / srs / quiz-engine / boot / app 的语言列表�
 存储布局 v3（`STORAGE_VERSION: '3'`，标记在 `dimenticato_storage_version`）：**语言数据一律是 `dimenticato_<code>_<name>`**，由 `DimStorage.key(lang, name)` 生成（`lang` 接受 code 或 key）。
 
 - `DimStorage`：`PREFIX`、`CODES`、`LANGS` / `LANGUAGE_LABELS`（界面选项用旧 key）、`PRESERVED_KEYS`（全局偏好）、`PRESERVED_NAMES`（每语言偏好：`prefs` / `quiz_difficulty` / `quiz_direction`）、`PROGRESS_NAMES`（`mastered` / `stats` / `daily_stats` / `srs` / `mastery_streak`）；key 工具 `code`、`key`、`parseKey`、`masteredKey` / `statsKey` / `dailyStatsKey` / `srsKey` / `wordbookKey(lang, id)`、`prefixFor`；读写 `allKeys()`、`safeParse`、`safeSetItem`、`moveKey`、`snapshot()`；`exportAll()`（`EXPORT_VERSION` `2.0`：`keys` 为权威数据 + `data` 1.0 兼容层）、`describePayload`、`normalizePayload`、合并纯函数（`mergeArrayUnion` / `mergeCounters` / `mergeDailyStats` / `mergeWordbooks` / `mergeSrsStore` / `mergeMaxMap` / `mergeFill` / `mergeValueForKey`）、`importAll(payload, { mode: 'merge'|'overwrite' })`、`keysForScope` / `reset({ scope })`
+- 声音偏好：`dimenticato_<code>_voice` 保存 `[voiceURI, name, normalizedLang]` 的 JSON 字符串，空串为自动；按语言分开，重置进度保留、导出覆盖、合并导入保留当前选择、覆盖导入按载荷恢复。失效或异常标识回退同语种声音但保留原选择；无同语种声音则提示而不使用默认语种。`safeSetPreference` 写入失败返回 false，不裁剪学习统计，设置页恢复原值并提示。
 - `Prefs`：`dimenticato_<code>_prefs`，`{ level, session, filter, source }`（默认 `A2` / `20` / `all` / `system`）；属于偏好，重置保留
 - `LegacyMigration` 两层：
   - `targetFor` / `migrateKeys` / `migrateStorage`：只改 key 名、不需要词库。把 v1/v2 的各种布局（意大利语无前缀的 `dimenticato_mastered` 等、`dimenticato_<german>_*`、`daily_stats_<lang>`、`srs_<lang>`、`mastery_streak_<lang>`、`quiz_*_<lang>`、`progress_wb_*`、旧 SM-2 `german_sr` / `english_sr` / `french_srs`、`french_daily`、合一的 `dimenticato_prefs`）并进 v3；多来源按 `mergeValueForKey` 合并，新 key 写成功后才删旧 key。文件加载时跑一次，版本已是 3 则跳过
@@ -864,3 +865,10 @@ Supabase key 失效、bucket 或表结构不匹配时，社区上传 / 浏览 / 
 - `tests/run-headless.js` 在执行前核对已选 HTML / Node / 数据校验入口；测试缺失或筛选名无匹配直接失败，避免绿色的部分结果。
 - 新增 `tests/test-headless-runner.js` 并纳入完整套件，覆盖缺失文件、目录冒充文件、空筛选结果、正常局部运行、原有失败报告和完整运行前置检查。
 - 只调整测试基础设施，不改变页面、数据格式或学习进度存储。
+
+### 2026-11-13 — 按语言选择朗读语音（issue #10）
+
+- `lib/utils.js > Speaker`：优先用户选择，自动选择先匹配精确地区，再按 Premium/Enhanced/Natural/Google 名称标记、同档本地声音排序。名称只作启发式，不保证音质；无语音/浏览器不支持明确提示，避免错误语种默认回退。保留正常语速及过期/取消错误过滤。
+- `app.js > renderVoiceSettings`：设置页显示当前语言可用声音、当前选择与试听；异步列表/跨标签偏好变化仅更新原控件，不替换整页。声音选择与学习进度独立。`styles.css` 限制长名称控件宽度。
+- `lib/storage.js`：新增不裁剪数据的 `safeSetPreference`；`voice` 为重置保留偏好，不改变原学习数据写入或导入规则。
+- `tests/test-speaker-settings.js`：真实 Speaker、设置渲染/事件与存储网关回归；覆盖四语、异步列表、地区/用户优先、失效选择、配额、重置、旧备份、导出导入、跨标签及转义。设备语音用 mock，实际音质和跨设备声音可用性不由此测试证明。纳入完整无头入口，并更新原自动朗读测试的空列表预期。

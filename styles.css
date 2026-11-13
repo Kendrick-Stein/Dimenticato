@@ -647,6 +647,8 @@ label { font-size: 0.9rem; }
 .segmented > button[aria-pressed="true"] { background: var(--ink); color: var(--on-ink); }
 .pref-row { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; align-items: center; justify-content: space-between; padding: 0.7rem 0; border-top: 1px solid var(--line); }
 .pref-row:first-of-type { border-top: 0; }
+#settingsVoice { min-width: 0; max-width: 100%; }
+#settingsVoiceStatus, #settingsVoiceHelp { flex-basis: 100%; overflow-wrap: anywhere; }
 .pref-label { font-weight: 500; }
 .pref-label small { display: block; color: var(--muted); font-size: 0.8rem; font-weight: 400; }
 
