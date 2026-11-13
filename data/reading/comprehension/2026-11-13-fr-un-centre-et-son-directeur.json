@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-13-fr-un-centre-et-son-directeur",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "Quel parcours professionnel est présenté avant l’arrivée au nouveau centre ?",
+      "promptZh": "到新中心之前，文中介绍了怎样的工作经历？",
+      "options": [
+        "Un travail à Bruxelles, puis une carrière dans le Loiret.",
+        "Des recherches à Laon, puis un travail dans le Loiret.",
+        "Des services de l’État, puis un travail à Bruxelles.",
+        "Des recherches à Arras, puis un travail au ministère."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "explanationZh": "s2—s4依次介绍公共部门经历、2004年在卢瓦雷省起步、农业部以及后来在布鲁塞尔的工作。A颠倒先后；B、D把新中心所在地误当成他的早期研究岗位。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Comment le centre est-il organisé géographiquement ?",
+      "promptZh": "研究中心在地理上如何分布？",
+      "options": [
+        "Ses équipes travaillent sur quatre sites du nord de la France.",
+        "Ses équipes travaillent dans quatre pays européens.",
+        "Ses équipes sont toutes installées dans un seul bâtiment à Bruxelles.",
+        "Ses équipes se partagent entre le Loiret et Paris."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s1",
+        "s5"
+      ],
+      "explanationZh": "s1说明中心位于法国北部，s5列出四个基地；四个基地不是四个国家。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Quel objectif est confié au nouveau responsable ?",
+      "promptZh": "新负责人承担哪项目标？",
+      "options": [
+        "Former les nouveaux vétérinaires de la région.",
+        "Regrouper les équipes sur le site de Laon.",
+        "Créer des bureaux de recherche à Bruxelles.",
+        "Renforcer la coopération avec les acteurs locaux."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s11",
+        "s12"
+      ],
+      "explanationZh": "s11—s12说明他要支持科研项目并加强与当地大学、机构、企业和农业领域参与者的联系。兽医培训、集中到Laon以及设立布鲁塞尔研究办公室均非文中所述职责。"
+    }
+  ]
+}

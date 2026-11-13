@@ -1,0 +1,205 @@
+{
+  "schema": 1,
+  "id": "2026-11-13-it-vita-quotidiana-e-soddisfazione",
+  "storyId": "istat-soddisfazione-cittadini-2025-2026-11-12",
+  "lang": "it",
+  "date": "2026-11-13",
+  "category": "society",
+  "topics": [
+    "我们怎样评价自己的生活？"
+  ],
+  "title": "Come valutiamo la nostra vita?",
+  "titleZh": "我们怎样评价自己的生活？",
+  "summaryZh": "Istat 的新报告比较2025年的生活满意度与日常生活各方面的评价。",
+  "level": "A2",
+  "levelReason": "编辑估计 A2：短句、日常生活词汇及简单数字比较；调查术语有中文辅助。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Istat",
+    "title": "Soddisfazione dei cittadini – Anno 2025",
+    "url": "https://www.istat.it/comunicato-stampa/soddisfazione-dei-cittadini-anno-2025/",
+    "publishedAt": "2026-11-12",
+    "lang": "it"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "来源：Istat，2026-11-12，Soddisfazione dei cittadini – Anno 2025。原机构文字按 CC BY 4.0 使用，保留原文及许可链接；原机构不为本教学改编背书。",
+  "adaptation": "根据意大利语机构原文进行同语言教学改写，并添加中文对照、词汇与原创练习。不是原文照录；未使用图片、标志、音视频或第三方直接引语。原发表日期与整理日期分别保留。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Il 12 novembre 2026 l'Istat pubblica un rapporto sulla soddisfazione dei cittadini per la loro vita.",
+      "zh": "2026年11月12日，意大利国家统计局发布了一份有关民众生活满意度的报告。",
+      "glosses": [
+        {
+          "surface": "rapporto",
+          "lemma": "rapporto",
+          "zh": "报告",
+          "note": "un 后接阳性单数名词 rapporto。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "I dati riguardano il 2025, non il mese in cui esce il rapporto.",
+      "zh": "这些数据涉及2025年，而不是报告发布的月份。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Alle persone dai quattordici anni in su viene chiesto di dare alla propria vita un voto da zero a dieci.",
+      "zh": "调查请14岁及以上的人给自己的生活打分，分值从0到10。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "Zero significa nessuna soddisfazione, mentre dieci indica una soddisfazione molto alta.",
+      "zh": "0分表示完全不满意，10分则表示非常满意。",
+      "glosses": [
+        {
+          "surface": "alta",
+          "lemma": "alto",
+          "zh": "高的",
+          "note": "alta 为阴性单数，修饰 soddisfazione。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Il 47,6% sceglie un voto tra otto e dieci: nel 2024 questa quota era del 46,3%.",
+      "zh": "47.6%的人选择8至10分；2024年这一比例为46.3%。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "La soddisfazione per la vita aumenta quindi rispetto all’anno precedente.",
+      "zh": "因此，生活满意度与前一年相比有所上升。",
+      "glosses": [
+        {
+          "surface": "precedente",
+          "lemma": "precedente",
+          "zh": "之前的",
+          "note": "形容词 precedente 与单数 anno 一致。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Il rapporto considera anche la famiglia, gli amici, la salute, il lavoro e il tempo libero.",
+      "zh": "报告也考察家庭、朋友、健康、工作和闲暇时间。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Nel 2025 migliorano le valutazioni del tempo libero e della situazione economica personale.",
+      "zh": "2025年，人们对闲暇时间和个人经济状况的评价有所改善。",
+      "glosses": [
+        {
+          "surface": "migliorano",
+          "lemma": "migliorare",
+          "zh": "改善",
+          "note": "主语 le valutazioni 是复数，动词用第三人称复数。"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "La soddisfazione per i rapporti familiari e con gli amici, invece, rimane stabile.",
+      "zh": "相比之下，人们对家庭关系和朋友关系的满意度保持稳定。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "La fiducia negli altri resta bassa e non cresce insieme alla soddisfazione generale.",
+      "zh": "对他人的信任仍然偏低，并未随着总体满意度一起增长。",
+      "glosses": [
+        {
+          "surface": "fiducia",
+          "lemma": "fiducia",
+          "zh": "信任",
+          "note": "la 后接阴性单数名词 fiducia；固定表达 fiducia negli altri。"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "I risultati cambiano anche secondo l’età, il lavoro e il luogo in cui si vive.",
+      "zh": "结果还因年龄、工作状况和居住地而有所不同。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Un unico numero, dunque, non descrive tutte le esperienze delle persone.",
+      "zh": "因此，一个数字并不能描述人们的所有经历。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "rapporto",
+        "lemma": "rapporto",
+        "zh": "报告",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "alta",
+        "lemma": "alto",
+        "zh": "高的",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "precedente",
+        "lemma": "precedente",
+        "zh": "之前的",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "migliorano",
+        "lemma": "migliorare",
+        "zh": "改善",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "fiducia",
+        "lemma": "fiducia",
+        "zh": "信任",
+        "sentenceId": "s10"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "dai quattordici anni in su",
+        "zh": "从14岁起",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "rispetto all’anno precedente",
+        "zh": "与前一年相比",
+        "sentenceId": "s6"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s3",
+        "note": "dai quattordici anni in su 表示年龄下限：从14岁起，包含14岁。dai 是 da + i，in su 表示“及以上”。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quali aspetti della vita quotidiana sono importanti per te?",
+        "zh": "日常生活中的哪些方面对你很重要？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Per me è importante…",
+        "zh": "对我来说，……很重要。"
+      }
+    ]
+  }
+}

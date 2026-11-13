@@ -1,0 +1,208 @@
+{
+  "schema": 1,
+  "date": "2026-11-13",
+  "scope": "Six new original-language institutional adaptations and one outbound listening guide. No historical article or learning record changes.",
+  "readings": [
+    {
+      "id": "2026-11-13-it-vita-quotidiana-e-soddisfazione",
+      "lang": "it",
+      "level": "A2",
+      "source": {
+        "name": "Istat",
+        "title": "Soddisfazione dei cittadini – Anno 2025",
+        "url": "https://www.istat.it/comunicato-stampa/soddisfazione-dei-cittadini-anno-2025/",
+        "publishedAt": "2026-11-12",
+        "lang": "it"
+      },
+      "storyId": "istat-soddisfazione-cittadini-2025-2026-11-12"
+    },
+    {
+      "id": "2026-11-13-it-prevenire-prima-dellemergenza",
+      "lang": "it",
+      "level": "B1",
+      "source": {
+        "name": "INGV Ufficio Stampa",
+        "title": "CATANIA | INGV presente all’evento “Oltre l’emergenza: governare il dissesto, dalle crisi alla prevenzione”",
+        "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/catania-ingv-presente-all-evento-oltre-l-emergenza-governare-il-dissesto-dalle-crisi-alla-prevenzione",
+        "publishedAt": "2026-11-12",
+        "lang": "it"
+      },
+      "storyId": "ingv-catania-prevenzione-2026-11-12"
+    },
+    {
+      "id": "2026-11-13-fr-un-centre-et-son-directeur",
+      "lang": "fr",
+      "level": "A2",
+      "source": {
+        "name": "INRAE — Communication Hauts-de-France",
+        "title": "Davy Liger, nouveau président du Centre INRAE Hauts-de-France",
+        "url": "https://www.inrae.fr/actualites/davy-liger-nouveau-president-du-centre-inrae-hauts-france",
+        "publishedAt": "2026-11-09",
+        "lang": "fr"
+      },
+      "storyId": "inrae-davy-liger-hdf-2026-11-09"
+    },
+    {
+      "id": "2026-11-13-de-bildungsberatung-beim-offenen-tag",
+      "lang": "de",
+      "level": "A2",
+      "source": {
+        "name": "erwachsenenbildung.at / bifeb",
+        "title": "Erwachsenenbildung beim Tag der offenen Tür im BMFWF",
+        "url": "https://erwachsenenbildung.at/aktuell/nachrichten/20955-erwachsenenbildung-beim-tag-der-offenen-tuer-im-bmfwf.php",
+        "publishedAt": "2026-11-12",
+        "lang": "de",
+        "author": "Andrea Bigl, bifeb"
+      },
+      "storyId": "erwachsenenbildung-bmfwf-offener-tag-2026-11-12"
+    },
+    {
+      "id": "2026-11-13-en-blue-plaques-and-changing-streets",
+      "lang": "en",
+      "level": "B1",
+      "source": {
+        "name": "Department for Digital, Culture, Media and Sport",
+        "author": "Department for Digital, Culture, Media and Sport",
+        "title": "Major changes to Blue Plaque schemes will see more of England’s ‘hidden heroes’ celebrated",
+        "url": "https://www.gov.uk/government/news/major-changes-to-blue-plaque-schemes-will-see-more-of-englands-hidden-heroes-celebrated",
+        "lang": "en",
+        "publishedAt": "2026-11-12"
+      },
+      "storyId": "dcms-blue-plaque-criteria-2026-11-12"
+    },
+    {
+      "id": "2026-11-13-en-have-your-say-on-local-arts",
+      "lang": "en",
+      "level": "A2",
+      "source": {
+        "name": "Department for Communities, Northern Ireland",
+        "author": "Department for Communities, Northern Ireland",
+        "title": "Lyons launches consultation on the future of the arts in Northern Ireland",
+        "url": "https://www.communities-ni.gov.uk/news/lyons-launches-consultation-future-arts-northern-ireland",
+        "lang": "en",
+        "publishedAt": "2026-11-12"
+      },
+      "storyId": "ni-arts-policy-consultation-2026-11-12"
+    }
+  ],
+  "counts": {
+    "readings": 6,
+    "clozeQuestions": 30,
+    "comprehensionQuestions": 20,
+    "listeningGuides": 1,
+    "listeningQuestions": 0
+  },
+  "missingReadingSlots": {
+    "it": [
+      "B2/C1"
+    ],
+    "fr": [
+      "B1",
+      "B2/C1"
+    ],
+    "de": [
+      "B1",
+      "B2/C1"
+    ],
+    "en": [
+      "B2/C1"
+    ]
+  },
+  "missingListeningLanguages": [
+    "it",
+    "fr",
+    "en"
+  ],
+  "editorialReview": "Independent review of source date, language, facts, reuse terms, translations, learning notes and exercises completed. Twenty comprehension questions were answered blind before checking answers and cited evidence. Revised weak distractors and teaching notes were reviewed again.",
+  "sourceRights": "Article-specific institutional permissions and exceptions checked. Text only; no media or third-party quotations reused. Each article retains attribution, original date, source link, license and adaptation notice.",
+  "deduplication": "Checked stable identities, canonical source URLs and body hashes against current articles, candidates and available pending records. Each selected source was first published November 9 or 12 as a distinct new report. Older incomplete inventories remain unresolved and excluded.",
+  "listening": "Official November 12 logo programme linked with original Chinese guidance. Muted player timing advanced; audio quality and availability in all regions were not verified. Metadata and player duration differ by one second; displayed as about ten minutes. No comprehension questions created from metadata.",
+  "protectedContent": "Existing candidate metadata and older held content left unchanged.",
+  "finalContentHashes": [
+    {
+      "path": "data/reading/articles/2026-11-13-it-vita-quotidiana-e-soddisfazione.json",
+      "sha256": "fc0b48b204bd7bb338cf74245efdf0e3b2915c5a3c1eab7f6747bf7c9ec0faf5"
+    },
+    {
+      "path": "data/reading/practice/2026-11-13-it-vita-quotidiana-e-soddisfazione.json",
+      "sha256": "bcc96784d285516ae2a300e4f4118e5c73f1f53a93fb408258ad1b846383e3ee"
+    },
+    {
+      "path": "data/reading/comprehension/2026-11-13-it-vita-quotidiana-e-soddisfazione.json",
+      "sha256": "ba90f22e27636e4951bad1d51be5ca183bc9eeabeba9efd66022833e5a790aa1"
+    },
+    {
+      "path": "data/reading/articles/2026-11-13-it-prevenire-prima-dellemergenza.json",
+      "sha256": "4795f6f93e781a902e0ff10bfd2cb27284a65cb5b00541d47c2f48b5a19777b6"
+    },
+    {
+      "path": "data/reading/practice/2026-11-13-it-prevenire-prima-dellemergenza.json",
+      "sha256": "b9c421205a219eb4338abddd90242aafca58c389c5e39a14f3de5b13818a9cb2"
+    },
+    {
+      "path": "data/reading/comprehension/2026-11-13-it-prevenire-prima-dellemergenza.json",
+      "sha256": "b0c2b8a1d0997e3600b91b75de170f269257fe6cdf36b33f625befc403781503"
+    },
+    {
+      "path": "data/reading/articles/2026-11-13-fr-un-centre-et-son-directeur.json",
+      "sha256": "660b7d5523db9374160cd1f90167b11b09a296b3101d1fcbd6587ff7e333003f"
+    },
+    {
+      "path": "data/reading/practice/2026-11-13-fr-un-centre-et-son-directeur.json",
+      "sha256": "a2d1c75399ebfc4dbb45ed906f0a34bb6dc2dd0347b20efacebb2197bd816071"
+    },
+    {
+      "path": "data/reading/comprehension/2026-11-13-fr-un-centre-et-son-directeur.json",
+      "sha256": "6b8fa46b17dffc7d92c1cde9825519aa85b6fd2e0b3d20a42944e443cd7a95d0"
+    },
+    {
+      "path": "data/reading/articles/2026-11-13-de-bildungsberatung-beim-offenen-tag.json",
+      "sha256": "4e7ae73e5b034801d959a98b6d5376009c18968a1c55b91c41650228f2ac987b"
+    },
+    {
+      "path": "data/reading/practice/2026-11-13-de-bildungsberatung-beim-offenen-tag.json",
+      "sha256": "1d7fcfa983f5fa32afb247932b431ef3230fae0e2005ce36dfece13ebfbeed23"
+    },
+    {
+      "path": "data/reading/comprehension/2026-11-13-de-bildungsberatung-beim-offenen-tag.json",
+      "sha256": "f61d5209819aaf33b836607b5643a9046e4e58c499b7716ee8850f5ad5383662"
+    },
+    {
+      "path": "data/reading/articles/2026-11-13-en-blue-plaques-and-changing-streets.json",
+      "sha256": "4a4d84488e3e4371e3bbaa69e8dbc6e90ef31ed4fe4da85fd10d63b26bc6a5cb"
+    },
+    {
+      "path": "data/reading/practice/2026-11-13-en-blue-plaques-and-changing-streets.json",
+      "sha256": "e4eebc902bc8bbb542ab8b2aa755b7ac2848e5b339f19fc12ff3c302aac427e1"
+    },
+    {
+      "path": "data/reading/comprehension/2026-11-13-en-blue-plaques-and-changing-streets.json",
+      "sha256": "0bc3ef6a86f0d6f4cd94cf390fe6bd441a40c613d99f1f33ac5c7a1fab8f7e85"
+    },
+    {
+      "path": "data/reading/articles/2026-11-13-en-have-your-say-on-local-arts.json",
+      "sha256": "f8d69dc8ce4b88aa87200dbac7c5712dd789297351a05746e315e41175d91d16"
+    },
+    {
+      "path": "data/reading/practice/2026-11-13-en-have-your-say-on-local-arts.json",
+      "sha256": "35d2ceeda725bda7ad3a116e0963d1adf2ecec02c02ccff8b9f870d81ec0bb3e"
+    },
+    {
+      "path": "data/reading/comprehension/2026-11-13-en-have-your-say-on-local-arts.json",
+      "sha256": "4227ea3a5a1fd4fbcf83de3eaf47e4d2a47a031d79c6f93ce2817925cb82584d"
+    },
+    {
+      "path": "data/listening/catalog.json",
+      "sha256": "6e1c8bbfbfbbf03091adb1063412a02cfab2a11821b3afca34946403468e558d"
+    },
+    {
+      "path": "data/reading/index.json",
+      "sha256": "27f0f6fa8d18938ade124dc353eda655dd82a9eaff6f65e4bca6b37d81734376"
+    }
+  ],
+  "checks": {
+    "fullSuite": "46 harnesses; 487748 passed; 0 failed",
+    "focused": "Reading, candidate, practice, comprehension and listening validators/tests passed",
+    "browser": "Private preview passed for all six readings and both exercise types, spelling/empty input/reset/navigation, 400 CSS pixel layout and the outbound listening guide. Audio quality remains unverified."
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-13-de-bildungsberatung-beim-offenen-tag",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "Was konnten die Gäste an dem Infostand erfahren?",
+      "options": [
+        "Welche Bildungswege und Unterstützungsmöglichkeiten es gibt.",
+        "Wie das historische Palais früher gebaut wurde.",
+        "Welche Experimente man in den Workshops durchführt.",
+        "Wann der nächste Tag der offenen Tür stattfindet."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s8",
+        "s9",
+        "s10"
+      ],
+      "explanationZh": "s8至s10说明咨询台介绍教育、咨询和培训项目，并回答教育途径与支持方面的问题。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Wer stellte die Themen der Erwachsenenbildung am Stand vor?",
+      "options": [
+        "Die Besucherinnen und Besucher des Palais.",
+        "Die Teilnehmenden eines wissenschaftlichen Workshops.",
+        "Drei Mitarbeiterinnen der zuständigen Abteilung.",
+        "Andrea Bigl zusammen mit drei Studierenden."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s6",
+        "s7"
+      ],
+      "explanationZh": "s6和s7明确说成人教育部门参与，三名女工作人员在咨询台介绍主题。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Welche zeitliche Reihenfolge beschreibt der Text?",
+      "options": [
+        "Der Bericht erschien vor der Veranstaltung im November.",
+        "Die Veranstaltung war im Oktober, der Bericht folgte im November.",
+        "Die Veranstaltung und der Bericht waren am selben Oktobertag.",
+        "Der Bericht kündigte eine Veranstaltung für den Dezember an."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s1",
+        "s12"
+      ],
+      "explanationZh": "活动在10月26日举行，报道在11月12日发表；文章是在回顾活动，不是预告。"
+    }
+  ]
+}

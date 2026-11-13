@@ -2732,6 +2732,41 @@
         }
       ],
       "questions": []
+    },
+    {
+      "id": "de-logo-2026-11-12",
+      "lang": "de",
+      "title": "logo! vom Donnerstag, 12. November 2026",
+      "titleZh": "11月12日儿童新闻：气候行动与体育社团",
+      "provider": "ZDF logo!",
+      "url": "https://www.logo.de/logo-vom-donnerstag-12-november-2026-102.html",
+      "level": "未分级",
+      "levelBasis": "editorial",
+      "levelLabel": "母语儿童内容 · 非 CEFR 分级",
+      "kind": "news",
+      "addedAt": "2026-11-13",
+      "sourcePublishedAt": "2026-11-12",
+      "duration": "约10分钟",
+      "evidenceStatus": "metadata_only",
+      "summaryZh": "从官方完整节目入口选听气候行动、体育社团等话题。",
+      "guideZh": "先选择一个感兴趣的片段，记录听清的关键词。第二遍留意人物的行动及原因，再尝试用一句德语概括；不必一次听懂整集。原站可能因所在地限制播放。",
+      "verificationZh": "已核对官方完整节目页、节目单及视频上传日期。云端浏览器中播放器静音自动播放，计时推进至00:02，显示总时长10:23；官方元数据为10:22，相差1秒。本次未听音，未核验音质，也不证明所有地区均可播放。未取得完整对应文字稿，仅提供原站导听，不设理解题。",
+      "vocabularyLabel": "主题预习词（不保证全部出现在音频中）",
+      "vocabulary": [
+        {
+          "text": "der Klimaschutz",
+          "zh": "气候保护"
+        },
+        {
+          "text": "der Sportverein",
+          "zh": "体育社团；体育俱乐部"
+        },
+        {
+          "text": "das Mitglied",
+          "zh": "成员"
+        }
+      ],
+      "questions": []
     }
   ],
   "schema": 1

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-13-it-vita-quotidiana-e-soddisfazione",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "Quali persone sono incluse nella domanda sul voto alla propria vita?",
+      "options": [
+        "Le persone di almeno quattordici anni.",
+        "Le persone che hanno meno di quattordici anni.",
+        "Le persone di almeno diciotto anni.",
+        "Le persone che hanno più di sessantacinque anni."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s3"
+      ],
+      "explanationZh": "第3句明确是14岁及以上的人，并非仅成年人或老年人。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Quali aspetti ricevono valutazioni migliori nel 2025?",
+      "options": [
+        "La salute e i rapporti con gli amici.",
+        "Il lavoro e i rapporti familiari.",
+        "Il tempo libero e la situazione economica personale.",
+        "I rapporti familiari e la fiducia negli altri."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s8",
+        "s9",
+        "s10"
+      ],
+      "explanationZh": "第8句指出改善的是闲暇时间和个人经济状况。家庭、朋友关系稳定，信任仍低。"
+    },
+    {
+      "id": "q3",
+      "kind": "main-idea",
+      "prompt": "Quale confronto riassume il risultato del rapporto?",
+      "options": [
+        "Soddisfazione generale e fiducia negli altri crescono insieme.",
+        "La soddisfazione generale cresce, ma la fiducia negli altri resta bassa.",
+        "La fiducia negli altri cresce, ma la soddisfazione generale diminuisce.",
+        "Soddisfazione generale e fiducia negli altri diminuiscono insieme."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s6",
+        "s10"
+      ],
+      "explanationZh": "总体满意度上升，但对他人的信任仍低，不能把这两种指标混为一谈。"
+    }
+  ]
+}

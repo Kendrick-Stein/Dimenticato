@@ -2,6 +2,89 @@
   "schema": 1,
   "articles": [
     {
+      "id": "2026-11-13-de-bildungsberatung-beim-offenen-tag",
+      "lang": "de",
+      "date": "2026-11-13",
+      "title": "Bildungsberatung beim Tag der offenen Tür",
+      "titleZh": "开放日里的教育咨询",
+      "summaryZh": "维也纳一次开放日活动，让公众了解成人教育、教育咨询和不同的学习途径。",
+      "level": "A2",
+      "category": "education",
+      "topics": [
+        "成人教育",
+        "教育咨询"
+      ],
+      "sourceLang": "de",
+      "sourcePublishedAt": "2026-11-12",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-13-en-blue-plaques-and-changing-streets",
+      "lang": "en",
+      "date": "2026-11-13",
+      "title": "Blue plaques and changing streets",
+      "titleZh": "街道变了，人物的故事仍可被纪念",
+      "summaryZh": "英格兰放宽蓝色纪念牌规则：与历史人物有关的建筑即使已被改建或替代，也不再因此自动失去资格。",
+      "level": "B1",
+      "category": "culture",
+      "topics": [
+        "文化参与",
+        "公共生活"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-11-12",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-13-en-have-your-say-on-local-arts",
+      "lang": "en",
+      "date": "2026-11-13",
+      "title": "Have your say on local arts",
+      "titleZh": "为本地艺术发展提建议",
+      "summaryZh": "北爱尔兰就未来十年的艺术政策征求公众意见，提议关注社区艺术、人才培养及不同地区的机会。",
+      "level": "A2",
+      "category": "culture",
+      "topics": [
+        "文化参与",
+        "公共生活"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-11-12",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-13-it-prevenire-prima-dellemergenza",
+      "lang": "it",
+      "date": "2026-11-13",
+      "title": "Preparare i territori prima dell’emergenza",
+      "titleZh": "在紧急情况发生前做好准备",
+      "summaryZh": "卡塔尼亚的会议连接科研、地方经验和防灾行动；计划中的系统不能当作已上线成果。",
+      "level": "B1",
+      "category": "society",
+      "topics": [
+        "在紧急情况发生前做好准备"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-11-12",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-13-it-vita-quotidiana-e-soddisfazione",
+      "lang": "it",
+      "date": "2026-11-13",
+      "title": "Come valutiamo la nostra vita?",
+      "titleZh": "我们怎样评价自己的生活？",
+      "summaryZh": "Istat 的新报告比较2025年的生活满意度与日常生活各方面的评价。",
+      "level": "A2",
+      "category": "society",
+      "topics": [
+        "我们怎样评价自己的生活？"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-11-12",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-11-12-en-moving-home-and-family-membership",
       "lang": "en",
       "date": "2026-11-12",
@@ -121,6 +204,23 @@
       ],
       "sourceLang": "it",
       "sourcePublishedAt": "2026-11-10",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-13-fr-un-centre-et-son-directeur",
+      "lang": "fr",
+      "date": "2026-11-13",
+      "title": "Un centre de recherche et son nouveau directeur",
+      "titleZh": "研究中心与新负责人",
+      "summaryZh": "从职业经历到团队合作，认识法国北部一个农业与环境研究中心。",
+      "level": "A2",
+      "category": "work-economy",
+      "topics": [
+        "职业经历",
+        "研究机构"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-11-09",
       "contentType": "native-adaptation"
     },
     {

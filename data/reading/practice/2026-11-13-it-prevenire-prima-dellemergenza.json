@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-13-it-prevenire-prima-dellemergenza",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s1",
+      "start": 116,
+      "answer": "prevenzione",
+      "options": [
+        "prevenire",
+        "preventivi",
+        "prevenzione",
+        "prevenuto"
+      ],
+      "explanation": "alla 后接阴性名词 prevenzione。 此处表达“预防”，恢复原文用词。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s3",
+      "start": 114,
+      "answer": "differenti",
+      "options": [
+        "differenti",
+        "differenza",
+        "differente",
+        "differire"
+      ],
+      "explanation": "修饰复数 conoscenze ed esperienze，用 differenti。 此处表达“不同的”，恢复原文用词。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s7",
+      "start": 46,
+      "answer": "riunisce",
+      "options": [
+        "riuniscono",
+        "riunisci",
+        "riuniamo",
+        "riunisce"
+      ],
+      "explanation": "主语 una tavola rotonda 为第三人称单数。 此处表达“汇聚”，恢复原文用词。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s9",
+      "start": 53,
+      "answer": "continuo",
+      "options": [
+        "continua",
+        "continuo",
+        "continui",
+        "continue"
+      ],
+      "explanation": "monitoraggio 为阳性单数，因此用 continuo。 此处表达“持续的”，恢复原文用词。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s11",
+      "start": 13,
+      "answer": "previsti",
+      "options": [
+        "previsto",
+        "previste",
+        "previsti",
+        "prevista"
+      ],
+      "explanation": "sono previsti 与阳性复数 sistemi 一致。 此处表达“计划中的”，恢复原文用词。"
+    }
+  ]
+}

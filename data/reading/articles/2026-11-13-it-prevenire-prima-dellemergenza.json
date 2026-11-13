@@ -1,0 +1,217 @@
+{
+  "schema": 1,
+  "id": "2026-11-13-it-prevenire-prima-dellemergenza",
+  "storyId": "ingv-catania-prevenzione-2026-11-12",
+  "lang": "it",
+  "date": "2026-11-13",
+  "category": "society",
+  "topics": [
+    "在紧急情况发生前做好准备"
+  ],
+  "title": "Preparare i territori prima dell’emergenza",
+  "titleZh": "在紧急情况发生前做好准备",
+  "summaryZh": "卡塔尼亚的会议连接科研、地方经验和防灾行动；计划中的系统不能当作已上线成果。",
+  "level": "B1",
+  "levelReason": "编辑估计 B1：约300词，含关系从句、因果连接和将来时；灾害预防专业词汇有中文释义。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "INGV Ufficio Stampa",
+    "title": "CATANIA | INGV presente all’evento “Oltre l’emergenza: governare il dissesto, dalle crisi alla prevenzione”",
+    "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/catania-ingv-presente-all-evento-oltre-l-emergenza-governare-il-dissesto-dalle-crisi-alla-prevenzione",
+    "publishedAt": "2026-11-12",
+    "lang": "it"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "来源：INGV Ufficio Stampa，2026-11-12，CATANIA | INGV presente all’evento “Oltre l’emergenza: governare il dissesto, dalle crisi alla prevenzione”。原机构文字按 CC BY 4.0 使用，保留原文及许可链接；原机构不为本教学改编背书。",
+  "adaptation": "根据意大利语机构原文进行同语言教学改写，并添加中文对照、词汇与原创练习。不是原文照录；未使用图片、标志、音视频或第三方直接引语。原发表日期与整理日期分别保留。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Dal 12 al 14 novembre 2026, il centro fieristico Le Ciminiere di Catania ospita un incontro nazionale dedicato alla prevenzione delle calamità naturali.",
+      "zh": "2026年11月12日至14日，卡塔尼亚的 Le Ciminiere 会展中心举办一场全国性自然灾害预防会议。",
+      "glosses": [
+        {
+          "surface": "prevenzione",
+          "lemma": "prevenzione",
+          "zh": "预防",
+          "note": "alla 后接阴性名词 prevenzione。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "L’evento mette in relazione due momenti diversi: il lavoro che precede un’emergenza e gli interventi necessari dopo che una calamità ha colpito un territorio.",
+      "zh": "这一活动将两个不同阶段联系起来：紧急情况发生前的工作，以及灾害袭击某地后所需的干预行动。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Al confronto partecipano istituzioni, ricercatori, professionisti e imprese, che portano conoscenze ed esperienze differenti.",
+      "zh": "机构、研究人员、专业人士和企业参加讨论，带来不同的知识和经验。",
+      "glosses": [
+        {
+          "surface": "differenti",
+          "lemma": "differente",
+          "zh": "不同的",
+          "note": "修饰复数 conoscenze ed esperienze，用 differenti。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Tra gli enti presenti c’è l’Istituto Nazionale di Geofisica e Vulcanologia, che sostiene l’iniziativa e contribuisce alla discussione con i propri rappresentanti.",
+      "zh": "参与机构包括意大利国家地球物理与火山学研究所，该所支持这一活动，并由其代表参与讨论。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "La prevenzione del rischio idrogeologico e la ricostruzione dopo le calamità sono al centro del programma.",
+      "zh": "水文地质风险的预防和灾后重建是活动议程的核心。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Il rischio idrogeologico riguarda, per esempio, i pericoli legati all’acqua e all’instabilità del terreno: questa è una spiegazione del termine usato nell’incontro.",
+      "zh": "水文地质风险例如涉及与水及地面不稳定有关的危险：这是对会议中所用术语的解释。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Nella giornata inaugurale, una tavola rotonda riunisce rappresentanti delle istituzioni, degli enti di ricerca, delle università e degli ordini professionali.",
+      "zh": "在开幕日，一场圆桌讨论汇聚了机构、研究单位、大学和专业协会的代表。",
+      "glosses": [
+        {
+          "surface": "riunisce",
+          "lemma": "riunire",
+          "zh": "汇聚",
+          "note": "主语 una tavola rotonda 为第三人称单数。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Il dialogo permette di condividere le esperienze dei territori colpiti da alluvioni e terremoti con chi programma investimenti e interventi.",
+      "zh": "对话让曾遭洪水和地震影响的地区能够与规划投资和干预行动的人分享经验。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "La ricerca dell’INGV comprende anche il monitoraggio continuo di fenomeni sismici, vulcanici e dei maremoti.",
+      "zh": "该研究所的研究工作还包括对地震、火山和海啸现象的持续监测。",
+      "glosses": [
+        {
+          "surface": "continuo",
+          "lemma": "continuo",
+          "zh": "持续的",
+          "note": "monitoraggio 为阳性单数，因此用 continuo。"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Secondo l’annuncio riportato nel comunicato, all’inizio del 2027 sarà disponibile una nuova mappa della pericolosità sismica italiana, destinata ad aggiornare quella del 2004.",
+      "zh": "根据通告中的宣布，意大利新地震危险性地图将于2027年初提供，用来更新2004年的地图。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Sono inoltre previsti sistemi di allerta precoce per l’attività vulcanica e gli tsunami a Stromboli; sull’Etna un sistema è già operativo dal 2022.",
+      "zh": "此外还计划在斯特龙博利启用火山活动和海啸早期预警系统；埃特纳已有一个系统自2022年运行。",
+      "glosses": [
+        {
+          "surface": "previsti",
+          "lemma": "prevedere",
+          "zh": "计划中的",
+          "note": "sono previsti 与阳性复数 sistemi 一致。"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "È importante distinguere questi nuovi programmi dal sistema già attivo: il comunicato annuncia attività future e non certifica che siano già state completate.",
+      "zh": "应将这些新计划与已运行的系统区分开：通告宣布的是未来活动，并不证明它们已完成。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "L’incontro offre quindi uno spazio per collegare dati scientifici, esperienze locali e strumenti operativi, con l’obiettivo di rafforzare la sicurezza dei territori.",
+      "zh": "因此，这次会议提供了将科学数据、地方经验和操作工具联系起来的空间，目标是加强各地的安全。",
+      "glosses": []
+    },
+    {
+      "id": "s14",
+      "text": "La collaborazione proposta coinvolge sia chi studia i fenomeni sia chi deve tradurre le conoscenze in decisioni e azioni sul territorio.",
+      "zh": "所提出的合作既包括研究这些现象的人，也包括需要把知识转化为地方决策和行动的人。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "prevenzione",
+        "lemma": "prevenzione",
+        "zh": "预防",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "differenti",
+        "lemma": "differente",
+        "zh": "不同的",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "riunisce",
+        "lemma": "riunire",
+        "zh": "汇聚",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "continuo",
+        "lemma": "continuo",
+        "zh": "持续的",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "previsti",
+        "lemma": "prevedere",
+        "zh": "计划中的",
+        "sentenceId": "s11"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "condividere le esperienze",
+        "zh": "分享经验",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "con l’obiettivo di",
+        "zh": "以……为目标",
+        "sentenceId": "s13"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s8",
+        "note": "condividere qualcosa con qualcuno：与某人分享某事。句中 con chi… 指“与那些……的人”；chi 后面的动词 programma 用第三人称单数。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Come si possono condividere meglio le esperienze di un territorio dopo un’emergenza?",
+        "zh": "紧急情况之后，怎样才能更好地分享一个地区的经验？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "È importante distinguere… da…",
+        "zh": "区分……与……很重要。"
+      }
+    ]
+  }
+}

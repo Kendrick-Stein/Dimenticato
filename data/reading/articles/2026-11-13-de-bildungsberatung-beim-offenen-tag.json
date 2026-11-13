@@ -1,0 +1,240 @@
+{
+  "schema": 1,
+  "id": "2026-11-13-de-bildungsberatung-beim-offenen-tag",
+  "storyId": "erwachsenenbildung-bmfwf-offener-tag-2026-11-12",
+  "lang": "de",
+  "date": "2026-11-13",
+  "category": "education",
+  "topics": [
+    "成人教育",
+    "教育咨询"
+  ],
+  "title": "Bildungsberatung beim Tag der offenen Tür",
+  "titleZh": "开放日里的教育咨询",
+  "summaryZh": "维也纳一次开放日活动，让公众了解成人教育、教育咨询和不同的学习途径。",
+  "level": "A2",
+  "levelReason": "编辑估计：用短句回顾一次活动，包含地点、人员和咨询内容；少量过去时及教育词汇配逐句中文辅助。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "erwachsenenbildung.at / bifeb",
+    "title": "Erwachsenenbildung beim Tag der offenen Tür im BMFWF",
+    "url": "https://erwachsenenbildung.at/aktuell/nachrichten/20955-erwachsenenbildung-beim-tag-der-offenen-tuer-im-bmfwf.php",
+    "publishedAt": "2026-11-12",
+    "lang": "de",
+    "author": "Andrea Bigl, bifeb"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "原文：Andrea Bigl, bifeb，发表于erwachsenenbildung.at，2026-11-12，正文许可CC BY 4.0。保留原文及许可链接。",
+  "adaptation": "德语同语言教学改写、逐句中文翻译及原创学习补充；不是原文逐字转载，不代表原作者认可。只使用获许可正文，未使用图片或第三方作品。报道发表于11月12日，活动已于10月26日举行。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Am 26. Oktober 2026 gab es in Wien einen Tag der offenen Tür.",
+      "zh": "2026年10月26日，维也纳举办了一次开放日活动。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Das Bundesministerium für Frauen, Wissenschaft und Forschung hatte dazu eingeladen.",
+      "zh": "奥地利联邦妇女、科学与研究部邀请公众参加了这次活动。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Die Veranstaltung fand im Palais Dietrichstein am Minoritenplatz in Wien statt.",
+      "zh": "活动在Minoritenplatz广场的Dietrichstein宫举行。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "Die Besucherinnen und Besucher konnten dort bei diesem besonderen Anlass das historische Gebäude kennenlernen.",
+      "zh": "到访者在那里可以了解这座历史建筑。",
+      "glosses": [
+        {
+          "surface": "Gebäude",
+          "lemma": "Gebäude",
+          "zh": "建筑物",
+          "note": "das Gebäude；这里为单数。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Es gab auch Stationen zum Mitmachen und Workshops mit Menschen aus der Wissenschaft.",
+      "zh": "现场还有互动体验站和由科学领域人士参与的工作坊。",
+      "glosses": [
+        {
+          "surface": "Wissenschaft",
+          "lemma": "Wissenschaft",
+          "zh": "科学",
+          "note": "die Wissenschaft；aus der Wissenschaft表示来自科学领域。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Auch die Abteilung für Erwachsenenbildung war an diesem Tag dabei.",
+      "zh": "成人教育部门当天也参与其中。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Drei Mitarbeiterinnen arbeiteten an einem Infostand und stellten ihre Themen vor.",
+      "zh": "三名女工作人员在咨询台介绍了她们负责的主题。",
+      "glosses": [
+        {
+          "surface": "Mitarbeiterinnen",
+          "lemma": "Mitarbeiterin",
+          "zh": "女工作人员",
+          "note": "复数；单数die Mitarbeiterin。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Dort ging es um Informationen über Bildung, um Beratung und um Lehre mit Matura.",
+      "zh": "那里介绍的内容包括教育信息、咨询以及学徒培训与高中毕业资格相结合的项目。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Die Gäste konnten Fragen zu verschiedenen Bildungswegen stellen.",
+      "zh": "来宾可以就不同的教育途径提问。",
+      "glosses": [
+        {
+          "surface": "Bildungswegen",
+          "lemma": "Bildungsweg",
+          "zh": "教育途径",
+          "note": "复数第三格，原形复数为Bildungswege；zu后接第三格。"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Sie konnten sich außerdem über Möglichkeiten der Unterstützung informieren.",
+      "zh": "他们还可以了解有哪些支持途径。",
+      "glosses": [
+        {
+          "surface": "Unterstützung",
+          "lemma": "Unterstützung",
+          "zh": "支持",
+          "note": "die Unterstützung；这里为抽象名词。"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Die Mitarbeiterinnen beantworteten diese Fragen direkt am Stand.",
+      "zh": "工作人员在咨询台直接回答了这些问题。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Andrea Bigl vom bifeb berichtete am 12. November 2026 über die Veranstaltung.",
+      "zh": "bifeb的Andrea Bigl于2026年11月12日报道了这次活动。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "Ihr Beitrag zeigt: Erwachsenenbildung hat viele verschiedene Seiten.",
+      "zh": "她的报道表明：成人教育包含许多不同的方面。",
+      "glosses": []
+    },
+    {
+      "id": "s14",
+      "text": "Beim Austausch konnten die Besucher diese Vielfalt näher kennenlernen.",
+      "zh": "通过交流，来宾能够进一步了解这种多样性。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "Gebäude",
+        "lemma": "Gebäude",
+        "zh": "建筑物",
+        "note": "das Gebäude；这里为单数。",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "Wissenschaft",
+        "lemma": "Wissenschaft",
+        "zh": "科学",
+        "note": "die Wissenschaft；aus der Wissenschaft表示来自科学领域。",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "Mitarbeiterinnen",
+        "lemma": "Mitarbeiterin",
+        "zh": "女工作人员",
+        "note": "复数；单数die Mitarbeiterin。",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "Bildungswegen",
+        "lemma": "Bildungsweg",
+        "zh": "教育途径",
+        "note": "复数第三格，原形复数为Bildungswege；zu后接第三格。",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "Unterstützung",
+        "lemma": "Unterstützung",
+        "zh": "支持",
+        "note": "die Unterstützung；这里为抽象名词。",
+        "sentenceId": "s10"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "Tag der offenen Tür",
+        "zh": "开放日",
+        "sentenceId": "s1",
+        "note": "机构向公众开放、介绍自身工作的活动。"
+      },
+      {
+        "text": "Fragen zu",
+        "zh": "关于……的问题",
+        "sentenceId": "s9",
+        "note": "zu后面的名词用第三格。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s9",
+        "note": "konnten是können的过去时；Fragen stellen表示提出问题。"
+      },
+      {
+        "sentenceId": "s10",
+        "note": "sich über etwas informieren表示了解某事；über后接第四格。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Welche Fragen möchtest du bei einer Bildungsberatung stellen?",
+        "zh": "你想在教育咨询时提出哪些问题？"
+      },
+      {
+        "text": "Welche Einrichtung möchtest du an einem Tag der offenen Tür besuchen?",
+        "zh": "你想在开放日参观哪一家机构？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Ich möchte mich über … informieren.",
+        "zh": "我想了解……。",
+        "note": "原创实用句；über后接第四格。"
+      },
+      {
+        "text": "Welche Möglichkeiten gibt es?",
+        "zh": "有哪些可能的途径？",
+        "note": "原创咨询表达。"
+      }
+    ]
+  }
+}

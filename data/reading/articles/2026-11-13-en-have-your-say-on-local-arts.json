@@ -1,0 +1,256 @@
+{
+  "schema": 1,
+  "id": "2026-11-13-en-have-your-say-on-local-arts",
+  "storyId": "ni-arts-policy-consultation-2026-11-12",
+  "lang": "en",
+  "date": "2026-11-13",
+  "category": "culture",
+  "topics": [
+    "文化参与",
+    "公共生活"
+  ],
+  "title": "Have your say on local arts",
+  "titleZh": "为本地艺术发展提建议",
+  "summaryZh": "北爱尔兰就未来十年的艺术政策征求公众意见，提议关注社区艺术、人才培养及不同地区的机会。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：短句说明公众咨询、艺术机会与日期，抽象政策词配中文释义。不是官方分级。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Department for Communities, Northern Ireland",
+    "author": "Department for Communities, Northern Ireland",
+    "title": "Lyons launches consultation on the future of the arts in Northern Ireland",
+    "url": "https://www.communities-ni.gov.uk/news/lyons-launches-consultation-future-arts-northern-ireland",
+    "lang": "en",
+    "publishedAt": "2026-11-12"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. Department for Communities, Northern Ireland; original publication 12 November 2026; source linked above.",
+  "adaptation": "2026-11-13整理：依据机构英文新闻稿同语言分级改写，添加中文翻译、词义与原创练习；不是原文、官方课程或机构认可的材料。仅使用机构叙述，不转载任何引语、图片、标志或其他第三方材料。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "On 12 November 2026, Northern Ireland opened a public consultation about a new arts policy.",
+      "zh": "2026年11月12日，北爱尔兰就一项新的艺术政策启动公众咨询。",
+      "glosses": [
+        {
+          "surface": "consultation",
+          "lemma": "consultation",
+          "zh": "征求意见；咨询"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "The Department for Communities wants to hear people’s views on plans for the next ten years.",
+      "zh": "社区事务部希望听取人们对未来十年计划的看法。",
+      "glosses": [
+        {
+          "surface": "views",
+          "lemma": "view",
+          "zh": "看法"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "People can read the proposals and give their opinions before the consultation ends on 21 January 2027.",
+      "zh": "人们可以阅读提案，并在咨询于2027年1月21日结束前提出意见。",
+      "glosses": [
+        {
+          "surface": "opinions",
+          "lemma": "opinion",
+          "zh": "意见"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "The proposed actions include better opportunities for people in different parts of Northern Ireland.",
+      "zh": "拟议行动包括为北爱尔兰不同地区的人们提供更好的机会。",
+      "glosses": [
+        {
+          "surface": "opportunities",
+          "lemma": "opportunity",
+          "zh": "机会"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "They also include support for arts activities in local communities, as part of the planned changes.",
+      "zh": "这些行动还包括支持当地社区的艺术活动，作为拟议改变的一部分。",
+      "glosses": [
+        {
+          "surface": "communities",
+          "lemma": "community",
+          "zh": "社区"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Another aim is to help people develop their artistic talent and find ways to show their work.",
+      "zh": "另一个目标是帮助人们发展艺术才能，并找到展示作品的方式。",
+      "glosses": [
+        {
+          "surface": "talent",
+          "lemma": "talent",
+          "zh": "才能"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "The proposals also encourage different parts of the arts sector to work together.",
+      "zh": "提案还鼓励艺术领域的不同方面开展合作。",
+      "glosses": [
+        {
+          "surface": "sector",
+          "lemma": "sector",
+          "zh": "领域"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "This consultation is part of a wider programme that began in 2024.",
+      "zh": "这次咨询属于一项始于2024年的更大计划。",
+      "glosses": [
+        {
+          "surface": "programme",
+          "lemma": "programme",
+          "zh": "计划"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "That programme covers the arts, museums, public libraries and historic places.",
+      "zh": "该计划涵盖艺术、博物馆、公共图书馆和历史场所。",
+      "glosses": [
+        {
+          "surface": "libraries",
+          "lemma": "library",
+          "zh": "图书馆"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "The department is asking about proposed aims and actions; the consultation does not mean that all the changes are already in place.",
+      "zh": "社区事务部正在就拟议目标和行动征求意见；开展咨询并不意味着所有改变均已落实。",
+      "glosses": [
+        {
+          "surface": "changes",
+          "lemma": "change",
+          "zh": "改变"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "consultation",
+        "lemma": "consultation",
+        "zh": "征求意见；咨询",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "views",
+        "lemma": "view",
+        "zh": "看法",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "opinions",
+        "lemma": "opinion",
+        "zh": "意见",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "opportunities",
+        "lemma": "opportunity",
+        "zh": "机会",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "communities",
+        "lemma": "community",
+        "zh": "社区",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "talent",
+        "lemma": "talent",
+        "zh": "才能",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "sector",
+        "lemma": "sector",
+        "zh": "领域",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "programme",
+        "lemma": "programme",
+        "zh": "计划",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "libraries",
+        "lemma": "library",
+        "zh": "图书馆",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "changes",
+        "lemma": "change",
+        "zh": "改变",
+        "sentenceId": "s10"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "give their opinions",
+        "zh": "提出他们的意见",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "work together",
+        "zh": "合作",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "in place",
+        "zh": "已落实；已到位",
+        "sentenceId": "s10"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s10",
+        "note": "does not mean that…用于区分征求意见与已经落实，避免把提议当成事实。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Which arts activities would you like to see in your community?",
+        "zh": "你希望在社区看到哪些艺术活动？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "One change I would suggest is …",
+        "zh": "我会建议的一项改变是……",
+        "note": "原创讨论表达，would使建议语气较委婉。"
+      }
+    ]
+  }
+}

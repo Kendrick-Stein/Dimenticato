@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-13-it-prevenire-prima-dellemergenza",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "Che cosa verrà aggiornato secondo l’annuncio per l’inizio del 2027?",
+      "options": [
+        "La mappa italiana della pericolosità sismica del 2022.",
+        "La mappa italiana del rischio idrogeologico del 2004.",
+        "La mappa italiana della pericolosità sismica del 2004.",
+        "La mappa italiana del rischio idrogeologico del 2022."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s10"
+      ],
+      "explanationZh": "第10句说明新地图将更新2004年的地震危险性地图。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Quale situazione distingue l’Etna da Stromboli nel testo?",
+      "options": [
+        "Sull’Etna un sistema è già operativo, mentre a Stromboli sono previsti nuovi sistemi.",
+        "A Stromboli un sistema è già operativo, mentre sull’Etna sono previsti nuovi sistemi.",
+        "Sull’Etna e a Stromboli i nuovi sistemi sono previsti per il 2004.",
+        "Sull’Etna e a Stromboli i sistemi descritti sono già attivi dal 2022."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s11",
+        "s12"
+      ],
+      "explanationZh": "第11句明确区分埃特纳自2022年运行的系统与斯特龙博利计划中的系统。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Quali esperienze vengono condivise nel dialogo descritto?",
+      "options": [
+        "Quelle dei territori colpiti da siccità e incendi.",
+        "Quelle dei territori colpiti da frane ed eruzioni.",
+        "Quelle dei territori colpiti da maremoti ed eruzioni.",
+        "Quelle dei territori colpiti da alluvioni e terremoti."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s8"
+      ],
+      "explanationZh": "第8句具体说分享的是遭洪水和地震影响地区的经验，其他选项不对应这项交流。"
+    },
+    {
+      "id": "q4",
+      "kind": "main-idea",
+      "prompt": "Quale descrizione riflette meglio il programma presentato?",
+      "options": [
+        "Un confronto sulla ricostruzione dopo le calamità e sulle tecniche di restauro dei monumenti.",
+        "Un confronto che collega la prevenzione dei rischi, la ricerca e gli interventi dopo le calamità.",
+        "Un confronto che collega il monitoraggio dei vulcani alla previsione delle condizioni meteorologiche.",
+        "Un confronto sulle nuove mappe sismiche e sui sistemi di allerta entrati in funzione nel 2026."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s2",
+        "s5",
+        "s8",
+        "s9",
+        "s13"
+      ],
+      "explanationZh": "文章将灾前预防、科研与灾后行动联系起来。没有讨论文物修复或天气预报，也没有说新系统已于2026年运行。"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-13-en-have-your-say-on-local-arts",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "What date is given as the end of the consultation?",
+      "options": [
+        "12 November 2026.",
+        "21 January 2027.",
+        "21 November 2026.",
+        "12 January 2027."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s3"
+      ],
+      "explanationZh": "s3明确给出结束日期为2027年1月21日，不是启动日期。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Which activity is included in the proposals?",
+      "options": [
+        "Moving local arts into larger centres.",
+        "Replacing libraries with art galleries.",
+        "Helping artists show their work.",
+        "Limiting support to museum collections."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s5",
+        "s6"
+      ],
+      "explanationZh": "s6提到帮助展示作品；s5支持本地活动，没有要求集中迁移。"
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": "What can readers conclude about the new policy?",
+      "options": [
+        "All its changes started in 2024.",
+        "Its actions apply only to libraries.",
+        "Its plans have already been completed.",
+        "Its proposed actions are open to comment."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s2",
+        "s3",
+        "s10"
+      ],
+      "explanationZh": "公众仍可就拟议行动发表意见；2024年是更大计划启动时间，不表示新政策全部完成。"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-13-de-bildungsberatung-beim-offenen-tag",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s4",
+      "start": 89,
+      "answer": "Gebäude",
+      "options": [
+        "Gebäude",
+        "Gelände",
+        "Gemälde",
+        "Geräte"
+      ],
+      "explanation": "根据中文句意还原“建筑物”，原文是Gebäude。das Gebäude；这里为单数。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s5",
+      "start": 71,
+      "answer": "Wissenschaft",
+      "options": [
+        "Wirtschaft",
+        "Gesellschaft",
+        "Wissenschaft",
+        "Landwirtschaft"
+      ],
+      "explanation": "根据中文句意还原“科学”，原文是Wissenschaft。die Wissenschaft；aus der Wissenschaft表示来自科学领域。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s7",
+      "start": 5,
+      "answer": "Mitarbeiterinnen",
+      "options": [
+        "Mitarbeiterinnen",
+        "Besucherinnen",
+        "Schülerinnen",
+        "Forscherinnen"
+      ],
+      "explanation": "根据中文句意还原“女工作人员”，原文是Mitarbeiterinnen。复数；单数die Mitarbeiterin。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s9",
+      "start": 42,
+      "answer": "Bildungswegen",
+      "options": [
+        "Schulbüchern",
+        "Bildungswegen",
+        "Prüfungsnoten",
+        "Ferienterminen"
+      ],
+      "explanation": "根据中文句意还原“教育途径”，原文是Bildungswegen。复数第三格，原形复数为Bildungswege；zu后接第三格。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s10",
+      "start": 49,
+      "answer": "Unterstützung",
+      "options": [
+        "Unterhaltung",
+        "Unterkunft",
+        "Untersuchung",
+        "Unterstützung"
+      ],
+      "explanation": "根据中文句意还原“支持”，原文是Unterstützung。die Unterstützung；这里为抽象名词。"
+    }
+  ]
+}

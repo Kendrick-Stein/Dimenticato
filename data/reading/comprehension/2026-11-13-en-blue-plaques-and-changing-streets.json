@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-13-en-blue-plaques-and-changing-streets",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "cause",
+      "prompt": "Why could some historical stories not qualify under the previous rules?",
+      "options": [
+        "The connected buildings had changed too much or disappeared.",
+        "The public had to nominate groups rather than individuals.",
+        "The national scheme accepted workplaces but excluded homes.",
+        "The people involved had to have lived in London."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s5",
+        "s6"
+      ],
+      "explanationZh": "此前要求建筑仍在且可辨认，因此拆除或变化过大成为障碍。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "What condition applies to a group being honoured?",
+      "options": [
+        "It must still be working in its original building.",
+        "It must have received a community grant this year.",
+        "It must have started twenty years ago or earlier and stopped operating.",
+        "It must have worked in both Plymouth and Liverpool."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s10"
+      ],
+      "explanationZh": "s10同时给出成立至少二十年和不再运作两个条件。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "How are the two schemes organised?",
+      "options": [
+        "English Heritage runs both, with local councils choosing sites.",
+        "Historic England runs the national one; English Heritage runs London’s.",
+        "Community groups run the national one; Historic England runs London’s.",
+        "The culture department runs London’s; English Heritage runs the national one."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s11"
+      ],
+      "explanationZh": "s11明确区分两个机构及其对应计划。"
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": "What does the rule change mean for a redeveloped site?",
+      "options": [
+        "It will receive a plaque before the application deadline.",
+        "It can qualify without a connection to a historical person.",
+        "It receives priority over buildings that still look the same.",
+        "It is no longer excluded solely because its building was replaced."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s3",
+        "s7",
+        "s8",
+        "s9"
+      ],
+      "explanationZh": "建筑被替代不再单独导致排除，但贡献、地点联系等其他条件仍存在，也不保证获牌或优先。"
+    }
+  ]
+}

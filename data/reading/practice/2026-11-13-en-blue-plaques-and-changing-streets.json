@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-13-en-blue-plaques-and-changing-streets",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "p1",
+      "sentenceId": "s3",
+      "start": 85,
+      "answer": "replaced",
+      "options": [
+        "replacing",
+        "replace",
+        "replaced",
+        "replacement"
+      ],
+      "explanation": "have been后需过去分词replaced，与changed并列构成被动结构，表示建筑被替代。"
+    },
+    {
+      "id": "p2",
+      "sentenceId": "s5",
+      "start": 61,
+      "answer": "recognisable",
+      "options": [
+        "recognisable",
+        "recognising",
+        "recognises",
+        "recognition"
+      ],
+      "explanation": "be后用形容词recognisable，表示建筑仍可辨认；recognition为名词。"
+    },
+    {
+      "id": "p3",
+      "sentenceId": "s8",
+      "start": 85,
+      "answer": "contribution",
+      "options": [
+        "contribute",
+        "contributing",
+        "contributed",
+        "contribution"
+      ],
+      "explanation": "an exceptional后接单数名词contribution；make a contribution to表示对……作出贡献。"
+    },
+    {
+      "id": "p4",
+      "sentenceId": "s13",
+      "start": 93,
+      "answer": "grants",
+      "options": [
+        "debts",
+        "grants",
+        "fines",
+        "tickets"
+      ],
+      "explanation": "grants是资助金，文中指给予社区团体的支持，不是债务、罚款或门票。"
+    },
+    {
+      "id": "p5",
+      "sentenceId": "s15",
+      "start": 121,
+      "answer": "unveiled",
+      "options": [
+        "unveiling",
+        "unveil",
+        "unveiled",
+        "unveils"
+      ],
+      "explanation": "be后接过去分词unveiled，意为被揭幕；are due to be unveiled表示预计揭幕。"
+    }
+  ]
+}

@@ -1,0 +1,350 @@
+{
+  "schema": 1,
+  "id": "2026-11-13-en-blue-plaques-and-changing-streets",
+  "storyId": "dcms-blue-plaque-criteria-2026-11-12",
+  "lang": "en",
+  "date": "2026-11-13",
+  "category": "culture",
+  "topics": [
+    "文化参与",
+    "公共生活"
+  ],
+  "title": "Blue plaques and changing streets",
+  "titleZh": "街道变了，人物的故事仍可被纪念",
+  "summaryZh": "英格兰放宽蓝色纪念牌规则：与历史人物有关的建筑即使已被改建或替代，也不再因此自动失去资格。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：通过关系从句、被动语态及因果对比解释纪念规则，政策与文化词汇配中文释义。不是官方分级。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Department for Digital, Culture, Media and Sport",
+    "author": "Department for Digital, Culture, Media and Sport",
+    "title": "Major changes to Blue Plaque schemes will see more of England’s ‘hidden heroes’ celebrated",
+    "url": "https://www.gov.uk/government/news/major-changes-to-blue-plaque-schemes-will-see-more-of-englands-hidden-heroes-celebrated",
+    "lang": "en",
+    "publishedAt": "2026-11-12"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. Department for Digital, Culture, Media and Sport; original publication 12 November 2026; source linked above.",
+  "adaptation": "2026-11-13整理：依据机构英文新闻稿同语言分级改写，添加中文翻译、词义与原创练习；不是原文、官方课程或机构认可的材料。仅使用机构叙述，不转载任何引语、图片、标志或其他第三方材料。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "England’s streets change over time, but the people connected with them can still deserve to be remembered.",
+      "zh": "英格兰的街道随时间变化，但与之相关的人物仍可能值得纪念。",
+      "glosses": [
+        {
+          "surface": "remembered",
+          "lemma": "remember",
+          "zh": "被记住；被纪念"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "On 12 November 2026, the government announced changes to the National and Greater London Blue Plaque schemes.",
+      "zh": "2026年11月12日，政府宣布调整全国和大伦敦的蓝色纪念牌计划。",
+      "glosses": [
+        {
+          "surface": "schemes",
+          "lemma": "scheme",
+          "zh": "计划；项目"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "The updated rules allow plaques on buildings that have been substantially changed or replaced since a historical person or group was connected with them.",
+      "zh": "更新后的规则允许在与某历史人物或团体有关联之后被大幅改建或替代的建筑上设置纪念牌。",
+      "glosses": [
+        {
+          "surface": "replaced",
+          "lemma": "replace",
+          "zh": "被替代"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "The places involved can include homes, shops, workplaces, community buildings and streets.",
+      "zh": "涉及的场所可以包括住宅、商店、工作场所、社区建筑和街道。",
+      "glosses": [
+        {
+          "surface": "workplaces",
+          "lemma": "workplace",
+          "zh": "工作场所"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Previously, the building had to remain standing and still be recognisable as the place associated with the person or group.",
+      "zh": "此前，建筑必须仍然存在，并仍可被辨认为与该人物或团体有关的场所。",
+      "glosses": [
+        {
+          "surface": "recognisable",
+          "lemma": "recognisable",
+          "zh": "可以辨认的"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "This requirement excluded stories linked to places such as demolished homes, former factories and lost music venues.",
+      "zh": "这一要求使与已拆住宅、旧工厂或已消失音乐场所相关的故事无法入选。",
+      "glosses": [
+        {
+          "surface": "requirement",
+          "lemma": "requirement",
+          "zh": "要求"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Removing that barrier is intended to let the schemes represent a wider range of people, places and histories.",
+      "zh": "取消这一障碍旨在让计划呈现更广泛的人物、地点和历史。",
+      "glosses": [
+        {
+          "surface": "barrier",
+          "lemma": "barrier",
+          "zh": "障碍"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Other requirements remain important: a person or group must have made an exceptional contribution to their field or significantly improved human welfare or happiness.",
+      "zh": "其他要求仍然重要：人物或团体必须对其领域作出杰出贡献，或显著改善人类福祉或幸福。",
+      "glosses": [
+        {
+          "surface": "contribution",
+          "lemma": "contribution",
+          "zh": "贡献"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "The site must have a strong connection with the person, who must have been dead for at least twenty years.",
+      "zh": "地点必须与该人物有紧密联系，且该人物必须已经去世至少二十年。",
+      "glosses": [
+        {
+          "surface": "connection",
+          "lemma": "connection",
+          "zh": "联系"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "For a group, it must have been formed at least twenty years ago and must no longer be operating.",
+      "zh": "对于团体，其成立时间必须至少为二十年前，并且已不再运作。",
+      "glosses": [
+        {
+          "surface": "operating",
+          "lemma": "operate",
+          "zh": "运作"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Historic England runs the national scheme on behalf of the culture department, while English Heritage runs the London scheme.",
+      "zh": "历史英格兰代表文化部门运营全国计划，而英国遗产组织运营伦敦计划。",
+      "glosses": [
+        {
+          "surface": "behalf",
+          "lemma": "behalf",
+          "zh": "代表；利益"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "The national scheme began in 2023 and has placed twelve plaques in locations stretching from Plymouth to Liverpool.",
+      "zh": "全国计划于2023年启动，已在从普利茅斯到利物浦的不同地点设置十二块纪念牌。",
+      "glosses": [
+        {
+          "surface": "locations",
+          "lemma": "location",
+          "zh": "地点"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "The department says £100,000 has been provided this year to support the programme, including grants for community groups researching nominations.",
+      "zh": "该部门表示，今年已提供十万英镑支持该计划，包括资助研究提名的社区团体。",
+      "glosses": [
+        {
+          "surface": "grants",
+          "lemma": "grant",
+          "zh": "资助金"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "This work aims to address gaps in whose stories are represented and to improve the geographical reach of the scheme.",
+      "zh": "这项工作旨在弥补被呈现人物故事的不足，并扩大计划的地域覆盖。",
+      "glosses": [
+        {
+          "surface": "geographical",
+          "lemma": "geographical",
+          "zh": "地理的；地域的"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "Applications for both schemes are open until 13 January 2027, and plaques resulting from these nominations are due to be unveiled in 2027.",
+      "zh": "两个计划的申请均开放至2027年1月13日，这些提名所产生的纪念牌计划于2027年揭幕。",
+      "glosses": [
+        {
+          "surface": "unveiled",
+          "lemma": "unveil",
+          "zh": "揭幕"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "remembered",
+        "lemma": "remember",
+        "zh": "被记住；被纪念",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "schemes",
+        "lemma": "scheme",
+        "zh": "计划；项目",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "replaced",
+        "lemma": "replace",
+        "zh": "被替代",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "workplaces",
+        "lemma": "workplace",
+        "zh": "工作场所",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "recognisable",
+        "lemma": "recognisable",
+        "zh": "可以辨认的",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "requirement",
+        "lemma": "requirement",
+        "zh": "要求",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "barrier",
+        "lemma": "barrier",
+        "zh": "障碍",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "contribution",
+        "lemma": "contribution",
+        "zh": "贡献",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "connection",
+        "lemma": "connection",
+        "zh": "联系",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "operating",
+        "lemma": "operate",
+        "zh": "运作",
+        "sentenceId": "s10"
+      },
+      {
+        "text": "behalf",
+        "lemma": "behalf",
+        "zh": "代表；利益",
+        "sentenceId": "s11"
+      },
+      {
+        "text": "locations",
+        "lemma": "location",
+        "zh": "地点",
+        "sentenceId": "s12"
+      },
+      {
+        "text": "grants",
+        "lemma": "grant",
+        "zh": "资助金",
+        "sentenceId": "s13"
+      },
+      {
+        "text": "geographical",
+        "lemma": "geographical",
+        "zh": "地理的；地域的",
+        "sentenceId": "s14"
+      },
+      {
+        "text": "unveiled",
+        "lemma": "unveil",
+        "zh": "揭幕",
+        "sentenceId": "s15"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "on behalf of",
+        "zh": "代表……",
+        "sentenceId": "s11"
+      },
+      {
+        "text": "at least",
+        "zh": "至少",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "are due to",
+        "zh": "预计将；按计划将",
+        "sentenceId": "s15"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s3",
+        "note": "that引导关系从句修饰buildings；have been changed/replaced是现在完成时被动语态。"
+      },
+      {
+        "sentenceId": "s15",
+        "note": "are due to表达计划时间，不是已经完成。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Which person connected with your town would you nominate, and why?",
+        "zh": "你会提名哪位与你的城市有关的人物？为什么？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "One change I would suggest is …",
+        "zh": "我会建议的一项改变是……",
+        "note": "原创讨论表达，would使建议语气较委婉。"
+      }
+    ]
+  }
+}

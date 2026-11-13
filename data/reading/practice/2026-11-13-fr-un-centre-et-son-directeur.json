@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-13-fr-un-centre-et-son-directeur",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 60,
+      "answer": "expérience",
+      "options": [
+        "distance",
+        "expérience",
+        "patience",
+        "présence"
+      ],
+      "explanation": "恢复原文expérience，指二十多年的工作经验；d’后接元音开头的单数名词。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s3",
+      "start": 47,
+      "answer": "carrière",
+      "options": [
+        "carrière",
+        "frontière",
+        "matière",
+        "lumière"
+      ],
+      "explanation": "恢复原文carrière，commencer sa carrière表示开始职业生涯。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s5",
+      "start": 40,
+      "answer": "sites",
+      "options": [
+        "livres",
+        "pays",
+        "sites",
+        "cours"
+      ],
+      "explanation": "恢复原文sites，指研究中心分布的四个工作地点，quatre后为复数。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s8",
+      "start": 49,
+      "answer": "sols",
+      "options": [
+        "murs",
+        "sols",
+        "ponts",
+        "ports"
+      ],
+      "explanation": "恢复原文sols，指研究的土壤，des是de与les的缩合。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s11",
+      "start": 71,
+      "answer": "liens",
+      "options": [
+        "prix",
+        "bruits",
+        "choix",
+        "liens"
+      ],
+      "explanation": "恢复原文liens，renforcer les liens意为加强联系，les后为复数。"
+    }
+  ]
+}

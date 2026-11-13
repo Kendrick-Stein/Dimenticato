@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-13-en-have-your-say-on-local-arts",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "p1",
+      "sentenceId": "s2",
+      "start": 54,
+      "answer": "views",
+      "options": [
+        "views",
+        "tickets",
+        "rooms",
+        "prices"
+      ],
+      "explanation": "views在这里是可数复数名词，指对计划的看法，与hear搭配。"
+    },
+    {
+      "id": "p2",
+      "sentenceId": "s3",
+      "start": 45,
+      "answer": "opinions",
+      "options": [
+        "addresses",
+        "opinions",
+        "orders",
+        "payments"
+      ],
+      "explanation": "opinions指意见，give their opinions表示提出意见，而不是下单或付款。"
+    },
+    {
+      "id": "p3",
+      "sentenceId": "s4",
+      "start": 36,
+      "answer": "opportunities",
+      "options": [
+        "opportunities",
+        "instructions",
+        "instruments",
+        "buildings"
+      ],
+      "explanation": "opportunities是opportunity的复数，表示人们可以参与和发展的机会。"
+    },
+    {
+      "id": "p4",
+      "sentenceId": "s6",
+      "start": 53,
+      "answer": "talent",
+      "options": [
+        "rent",
+        "weather",
+        "talent",
+        "traffic"
+      ],
+      "explanation": "talent指才能，artistic talent是艺术才能，不是租金或交通。"
+    },
+    {
+      "id": "p5",
+      "sentenceId": "s9",
+      "start": 48,
+      "answer": "libraries",
+      "options": [
+        "factories",
+        "hospitals",
+        "stations",
+        "libraries"
+      ],
+      "explanation": "libraries是library的复数，public libraries意为公共图书馆。"
+    }
+  ]
+}

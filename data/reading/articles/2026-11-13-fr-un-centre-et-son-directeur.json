@@ -1,0 +1,278 @@
+{
+  "schema": 1,
+  "id": "2026-11-13-fr-un-centre-et-son-directeur",
+  "storyId": "inrae-davy-liger-hdf-2026-11-09",
+  "lang": "fr",
+  "date": "2026-11-13",
+  "contentType": "native-adaptation",
+  "category": "work-economy",
+  "topics": [
+    "职业经历",
+    "研究机构"
+  ],
+  "title": "Un centre de recherche et son nouveau directeur",
+  "titleZh": "研究中心与新负责人",
+  "summaryZh": "从职业经历到团队合作，认识法国北部一个农业与环境研究中心。",
+  "level": "A2",
+  "levelReason": "编辑估计A2基础档：以具体职业、地点、人数和职责为主，短句与现在时为主；历史经历用叙事现在时，机构及研究词汇配逐句中文和注释。",
+  "source": {
+    "name": "INRAE — Communication Hauts-de-France",
+    "title": "Davy Liger, nouveau président du Centre INRAE Hauts-de-France",
+    "url": "https://www.inrae.fr/actualites/davy-liger-nouveau-president-du-centre-inrae-hauts-france",
+    "publishedAt": "2026-11-09",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "Licence Ouverte / Open Licence Etalab 2.0",
+    "url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0"
+  },
+  "attribution": "原作：Aline Waquet，Communication INRAE Hauts-de-France，2026-11-09。机构文本依据INRAE使用条款（https://www.inrae.fr/conditions-generales-dutilisation）采用Licence Ouverte Etalab 2.0；保留来源、日期及改写说明，无官方认可关系。",
+  "adaptation": "法语同语言教学简写，非原文转载；增加中文对照、词义和原创练习。删去前任姓名、专业履历细节和人物直接引语，不使用照片、标识、媒体或第三方文字。历史经历以叙事现在时呈现；任职日期与原报道日期分别保留。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Depuis le 1er novembre 2026, Davy Liger dirige le Centre INRAE Hauts-de-France, dans le nord de la France.",
+      "zh": "自2026年11月1日起，达维·利热负责法国北部的INRAE上法兰西研究中心。",
+      "glosses": [
+        {
+          "surface": "dirige",
+          "lemma": "diriger",
+          "zh": "负责、管理"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Il est nommé pour quatre ans et possède plus de vingt ans d’expérience dans les services de l’État.",
+      "zh": "他的任期为四年，在国家公共部门拥有二十多年的工作经验。",
+      "glosses": [
+        {
+          "surface": "expérience",
+          "lemma": "expérience",
+          "zh": "经验"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Il est vétérinaire de formation et commence sa carrière dans le Loiret en 2004.",
+      "zh": "他受过兽医专业训练，并于2004年在卢瓦雷省开始职业生涯。",
+      "glosses": [
+        {
+          "surface": "carrière",
+          "lemma": "carrière",
+          "zh": "职业生涯"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Plus tard, il travaille au ministère de l’Agriculture, puis à Bruxelles, auprès de l’Union européenne.",
+      "zh": "后来，他在农业部工作，之后到布鲁塞尔从事法国驻欧盟相关工作。",
+      "glosses": [
+        {
+          "surface": "travaille",
+          "lemma": "travailler",
+          "zh": "工作"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Son nouveau centre se trouve sur quatre sites : Villeneuve-d’Ascq, Arras, Estrées-Mons et Laon.",
+      "zh": "他现在负责的中心分布在四个地点：阿斯克新城、阿拉斯、埃斯特雷蒙和拉昂。",
+      "glosses": [
+        {
+          "surface": "sites",
+          "lemma": "site",
+          "zh": "地点、工作基地"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Les équipes de recherche réunissent près de cent cinquante personnes.",
+      "zh": "研究团队共有近一百五十人。",
+      "glosses": [
+        {
+          "surface": "équipes",
+          "lemma": "équipe",
+          "zh": "团队"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Le centre dispose aussi d’un domaine de cent soixante-six hectares pour les expériences.",
+      "zh": "中心还拥有一百六十六公顷的试验用地。",
+      "glosses": [
+        {
+          "surface": "hectares",
+          "lemma": "hectare",
+          "zh": "公顷"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Les chercheurs étudient notamment la qualité des sols et les systèmes de grandes cultures.",
+      "zh": "研究人员尤其研究土壤质量和大田作物种植系统。",
+      "glosses": [
+        {
+          "surface": "sols",
+          "lemma": "sol",
+          "zh": "土壤"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Ils travaillent également sur l’hygiène et sur des méthodes de production alimentaire plus respectueuses de l’environnement.",
+      "zh": "他们还研究卫生问题，以及更环保的食品生产方法。",
+      "glosses": [
+        {
+          "surface": "environnement",
+          "lemma": "environnement",
+          "zh": "环境"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Dans cette région, l’agriculture et les industries alimentaires occupent une place importante.",
+      "zh": "在这个地区，农业和食品工业占有重要地位。",
+      "glosses": [
+        {
+          "surface": "région",
+          "lemma": "région",
+          "zh": "地区"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Davy Liger doit accompagner les projets scientifiques et renforcer les liens avec les partenaires locaux.",
+      "zh": "达维·利热的职责包括支持科研项目，并加强与当地合作伙伴的联系。",
+      "glosses": [
+        {
+          "surface": "liens",
+          "lemma": "lien",
+          "zh": "联系"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Ces partenaires comprennent des universités, des institutions, des entreprises et des acteurs du monde agricole.",
+      "zh": "这些合作伙伴包括大学、机构、企业以及农业领域的相关参与者。",
+      "glosses": [
+        {
+          "surface": "partenaires",
+          "lemma": "partenaire",
+          "zh": "合作伙伴"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "expérience",
+        "lemma": "expérience",
+        "zh": "经验",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "carrière",
+        "lemma": "carrière",
+        "zh": "职业生涯",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "sites",
+        "lemma": "site",
+        "zh": "地点、工作基地",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "équipes",
+        "lemma": "équipe",
+        "zh": "团队",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "sols",
+        "lemma": "sol",
+        "zh": "土壤",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "environnement",
+        "lemma": "environnement",
+        "zh": "环境",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "liens",
+        "lemma": "lien",
+        "zh": "联系",
+        "sentenceId": "s11"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "plus de vingt ans",
+        "zh": "二十多年；plus de用于数量之前",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "auprès de l’Union européenne",
+        "zh": "在欧盟方面／驻欧盟；这里指职业工作背景",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "renforcer les liens",
+        "zh": "加强联系",
+        "sentenceId": "s11"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s2",
+        "note": "être nommé pour + 时长：被任命，任期为……；expérience在这里表示工作经验。"
+      },
+      {
+        "sentenceId": "s3",
+        "note": "叙事现在时commence讲述2004年的经历，不表示事情正在发生。"
+      },
+      {
+        "sentenceId": "s11",
+        "note": "doit + 动词原形在这里说明岗位职责，而不是已经完成的成果。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quel domaine de recherche vous intéresse le plus dans ce centre ? Pourquoi ?",
+        "zh": "中心的哪个研究领域最让你感兴趣？为什么？"
+      },
+      {
+        "text": "Avec quels partenaires travaillez-vous ou étudiez-vous ?",
+        "zh": "你与哪些合作伙伴一起工作或学习？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Je travaille dans le domaine de…",
+        "zh": "我在……领域工作。",
+        "note": "教学补充，可替换为自己的领域。"
+      },
+      {
+        "text": "J’ai de l’expérience dans…",
+        "zh": "我在……方面有经验。",
+        "note": "教学补充，介绍工作或学习经历。"
+      }
+    ]
+  }
+}
