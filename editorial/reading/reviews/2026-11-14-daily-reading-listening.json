@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "date": "2026-11-14",
+  "scope": "One French native-source B1 adaptation and one German outbound-only listening guide. No historical content, code or learning record changes.",
+  "readings": [
+    {
+      "id": "2026-11-14-fr-partager-la-recherche",
+      "storyId": "inrae-javier-science-ouverte-2026-11-12",
+      "source": {
+        "name": "INRAE",
+        "title": "Javier Belinchon-Moreno lauréat du Prix Science Ouverte de la thèse 2026, pour ses travaux sur le melon",
+        "url": "https://www.inrae.fr/actualites/javier-belinchon-moreno-prix-science-ouverte-these-2026",
+        "publishedAt": "2026-11-12",
+        "lang": "fr"
+      },
+      "level": "B1",
+      "words": 290,
+      "practice": 5,
+      "comprehension": 4,
+      "license": {
+        "name": "Licence Ouverte Etalab 2.0",
+        "url": "https://www.etalab.gouv.fr/licence-ouverte-open-licence/"
+      },
+      "thirdPartyExclusions": "No photographs, logos, linked thesis or partner publications used.",
+      "hashes": {
+        "article": "6b5100cc035df562ee1a494bc331243c5420a8938afe5aea744b72b019753105",
+        "practice": "e3b1e155d2aba89587b6d605efc56e16282f620c26812d9a261c96f3eac78a5e",
+        "comprehension": "4442b5c028409045e16e7a6c1af1d2f6bbf05f9a2dc9a213d4e11845fb4ce8c3"
+      }
+    }
+  ],
+  "listening": [
+    {
+      "id": "de-logo-2026-11-13",
+      "url": "https://www.logo.de/logo-vom-freitag-13-november-2026-102.html",
+      "sourcePublishedAt": "2026-11-13",
+      "evidenceStatus": "metadata_only",
+      "questions": 0,
+      "playback": "Cloud browser muted timer advanced 00:09 to 00:14 of 08:18; no audio-quality or worldwide availability claim.",
+      "rights": "Outbound official link with original short guide and thematic vocabulary only; no media, transcript or publisher exercise copied.",
+      "sha256": "d57445462256967abc2d581ce3680c3a55baa83e14e99afa4a243da6c0343b28"
+    }
+  ],
+  "independentReview": {
+    "blindFirstAnswers": [
+      1,
+      2,
+      0,
+      3
+    ],
+    "revisedBlindAnswers": [
+      1,
+      2,
+      0,
+      3
+    ],
+    "revisions": "Improved q1 and q4 distractors; dispersed cloze answer positions. Final article, translation, facts, rights, level and exercise keys approved."
+  },
+  "dedup": {
+    "baseline": "9cc46d1c6c1db66fbb8f84499e158c3f7545da48",
+    "openPRs": 0,
+    "previousBatchRecoveredFiles": 126,
+    "previousBatchIdentityHits": 0,
+    "historyUncertainty": "Exact November 4–7 manifests still unavailable. These specific works were first published November 12 and 13, after the missing batches; no older-republication indication. Protected uncertain candidate write unchanged."
+  },
+  "gaps": {
+    "reading": "Only FR B1 completed. Other eleven tier/language slots absent. IT proposed trade lesson repeats October24 learning content; DE reading is recycled older work; EN leads lack verified full text.",
+    "listening": "Only DE guide completed; IT/FR/EN absent. No questions without verified full content."
+  },
+  "validation": "Content independently approved. Publication requires recorded full tests, private browser gate, expected-SHA update and exact-commit deployment verification."
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-14-fr-partager-la-recherche",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s3",
+      "start": 8,
+      "answer": "récompense",
+      "options": [
+        "interrompt",
+        "finance",
+        "récompense",
+        "critique"
+      ],
+      "explanation": "récompense 是 récompenser 的现在时第三人称单数，与 le prix 一致，表示表彰。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s3",
+      "start": 64,
+      "answer": "partage",
+      "options": [
+        "partage",
+        "refus",
+        "retrait",
+        "achat"
+      ],
+      "explanation": "partage 是阳性单数名词，le partage des données 表示数据共享，不是购买或撤回。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s4",
+      "start": 121,
+      "answer": "accessibles",
+      "options": [
+        "inutiles",
+        "inconnues",
+        "interdites",
+        "accessibles"
+      ],
+      "explanation": "accessibles 是形容词复数，与 les connaissances 一致，表示可以获取的。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s7",
+      "start": 54,
+      "answer": "diversité",
+      "options": [
+        "durée",
+        "diversité",
+        "taille",
+        "quantité"
+      ],
+      "explanation": "diversité 是阴性单数名词，指多样性，不是数量、大小或时长。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s10",
+      "start": 81,
+      "answer": "repérer",
+      "options": [
+        "effacer",
+        "réduire",
+        "repérer",
+        "cacher"
+      ],
+      "explanation": "repérer 是不定式，aide à repérer 表示有助于发现，不是消除或隐藏。"
+    }
+  ]
+}

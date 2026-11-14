@@ -2,6 +2,23 @@
   "schema": 1,
   "articles": [
     {
+      "id": "2026-11-14-fr-partager-la-recherche",
+      "lang": "fr",
+      "date": "2026-11-14",
+      "title": "Étudier le melon et partager les connaissances",
+      "titleZh": "研究甜瓜，也分享知识",
+      "summaryZh": "一项获奖博士研究既探索甜瓜的抗性基因，也践行开放科学。读懂研究方法、具体成果与尚待实现的应用前景。",
+      "level": "B1",
+      "category": "technology",
+      "topics": [
+        "开放科学",
+        "植物研究"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-11-12",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-11-13-de-bildungsberatung-beim-offenen-tag",
       "lang": "de",
       "date": "2026-11-13",

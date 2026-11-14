@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-14-fr-partager-la-recherche",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Quels aspects du travail sont mis en relation dans le texte ?",
+      "options": [
+        "Le nombre de gènes découverts et la rapidité de la soutenance.",
+        "L’étude des résistances et l’accès aux connaissances scientifiques.",
+        "La mise en vente de variétés résistantes et le partage des bénéfices.",
+        "La comparaison des rendements et la formation des producteurs."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s1",
+        "s3",
+        "s4",
+        "s6"
+      ],
+      "explanationZh": "文章将甜瓜抗性研究与数据、知识开放相联系；没有将答辩速度、商业销售及利润分享、产量比较与生产者培训作为获奖研究的两方面。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Que représente le nombre 150 dans cette recherche ?",
+      "options": [
+        "Les gènes de résistance découverts chez chaque melon.",
+        "Les maladies auxquelles les nouvelles variétés résistent.",
+        "Les échantillons de melon étudiés par les chercheurs.",
+        "Les espèces auxquelles la méthode a déjà été appliquée."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s8"
+      ],
+      "explanationZh": "150指研究的甜瓜材料，不是基因、疾病或物种的数量。"
+    },
+    {
+      "id": "q3",
+      "kind": "cause",
+      "prompt": "Pourquoi utiliser une représentation collective plutôt qu’un seul génome de référence ?",
+      "options": [
+        "Pour mieux décrire les variations entre les melons étudiés.",
+        "Pour limiter les analyses à une seule origine géographique.",
+        "Pour éviter de comparer les données des différents melons.",
+        "Pour mesurer seulement le nombre de gènes chez un melon."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s9",
+        "s10"
+      ],
+      "explanationZh": "综合表示可以比较遗传差异，突破单一参考的限制；其余选项缩小或取消这种比较。"
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": "Que peut-on conclure sur les applications de ces travaux ?",
+      "options": [
+        "Elles pourraient viser surtout à raccourcir la durée des thèses.",
+        "Elles pourraient permettre de choisir le meilleur lieu de culture.",
+        "Elles pourraient se limiter à mesurer la taille des fruits.",
+        "Elles pourraient concerner la sélection de variétés et d’autres espèces."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s11",
+        "s12",
+        "s13"
+      ],
+      "explanationZh": "第12句说明成果可能帮助培育抗病虫害品种，第13句提到方法也可能用于其他物种；其余选项同样使用可能性措辞，但其应用方向没有文本依据。"
+    }
+  ]
+}

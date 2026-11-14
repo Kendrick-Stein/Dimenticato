@@ -3,6 +3,41 @@
   "policy": "Outbound official playback links only. No copied media, thumbnails or full transcripts. Original Chinese guides and questions. Playback itself has not been tested; verified means official page and content evidence were retrieved.",
   "entries": [
     {
+      "id": "de-logo-2026-11-13",
+      "lang": "de",
+      "title": "logo! vom Freitag, 13. November 2026",
+      "titleZh": "11月13日儿童新闻：情绪与冬季健康",
+      "provider": "ZDF logo!",
+      "url": "https://www.logo.de/logo-vom-freitag-13-november-2026-102.html",
+      "level": "未分级",
+      "levelBasis": "editorial",
+      "levelLabel": "母语儿童内容 · 非 CEFR 分级",
+      "kind": "news",
+      "addedAt": "2026-11-14",
+      "sourcePublishedAt": "2026-11-13",
+      "duration": "8分18秒",
+      "evidenceStatus": "metadata_only",
+      "summaryZh": "从原站完整节目入口选听情绪、冬季健康等话题。",
+      "guideZh": "先挑选一个感兴趣的话题，记录听清的关键词；第二遍留意节目怎样提出问题和举例。尝试用一句德语概括，不必一次听懂全部内容。原站可能因所在地限制播放。",
+      "verificationZh": "已核对官方节目日期与主题。云端浏览器播放器静音播放，计时由00:09推进至00:14，总时长08:18；本次未听音，未核验音质，也不证明所有地区均可播放。没有完整对应文字稿，仅提供原站导听，不设理解题；不转载音视频或字幕。",
+      "vocabularyLabel": "主题预习词（不保证全部出现在音频中）",
+      "vocabulary": [
+        {
+          "text": "die Wut",
+          "zh": "愤怒"
+        },
+        {
+          "text": "der Winter",
+          "zh": "冬季"
+        },
+        {
+          "text": "die Erkältung",
+          "zh": "感冒"
+        }
+      ],
+      "questions": []
+    },
+    {
       "id": "it-rai-hotel-a2",
       "title": "Le parole dell'italiano: prenotare l'albergo, da oggi a mercoledì",
       "titleZh": "预订酒店：房型与入住时间",

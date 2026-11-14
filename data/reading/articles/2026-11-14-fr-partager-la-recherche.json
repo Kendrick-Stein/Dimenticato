@@ -1,0 +1,216 @@
+{
+  "schema": 1,
+  "id": "2026-11-14-fr-partager-la-recherche",
+  "storyId": "inrae-javier-science-ouverte-2026-11-12",
+  "lang": "fr",
+  "date": "2026-11-14",
+  "title": "Étudier le melon et partager les connaissances",
+  "titleZh": "研究甜瓜，也分享知识",
+  "summaryZh": "一项获奖博士研究既探索甜瓜的抗性基因，也践行开放科学。读懂研究方法、具体成果与尚待实现的应用前景。",
+  "level": "B1",
+  "levelReason": "编辑估计：以连接明确的说明文介绍开放科学与研究步骤，解释少量专业词，使用过去时、比较及条件式区分成果和前景；非认证分级。",
+  "category": "technology",
+  "topics": [
+    "开放科学",
+    "植物研究"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "INRAE",
+    "title": "Javier Belinchon-Moreno lauréat du Prix Science Ouverte de la thèse 2026, pour ses travaux sur le melon",
+    "url": "https://www.inrae.fr/actualites/javier-belinchon-moreno-prix-science-ouverte-these-2026",
+    "publishedAt": "2026-11-12",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "Licence Ouverte Etalab 2.0",
+    "url": "https://www.etalab.gouv.fr/licence-ouverte-open-licence/"
+  },
+  "attribution": "INRAE，Nathalie Mansion（Communication，Département BAP），2026-11-12，Javier Belinchon-Moreno lauréat du Prix Science Ouverte de la thèse 2026, pour ses travaux sur le melon。来源：https://www.inrae.fr/actualites/javier-belinchon-moreno-prix-science-ouverte-these-2026。机构公共正文依据 Licence Ouverte Etalab 2.0 使用；不使用蒙彼利埃大学照片、标志、链接论文或其他第三方材料。",
+  "adaptation": "本站将法语机构原文同语言简化改写，添加中文翻译、词义和原创教学练习；非官方原文或官方分级，不代表来源机构认可。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Le 9 novembre 2026, Javier Belinchon-Moreno a reçu un prix national pour une thèse consacrée au melon et à sa résistance aux maladies.",
+      "zh": "2026年11月9日，哈维尔·贝林琼-莫雷诺因一篇研究甜瓜及其抗病能力的博士论文获得了全国性奖项。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "INRAE a présenté cette distinction dans un article publié le 12 novembre, en mettant en avant la qualité scientifique du travail et son ouverture.",
+      "zh": "法国国家农业、食品与环境研究院在11月12日发表的文章中介绍了这一奖项，强调了研究的科学质量与开放性。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Le prix récompense notamment la transparence des recherches, le partage des données et la possibilité de réutiliser les résultats scientifiques.",
+      "zh": "该奖项特别表彰研究的透明性、数据共享，以及科学成果能够被重复利用的特点。",
+      "glosses": [
+        {
+          "surface": "récompense",
+          "lemma": "récompenser",
+          "zh": "表彰；奖励"
+        },
+        {
+          "surface": "partage",
+          "lemma": "partage",
+          "zh": "共享"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "La science ouverte ne consiste donc pas seulement à annoncer une découverte : elle vise aussi à rendre les connaissances accessibles à d’autres personnes.",
+      "zh": "因此，开放科学不只是宣布一项发现，也致力于让其他人能够获取知识。",
+      "glosses": [
+        {
+          "surface": "accessibles",
+          "lemma": "accessible",
+          "zh": "可获取的"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Le chercheur a soutenu sa thèse en 2025 à l’université d’Avignon, après des travaux menés dans deux unités d’INRAE, à Avignon et à Évry.",
+      "zh": "这位研究者在位于阿维尼翁和埃夫里的两个研究院单位开展研究后，于2025年在阿维尼翁大学完成了博士论文答辩。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Avec ses collègues, il s’est intéressé à une famille de gènes appelés NLR, qui participent à la défense des plantes contre les agents pathogènes.",
+      "zh": "他与同事研究了一类名为NLR的基因，它们参与植物抵御病原体的防御过程。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Chez le melon, ces gènes sont peu nombreux, mais leur diversité reste encore mal connue : les chercheurs ont voulu mieux la décrire.",
+      "zh": "甜瓜的这类基因数量不多，但人们仍未充分了解其多样性，因此研究者希望对其进行更好的描述。",
+      "glosses": [
+        {
+          "surface": "diversité",
+          "lemma": "diversité",
+          "zh": "多样性"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Ils ont étudié 150 échantillons de melon d’origines géographiques et de types botaniques variés, grâce à une méthode qui cible certaines régions du génome.",
+      "zh": "他们采用针对基因组特定区域的方法，研究了150份地理来源和植物学类型各不相同的甜瓜材料。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "À partir de ces données, ils ont construit une représentation collective qui permet de comparer les différences génétiques entre les melons étudiés.",
+      "zh": "他们利用这些数据构建了一种综合表示方式，以比较所研究甜瓜之间的遗传差异。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Cette représentation dépasse les limites d’un seul génome de référence et aide à repérer davantage de variations intéressantes pour la recherche.",
+      "zh": "这种表示方式突破了单一参考基因组的局限，有助于发现更多具有研究价值的变异。",
+      "glosses": [
+        {
+          "surface": "repérer",
+          "lemma": "repérer",
+          "zh": "发现；识别"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Parmi les variantes de gènes identifiées par les analyses d’association, un quart correspond à des variantes de résistance.",
+      "zh": "在关联分析识别出的基因变体中，四分之一属于抗性变体。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Ces résultats pourraient aider à développer des variétés capables de résister à plusieurs maladies et ravageurs, sans signifier que ces variétés existent déjà.",
+      "zh": "这些成果可能有助于培育能够抵抗多种病虫害的品种，但并不意味着这样的品种已经存在。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "Les méthodes développées pour le melon pourraient également servir à étudier d’autres espèces et d’autres caractères, selon les perspectives présentées par INRAE.",
+      "zh": "根据研究院介绍的前景，为甜瓜开发的方法还可能用于研究其他物种和其他性状。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "récompense",
+        "lemma": "récompenser",
+        "zh": "表彰；奖励",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "partage",
+        "lemma": "partage",
+        "zh": "共享",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "accessibles",
+        "lemma": "accessible",
+        "zh": "可获取的",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "diversité",
+        "lemma": "diversité",
+        "zh": "多样性",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "repérer",
+        "lemma": "repérer",
+        "zh": "发现；识别",
+        "sentenceId": "s10"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "en mettant en avant",
+        "zh": "通过突出强调",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "À partir de ces données",
+        "zh": "根据这些数据",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "sans signifier que",
+        "zh": "并不意味着",
+        "sentenceId": "s12"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s12",
+        "note": "pourraient 是 pouvoir 的条件式，表示可能的应用前景；sans signifier que 明确排除把未来可能性误读为既成事实。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Pourquoi est-il utile de partager les données d’une recherche ?",
+        "zh": "共享研究数据为什么有用？"
+      },
+      {
+        "text": "Comment expliqueriez-vous la différence entre un résultat et une application possible ?",
+        "zh": "你会如何解释研究成果与可能应用之间的区别？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Ces résultats pourraient aider à…",
+        "zh": "这些成果可能有助于……",
+        "note": "pourraient + 不定式表示可能性，不把研究前景说成已经实现。"
+      }
+    ]
+  }
+}
