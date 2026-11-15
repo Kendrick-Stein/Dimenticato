@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-15-fr-prevoir-la-mousse",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Quelle évolution de la méthode de recherche le texte présente-t-il ?",
+      "options": [
+        "Remplacer les expériences par une comparaison des produits vendus.",
+        "Prévoir la mousse uniquement à partir de sa composition chimique.",
+        "Combiner des mesures liées au temps et une recherche d’équation.",
+        "Choisir une équation stable puis réduire le nombre de molécules."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s5",
+        "s6",
+        "s8",
+        "s9",
+        "s10"
+      ],
+      "explanationZh": "新方法考虑动态性质，将实验数据转为无量纲数，再用人工智能寻找方程；没有取消实验，也不只考虑成分。"
+    },
+    {
+      "id": "q2",
+      "kind": "cause",
+      "prompt": "Pourquoi les chercheurs ne se limitent-ils pas aux mesures prises dans un système stable ?",
+      "options": [
+        "La formation rapide des bulles rend importants les déplacements des molécules.",
+        "Le système stable empêche de connaître la nature des molécules utilisées.",
+        "Les bulles se forment seulement après la stabilisation complète du liquide.",
+        "La concentration des molécules reste identique dans tous les procédés."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s5",
+        "s6"
+      ],
+      "explanationZh": "气泡形成很快，因此分子移动的动态过程重要；稳定状态测量本身不代表形成气泡时的情况。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Comment les relations obtenues sont-elles utilisées dans les essais décrits ?",
+      "options": [
+        "Une relation est nécessaire pour chaque tensioactif et chaque expérience.",
+        "Une relation commune remplace la distinction entre les deux procédés.",
+        "Une relation sert seulement aux molécules déjà utilisées dans les anciens modèles.",
+        "Une relation par procédé couvre les différents tensioactifs étudiés."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s11"
+      ],
+      "explanationZh": "每种工艺有一个关系式，覆盖全部受研究的表面活性剂；不是所有工艺共用一个关系式，也不是每个分子各一个。"
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": "Quelle différence le texte fait-il entre les résultats et leurs applications ?",
+      "options": [
+        "Les économies sont connues, tandis que les modèles restent à comparer.",
+        "La précision s’améliore, tandis que les économies restent une perspective.",
+        "Les essais disparaissent, tandis que les procédés restent à sélectionner.",
+        "La production augmente, tandis que les mesures restent à transformer."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s11",
+        "s12"
+      ],
+      "explanationZh": "精确度提高是研究结果，减少成本高昂试验仍属未来应用；文中没有已经量化的节约成本或生产增长。"
+    }
+  ]
+}

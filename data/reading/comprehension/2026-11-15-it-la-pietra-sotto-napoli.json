@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-15-it-la-pietra-sotto-napoli",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Quale rapporto presenta il testo?",
+      "promptZh": "文章呈现了哪一种联系？",
+      "options": [
+        "Un’eruzione antica ha lasciato materiali usati nella città, e una ricerca ne studia la storia.",
+        "Una ricerca sulle pietre di Napoli conferma che il magma proveniva da un unico serbatoio.",
+        "Le rocce di Napoli mostrano un’eruzione con più magma rispetto alle stime precedenti.",
+        "Una ricerca collega il Tufo Giallo alle costruzioni recenti, ma non a quelle romane."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s2",
+        "s4",
+        "s7",
+        "s8",
+        "s11",
+        "s12"
+      ],
+      "explanationZh": "s2、s4、s7联系喷发物、建筑使用与新研究；s8、s11–12排除更多岩浆和单一储库，s4明确罗马时代已使用。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Come hanno lavorato i ricercatori?",
+      "promptZh": "研究人员采用了怎样的工作方式？",
+      "options": [
+        "Hanno confrontato i progetti degli acquedotti con quelli delle fortificazioni.",
+        "Hanno collegato le date degli edifici ai materiali usati per costruirli.",
+        "Hanno unito ricerche precedenti e nuovi dati sulle rocce.",
+        "Hanno confrontato la forma delle strade con la posizione dei serbatoi."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s7"
+      ],
+      "explanationZh": "s7明确方法是结合多年研究与新岩石数据；其余选项虽涉及建筑或地下结构，但文中没有把它们作为本研究的方法。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Da dove veniva il magma, secondo la nuova spiegazione?",
+      "promptZh": "根据新的解释，岩浆来自哪里？",
+      "options": [
+        "Da quattro serbatoi che si sono svuotati tutti insieme.",
+        "Da almeno quattro serbatoi che si sono svuotati in successione.",
+        "Da un solo serbatoio che si è svuotato quattro volte.",
+        "Da due serbatoi grandi e da uno più piccolo."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s11",
+        "s12"
+      ],
+      "explanationZh": "至少四个不同储库先后排空；不是同时排空，也不是一个储库多次排空。"
+    }
+  ]
+}

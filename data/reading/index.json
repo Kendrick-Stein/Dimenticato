@@ -2,6 +2,73 @@
   "schema": 1,
   "articles": [
     {
+      "id": "2026-11-15-en-a-new-way-to-compare-schools",
+      "lang": "en",
+      "date": "2026-11-15",
+      "title": "A new way to compare schools",
+      "titleZh": "比较学校的新工具",
+      "summaryZh": "英格兰的新学校资料工具集中展示出勤、成绩和早餐俱乐部等信息，部分比较功能仍待扩展。",
+      "level": "A2",
+      "category": "education",
+      "topics": [
+        "比较学校的新工具"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-11-13",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-15-en-more-than-a-seat-at-the-theatre",
+      "lang": "en",
+      "date": "2026-11-15",
+      "title": "More than a seat at the theatre",
+      "titleZh": "走进剧院，也参与创作",
+      "summaryZh": "英格兰公布面向青少年的剧院合作计划，将低价票、学校巡演和创作机会结合；拨款与实施仍须经过正式审议。",
+      "level": "B1",
+      "category": "culture",
+      "topics": [
+        "走进剧院，也参与创作"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-11-13",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-15-fr-prevoir-la-mousse",
+      "lang": "fr",
+      "date": "2026-11-15",
+      "title": "Comment prévoir la quantité de mousse ?",
+      "titleZh": "如何预测泡沫的多少？",
+      "summaryZh": "从日常泡沫出发，了解研究者如何结合实验、物理分析和人工智能改进预测，并区分已验证结果与未来应用。",
+      "level": "B1",
+      "category": "technology",
+      "topics": [
+        "日常科学",
+        "人工智能"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-11-12",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-15-it-la-pietra-sotto-napoli",
+      "lang": "it",
+      "date": "2026-11-15",
+      "title": "La pietra sotto Napoli",
+      "titleZh": "那不勒斯脚下的石材",
+      "summaryZh": "古老喷发留下了建筑石材；一项新研究提出了更复杂的岩浆来源解释。",
+      "level": "A2",
+      "category": "culture",
+      "topics": [
+        "城市建筑",
+        "火山岩",
+        "新研究"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-11-12",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-11-14-fr-partager-la-recherche",
       "lang": "fr",
       "date": "2026-11-14",

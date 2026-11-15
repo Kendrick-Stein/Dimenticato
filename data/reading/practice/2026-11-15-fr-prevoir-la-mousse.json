@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-15-fr-prevoir-la-mousse",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s2",
+      "start": 22,
+      "answer": "prévoir",
+      "options": [
+        "prévoir",
+        "détruire",
+        "vendre",
+        "transporter"
+      ],
+      "explanation": "prévoir 是不定式，表示预测；句中不定式短语作主语。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s4",
+      "start": 122,
+      "answer": "hauteur",
+      "options": [
+        "largeur",
+        "couleur",
+        "hauteur",
+        "température"
+      ],
+      "explanation": "hauteur 是阴性单数名词，la hauteur de mousse 表示泡沫高度。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s6",
+      "start": 40,
+      "answer": "vitesse",
+      "options": [
+        "forme",
+        "taille",
+        "masse",
+        "vitesse"
+      ],
+      "explanation": "vitesse 是阴性单数名词，à laquelle 与它对应，表示分子移动的速度。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s9",
+      "start": 31,
+      "answer": "mesures",
+      "options": [
+        "dépenses",
+        "mesures",
+        "recettes",
+        "erreurs"
+      ],
+      "explanation": "mesures 是阴性复数名词，此处指测量值，不是支出或错误。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s12",
+      "start": 52,
+      "answer": "coûteux",
+      "options": [
+        "gratuits",
+        "anciens",
+        "coûteux",
+        "simples"
+      ],
+      "explanation": "coûteux 是阳性复数形容词，修饰 essais，单复数均以x结尾，表示成本高昂。"
+    }
+  ]
+}

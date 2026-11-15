@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-15-en-more-than-a-seat-at-the-theatre",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "How does the programme plan to widen young people’s access to theatre?",
+      "options": [
+        "By funding buildings before planning activities.",
+        "By focusing on training for existing theatre staff.",
+        "By combining affordable visits with creative participation.",
+        "By replacing live performances with school recordings."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s6",
+        "s7",
+        "s8",
+        "s9",
+        "s14"
+      ],
+      "explanationZh": "计划同时提供低价观演、学校演出和创作培训，不只是建设场馆或培训现有员工。"
+    },
+    {
+      "id": "q2",
+      "kind": "cause",
+      "prompt": "Why is a Skills Roadshow included in the plans?",
+      "options": [
+        "To offer opportunities in places without theatres.",
+        "To select which theatres receive touring productions.",
+        "To train teachers to sell tickets in their schools.",
+        "To move community shows to the National Theatre."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s10"
+      ],
+      "explanationZh": "s10明确巡展面向没有剧院的地方，直接把机会带给当地年轻人。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "What role is planned for the Nationwide Youth Council?",
+      "options": [
+        "Approving the final funding for the partnership.",
+        "Setting ticket prices for regional performances.",
+        "Choosing the twelve existing regional partners.",
+        "Helping shape the activities offered to young people."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s11"
+      ],
+      "explanationZh": "s11说明青年委员会帮助设计活动，没有授予拨款审批或票价制定职责。"
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": "What can readers conclude about the announced funding?",
+      "options": [
+        "The whole amount has already reached the partners.",
+        "Its award depends on the formal review process.",
+        "It will be paid directly to individual ticket buyers.",
+        "The Youth Council will decide whether it is granted."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s12",
+        "s13",
+        "s14"
+      ],
+      "explanationZh": "s12–14明确拨款和实施须经正式程序，不能把至多金额理解为已经拨付。"
+    }
+  ]
+}

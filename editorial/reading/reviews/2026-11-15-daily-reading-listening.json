@@ -1,0 +1,168 @@
+{
+  "schema": 1,
+  "date": "2026-11-15",
+  "readings": [
+    {
+      "id": "2026-11-15-it-la-pietra-sotto-napoli",
+      "storyId": "ingv-tufo-giallo-napoletano-2026-11-12",
+      "lang": "it",
+      "level": "A2",
+      "words": 173,
+      "source": {
+        "name": "INGV",
+        "title": "CAMPI FLEGREI | Uno studio INGV riscrive la storia dell’eruzione che contribuì a costruire Napoli",
+        "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/campi-flegrei-uno-studio-ingv-riscrive-la-storia-dell-eruzione-che-contribui-a-costruire-napoli",
+        "publishedAt": "2026-11-12",
+        "lang": "it"
+      },
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "hashes": {
+        "article": "70d20c81ef1e45bb4423c61782301f8684641abf8f5d32b62ee37fb5c6317c87",
+        "practice": "e8092d00e11b0d2a832a973bffeb6284e4181c0ed81a5553a6f57a89aee85199",
+        "comprehension": "ad761d938456146cf582b8b43946f5d1249063271c1c58098c2d214ee6b415f0"
+      },
+      "blindAnswers": [
+        0,
+        2,
+        1
+      ],
+      "practiceCount": 5,
+      "comprehensionCount": 3
+    },
+    {
+      "id": "2026-11-15-fr-prevoir-la-mousse",
+      "storyId": "inrae-mousse-modeles-dynamiques-2026-11-12",
+      "lang": "fr",
+      "level": "B1",
+      "words": 285,
+      "source": {
+        "name": "INRAE",
+        "title": "Prédire la mousse avant de la faire : l'analyse dimensionnelle rencontre l'intelligence artificielle",
+        "url": "https://www.inrae.fr/actualites/predire-mousse-faire-lanalyse-dimensionnelle-rencontre-lintelligence-artificielle",
+        "publishedAt": "2026-11-12",
+        "lang": "fr"
+      },
+      "license": {
+        "name": "Licence Ouverte Etalab 2.0",
+        "url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0"
+      },
+      "hashes": {
+        "article": "96c86202fa48a3a376691947c68dd6254c53f80c4d6b2d7b14e4bd9132304316",
+        "practice": "60a8b8a44c36022997df94f5d7cf08ec0487943116eba65f5a00843646983736",
+        "comprehension": "fba4f9b07641d7f12d8a192d1a84dfad2e6547177b1899783073dba817555b4f"
+      },
+      "blindAnswers": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "practiceCount": 5,
+      "comprehensionCount": 4
+    },
+    {
+      "id": "2026-11-15-en-a-new-way-to-compare-schools",
+      "storyId": "dfe-school-profile-tool-launch-2026-11-13",
+      "lang": "en",
+      "level": "A2",
+      "words": 156,
+      "source": {
+        "name": "Department for Education",
+        "author": "Department for Education",
+        "title": "New online tool to help parents choose the right school",
+        "url": "https://www.gov.uk/government/news/new-online-tool-to-help-parents-choose-the-right-school",
+        "publishedAt": "2026-11-13",
+        "lang": "en"
+      },
+      "license": {
+        "name": "Open Government Licence v3.0",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      },
+      "hashes": {
+        "article": "3dd2a4ba5ee8cfcc840a7cd96cb8ce50c66073c6e2c99914e2573be44482cc23",
+        "practice": "96a3a2a3d82e154ed3b0bbf95c8f6b9bbefef3426c26eb28e5005ed9c9454176",
+        "comprehension": "1490bee6d732a1fd8a90e677e2885a580ae53bbd3677fbbd558f897e8c55d613"
+      },
+      "blindAnswers": [
+        1,
+        3,
+        0
+      ],
+      "practiceCount": 5,
+      "comprehensionCount": 3
+    },
+    {
+      "id": "2026-11-15-en-more-than-a-seat-at-the-theatre",
+      "storyId": "dcms-national-theatre-youth-funding-2026-11-13",
+      "lang": "en",
+      "level": "B1",
+      "words": 287,
+      "source": {
+        "name": "Department for Digital, Culture, Media and Sport",
+        "author": "Department for Digital, Culture, Media and Sport",
+        "title": "School tours, workshops and £10 tickets to open up the magic of theatre to 100,000 young people",
+        "url": "https://www.gov.uk/government/news/school-tours-workshops-and-10-tickets-to-open-up-the-magic-of-theatre-to-100000-young-people",
+        "publishedAt": "2026-11-13",
+        "lang": "en"
+      },
+      "license": {
+        "name": "Open Government Licence v3.0",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      },
+      "hashes": {
+        "article": "5ca57db1329f68b3787a85801b5282173df62f788aaba0f70180fff9f883285d",
+        "practice": "960c946e45d7fc28da782072e8aa835271694c2ba36595f819a03b4df18b9813",
+        "comprehension": "dceaddeae2e52d52c694c62c0d196c427be11d13b7c87f130e3eafe83366cd12"
+      },
+      "blindAnswers": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "practiceCount": 5,
+      "comprehensionCount": 4
+    }
+  ],
+  "listening": [
+    {
+      "id": "de-logo-2026-11-14",
+      "url": "https://www.logo.de/logo-vom-samstag-14-november-2026-102.html",
+      "sourcePublishedAt": "2026-11-14",
+      "level": "未分级",
+      "questions": 0,
+      "sha256": "a64ee9b816b8cb0e1e6a64944968e48d4717cae896bc08a317df925e15a7e458",
+      "verification": "已核对官方完整节目页的日期、节目单及首页显示的10:36时长。本次云端浏览器播放器明确提示本集仅限德国境内，未成功播放，未听音或核验音质，也未绕过区域限制。未取得完整对应文字稿，仅提供原站导听，不设理解题；不转载音视频或字幕。"
+    },
+    {
+      "id": "fr-tv5-cop17-2026-11-13",
+      "url": "https://apprendre.tv5monde.com/fr/exercices/b2-avance/cop17-un-bilan-mitige-pour-la-biodiversite",
+      "sourcePublishedAt": "2026-11-13",
+      "level": "B2",
+      "questions": 0,
+      "sha256": "c63c84b79ba235a2f15e5bac3c9f0287bc6a426244b067e79a326e7a0846333d",
+      "verification": "已核对官方法语课程页、B2分级与2026年11月13日课程发布日期。云端浏览器经官方练习入口启动播放器，计时从0:00推进至0:06、0:10，总时长2:05，随后暂停；未实际听音，0:06时播放器静音，不代表音质验收或所有地区均可播放。无经核验完整逐字稿，不设置本站理解题，不复制音视频、字幕或原站题目。"
+    }
+  ],
+  "independentReview": "All four articles and their Chinese teaching material, rights, facts, level estimates, five-cloze companions and comprehension sidecars independently checked. Blind answers saved before keys; IT definition/distractors and EN school scope/future tense/main-idea question revised and rechecked against final hashes.",
+  "rights": "Only licensed institutional article text adapted. No third-party photos, figures, interview quotations, paper full texts, media, subtitles or publisher exercises reproduced. Listening guides are original outbound-link entries, not reading editions.",
+  "dedup": {
+    "baseline": "4ef19f16b9512e183e3eddb75368b0d568ba71b1",
+    "openPRs": 0,
+    "privateHistory": "November12 local records plus November13 (126 files) and November14 (23 files) complete recovered packages checked. New works first published after November7; exact older missing manifests remain unavailable.",
+    "reusedLead": {
+      "id": "tv5-cop17-38767-2026-11-13",
+      "alias": "https://apprendre.tv5monde.com/en/node/38767",
+      "status": "Previously unverified November14 lead, now verified metadata and official player request. No previous published or completed draft found."
+    },
+    "protectedCandidateBlob": "f371ee57ace6678d5c8ef153182bf2b4bab3e82a"
+  },
+  "gaps": {
+    "reading": "IT B1/B2-C1, FR A2/B2-C1, DE all three tiers, EN B2-C1 missing; no filler.",
+    "listening": "No new IT or EN listening. Both new listening entries have zero questions. DE programme only available within Germany; no audio-quality claim."
+  },
+  "validation": "Publication requires complete suite, private browser acceptance, expected-SHA update and exact-commit deployment/production verification recorded separately."
+}

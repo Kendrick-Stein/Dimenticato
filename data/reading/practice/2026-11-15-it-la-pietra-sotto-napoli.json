@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-15-it-la-pietra-sotto-napoli",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s3",
+      "start": 7,
+      "answer": "pietra",
+      "options": [
+        "pietra",
+        "pietre",
+        "pietroso",
+        "pietrosa"
+      ],
+      "explanation": "阴性单数名词；questa pietra 指这种石材。 此处恢复原文“石材”。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s4",
+      "start": 47,
+      "answer": "costruire",
+      "options": [
+        "costruzione",
+        "costruito",
+        "costruire",
+        "costruiscono"
+      ],
+      "explanation": "per 后接不定式，表示用途。 此处恢复原文“建造”。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s5",
+      "start": 61,
+      "answer": "sopra",
+      "options": [
+        "sotto",
+        "sopra",
+        "tra",
+        "lungo"
+      ],
+      "explanation": "sopra 表示“在……上方”，对应中文句意与文中城市坐落在火山物质之上的关系；sotto 是下方，tra 是之间，lungo 是沿着。本题恢复原文 sopra。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s7",
+      "start": 45,
+      "answer": "unito",
+      "options": [
+        "unire",
+        "unisce",
+        "uniti",
+        "unito"
+      ],
+      "explanation": "hanno unito 是 unire 的近过去时，主语是研究人员。 此处恢复原文“结合”。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s12",
+      "start": 34,
+      "answer": "diversi",
+      "options": [
+        "diversa",
+        "diverse",
+        "diversi",
+        "diverso"
+      ],
+      "explanation": "阳性复数形容词，与 serbatoi 一致。 此处恢复原文“不同的”。"
+    }
+  ]
+}

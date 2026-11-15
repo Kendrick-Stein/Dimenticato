@@ -3,6 +3,76 @@
   "policy": "Outbound official playback links only. No copied media, thumbnails or full transcripts. Original Chinese guides and questions. Playback itself has not been tested; verified means official page and content evidence were retrieved.",
   "entries": [
     {
+      "id": "fr-tv5-cop17-2026-11-13",
+      "lang": "fr",
+      "title": "COP17 : un bilan mitigé pour la biodiversité",
+      "titleZh": "COP17：生物多样性会议的复杂结果",
+      "provider": "TV5MONDE",
+      "url": "https://apprendre.tv5monde.com/fr/exercices/b2-avance/cop17-un-bilan-mitige-pour-la-biodiversite",
+      "level": "B2",
+      "levelBasis": "provider",
+      "levelLabel": "B2 · 官方分级",
+      "kind": "lesson",
+      "addedAt": "2026-11-15",
+      "sourcePublishedAt": "2026-11-13",
+      "evidenceStatus": "metadata_only",
+      "summaryZh": "使用TV5MONDE官方B2课程，练习听取国际会议报道。",
+      "guideZh": "先听报道的大意，再记录表示进展、分歧和评价的词语。第二遍留意各方发言如何组织，最后用两三句法语复述。可在原站完成配套练习。",
+      "verificationZh": "已核对官方法语课程页、B2分级与2026年11月13日课程发布日期。云端浏览器经官方练习入口启动播放器，计时从0:00推进至0:06、0:10，总时长2:05，随后暂停；未实际听音，0:06时播放器静音，不代表音质验收或所有地区均可播放。无经核验完整逐字稿，不设置本站理解题，不复制音视频、字幕或原站题目。",
+      "vocabularyLabel": "主题预习词（不保证全部出现在音频中）",
+      "vocabulary": [
+        {
+          "text": "un bilan",
+          "zh": "总结；结果评估"
+        },
+        {
+          "text": "la biodiversité",
+          "zh": "生物多样性"
+        },
+        {
+          "text": "un accord",
+          "zh": "协议；共识"
+        }
+      ],
+      "questions": [],
+      "duration": "2分05秒"
+    },
+    {
+      "id": "de-logo-2026-11-14",
+      "lang": "de",
+      "title": "logo! vom Samstag, 14. November 2026",
+      "titleZh": "11月14日儿童新闻：健康与体育",
+      "provider": "ZDF logo!",
+      "url": "https://www.logo.de/logo-vom-samstag-14-november-2026-102.html",
+      "level": "未分级",
+      "levelBasis": "editorial",
+      "levelLabel": "母语儿童内容 · 非 CEFR 分级",
+      "kind": "news",
+      "addedAt": "2026-11-15",
+      "sourcePublishedAt": "2026-11-14",
+      "duration": "10分36秒",
+      "evidenceStatus": "metadata_only",
+      "summaryZh": "从官方完整节目入口选听糖尿病、足球与青年奥运会等话题。",
+      "guideZh": "先选一个感兴趣的段落，记录听清的主题词。第二遍留意人物、事件和说明，再尝试用一句德语概括；不必一次听懂整集。本集仅限德国播放。",
+      "verificationZh": "已核对官方完整节目页的日期、节目单及首页显示的10:36时长。本次云端浏览器播放器明确提示本集仅限德国境内，未成功播放，未听音或核验音质，也未绕过区域限制。未取得完整对应文字稿，仅提供原站导听，不设理解题；不转载音视频或字幕。",
+      "vocabularyLabel": "主题预习词（不保证全部出现在音频中）",
+      "vocabulary": [
+        {
+          "text": "der Diabetes",
+          "zh": "糖尿病"
+        },
+        {
+          "text": "der Fußball",
+          "zh": "足球"
+        },
+        {
+          "text": "der Wettbewerb",
+          "zh": "竞赛；比赛"
+        }
+      ],
+      "questions": []
+    },
+    {
       "id": "de-logo-2026-11-13",
       "lang": "de",
       "title": "logo! vom Freitag, 13. November 2026",

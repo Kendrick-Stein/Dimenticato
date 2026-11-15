@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-15-en-a-new-way-to-compare-schools",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "p1",
+      "sentenceId": "s1",
+      "start": 50,
+      "answer": "launched",
+      "options": [
+        "closed",
+        "launched",
+        "borrowed",
+        "forgot"
+      ],
+      "explanation": "launched是launch的过去式，此处表示推出新工具。"
+    },
+    {
+      "id": "p2",
+      "sentenceId": "s3",
+      "start": 49,
+      "answer": "location",
+      "options": [
+        "uniform",
+        "budget",
+        "location",
+        "timetable"
+      ],
+      "explanation": "location指地理位置，与本句中文及学校资料内容对应。"
+    },
+    {
+      "id": "p3",
+      "sentenceId": "s4",
+      "start": 37,
+      "answer": "attendance",
+      "options": [
+        "attendance",
+        "transport",
+        "furniture",
+        "weather"
+      ],
+      "explanation": "attendance指出勤情况，而非交通、家具或天气。"
+    },
+    {
+      "id": "p4",
+      "sentenceId": "s9",
+      "start": 23,
+      "answer": "compare",
+      "options": [
+        "repair",
+        "employ",
+        "invite",
+        "compare"
+      ],
+      "explanation": "compare意为比较；compare schools side by side是并排比较学校。"
+    },
+    {
+      "id": "p5",
+      "sentenceId": "s11",
+      "start": 18,
+      "answer": "reports",
+      "options": [
+        "meals",
+        "reports",
+        "games",
+        "trips"
+      ],
+      "explanation": "reports是报告的复数，inspection reports指检查报告。"
+    }
+  ]
+}

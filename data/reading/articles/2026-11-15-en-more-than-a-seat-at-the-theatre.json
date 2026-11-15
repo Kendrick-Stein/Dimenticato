@@ -1,0 +1,327 @@
+{
+  "schema": 1,
+  "id": "2026-11-15-en-more-than-a-seat-at-the-theatre",
+  "storyId": "dcms-national-theatre-youth-funding-2026-11-13",
+  "lang": "en",
+  "date": "2026-11-15",
+  "category": "culture",
+  "topics": [
+    "走进剧院，也参与创作"
+  ],
+  "title": "More than a seat at the theatre",
+  "titleZh": "走进剧院，也参与创作",
+  "summaryZh": "英格兰公布面向青少年的剧院合作计划，将低价票、学校巡演和创作机会结合；拨款与实施仍须经过正式审议。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：连接活动、费用和地域障碍，区分计划与拨款条件；使用关系从句、被动语态及较丰富的文化词汇。非官方分级。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Department for Digital, Culture, Media and Sport",
+    "author": "Department for Digital, Culture, Media and Sport",
+    "title": "School tours, workshops and £10 tickets to open up the magic of theatre to 100,000 young people",
+    "url": "https://www.gov.uk/government/news/school-tours-workshops-and-10-tickets-to-open-up-the-magic-of-theatre-to-100000-young-people",
+    "publishedAt": "2026-11-13",
+    "lang": "en"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. Department for Digital, Culture, Media and Sport; original publication 13 November 2026; source linked above.",
+  "adaptation": "2026-11-15整理：依据机构英文新闻稿同语言分级改写，添加中文翻译、词义及原创练习；不是原文、官方课程或机构认可的材料。仅使用机构叙述，不转载引语、图片、标志或其他第三方材料。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "A theatre ticket can be difficult to afford, and living far from a theatre can make a visit harder still.",
+      "zh": "剧院门票可能难以负担，住得离剧院远则可能让观看演出更困难。",
+      "glosses": [
+        {
+          "surface": "afford",
+          "lemma": "afford",
+          "zh": "负担得起"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "On 13 November 2026, the government announced support for a programme designed to help young people in England overcome these barriers.",
+      "zh": "2026年11月13日，政府宣布支持一项计划，旨在帮助英格兰的年轻人克服这些障碍。",
+      "glosses": [
+        {
+          "surface": "barriers",
+          "lemma": "barrier",
+          "zh": "障碍"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Called Nationwide, the new four-year partnership brings the National Theatre together with twelve partners across every English region.",
+      "zh": "这项新的四年合作计划名为Nationwide，将国家剧院与英格兰各地区的十二家合作机构联系起来。",
+      "glosses": [
+        {
+          "surface": "partnership",
+          "lemma": "partnership",
+          "zh": "合作关系；合作计划"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "It aims to reach more than 100,000 young people, including those who may not have experienced live theatre before.",
+      "zh": "它旨在惠及十多万名年轻人，其中包括可能从未看过现场戏剧的人。",
+      "glosses": [
+        {
+          "surface": "aims",
+          "lemma": "aim",
+          "zh": "以……为目标"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "The announcement includes up to £15 million from the Every Child Can programme to support this work.",
+      "zh": "公告包括从Every Child Can计划中拨出至多1500万英镑来支持这项工作。",
+      "glosses": [
+        {
+          "surface": "includes",
+          "lemma": "include",
+          "zh": "包括"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Regional partners will offer thousands of subsidised tickets costing £10, while shows created for young audiences will visit 400 schools.",
+      "zh": "地区合作机构将提供数千张补贴后的10英镑门票，为年轻观众创作的剧目则将走进400所学校。",
+      "glosses": [
+        {
+          "surface": "subsidised",
+          "lemma": "subsidise",
+          "zh": "获得补贴的"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "However, watching a performance is only one part of the plan: young people will also explore acting, directing, writing plays and working backstage.",
+      "zh": "不过，观看演出只是计划的一部分：年轻人还将探索表演、导演、剧本创作和幕后工作。",
+      "glosses": [
+        {
+          "surface": "backstage",
+          "lemma": "backstage",
+          "zh": "在后台；幕后"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Training and workshops will take place around touring productions, linking the performances with opportunities to develop creative skills.",
+      "zh": "培训和工作坊将围绕巡演开展，把演出与培养创作技能的机会联系起来。",
+      "glosses": [
+        {
+          "surface": "workshops",
+          "lemma": "workshop",
+          "zh": "工作坊"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "A separate music theatre programme will allow local young people to help create, produce and perform original shows in their own communities.",
+      "zh": "另一个音乐剧项目将让本地年轻人参与创作、制作和演出社区原创剧目。",
+      "glosses": [
+        {
+          "surface": "communities",
+          "lemma": "community",
+          "zh": "社区"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "For places without theatres, a Skills Roadshow will bring opportunities directly to young people rather than expecting them to travel to a theatre.",
+      "zh": "对于没有剧院的地方，技能巡展将直接为年轻人带来机会，而不是指望他们到剧院去。",
+      "glosses": [
+        {
+          "surface": "directly",
+          "lemma": "directly",
+          "zh": "直接地"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Young people will also have a voice in decisions through a new Nationwide Youth Council, which will help shape the activities.",
+      "zh": "年轻人还将通过新设的Nationwide青年委员会参与决策，帮助设计活动。",
+      "glosses": [
+        {
+          "surface": "decisions",
+          "lemma": "decision",
+          "zh": "决定；决策"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "These are plans rather than completed results: the announcement also explains that the funding and delivery still depend on a formal process.",
+      "zh": "这些是计划，而非已完成的成果：公告还解释，拨款和实施仍取决于正式程序。",
+      "glosses": [
+        {
+          "surface": "depend",
+          "lemma": "depend",
+          "zh": "取决于"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "The National Lottery Community Fund has been asked to examine and develop the proposals with the National Theatre before funding is granted.",
+      "zh": "国家彩票社区基金已被要求在拨款前与国家剧院一起审查和完善提案。",
+      "glosses": [
+        {
+          "surface": "granted",
+          "lemma": "grant",
+          "zh": "获批；拨付"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "The programme therefore combines cheaper access to performances with participation and training, but its final delivery remains subject to that review.",
+      "zh": "因此，这项计划把更低价的观演机会与参与和培训相结合，但最终实施仍须经过上述审议。",
+      "glosses": [
+        {
+          "surface": "participation",
+          "lemma": "participation",
+          "zh": "参与"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "afford",
+        "lemma": "afford",
+        "zh": "负担得起",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "barriers",
+        "lemma": "barrier",
+        "zh": "障碍",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "partnership",
+        "lemma": "partnership",
+        "zh": "合作关系；合作计划",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "aims",
+        "lemma": "aim",
+        "zh": "以……为目标",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "includes",
+        "lemma": "include",
+        "zh": "包括",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "subsidised",
+        "lemma": "subsidise",
+        "zh": "获得补贴的",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "backstage",
+        "lemma": "backstage",
+        "zh": "在后台；幕后",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "workshops",
+        "lemma": "workshop",
+        "zh": "工作坊",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "communities",
+        "lemma": "community",
+        "zh": "社区",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "directly",
+        "lemma": "directly",
+        "zh": "直接地",
+        "sentenceId": "s10"
+      },
+      {
+        "text": "decisions",
+        "lemma": "decision",
+        "zh": "决定；决策",
+        "sentenceId": "s11"
+      },
+      {
+        "text": "depend",
+        "lemma": "depend",
+        "zh": "取决于",
+        "sentenceId": "s12"
+      },
+      {
+        "text": "granted",
+        "lemma": "grant",
+        "zh": "获批；拨付",
+        "sentenceId": "s13"
+      },
+      {
+        "text": "participation",
+        "lemma": "participation",
+        "zh": "参与",
+        "sentenceId": "s14"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "aims to reach",
+        "zh": "目标是惠及",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "rather than",
+        "zh": "而不是",
+        "sentenceId": "s10"
+      },
+      {
+        "text": "depend on",
+        "zh": "取决于",
+        "sentenceId": "s12"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s14",
+        "note": "but连接计划目标与实施条件；subject to表示须经……，不把承诺写成已经兑现。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Would you prefer to watch a play or help create one, and why?",
+        "zh": "你更愿意观看戏剧还是参与创作？为什么？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Lower prices would help, but …",
+        "zh": "更低的价格会有帮助，但是……",
+        "note": "原创口语练习表达，不是原报道引文。"
+      }
+    ]
+  }
+}

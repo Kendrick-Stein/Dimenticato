@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-15-en-more-than-a-seat-at-the-theatre",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "p1",
+      "sentenceId": "s1",
+      "start": 37,
+      "answer": "afford",
+      "options": [
+        "record",
+        "afford",
+        "translate",
+        "repair"
+      ],
+      "explanation": "afford表示有经济能力负担，此处对应票价障碍。"
+    },
+    {
+      "id": "p2",
+      "sentenceId": "s6",
+      "start": 42,
+      "answer": "subsidised",
+      "options": [
+        "cancelled",
+        "private",
+        "subsidised",
+        "seasonal"
+      ],
+      "explanation": "subsidised表示得到补贴的，指价格获支持而较低的票。"
+    },
+    {
+      "id": "p3",
+      "sentenceId": "s7",
+      "start": 138,
+      "answer": "backstage",
+      "options": [
+        "backstage",
+        "upstairs",
+        "abroad",
+        "outdoors"
+      ],
+      "explanation": "backstage指剧场幕后工作，与表演和导演并列。"
+    },
+    {
+      "id": "p4",
+      "sentenceId": "s12",
+      "start": 114,
+      "answer": "depend",
+      "options": [
+        "arrive",
+        "insist",
+        "vote",
+        "depend"
+      ],
+      "explanation": "depend on意为取决于；拨款和实施仍取决于正式程序。"
+    },
+    {
+      "id": "p5",
+      "sentenceId": "s13",
+      "start": 132,
+      "answer": "granted",
+      "options": [
+        "printed",
+        "granted",
+        "performed",
+        "translated"
+      ],
+      "explanation": "funding is granted表示拨款获批，granted为被动语态的过去分词。"
+    }
+  ]
+}

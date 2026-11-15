@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-15-en-a-new-way-to-compare-schools",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "What does the article explain about the new service?",
+      "options": [
+        "It compares primary schools first and will add secondary schools later.",
+        "It gathers school information now and will add more features later.",
+        "It offers inspection reports now and will add school locations later.",
+        "It focuses on school results now and will add breakfast clubs later."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s2",
+        "s3",
+        "s4",
+        "s9",
+        "s10",
+        "s11"
+      ],
+      "explanationZh": "全文说明资料集中展示且功能分阶段增加；其他选项颠倒了学校类型或功能的时间安排。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "What can parents compare side by side at launch?",
+      "options": [
+        "Primary schools.",
+        "Breakfast clubs.",
+        "Inspection reports.",
+        "Secondary schools."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s9",
+        "s10",
+        "s11"
+      ],
+      "explanationZh": "s9明确是中学；小学比较与检查报告尚未开放。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "What are the profiles intended to show about pupils after year 11?",
+      "options": [
+        "Their next steps in study or work.",
+        "Their opinions about breakfast clubs.",
+        "Their choices of school uniforms.",
+        "Their plans for next year’s lessons."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s6"
+      ],
+      "explanationZh": "s6说明资料包含11年级后的学习或工作去向，而不是其他个人偏好。"
+    }
+  ]
+}

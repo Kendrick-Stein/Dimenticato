@@ -1,0 +1,211 @@
+{
+  "schema": 1,
+  "id": "2026-11-15-fr-prevoir-la-mousse",
+  "storyId": "inrae-mousse-modeles-dynamiques-2026-11-12",
+  "lang": "fr",
+  "date": "2026-11-15",
+  "title": "Comment prévoir la quantité de mousse ?",
+  "titleZh": "如何预测泡沫的多少？",
+  "summaryZh": "从日常泡沫出发，了解研究者如何结合实验、物理分析和人工智能改进预测，并区分已验证结果与未来应用。",
+  "level": "B1",
+  "levelReason": "编辑估计：由日常场景引入实验步骤，解释专业词，结合过去时、比较和条件式说明方法与前景；技术内容为B1上沿，非认证分级。",
+  "category": "technology",
+  "topics": [
+    "日常科学",
+    "人工智能"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "INRAE",
+    "title": "Prédire la mousse avant de la faire : l'analyse dimensionnelle rencontre l'intelligence artificielle",
+    "url": "https://www.inrae.fr/actualites/predire-mousse-faire-lanalyse-dimensionnelle-rencontre-lintelligence-artificielle",
+    "publishedAt": "2026-11-12",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "Licence Ouverte Etalab 2.0",
+    "url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0"
+  },
+  "attribution": "Aline Waquet，Communication INRAE Hauts-de-France；INRAE，2026-11-12。原文：https://www.inrae.fr/actualites/predire-mousse-faire-lanalyse-dimensionnelle-rencontre-lintelligence-artificielle。依 Licence Ouverte Etalab 2.0 使用机构正文；不使用Pixabay图片、标志、直接引语或链接论文。",
+  "adaptation": "本站同语言教学简化改写，配中文翻译、词义及原创练习；非官方原文或官方分级，不代表来源机构认可。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Dans la cuisine, la salle de bains ou les produits de nettoyage, la mousse est présente dans de nombreuses situations de la vie quotidienne.",
+      "zh": "在厨房、浴室或清洁用品中，泡沫出现在许多日常生活场景里。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Pour les industriels, prévoir la quantité de mousse produite par un mélange reste pourtant un problème complexe, car plusieurs éléments interviennent en même temps.",
+      "zh": "然而，对工业生产者来说，预测混合物产生的泡沫量仍是一个复杂问题，因为多个因素同时起作用。",
+      "glosses": [
+        {
+          "surface": "prévoir",
+          "lemma": "prévoir",
+          "zh": "预测"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "La nature des molécules, leur concentration, le procédé utilisé et les conditions de fabrication peuvent modifier le résultat obtenu.",
+      "zh": "分子的性质、浓度、采用的工艺和生产条件都可能改变最终结果。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "Le 12 novembre 2026, INRAE a présenté des travaux de chercheurs français qui proposent une nouvelle manière de prévoir la hauteur de mousse.",
+      "zh": "2026年11月12日，法国国家农业、食品与环境研究院介绍了法国研究者的工作：他们提出了一种预测泡沫高度的新方法。",
+      "glosses": [
+        {
+          "surface": "hauteur",
+          "lemma": "hauteur",
+          "zh": "高度"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Les modèles classiques utilisent une propriété mesurée lorsque le système est stable, alors que les bulles se forment en une fraction de seconde.",
+      "zh": "传统模型使用系统稳定时测量的一项性质，而气泡却在转瞬间形成。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "La nouvelle approche tient compte de la vitesse à laquelle certaines molécules se déplacent vers la surface des bulles en formation.",
+      "zh": "新方法考虑了某些分子移向正在形成的气泡表面的速度。",
+      "glosses": [
+        {
+          "surface": "vitesse",
+          "lemma": "vitesse",
+          "zh": "速度"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Ces molécules sont appelées des tensioactifs, et leur comportement au cours du temps est important pour comprendre comment se forme la mousse.",
+      "zh": "这些分子被称为表面活性剂，它们随时间变化的行为对理解泡沫如何形成很重要。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Les chercheurs ont réalisé 130 expériences avec une dizaine de tensioactifs, en utilisant deux procédés : le mélange mécanique et l’introduction de gaz dans un liquide.",
+      "zh": "研究者用约十种表面活性剂进行了130次实验，采用两种工艺：机械搅拌以及向液体中通入气体。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Ils ont ensuite transformé les mesures en nombres sans dimension, une méthode qui permet de comparer des phénomènes à différentes échelles.",
+      "zh": "随后，他们将测量值转换为无量纲数，这种方法能够比较不同尺度的现象。",
+      "glosses": [
+        {
+          "surface": "mesures",
+          "lemma": "mesure",
+          "zh": "测量值"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Une intelligence artificielle a recherché la forme de l’équation la mieux adaptée aux données, au lieu de partir uniquement d’une équation déjà choisie.",
+      "zh": "人工智能寻找最符合数据的方程形式，而不是仅从预先选好的方程出发。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Pour chacun des deux procédés, une seule relation permet de prévoir la hauteur de mousse pour l’ensemble des tensioactifs étudiés, avec une meilleure précision dans les conditions des expériences décrites par les chercheurs.",
+      "zh": "对于两种工艺中的每一种，只需一个关系式就能以更高的精确度预测所有受研究表面活性剂产生的泡沫高度，这是在研究者所描述的实验条件下得出的结果。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Ces résultats pourraient réduire le nombre d’essais coûteux et aider à choisir un tensioactif adapté, mais les économies futures ne sont pas encore mesurées dans cet article.",
+      "zh": "这些成果可能减少成本高昂的试验，并帮助选择合适的表面活性剂，但该文尚未测量未来能节省多少成本。",
+      "glosses": [
+        {
+          "surface": "coûteux",
+          "lemma": "coûteux",
+          "zh": "成本高昂的"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "prévoir",
+        "lemma": "prévoir",
+        "zh": "预测",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "hauteur",
+        "lemma": "hauteur",
+        "zh": "高度",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "vitesse",
+        "lemma": "vitesse",
+        "zh": "速度",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "mesures",
+        "lemma": "mesure",
+        "zh": "测量值",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "coûteux",
+        "lemma": "coûteux",
+        "zh": "成本高昂的",
+        "sentenceId": "s12"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "tient compte de",
+        "zh": "考虑到",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "au lieu de",
+        "zh": "而不是",
+        "sentenceId": "s10"
+      },
+      {
+        "text": "au cours du temps",
+        "zh": "随着时间的推移",
+        "sentenceId": "s7"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s5",
+        "note": "lorsque 引出测量时的条件，alors que 对比系统稳定时与气泡快速形成时的不同，帮助理解旧模型的局限。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Dans quels produits utilisez-vous de la mousse au quotidien ?",
+        "zh": "你日常使用的哪些产品中有泡沫？"
+      },
+      {
+        "text": "Pourquoi faut-il distinguer les résultats d’une expérience et ses applications futures ?",
+        "zh": "为什么需要区分实验结果与未来应用？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Cette méthode tient compte de plusieurs éléments.",
+        "zh": "这种方法考虑了多个因素。",
+        "note": "tenir compte de 表示考虑到；这是教学例句，不是原文引语。"
+      }
+    ]
+  }
+}

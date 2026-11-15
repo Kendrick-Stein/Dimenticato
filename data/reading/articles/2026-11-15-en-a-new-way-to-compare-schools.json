@@ -1,0 +1,273 @@
+{
+  "schema": 1,
+  "id": "2026-11-15-en-a-new-way-to-compare-schools",
+  "storyId": "dfe-school-profile-tool-launch-2026-11-13",
+  "lang": "en",
+  "date": "2026-11-15",
+  "category": "education",
+  "topics": [
+    "比较学校的新工具"
+  ],
+  "title": "A new way to compare schools",
+  "titleZh": "比较学校的新工具",
+  "summaryZh": "英格兰的新学校资料工具集中展示出勤、成绩和早餐俱乐部等信息，部分比较功能仍待扩展。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：围绕选学校的具体需求，使用短句、常用时态；attendance等主题词配中文辅助。非官方分级。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Department for Education",
+    "author": "Department for Education",
+    "title": "New online tool to help parents choose the right school",
+    "url": "https://www.gov.uk/government/news/new-online-tool-to-help-parents-choose-the-right-school",
+    "publishedAt": "2026-11-13",
+    "lang": "en"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. Department for Education; original publication 13 November 2026; source linked above.",
+  "adaptation": "2026-11-15整理：依据机构英文新闻稿同语言分级改写，添加中文翻译、词义及原创练习；不是原文、官方课程或机构认可的材料。仅使用机构叙述，不转载引语、图片、标志或其他第三方材料。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "On 13 November 2026, the Department for Education launched a new online tool to help parents choose a school in England.",
+      "zh": "2026年11月13日，教育部推出一款新线上工具，帮助家长选择英格兰的学校。",
+      "glosses": [
+        {
+          "surface": "launched",
+          "lemma": "launch",
+          "zh": "推出"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "It brings different kinds of school information together in one place.",
+      "zh": "它把不同类型的学校信息集中到一处。",
+      "glosses": [
+        {
+          "surface": "information",
+          "lemma": "information",
+          "zh": "信息"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Parents can use the profiles to check a school’s location and the ages of its pupils.",
+      "zh": "家长可以利用学校资料查看学校的位置和学生的年龄范围。",
+      "glosses": [
+        {
+          "surface": "location",
+          "lemma": "location",
+          "zh": "位置"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "They can also find information about attendance, results and services such as free breakfast clubs.",
+      "zh": "他们还可以了解出勤、成绩及免费早餐俱乐部等服务。",
+      "glosses": [
+        {
+          "surface": "attendance",
+          "lemma": "attendance",
+          "zh": "出勤情况"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "For older children, the profiles will include information about GCSE subjects.",
+      "zh": "对于年龄较大的孩子，学校资料将包含GCSE考试科目的信息。",
+      "glosses": [
+        {
+          "surface": "subjects",
+          "lemma": "subject",
+          "zh": "科目"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "They will also show what pupils did after year 11, such as further study or work.",
+      "zh": "资料也将展示学生在11年级之后的去向，例如继续学习或工作。",
+      "glosses": [
+        {
+          "surface": "further",
+          "lemma": "further",
+          "zh": "进一步的"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "The tool is available as primary school applications open in every local area.",
+      "zh": "在各地小学申请开放之际，这款工具开始可用。",
+      "glosses": [
+        {
+          "surface": "applications",
+          "lemma": "application",
+          "zh": "申请"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Parents have until January to choose a school for their family.",
+      "zh": "家长可以在截至一月的申请期内为孩子选择学校。",
+      "glosses": [
+        {
+          "surface": "choose",
+          "lemma": "choose",
+          "zh": "选择"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "At launch, parents can compare secondary schools side by side.",
+      "zh": "在推出时，家长可以并排比较中学。",
+      "glosses": [
+        {
+          "surface": "compare",
+          "lemma": "compare",
+          "zh": "比较"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "This comparison feature will later become available for primary schools too.",
+      "zh": "之后小学也将可以使用这个比较功能。",
+      "glosses": [
+        {
+          "surface": "feature",
+          "lemma": "feature",
+          "zh": "功能"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Ofsted inspection reports are planned for next year, while information about more activities outside lessons will be added in coming years.",
+      "zh": "计划明年加入Ofsted督学机构的检查报告，未来几年还将添加更多课外活动信息。",
+      "glosses": [
+        {
+          "surface": "reports",
+          "lemma": "report",
+          "zh": "报告"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "launched",
+        "lemma": "launch",
+        "zh": "推出",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "information",
+        "lemma": "information",
+        "zh": "信息",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "location",
+        "lemma": "location",
+        "zh": "位置",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "attendance",
+        "lemma": "attendance",
+        "zh": "出勤情况",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "subjects",
+        "lemma": "subject",
+        "zh": "科目",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "further",
+        "lemma": "further",
+        "zh": "进一步的",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "applications",
+        "lemma": "application",
+        "zh": "申请",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "choose",
+        "lemma": "choose",
+        "zh": "选择",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "compare",
+        "lemma": "compare",
+        "zh": "比较",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "feature",
+        "lemma": "feature",
+        "zh": "功能",
+        "sentenceId": "s10"
+      },
+      {
+        "text": "reports",
+        "lemma": "report",
+        "zh": "报告",
+        "sentenceId": "s11"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "in one place",
+        "zh": "集中在一处",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "side by side",
+        "zh": "并排",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "outside lessons",
+        "zh": "在课外",
+        "sentenceId": "s11"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s10",
+        "note": "will later become…说明未来将有的功能，不能与已经开放的功能混淆。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "What information would you look for when choosing a school?",
+        "zh": "选择学校时，你会寻找哪些信息？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "I would compare … before choosing …",
+        "zh": "在选择……前，我会比较……",
+        "note": "原创口语练习表达，不是原报道引文。"
+      }
+    ]
+  }
+}

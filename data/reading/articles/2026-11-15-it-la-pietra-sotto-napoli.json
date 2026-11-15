@@ -1,0 +1,222 @@
+{
+  "schema": 1,
+  "id": "2026-11-15-it-la-pietra-sotto-napoli",
+  "storyId": "ingv-tufo-giallo-napoletano-2026-11-12",
+  "lang": "it",
+  "date": "2026-11-15",
+  "title": "La pietra sotto Napoli",
+  "titleZh": "那不勒斯脚下的石材",
+  "summaryZh": "古老喷发留下了建筑石材；一项新研究提出了更复杂的岩浆来源解释。",
+  "level": "A2",
+  "levelReason": "编辑估计 A2：短句连接过去用途与新研究，近过去时及未完成过去时配中文支持；火山、岩浆、储库为受解释的主题新词。",
+  "category": "culture",
+  "topics": [
+    "城市建筑",
+    "火山岩",
+    "新研究"
+  ],
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "INGV",
+    "title": "CAMPI FLEGREI | Uno studio INGV riscrive la storia dell’eruzione che contribuì a costruire Napoli",
+    "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/campi-flegrei-uno-studio-ingv-riscrive-la-storia-dell-eruzione-che-contribui-a-costruire-napoli",
+    "publishedAt": "2026-11-12",
+    "lang": "it"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "原文：INGV（机构作者，未单列新闻稿个人作者），原题、原日期与链接见来源。依 CC BY 4.0 改编；本篇改写、中文翻译与教学补充亦按该许可发布，不代表原机构认可。",
+  "adaptation": "2026-11-15 同语言简化改写，不是当天新闻或研究论文全文。保留研究观点属性，聚焦石材与城市。岩浆定义为教学说明。不使用图片、图示、直接引语或外链论文。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Il 12 novembre 2026, l’INGV ha presentato uno studio su una grande eruzione del passato, nei Campi Flegrei, vicino a Napoli.",
+      "zh": "2026年11月12日，意大利国家地球物理与火山研究所介绍了一项关于那不勒斯附近坎皮弗莱格雷地区古代一次大规模喷发的研究。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Dopo questa eruzione, avvenuta circa quattordicimila anni fa, i materiali del vulcano sono diventati una roccia chiamata Tufo Giallo Napoletano.",
+      "zh": "这次喷发约发生于一万四千年前，之后火山物质形成了一种叫作那不勒斯黄色凝灰岩的岩石。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Questa pietra è tenera e facile da lavorare.",
+      "zh": "这种石材质地较软，容易加工。",
+      "glosses": [
+        {
+          "surface": "pietra",
+          "lemma": "pietra",
+          "zh": "石材",
+          "note": "阴性单数名词；questa pietra 指这种石材。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Già in epoca romana, le persone la usavano per costruire acquedotti e fortificazioni.",
+      "zh": "早在罗马时代，人们就用它建造引水渠和防御工事。",
+      "glosses": [
+        {
+          "surface": "costruire",
+          "lemma": "costruire",
+          "zh": "建造",
+          "note": "per 后接不定式，表示用途。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Ancora oggi, una grande parte della città di Napoli si trova sopra questi materiali.",
+      "zh": "如今，那不勒斯城区仍有很大一部分坐落在这些物质之上。",
+      "glosses": [
+        {
+          "surface": "sopra",
+          "lemma": "sopra",
+          "zh": "在……上方",
+          "note": "介词，说明城区与岩层的空间关系。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Si possono vedere, per esempio, a Castel Sant’Elmo e ai Ponti Rossi.",
+      "zh": "例如，在圣埃尔莫城堡和红桥可以看到这些物质。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Per studiare l’eruzione, i ricercatori hanno unito i risultati di molti anni di lavoro a nuovi dati sulle rocce.",
+      "zh": "为了研究这次喷发，研究人员将多年的工作成果与新的岩石数据结合起来。",
+      "glosses": [
+        {
+          "surface": "unito",
+          "lemma": "unire",
+          "zh": "结合",
+          "note": "hanno unito 是 unire 的近过去时，主语是研究人员。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Secondo lo studio, il vulcano ha emesso meno magma di quanto si pensava prima.",
+      "zh": "根据这项研究，火山喷出的岩浆比此前认为的少。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Il magma è roccia fusa, o in parte fusa, sotto la superficie terrestre.",
+      "zh": "岩浆是位于地表以下的熔融或部分熔融的岩石。",
+      "glosses": [
+        {
+          "surface": "fusa",
+          "lemma": "fuso",
+          "zh": "熔融的",
+          "note": "阴性单数形容词，与 roccia 一致。"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Ma una quantità minore non significa una storia più semplice.",
+      "zh": "但较少的数量并不意味着过程更加简单。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "I ricercatori propongono infatti questa spiegazione: il magma non arrivava da un solo grande serbatoio sotterraneo.",
+      "zh": "研究人员提出这样的解释：岩浆并非来自单一的大型地下储库。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Veniva da almeno quattro serbatoi diversi, che si sono svuotati uno dopo l’altro.",
+      "zh": "它来自至少四个不同的储库，这些储库一个接一个地排空。",
+      "glosses": [
+        {
+          "surface": "diversi",
+          "lemma": "diverso",
+          "zh": "不同的",
+          "note": "阳性复数形容词，与 serbatoi 一致。"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "pietra",
+        "lemma": "pietra",
+        "zh": "石材",
+        "sentenceId": "s3",
+        "note": "阴性单数名词；questa pietra 指这种石材。"
+      },
+      {
+        "text": "costruire",
+        "lemma": "costruire",
+        "zh": "建造",
+        "sentenceId": "s4",
+        "note": "per 后接不定式，表示用途。"
+      },
+      {
+        "text": "sopra",
+        "lemma": "sopra",
+        "zh": "在……上方",
+        "sentenceId": "s5",
+        "note": "介词，说明城区与岩层的空间关系。"
+      },
+      {
+        "text": "unito",
+        "lemma": "unire",
+        "zh": "结合",
+        "sentenceId": "s7",
+        "note": "hanno unito 是 unire 的近过去时，主语是研究人员。"
+      },
+      {
+        "text": "diversi",
+        "lemma": "diverso",
+        "zh": "不同的",
+        "sentenceId": "s12",
+        "note": "阳性复数形容词，与 serbatoi 一致。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "facile da lavorare",
+        "zh": "容易加工",
+        "sentenceId": "s3",
+        "note": "facile da + 不定式，说明某物容易进行何种处理。"
+      },
+      {
+        "text": "uno dopo l’altro",
+        "zh": "一个接一个",
+        "sentenceId": "s12",
+        "note": "表示动作先后发生；这里对应多个储库。"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s10",
+        "note": "non significa 将“数量少”与“过程简单”分开，避免把两种判断混为一谈。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quali materiali si usano per costruire nella tua città?",
+        "zh": "你的城市用哪些材料建造建筑？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Nella mia città si usa…",
+        "zh": "在我的城市，人们使用……",
+        "note": "用 si usa 描述常见做法。"
+      }
+    ]
+  }
+}
