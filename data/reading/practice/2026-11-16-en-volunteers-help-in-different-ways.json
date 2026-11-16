@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-16-en-volunteers-help-in-different-ways",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "p1",
+      "sentenceId": "s1",
+      "start": 80,
+      "answer": "volunteers",
+      "options": [
+        "visitors",
+        "volunteers",
+        "players",
+        "customers"
+      ],
+      "explanation": "volunteers是志愿者的复数，说明由谁主导团体。"
+    },
+    {
+      "id": "p2",
+      "sentenceId": "s5",
+      "start": 65,
+      "answer": "library",
+      "options": [
+        "factory",
+        "library",
+        "race",
+        "shop"
+      ],
+      "explanation": "本句library指借用服务；bike library不是商店或工厂。"
+    },
+    {
+      "id": "p3",
+      "sentenceId": "s7",
+      "start": 91,
+      "answer": "unused",
+      "options": [
+        "crowded",
+        "expensive",
+        "unused",
+        "wet"
+      ],
+      "explanation": "unused表示土地曾闲置，呼应中文线索。"
+    },
+    {
+      "id": "p4",
+      "sentenceId": "s9",
+      "start": 44,
+      "answer": "outside",
+      "options": [
+        "outside",
+        "inside",
+        "around",
+        "near"
+      ],
+      "explanation": "outside说明获奖团体处于伦敦和东南部之外；不能改成内部或附近。"
+    },
+    {
+      "id": "p5",
+      "sentenceId": "s11",
+      "start": 15,
+      "answer": "nominate",
+      "options": [
+        "visit",
+        "pay",
+        "build",
+        "nominate"
+      ],
+      "explanation": "nominate groups表示提名团体参加评奖。"
+    }
+  ]
+}

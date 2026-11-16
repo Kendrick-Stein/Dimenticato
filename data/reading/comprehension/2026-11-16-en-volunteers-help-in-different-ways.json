@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-16-en-volunteers-help-in-different-ways",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "What two kinds of help involving bikes does the Evesham group provide?",
+      "options": [
+        "It repairs race tracks and teaches road safety.",
+        "It gives old bikes a new life and lends bikes to children.",
+        "It sells new bikes and runs football sessions.",
+        "It builds bike parks and holds gardening sessions."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s5"
+      ],
+      "explanationZh": "s5同时说明旧车再利用项目和儿童自行车借用服务；其他选项混入其他团体的活动或未提及服务。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Which place is open for people to visit every day?",
+      "options": [
+        "The football centre in County Londonderry.",
+        "The bike library in Worcestershire.",
+        "The green space at Caldmore.",
+        "The offices that organise the awards."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s7",
+        "s8"
+      ],
+      "explanationZh": "每日可到访的是卡尔德莫尔绿地；正文未给其他设施这样的开放信息。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "What does the number 87% describe?",
+      "options": [
+        "The awards given to groups outside London and the South East.",
+        "The groups that organise activities for children and young people.",
+        "The volunteers who work in gardens and green spaces.",
+        "The awards given to groups in London and the South East."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s9"
+      ],
+      "explanationZh": "87%指授予特定地区之外团体的奖项比例，不是志愿者、活动类型或伦敦及东南部内部的比例。"
+    }
+  ]
+}

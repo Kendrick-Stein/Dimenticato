@@ -1,0 +1,217 @@
+{
+  "schema": 1,
+  "id": "2026-11-16-fr-un-poulet-et-tout-le-groupe",
+  "storyId": "inrae-coccidiose-modelisation-2026-11-10",
+  "lang": "fr",
+  "date": "2026-11-16",
+  "contentType": "native-adaptation",
+  "category": "health",
+  "topics": [
+    "动物健康",
+    "模型与证据"
+  ],
+  "title": "Un poulet et tout le groupe",
+  "titleZh": "一只鸡与整个鸡群",
+  "summaryZh": "一个计算机模型比较不同抗病能力，说明个体表现好不一定能保护同伴。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：通过比较和因果连接组织说明；术语当句解释，模型结果和实际养殖证据分开。句式含关系从句、对比与条件表达，配完整中文支持。",
+  "source": {
+    "name": "INRAE — Département Génétique animale",
+    "title": "Coccidiose du poulet : guérir vite, un atout pour l’animal… et pour tout l’élevage",
+    "url": "https://www.inrae.fr/actualites/coccidiose-du-poulet-guerir-vite-atout-lanimal-lelevage",
+    "publishedAt": "2026-11-10",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "Licence Ouverte / Open Licence Etalab 2.0",
+    "url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0"
+  },
+  "attribution": "原作：INRAE，动物遗传学部门，2026-11-10。依据 https://www.inrae.fr/conditions-generales-dutilisation 的Etalab 2.0许可改写机构文本，来源链接与原日期保留；无官方认可关系。",
+  "adaptation": "法语同语言教学改写，非原文转载。增补中文、语境词义及原创练习。不使用图片、图注、标识、论文正文或第三方文字。所有效果均指模型模拟，不能视为养殖场验证结果或实际治疗建议。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Dans un élevage, la santé d’un poulet peut avoir des conséquences pour les autres animaux du groupe.",
+      "zh": "在养殖场里，一只鸡的健康状况可能影响群体中的其他动物。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Une équipe associant INRAE et des partenaires aux Pays-Bas et au Royaume-Uni a étudié ce lien avec un modèle informatique.",
+      "zh": "由INRAE及荷兰、英国合作伙伴组成的团队，用计算机模型研究了这种联系。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Son travail concerne la coccidiose, une maladie de l’intestin causée par de très petits parasites du genre Eimeria.",
+      "zh": "研究针对球虫病，这是一种由艾美耳属微小寄生虫引发的肠道疾病。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "Cette maladie ralentit la croissance des poulets et peut entraîner leur mort ; les scientifiques cherchent donc d’autres moyens de la combattre.",
+      "zh": "这种疾病会减缓鸡的生长，并可能导致死亡，因此科学家在探索其他应对办法。",
+      "glosses": [
+        {
+          "surface": "ralentit",
+          "lemma": "ralentir",
+          "zh": "减缓"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Le modèle décrit les changements d’état des animaux, la présence de parasites dans leur environnement et les effets sur leur croissance.",
+      "zh": "模型描述动物状态的变化、环境中寄生虫的存在以及对动物生长的影响。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Il utilise des données expérimentales déjà publiées sur une seule espèce de parasite, et non sur toutes les espèces possibles.",
+      "zh": "它使用的是针对单一寄生虫物种的已发表实验数据，而非所有可能的物种。",
+      "glosses": [
+        {
+          "surface": "seule",
+          "lemma": "seul",
+          "zh": "单一的"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Les chercheurs ont simulé des milliers d’épidémies dans des groupes de vingt poulets à croissance lente, en modifiant différentes capacités des animaux.",
+      "zh": "研究人员对二十只慢生长鸡组成的群体模拟了数千次疫情，并改变动物的不同能力。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Ils ont séparé ce qui aide directement un animal de ce qui aide indirectement ses compagnons, afin de mieux comparer ces capacités.",
+      "zh": "他们区分了直接帮助某只动物的效果与间接帮助其同伴的效果，以便更好地比较这些能力。",
+      "glosses": [
+        {
+          "surface": "indirectement",
+          "lemma": "indirectement",
+          "zh": "间接地"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Un poulet qui contamine moins son environnement protège surtout les autres : ils rencontrent alors moins de parasites et sont moins souvent infectés.",
+      "zh": "一只对环境造成较少污染的鸡主要保护的是其他鸡：它们接触到的寄生虫更少，被感染的频率也更低。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "À l’inverse, mieux supporter l’infection protège la croissance du poulet, mais ne réduit pas forcément la circulation des parasites dans le groupe.",
+      "zh": "相反，更能耐受感染可以保护鸡的生长，却不一定减少寄生虫在群体中的传播。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Dans les simulations, ces animaux survivent davantage et restent en moyenne plus longtemps porteurs du parasite, ce qui favorise sa circulation.",
+      "zh": "在模拟中，这些动物存活得更多，平均携带寄生虫的时间更长，从而促进其传播。",
+      "glosses": [
+        {
+          "surface": "longtemps",
+          "lemma": "longtemps",
+          "zh": "长时间地"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Guérir plus vite présente un double avantage dans le modèle : cela aide le poulet concerné et réduit aussi les risques pour ses compagnons.",
+      "zh": "在模型中，更快康复具有双重优势：既帮助该只鸡，也降低其同伴的风险。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "Cependant, ces résultats ne suffisent pas à prouver l’efficacité d’une solution dans un élevage réel : des vérifications restent nécessaires.",
+      "zh": "不过，这些结果不足以证明某种方案在真实养殖场中的有效性，仍需验证。",
+      "glosses": [
+        {
+          "surface": "nécessaires",
+          "lemma": "nécessaire",
+          "zh": "必要的"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "L’équipe souhaite maintenant intégrer la génétique au modèle et confronter ses résultats à des données d’élevage ainsi qu’à d’autres espèces de parasites.",
+      "zh": "团队希望接下来将遗传因素纳入模型，并用养殖场数据和其他寄生虫物种检验其结果。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "ralentit",
+        "lemma": "ralentir",
+        "zh": "减缓",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "seule",
+        "lemma": "seul",
+        "zh": "单一的",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "indirectement",
+        "lemma": "indirectement",
+        "zh": "间接地",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "longtemps",
+        "lemma": "longtemps",
+        "zh": "长时间地",
+        "sentenceId": "s11"
+      },
+      {
+        "text": "nécessaires",
+        "lemma": "nécessaire",
+        "zh": "必要的",
+        "sentenceId": "s13"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "À l’inverse",
+        "zh": "相反，用于引入对照",
+        "sentenceId": "s10"
+      },
+      {
+        "text": "ne suffisent pas à",
+        "zh": "不足以……，用于限定证据力度",
+        "sentenceId": "s13"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s10",
+        "note": "相反，用于引入对照"
+      },
+      {
+        "sentenceId": "s13",
+        "note": "不足以……，用于限定证据力度"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Pourquoi faut-il vérifier les résultats d’un modèle dans la réalité ?",
+        "zh": "为什么需要在现实中检验模型结果？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Ce résultat aide un individu, mais pas forcément tout le groupe.",
+        "zh": "这个结果对个体有帮助，但不一定对整个群体都有帮助。"
+      }
+    ]
+  }
+}

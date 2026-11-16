@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-16-fr-un-poulet-et-tout-le-groupe",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "p1",
+      "sentenceId": "s4",
+      "start": 14,
+      "answer": "ralentit",
+      "options": [
+        "ralentit",
+        "prépare",
+        "annonce",
+        "raconte"
+      ],
+      "explanation": "ralentit为ralentir第三人称单数现在时，表示疾病使生长速度变慢。"
+    },
+    {
+      "id": "p2",
+      "sentenceId": "s6",
+      "start": 60,
+      "answer": "seule",
+      "options": [
+        "ancienne",
+        "nouvelle",
+        "seule",
+        "dernière"
+      ],
+      "explanation": "une seule espèce强调数据只涵盖一个物种，而不是所有物种。"
+    },
+    {
+      "id": "p3",
+      "sentenceId": "s8",
+      "start": 64,
+      "answer": "indirectement",
+      "options": [
+        "rapidement",
+        "indirectement",
+        "régulièrement",
+        "facilement"
+      ],
+      "explanation": "indirectement对应间接帮助同伴，与directement形成对比。"
+    },
+    {
+      "id": "p4",
+      "sentenceId": "s11",
+      "start": 81,
+      "answer": "longtemps",
+      "options": [
+        "souvent",
+        "ailleurs",
+        "vite",
+        "longtemps"
+      ],
+      "explanation": "plus longtemps表示更长时间，描述携带寄生虫的持续时间。"
+    },
+    {
+      "id": "p5",
+      "sentenceId": "s13",
+      "start": 129,
+      "answer": "nécessaires",
+      "options": [
+        "gratuites",
+        "impossibles",
+        "nécessaires",
+        "anciennes"
+      ],
+      "explanation": "nécessaires修饰复数vérifications，表示模型之后仍需要验证。"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-16-en-saving-through-the-payroll",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "What is the main development described in the article?",
+      "options": [
+        "A new coalition has been created and its rules are now complete.",
+        "Existing members have replaced payroll saving with individual transfers.",
+        "More employers have joined a savings coalition, while further guidance is planned.",
+        "A completed factsheet has allowed all UK workers to join one scheme."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s1",
+        "s2",
+        "s12",
+        "s13",
+        "s14"
+      ],
+      "explanationZh": "文章核心是更多雇主加入储蓄联盟，同时相关说明仍在计划中；联盟不是此次才成立。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "What does the figure of over half a million refer to?",
+      "options": [
+        "Workers who have already made their first savings transfer.",
+        "Workers who will gain an opportunity to use workplace savings.",
+        "Workers who have asked to leave workplace savings schemes.",
+        "Workers whose employers have already received the new factsheet."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s3",
+        "s4"
+      ],
+      "explanationZh": "该数字是新增获得机会的人数，不是已参加人数或已收到文件的人数。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "What does the announcement say about taking money out of the savings pot?",
+      "options": [
+        "It can be taken out only when the employee changes jobs.",
+        "It can be taken out once a year without paying a fee.",
+        "It can be taken out after the new factsheet is published.",
+        "It can be taken out when needed without paying a fee."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s7"
+      ],
+      "explanationZh": "s7明确需要时可随时免费取用，未设置换工作、每年一次或等待文件的条件。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "What is the planned factsheet intended to explain?",
+      "options": [
+        "How payroll savings schemes should work under minimum wage rules.",
+        "How workers should divide savings between different bank accounts.",
+        "How coalition members should select the next employers to join.",
+        "How workers should calculate the interest earned on their savings."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s13",
+        "s14"
+      ],
+      "explanationZh": "说明单旨在澄清工资储蓄计划如何符合最低工资规则，不讨论账户分配、成员挑选或利息计算。"
+    }
+  ]
+}

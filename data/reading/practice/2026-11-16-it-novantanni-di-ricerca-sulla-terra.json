@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-16-it-novantanni-di-ricerca-sulla-terra",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "p1",
+      "sentenceId": "s2",
+      "start": 10,
+      "answer": "comincia",
+      "options": [
+        "finisce",
+        "comincia",
+        "dimentica",
+        "vende"
+      ],
+      "explanation": "comincia是cominciare第三人称单数现在时；此处用叙事现在时说历史从该日开始。"
+    },
+    {
+      "id": "p2",
+      "sentenceId": "s3",
+      "start": 14,
+      "answer": "riunire",
+      "options": [
+        "vendere",
+        "nascondere",
+        "riunire",
+        "perdere"
+      ],
+      "explanation": "riunire表示把研究汇集起来，与in un solo istituto相呼应。"
+    },
+    {
+      "id": "p3",
+      "sentenceId": "s5",
+      "start": 23,
+      "answer": "origine",
+      "options": [
+        "origine",
+        "vacanza",
+        "finestra",
+        "stagione"
+      ],
+      "explanation": "origine为阴性单数名词，l’unica origine表示唯一来源。"
+    },
+    {
+      "id": "p4",
+      "sentenceId": "s8",
+      "start": 46,
+      "answer": "diverse",
+      "options": [
+        "vuote",
+        "diverse",
+        "lontane",
+        "costose"
+      ],
+      "explanation": "diverse与阴性复数storie e specializzazioni一致，此处表示不同。"
+    },
+    {
+      "id": "p5",
+      "sentenceId": "s9",
+      "start": 27,
+      "answer": "organizzerà",
+      "options": [
+        "organizzava",
+        "organizzeranno",
+        "organizzerà",
+        "organizzavi"
+      ],
+      "explanation": "organizzerà为第三人称单数简单将来时，主语l’INGV；纪念活动尚在计划中。"
+    }
+  ]
+}

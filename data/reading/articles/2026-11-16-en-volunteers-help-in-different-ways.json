@@ -1,0 +1,273 @@
+{
+  "schema": 1,
+  "id": "2026-11-16-en-volunteers-help-in-different-ways",
+  "storyId": "dcms-kavs-250-groups-2026-11-14",
+  "lang": "en",
+  "date": "2026-11-16",
+  "category": "society",
+  "topics": [
+    "志愿者的多种助人方式"
+  ],
+  "title": "Volunteers help in different ways",
+  "titleZh": "志愿者的多种助人方式",
+  "summaryZh": "英国250个志愿团体获奖：从儿童自行车借用到足球和社区花园，服务形式各不相同。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：具体社区活动、常用时态和短句；机构名称和主题词配中文辅助。非官方分级。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Department for Digital, Culture, Media and Sport",
+    "author": "Department for Digital, Culture, Media and Sport",
+    "title": "King's Award for Voluntary Service honour 250 volunteer groups",
+    "url": "https://www.gov.uk/government/news/kings-award-for-voluntary-service-honour-250-volunteer-groups",
+    "publishedAt": "2026-11-14",
+    "lang": "en"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. Department for Digital, Culture, Media and Sport; original publication 14 November 2026; source linked above.",
+  "adaptation": "2026-11-16整理：依据机构英文新闻稿同语言分级改写，添加中文翻译、词义与原创学习练习；不是原文、官方课程或机构认可的材料。仅使用机构叙述，不转载引语、照片、标志或其他第三方材料。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "On 14 November 2026, the UK government announced an award for 250 groups led by volunteers.",
+      "zh": "2026年11月14日，英国政府宣布向250个由志愿者主导的团体授奖。",
+      "glosses": [
+        {
+          "surface": "volunteers",
+          "lemma": "volunteer",
+          "zh": "志愿者"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "The King’s Award for Voluntary Service is the highest award for a voluntary group in the UK.",
+      "zh": "国王志愿服务奖是英国志愿团体的最高荣誉。",
+      "glosses": [
+        {
+          "surface": "highest",
+          "lemma": "high",
+          "zh": "最高的"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "The winning groups help their communities in many different ways.",
+      "zh": "获奖团体以多种不同的方式帮助各自的社区。",
+      "glosses": [
+        {
+          "surface": "communities",
+          "lemma": "community",
+          "zh": "社区"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "In Worcestershire, Evesham Adventure Playground Association runs activities for children and young people.",
+      "zh": "在伍斯特郡，伊夫舍姆冒险游乐场协会为儿童和年轻人开展活动。",
+      "glosses": [
+        {
+          "surface": "activities",
+          "lemma": "activity",
+          "zh": "活动"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "It also has a project that gives old bikes a new life and a bike library for children.",
+      "zh": "它还有一个让旧自行车重新发挥作用的项目，以及儿童自行车借用服务。",
+      "glosses": [
+        {
+          "surface": "library",
+          "lemma": "library",
+          "zh": "借用服务（此处为自行车）"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "In County Londonderry, the Harry Gregg Foundation offers football sessions for young people with disabilities.",
+      "zh": "在伦敦德里郡，哈里·格雷格基金会为残障年轻人提供足球活动。",
+      "glosses": [
+        {
+          "surface": "offers",
+          "lemma": "offer",
+          "zh": "提供"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "At Caldmore, volunteers hold gardening sessions and community events on land that was once unused.",
+      "zh": "在卡尔德莫尔，志愿者在一片曾经闲置的土地上举办园艺活动和社区活动。",
+      "glosses": [
+        {
+          "surface": "unused",
+          "lemma": "unused",
+          "zh": "闲置的"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "People can visit this green space every day.",
+      "zh": "人们每天都可以到访这片绿地。",
+      "glosses": [
+        {
+          "surface": "visit",
+          "lemma": "visit",
+          "zh": "到访"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "This year, 87% of the awards went to groups outside London and the South East.",
+      "zh": "今年，87%的奖项授予了伦敦及英格兰东南部以外地区的团体。",
+      "glosses": [
+        {
+          "surface": "outside",
+          "lemma": "outside",
+          "zh": "在……以外"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "The awards cover different services, not just one kind of volunteering.",
+      "zh": "这些奖项涵盖不同服务，而不仅是一种志愿活动。",
+      "glosses": [
+        {
+          "surface": "services",
+          "lemma": "service",
+          "zh": "服务"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "People can now nominate groups for the 2027 awards, with nominations closing on 1 December 2026.",
+      "zh": "现在可以提名团体参加2027年评选，提名于2026年12月1日截止。",
+      "glosses": [
+        {
+          "surface": "nominate",
+          "lemma": "nominate",
+          "zh": "提名"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "volunteers",
+        "lemma": "volunteer",
+        "zh": "志愿者",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "highest",
+        "lemma": "high",
+        "zh": "最高的",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "communities",
+        "lemma": "community",
+        "zh": "社区",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "activities",
+        "lemma": "activity",
+        "zh": "活动",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "library",
+        "lemma": "library",
+        "zh": "借用服务（此处为自行车）",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "offers",
+        "lemma": "offer",
+        "zh": "提供",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "unused",
+        "lemma": "unused",
+        "zh": "闲置的",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "visit",
+        "lemma": "visit",
+        "zh": "到访",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "outside",
+        "lemma": "outside",
+        "zh": "在……以外",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "services",
+        "lemma": "service",
+        "zh": "服务",
+        "sentenceId": "s10"
+      },
+      {
+        "text": "nominate",
+        "lemma": "nominate",
+        "zh": "提名",
+        "sentenceId": "s11"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "in many different ways",
+        "zh": "以许多不同方式",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "a new life",
+        "zh": "新的生命／重新发挥作用",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "not just",
+        "zh": "不只是",
+        "sentenceId": "s10"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s11",
+        "note": "注意本句的时态和时间关系，将当前事实与下一步安排区分开。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Which of these activities would you like to help with, and why?",
+        "zh": "你想协助其中哪一种活动，为什么？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "I would like to help with … because …",
+        "zh": "我想协助……，因为……",
+        "note": "原创口语练习表达，不是原报道引文。"
+      }
+    ]
+  }
+}

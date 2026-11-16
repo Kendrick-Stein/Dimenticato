@@ -1,0 +1,307 @@
+{
+  "schema": 1,
+  "date": "2026-11-16",
+  "baseline": "6f554c160bfd9cea77d9e9eaf9316f505dbd23e3",
+  "readings": [
+    {
+      "id": "2026-11-16-en-saving-through-the-payroll",
+      "storyId": "treasury-workplace-savings-new-employers-2026-11-14",
+      "lang": "en",
+      "level": "B1",
+      "words": 287,
+      "source": {
+        "name": "HM Treasury; Prime Minister’s Office, 10 Downing Street; Department for Business, Innovation, Science and Trade; Financial Conduct Authority; Money and Pensions Service; National Employment Savings Trust (NEST) Corporation",
+        "author": "HM Treasury; Prime Minister’s Office, 10 Downing Street; Department for Business, Innovation, Science and Trade; Financial Conduct Authority; Money and Pensions Service; National Employment Savings Trust (NEST) Corporation",
+        "title": "Stronger savings for hundreds of thousands of workers",
+        "url": "https://www.gov.uk/government/news/stronger-savings-for-hundreds-of-thousands-of-workers",
+        "publishedAt": "2026-11-14",
+        "lang": "en"
+      },
+      "license": {
+        "name": "Open Government Licence v3.0",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      },
+      "hashes": {
+        "articles": "ba39b0492ca36def313f925ef7cdd1c30cfa685d55f995fcb592509f24eb7055",
+        "practice": "7caa400bc925c09079a1fecba4fc410a14ec2a0a0ca6b5b37378aab174077cd9",
+        "comprehension": "0761161885b098d039bfffbdaf71c3f4b71940847605c8f368fa10ff2d736e73"
+      },
+      "cloze": 5,
+      "comprehension": 4
+    },
+    {
+      "id": "2026-11-16-en-volunteers-help-in-different-ways",
+      "storyId": "dcms-kavs-250-groups-2026-11-14",
+      "lang": "en",
+      "level": "A2",
+      "words": 154,
+      "source": {
+        "name": "Department for Digital, Culture, Media and Sport",
+        "author": "Department for Digital, Culture, Media and Sport",
+        "title": "King's Award for Voluntary Service honour 250 volunteer groups",
+        "url": "https://www.gov.uk/government/news/kings-award-for-voluntary-service-honour-250-volunteer-groups",
+        "publishedAt": "2026-11-14",
+        "lang": "en"
+      },
+      "license": {
+        "name": "Open Government Licence v3.0",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      },
+      "hashes": {
+        "articles": "bf0d946e2838d8743e53e9798774f99960ae658cfbda11a261283d2a73ee1ced",
+        "practice": "3c33cb57aa9f6db77f11ae2895970255ae596813695609d420041d38242a3e3e",
+        "comprehension": "3d048dc14a45490343b0a967f41f8af599fb6fd59fd9a6f2fa52054eaecd7718"
+      },
+      "cloze": 5,
+      "comprehension": 3
+    },
+    {
+      "id": "2026-11-16-fr-un-poulet-et-tout-le-groupe",
+      "storyId": "inrae-coccidiose-modelisation-2026-11-10",
+      "lang": "fr",
+      "level": "B1",
+      "words": 290,
+      "source": {
+        "name": "INRAE — Département Génétique animale",
+        "title": "Coccidiose du poulet : guérir vite, un atout pour l’animal… et pour tout l’élevage",
+        "url": "https://www.inrae.fr/actualites/coccidiose-du-poulet-guerir-vite-atout-lanimal-lelevage",
+        "publishedAt": "2026-11-10",
+        "lang": "fr"
+      },
+      "license": {
+        "name": "Licence Ouverte / Open Licence Etalab 2.0",
+        "url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0"
+      },
+      "hashes": {
+        "articles": "740ede282cce6d31fcc135dacf181e7d2f0ac52722f6a7634ac2765c4fd8c224",
+        "practice": "1abf807d12d5535aca05f90c8a89664313164796d808104b8f793b4317c8a6d8",
+        "comprehension": "1ac45e918365d1898bd434c87bebbec301b62cba64030672d9e88e10e928b7ad"
+      },
+      "cloze": 5,
+      "comprehension": 4
+    },
+    {
+      "id": "2026-11-16-it-novantanni-di-ricerca-sulla-terra",
+      "storyId": "ingv-ing-90-anniversario-2026-11-15",
+      "lang": "it",
+      "level": "A2",
+      "words": 155,
+      "source": {
+        "name": "INGV — Ufficio Stampa",
+        "title": "90 anni dalla fondazione dell’Istituto Nazionale di Geofisica: la visione di Guglielmo Marconi alle origini di una grande storia scientifica",
+        "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/90-anni-dalla-fondazione-dell-istituto-nazionale-di-geofisica-la-visione-di-guglielmo-marconi-alle-origini-di-una-grande-storia-scientifica",
+        "publishedAt": "2026-11-15",
+        "lang": "it"
+      },
+      "license": {
+        "name": "Creative Commons Attribution 4.0 International",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "hashes": {
+        "articles": "93841ca0f278eaa4fdb5483a804c3d44988543e82e702487b6fd23ef735a5809",
+        "practice": "f31e21adf3e1b87eb89227bc840652579bdd4f391943d8fcb3fa299bfd52841f",
+        "comprehension": "66450d421d368efa4b54d6745b900339536a4c59eb1318781c329f3f2837d0d1"
+      },
+      "cloze": 5,
+      "comprehension": 3
+    }
+  ],
+  "listening": [
+    {
+      "id": "de-logo-2026-11-15",
+      "url": "https://www.logo.de/logo-vom-sonntag-15-november-2026-102.html",
+      "sourceDate": "2026-11-15",
+      "questions": 0,
+      "verification": "Official date/title/topics independently checked. Source player advanced muted 00:16 to 00:34 / 10:22, then paused. No audio-quality or global availability claim; no region block observed for this episode. Original outbound-link study guide only; no media/subtitle copying or embedding."
+    }
+  ],
+  "independentReview": {
+    "blindAnswers": {
+      "en-saving": [
+        2,
+        1,
+        3,
+        0
+      ],
+      "en-volunteers": [
+        1,
+        2,
+        0
+      ],
+      "it": [
+        1,
+        3,
+        0
+      ],
+      "fr": [
+        0,
+        2,
+        1,
+        3
+      ]
+    },
+    "procedure": "Original comprehension packages solved without keys, evidence or explanations. Facts, bilingual text, licensing, level, cloze uniqueness and explanations independently checked. Payroll wording/attribution, IT chronological distractors and FR title-answer leakage revised and rechecked against final hashes. Revised questions were reviewed after key exposure, not claimed as a second blind trial."
+  },
+  "rights": {
+    "en": {
+      "articleFooter": "Both exact pages state all content under OGL v3.0 except otherwise stated; named publishers match registered sources. Institutional narrative only, no media, attributed quotations, third-party reports or personal case studies.",
+      "liveTerms": "https://www.gov.uk/help/terms-conditions",
+      "termsResult": "Current full terms retrieved; lines 91-98 permit reproduction under OGL, exclusions apply.",
+      "canonicalLicense": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "licenseAccess": "Canonical direct open returned 403; not retried or bypassed. Official indexed National Archives text supplied permissions, definitions and attribution; official Welsh Government OGL v3 explanation separately retrieved to corroborate adaptation, commercial/noncommercial use and attribution.",
+      "corroboration": "https://www.gov.wales/bydtermcymru/about/ogl-licence",
+      "limitations": "Independent reviewer should assess this evidence; no claim direct canonical license page loaded."
+    },
+    "it": "Article footer explicitly CC BY 4.0, legal page permits source-attributed reproduction. No article text exception found. All quotes, pictures, mismatched captions, logos excluded.",
+    "fr": "Fresh INRAE terms retrieval permits public institutional text under Etalab2.0; no body-text exception found. Excluded copyrighted illustration M.Ithurbide, linked paper, external media.",
+    "scope": "Licensed institutional text only. No third-party imagery, interviews, scientific paper text or media copied. Listening is an original source-link guide, not a licensed audio adaptation."
+  },
+  "dedup": {
+    "openPRs": 0,
+    "checked": "Current main catalog, all published article bodies, candidates, reviews; 149 recovered November 13–14 files and November 15 source records. Source IDs, canonical URLs, story families and body hashes checked. FR source reuses an explicitly unconverted November 15 reserve lead.",
+    "limits": "Exact November 4–7 pending manifests remain unavailable. Selected original works first published November 10, 14 or 15 after cutoff; this clears only their specific older-history overlap, not missing history generally. Ambiguous old candidates write untouched."
+  },
+  "gaps": {
+    "missingReadingSlots": 8,
+    "reading": [
+      {
+        "lang": "it",
+        "tier": "B1",
+        "reason": "Inspected Istat Sep trade release Nov13, but repeated data-comparison/industry theme after Nov11-13 lessons; not expanded just to fill quota. Archive Milan event date does not securely establish first publication. No further independent source finalized."
+      },
+      {
+        "lang": "it",
+        "tier": "B2/C1",
+        "reason": "No independent sufficiently rich eligible source finalized; not pad anniversary source or produce another level from same story."
+      },
+      {
+        "lang": "fr",
+        "tier": "A2",
+        "reason": "Newly screened museum cycling route rejected as freshness/history conflict: ministry Nov13 report calls previous Côte-d’Or edition2025 but linked original association says first2024 and Saône-et-Loire second2025, so underlying story predates cutoff. Claire Naylies interview remains held pending separate interview quotation reuse assessment."
+      },
+      {
+        "lang": "fr",
+        "tier": "B2/C1",
+        "reason": "No second independent eligible source finalized. Coccidiosis adapted at B1 only, not reused for another level."
+      },
+      {
+        "lang": "de",
+        "tier": "all three",
+        "reason": "Destatis full text and complete rights details unavailable; next current source already published; older source not cleared against missing history."
+      },
+      {
+        "lang": "en",
+        "tier": "B2/C1",
+        "reason": "No sufficiently developed third independent source selected. Scottish questionnaire is a short reserve source; not padded. Search remains bounded, not claim no suitable English source exists."
+      }
+    ],
+    "listening": "Only one new DE guide; no IT/FR/EN item fully qualified in this bounded pass. Zero new listening questions."
+  },
+  "sourceScreening": [
+    {
+      "url": "https://www.culture.gouv.fr/regions/drac-bourgogne-franche-comte/actualite-a-la-une/decouvrez-la-grande-boucle-des-musees-en-saone-et-loire",
+      "status": "held",
+      "reason": "Older underlying work and inconsistent year against linked original https://musees-bfc.fr/les-musees-de-saone-et-loire. No registry change or draft."
+    },
+    {
+      "url": "https://www.inrae.fr/actualites/claire-naylies-explorer-genes-mieux-comprendre-vivant",
+      "status": "held",
+      "reason": "Nov12 interview mostly direct personal quotations; Nov15 hold retained, no new license evidence specifically clears them."
+    },
+    {
+      "url": "https://archivi.cultura.gov.it/archivio-notizie/notizia?cHash=def80c797d85bede4097f9deed13ebc4&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2862",
+      "status": "held",
+      "reason": "Displayed14Nov equals event day, not verified first publication; no substitution of event date for source date."
+    },
+    {
+      "url": "https://www.istat.it/comunicato-stampa/commercio-con-lestero-e-prezzi-allimport-settembre-2026/",
+      "status": "not-selected",
+      "reason": "First publication Nov13, but industry/numeric comparison teaching overlap with recent editions; source not fully converted/reviewed."
+    },
+    {
+      "url": "https://www.gov.scot/news/public-urged-to-share-views-on-local-government-reform/",
+      "storyId": "scotland-local-governance-questionnaire-2026-11-13",
+      "status": "reserve-only",
+      "reason": "Already retained Nov15 reserve; source too short for 500-700 word B2 without padding, A2 slot has more concrete everyday material."
+    },
+    {
+      "lang": "de",
+      "kind": "reading",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_393_211.html",
+      "status": "held",
+      "reason": "Article fetch returned 403, no full-text/date/provisional-population verification completed; no workaround attempted. Imprint retrieved, but its More copyright detail also returned 403. Attribution-based reproduction/distribution notice is not a verified adaptation/translation clearance. Not CC BY. Source not yet in registry."
+    },
+    {
+      "lang": "de",
+      "kind": "rights",
+      "url": "https://www.destatis.de/DE/Service/Impressum/_inhalt.html",
+      "status": "partial_evidence",
+      "reason": "Current imprint says general website content may be reproduced/distributed with source attribution unless page-specific exceptions; separate GENESIS database license and image exclusions. Complete general copyright detail inaccessible at https://www.destatis.de/DE/Service/Impressum/copyright-allgemein.html."
+    },
+    {
+      "lang": "de",
+      "kind": "reading",
+      "url": "https://open-educational-resources.de/von-offenen-infrastrukturen-zu-einem-offenen-oekosystem-beobachtungen-aus-zwei-jahren-hackathoern/",
+      "status": "duplicate",
+      "reason": "Full source CC BY 4.0, text author Kathrin Rabsch, but same source already published as 2026-11-12-de-gemeinsam-offene-bildung-gestalten; no new rewrite."
+    },
+    {
+      "lang": "de",
+      "kind": "reading",
+      "url": "https://open-educational-resources.de/ki-und-offenheit-vereinen-open-source-llms-im-bildungsbereich/",
+      "status": "held",
+      "reason": "Official dates include November 3 and September 21; not proven first publication after missing November 4–7 batch; no republishing."
+    },
+    {
+      "lang": "de",
+      "kind": "listening",
+      "url": "https://www.logo.de/logo-vom-sonntag-15-november-2026-102.html",
+      "status": "ready_for_independent_review",
+      "sourceDate": "2026-11-15",
+      "identity": "New complete Sunday broadcast, distinct from prior daily broadcast identities. No claim every individual segment is new. Official page date 15.11.2026 19:50 and homepage duration 10:22 agree with player.",
+      "rights": "Ordinary external link and original generic study directions only. No copied media, transcript, images, source exercises or source narrative; no embedding or republication licence claimed. Reviewed https://www.zdf.de/nutzungsbedingungen; its reproduction restriction does not provide a content-adaptation licence and none is relied upon.",
+      "playback": "Source page player was already advancing muted; paused at 00:16, resumed, observed 00:34/10:22, paused. No region error displayed for this episode. Do not import the prior episode Germany-only claim; no global availability inference. Audio not heard.",
+      "questions": 0
+    },
+    {
+      "lang": "fr",
+      "kind": "listening",
+      "url": "https://apprendre.tv5monde.com/fr/exercices/b1-intermediaire/lincroyable-voyage-de-karl-bushby",
+      "status": "held_rights_scope",
+      "sourceDate": "2026-11-13",
+      "level": "B1 provider",
+      "reason": "Official course verified with France 2 credit and Cécile Pacault design credit, current availability 12 days. Player at /fr/exercice/38746 advanced muted 0:00 to 0:18/2:03 and paused; no audio-quality claim. CGU https://www.tv5monde.com/la-chaine/conditions-generales-d-utilisation sections 6/7 explicitly restrict AI content generation without written permission. Conservative hold on generated guide/lesson; no media, transcript, original questions or protected narrative copied. Link alone not declared illegal; exact scope remains unsettled. No historical content changes requested."
+    },
+    {
+      "lang": "fr",
+      "kind": "listening",
+      "url": "https://apprendre.tv5monde.com/fr/exercices/a2-elementaire/ces-mots-qui-dessinent-une-generation",
+      "status": "held_history",
+      "sourceDate": "2026-11-06",
+      "reason": "Official course date before missing-batch cutoff and limited five-day remaining availability; not cleared against missing history, plus same TV5 terms caution."
+    },
+    {
+      "lang": "it",
+      "kind": "listening",
+      "url": "https://www.raiscuola.rai.it/italianoperstranieri",
+      "status": "no_new_verified_item",
+      "reason": "Reviewed official learner hub plus dated-source search. Only older course collection and unrelated current calendar material found in this pass. Did not establish new after-cutoff independent listening item or full historical dedup for old courses. Not a claim no suitable Italian source exists."
+    },
+    {
+      "lang": "en",
+      "kind": "listening",
+      "url": "https://learnenglish.britishcouncil.org/free-resources/learning-hub/events",
+      "status": "no_new_verified_recording",
+      "reason": "Official event list: Nov10 Let’s eat already published in catalog; next Nov17 Dream homes is future event, not an available new recording. Nov4 Checking the facts falls inside unresolved missing history. No fresh qualifying recorded work found in this pass."
+    }
+  ],
+  "tests": {
+    "harnesses": 47,
+    "passed": 488519,
+    "failed": 0,
+    "knownIssues": 0,
+    "commands": "Reading, candidate, practice and comprehension validators; comprehension loading, practice and listening tests; TZ=UTC npm test; git diff --check."
+  },
+  "preview": "Private cloud preview: all four articles and all 20 cloze/14 comprehension answers exercised; representative wrong answer, disabled repeat, evidence focus, redo, spelling, translation toggle, vocabulary game and back navigation checked. New listening route/source and zero-question presentation checked. No mobile-specific viewport test performed; unchanged renderer covered by existing suite.",
+  "publication": "Exact commit deployment and production verification recorded separately after publication."
+}

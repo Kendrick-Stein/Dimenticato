@@ -1,0 +1,327 @@
+{
+  "schema": 1,
+  "id": "2026-11-16-en-saving-through-the-payroll",
+  "storyId": "treasury-workplace-savings-new-employers-2026-11-14",
+  "lang": "en",
+  "date": "2026-11-16",
+  "category": "work-economy",
+  "topics": [
+    "通过工资发放安排储蓄"
+  ],
+  "title": "Saving through the payroll",
+  "titleZh": "通过工资发放安排储蓄",
+  "summaryZh": "更多英国雇主加入工资储蓄联盟；报道区分提供机会、个人选择与实际参加，并说明取用规则和后续工作。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：连贯说明工资储蓄安排，区分机会与实际参加，含条件、目的和未来安排；主题词配中文辅助。非官方分级。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "HM Treasury; Prime Minister’s Office, 10 Downing Street; Department for Business, Innovation, Science and Trade; Financial Conduct Authority; Money and Pensions Service; National Employment Savings Trust (NEST) Corporation",
+    "author": "HM Treasury; Prime Minister’s Office, 10 Downing Street; Department for Business, Innovation, Science and Trade; Financial Conduct Authority; Money and Pensions Service; National Employment Savings Trust (NEST) Corporation",
+    "title": "Stronger savings for hundreds of thousands of workers",
+    "url": "https://www.gov.uk/government/news/stronger-savings-for-hundreds-of-thousands-of-workers",
+    "publishedAt": "2026-11-14",
+    "lang": "en"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. HM Treasury; Prime Minister’s Office, 10 Downing Street; Department for Business, Innovation, Science and Trade; Financial Conduct Authority; Money and Pensions Service; National Employment Savings Trust (NEST) Corporation; original publication 14 November 2026; source linked above.",
+  "adaptation": "2026-11-16整理：依据机构英文新闻稿同语言分级改写，添加中文翻译、词义与原创学习练习；不是原文、官方课程或机构认可的材料。仅使用机构叙述，不转载引语、照片、标志或其他第三方材料。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "On 14 November 2026, the UK government announced that more major employers had joined its National Coalition of Workplace Savings.",
+      "zh": "2026年11月14日，英国政府宣布更多大型雇主加入其全国职场储蓄联盟。",
+      "glosses": [
+        {
+          "surface": "employers",
+          "lemma": "employer",
+          "zh": "雇主"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "BT, M&S, Veolia and Home Bargains have joined the coalition to offer savings arrangements to their employees.",
+      "zh": "BT、M&S、威立雅和Home Bargains已加入联盟，以向员工提供储蓄安排。",
+      "glosses": [
+        {
+          "surface": "employees",
+          "lemma": "employee",
+          "zh": "员工"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "According to the announcement, over half a million more workers will have the opportunity to save money in this way.",
+      "zh": "据公告，超过50万名额外劳动者将有机会以这种方式储蓄。",
+      "glosses": [
+        {
+          "surface": "opportunity",
+          "lemma": "opportunity",
+          "zh": "机会"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "This figure describes access to an opportunity; it does not say that all of these workers have already started saving.",
+      "zh": "这一数字描述的是获得机会，并不表示这些劳动者都已经开始储蓄。",
+      "glosses": [
+        {
+          "surface": "access",
+          "lemma": "access",
+          "zh": "获得／使用机会"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "A workplace payroll savings scheme lets an employee choose a proportion of their salary to put into their own savings pot.",
+      "zh": "职场工资储蓄计划让员工自行选择将工资的一定比例存入自己的储蓄账户。",
+      "glosses": [
+        {
+          "surface": "proportion",
+          "lemma": "proportion",
+          "zh": "比例"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Once the employee chooses to take part, the money goes into savings automatically, rather than requiring a separate transfer each time.",
+      "zh": "员工选择参加后，这笔钱就会自动转入储蓄，而不需要每次单独转账。",
+      "glosses": [
+        {
+          "surface": "automatically",
+          "lemma": "automatically",
+          "zh": "自动地"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "The announcement says that the money builds up over time and can be accessed whenever it is needed, without a charge.",
+      "zh": "公告说，这笔钱会随时间积累，并可在需要时随时免费取用。",
+      "glosses": [
+        {
+          "surface": "charge",
+          "lemma": "charge",
+          "zh": "费用"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "The aim is to help people set aside money regularly and have something available when they need it.",
+      "zh": "目的是帮助人们定期存下一些钱，在需要时有钱可用。",
+      "glosses": [
+        {
+          "surface": "regularly",
+          "lemma": "regularly",
+          "zh": "定期地"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Members of the coalition agree to offer a payroll savings arrangement and encourage their staff to use it.",
+      "zh": "联盟成员同意提供工资储蓄安排，并鼓励员工使用。",
+      "glosses": [
+        {
+          "surface": "encourage",
+          "lemma": "encourage",
+          "zh": "鼓励"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "The new members are joining employers such as Co-op, Bupa and Travelodge, which were already part of the coalition.",
+      "zh": "新成员加入了Co-op、保柏和Travelodge等雇主的行列，后者此前已是联盟成员。",
+      "glosses": [
+        {
+          "surface": "already",
+          "lemma": "already",
+          "zh": "已经"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Tesco is also working with the coalition and has launched its own payroll savings scheme.",
+      "zh": "乐购也在与联盟合作，并已推出自己的工资储蓄计划。",
+      "glosses": [
+        {
+          "surface": "launched",
+          "lemma": "launch",
+          "zh": "推出"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "The coalition began as part of the government’s Financial Inclusion Strategy, so the November announcement concerns its expansion rather than its creation.",
+      "zh": "联盟始于政府的金融普惠战略，因此十一月公告涉及其扩展，而不是其成立。",
+      "glosses": [
+        {
+          "surface": "expansion",
+          "lemma": "expansion",
+          "zh": "扩展"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Alongside this expansion, the government says it will work with businesses on a factsheet about how these schemes should operate under National Minimum Wage rules.",
+      "zh": "除扩展联盟外，政府表示将与企业合作编写说明单，介绍此类计划应如何遵守全国最低工资规则。",
+      "glosses": [
+        {
+          "surface": "factsheet",
+          "lemma": "factsheet",
+          "zh": "说明单"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "That document is intended to clarify the rules for employers and reduce barriers to setting up schemes; it is described as work to be done, not as a finished guide.",
+      "zh": "这份文件旨在向雇主澄清规则并减少设立计划的障碍；报道将其描述为待开展的工作，而非已完成的指南。",
+      "glosses": [
+        {
+          "surface": "barriers",
+          "lemma": "barrier",
+          "zh": "障碍"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "employers",
+        "lemma": "employer",
+        "zh": "雇主",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "employees",
+        "lemma": "employee",
+        "zh": "员工",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "opportunity",
+        "lemma": "opportunity",
+        "zh": "机会",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "access",
+        "lemma": "access",
+        "zh": "获得／使用机会",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "proportion",
+        "lemma": "proportion",
+        "zh": "比例",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "automatically",
+        "lemma": "automatically",
+        "zh": "自动地",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "charge",
+        "lemma": "charge",
+        "zh": "费用",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "regularly",
+        "lemma": "regularly",
+        "zh": "定期地",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "encourage",
+        "lemma": "encourage",
+        "zh": "鼓励",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "already",
+        "lemma": "already",
+        "zh": "已经",
+        "sentenceId": "s10"
+      },
+      {
+        "text": "launched",
+        "lemma": "launch",
+        "zh": "推出",
+        "sentenceId": "s11"
+      },
+      {
+        "text": "expansion",
+        "lemma": "expansion",
+        "zh": "扩展",
+        "sentenceId": "s12"
+      },
+      {
+        "text": "factsheet",
+        "lemma": "factsheet",
+        "zh": "说明单",
+        "sentenceId": "s13"
+      },
+      {
+        "text": "barriers",
+        "lemma": "barrier",
+        "zh": "障碍",
+        "sentenceId": "s14"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "take part",
+        "zh": "参加",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "set aside",
+        "zh": "留出／存下",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "rather than",
+        "zh": "而不是",
+        "sentenceId": "s12"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s14",
+        "note": "注意本句的时态和时间关系，将当前事实与下一步安排区分开。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "What information would you want before joining a workplace savings scheme?",
+        "zh": "加入职场储蓄计划前，你希望了解哪些信息？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Before deciding, I would want to know …",
+        "zh": "在作决定前，我想了解……",
+        "note": "原创口语练习表达，不是原报道引文。"
+      }
+    ]
+  }
+}

@@ -2,6 +2,55 @@
   "schema": 1,
   "articles": [
     {
+      "id": "2026-11-16-it-novantanni-di-ricerca-sulla-terra",
+      "lang": "it",
+      "date": "2026-11-16",
+      "title": "Novant’anni di ricerca sulla Terra",
+      "titleZh": "研究地球的九十年",
+      "summaryZh": "从ING的成立到今天的INGV，认识几个研究机构如何走到一起。",
+      "level": "A2",
+      "category": "culture",
+      "topics": [
+        "科学史",
+        "机构合作"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-11-15",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-16-en-saving-through-the-payroll",
+      "lang": "en",
+      "date": "2026-11-16",
+      "title": "Saving through the payroll",
+      "titleZh": "通过工资发放安排储蓄",
+      "summaryZh": "更多英国雇主加入工资储蓄联盟；报道区分提供机会、个人选择与实际参加，并说明取用规则和后续工作。",
+      "level": "B1",
+      "category": "work-economy",
+      "topics": [
+        "通过工资发放安排储蓄"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-11-14",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-16-en-volunteers-help-in-different-ways",
+      "lang": "en",
+      "date": "2026-11-16",
+      "title": "Volunteers help in different ways",
+      "titleZh": "志愿者的多种助人方式",
+      "summaryZh": "英国250个志愿团体获奖：从儿童自行车借用到足球和社区花园，服务形式各不相同。",
+      "level": "A2",
+      "category": "society",
+      "topics": [
+        "志愿者的多种助人方式"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-11-14",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-11-15-en-a-new-way-to-compare-schools",
       "lang": "en",
       "date": "2026-11-15",
@@ -236,6 +285,23 @@
       ],
       "sourceLang": "it",
       "sourcePublishedAt": "2026-11-11",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-16-fr-un-poulet-et-tout-le-groupe",
+      "lang": "fr",
+      "date": "2026-11-16",
+      "title": "Un poulet et tout le groupe",
+      "titleZh": "一只鸡与整个鸡群",
+      "summaryZh": "一个计算机模型比较不同抗病能力，说明个体表现好不一定能保护同伴。",
+      "level": "B1",
+      "category": "health",
+      "topics": [
+        "动物健康",
+        "模型与证据"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-11-10",
       "contentType": "native-adaptation"
     },
     {

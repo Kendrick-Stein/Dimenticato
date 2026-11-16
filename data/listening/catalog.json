@@ -3,6 +3,41 @@
   "policy": "Outbound official playback links only. No copied media, thumbnails or full transcripts. Original Chinese guides and questions. Playback itself has not been tested; verified means official page and content evidence were retrieved.",
   "entries": [
     {
+      "id": "de-logo-2026-11-15",
+      "lang": "de",
+      "title": "logo! vom Sonntag, 15. November 2026",
+      "titleZh": "11月15日儿童新闻：从校报到歌剧",
+      "provider": "ZDF logo!",
+      "url": "https://www.logo.de/logo-vom-sonntag-15-november-2026-102.html",
+      "level": "未分级",
+      "levelBasis": "editorial",
+      "levelLabel": "母语儿童内容 · 非 CEFR 分级",
+      "kind": "news",
+      "addedAt": "2026-11-16",
+      "sourcePublishedAt": "2026-11-15",
+      "duration": "10分22秒",
+      "evidenceStatus": "metadata_only",
+      "summaryZh": "进入官方完整节目，自选一个话题练习听取大意。",
+      "guideZh": "第一遍只选一个感兴趣的段落，记下听清的主题词；第二遍补充人物或事件。最后用一句德语说出自己听懂的内容，不必一次听懂整集。",
+      "verificationZh": "已核对官方完整节目页的日期与节目单。云端播放器静音计时从00:16推进至00:34，总时长10:22，随后暂停；不代表已听清、音质验收或所有地区均可播放。本轮未取得完整对应文字依据，不设本站理解题；仅提供原站链接与原创学习提示，不转载音视频、字幕或图片。",
+      "vocabularyLabel": "主题预习词（不保证全部出现在音频中）",
+      "vocabulary": [
+        {
+          "text": "die Schülerzeitung",
+          "zh": "校报"
+        },
+        {
+          "text": "das Telefon",
+          "zh": "电话"
+        },
+        {
+          "text": "die Oper",
+          "zh": "歌剧"
+        }
+      ],
+      "questions": []
+    },
+    {
       "id": "fr-tv5-cop17-2026-11-13",
       "lang": "fr",
       "title": "COP17 : un bilan mitigé pour la biodiversité",

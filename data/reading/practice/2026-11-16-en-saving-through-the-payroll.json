@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-16-en-saving-through-the-payroll",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "p1",
+      "sentenceId": "s3",
+      "start": 78,
+      "answer": "opportunity",
+      "options": [
+        "requirement",
+        "opportunity",
+        "promise",
+        "payment"
+      ],
+      "explanation": "opportunity是机会，不能写成义务、承诺或付款。"
+    },
+    {
+      "id": "p2",
+      "sentenceId": "s5",
+      "start": 61,
+      "answer": "proportion",
+      "options": [
+        "address",
+        "date",
+        "colour",
+        "proportion"
+      ],
+      "explanation": "proportion of their salary指工资的一定比例。"
+    },
+    {
+      "id": "p3",
+      "sentenceId": "s6",
+      "start": 68,
+      "answer": "automatically",
+      "options": [
+        "automatically",
+        "privately",
+        "manually",
+        "occasionally"
+      ],
+      "explanation": "automatically与不必每次单独转账的说明一致，表示自动地。"
+    },
+    {
+      "id": "p4",
+      "sentenceId": "s7",
+      "start": 110,
+      "answer": "charge",
+      "options": [
+        "choice",
+        "reason",
+        "charge",
+        "delay"
+      ],
+      "explanation": "without a charge表示不收费，而非没有选择、原因或延迟。"
+    },
+    {
+      "id": "p5",
+      "sentenceId": "s14",
+      "start": 72,
+      "answer": "barriers",
+      "options": [
+        "accounts",
+        "barriers",
+        "salaries",
+        "profits"
+      ],
+      "explanation": "barriers to setting up schemes指设立计划的障碍。"
+    }
+  ]
+}

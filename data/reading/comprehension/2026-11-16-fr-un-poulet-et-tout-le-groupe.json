@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-16-fr-un-poulet-et-tout-le-groupe",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "Quelle capacité aide à la fois le poulet concerné et ses compagnons dans le modèle ?",
+      "options": [
+        "Guérir plus vite de l’infection.",
+        "Mieux supporter l’infection en continuant de grandir.",
+        "Contaminer moins l’environnement du groupe.",
+        "Rester porteur du parasite pendant plus longtemps."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s9",
+        "s10",
+        "s11",
+        "s12"
+      ],
+      "explanationZh": "第十二句指出更快康复同时有利于该只鸡及其同伴；第九句少污染环境主要帮助其他鸡，第十至十一句说明耐受感染可能延长携带期。"
+    },
+    {
+      "id": "q2",
+      "kind": "cause",
+      "prompt": "Pourquoi une meilleure tolérance peut-elle favoriser la circulation du parasite ?",
+      "options": [
+        "Les chercheurs augmentent la taille des groupes.",
+        "Les poulets grandissent moins vite après leur guérison.",
+        "Les animaux restent porteurs plus longtemps en survivant davantage.",
+        "Le modèle utilise plusieurs espèces en même temps."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s10",
+        "s11"
+      ],
+      "explanationZh": "耐受感染的鸡存活更多，平均携带寄生虫时间更长，因此可能使寄生虫继续传播。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Quelle limite des données utilisées est précisée ?",
+      "options": [
+        "Elles portent seulement sur des poulets déjà guéris.",
+        "Elles concernent une seule espèce de parasite.",
+        "Elles viennent uniquement de mesures de poids.",
+        "Elles ont été recueillies dans un seul pays."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s6"
+      ],
+      "explanationZh": "第六句明确说明数据覆盖一种寄生虫；文中没有给出其他三个限制。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "Quelle étape l’équipe souhaite-t-elle réaliser ensuite ?",
+      "options": [
+        "Remplacer les données d’élevage par des témoignages.",
+        "Étudier seulement les effets sur chaque poulet isolé.",
+        "Supprimer la génétique pour simplifier les résultats.",
+        "Tester les résultats avec des données d’élevage et d’autres espèces."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s13",
+        "s14"
+      ],
+      "explanationZh": "最后一句提出加入遗传因素，并用养殖场数据及其他物种验证，尚未说已完成。"
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "schema": 1,
+  "id": "2026-11-16-it-novantanni-di-ricerca-sulla-terra",
+  "storyId": "ingv-ing-90-anniversario-2026-11-15",
+  "lang": "it",
+  "date": "2026-11-16",
+  "contentType": "native-adaptation",
+  "category": "culture",
+  "topics": [
+    "科学史",
+    "机构合作"
+  ],
+  "title": "Novant’anni di ricerca sulla Terra",
+  "titleZh": "研究地球的九十年",
+  "summaryZh": "从ING的成立到今天的INGV，认识几个研究机构如何走到一起。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：短句、时间顺序与具体地点为主；研究机构名配中文，采用叙事现在时讲述历史，并明确区分已发生的成立与计划中的纪念活动。",
+  "source": {
+    "name": "INGV — Ufficio Stampa",
+    "title": "90 anni dalla fondazione dell’Istituto Nazionale di Geofisica: la visione di Guglielmo Marconi alle origini di una grande storia scientifica",
+    "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/90-anni-dalla-fondazione-dell-istituto-nazionale-di-geofisica-la-visione-di-guglielmo-marconi-alle-origini-di-una-grande-storia-scientifica",
+    "publishedAt": "2026-11-15",
+    "lang": "it"
+  },
+  "license": {
+    "name": "Creative Commons Attribution 4.0 International",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "原作：INGV新闻办公室，2026-11-15，原链接见来源。依据文章页CC BY 4.0及 https://www.ingv.it/note-legali 署名使用；不表示机构认可本教学材料。",
+  "adaptation": "意大利语同语言教学改写，非原文；增补中文对照、词汇与原创练习。未使用人物引语、照片、图注或标识；历史采用叙事现在时。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Il 15 novembre 2026, l’INGV ricorda i novant’anni dalla nascita dell’Istituto Nazionale di Geofisica, chiamato ING.",
+      "zh": "2026年11月15日，INGV纪念意大利国家地球物理研究所（简称ING）成立九十周年。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "La storia comincia il 15 novembre 1936, grazie a un’iniziativa di Guglielmo Marconi, allora presidente del CNR.",
+      "zh": "故事始于1936年11月15日，当时任意大利国家研究委员会主席的古列尔莫·马可尼推动了这项倡议。",
+      "glosses": [
+        {
+          "surface": "comincia",
+          "lemma": "cominciare",
+          "zh": "开始"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "La sua idea è riunire in un solo istituto le ricerche sui fenomeni fisici della Terra.",
+      "zh": "他的想法是把研究地球物理现象的工作汇集到同一个研究所。",
+      "glosses": [
+        {
+          "surface": "riunire",
+          "lemma": "riunire",
+          "zh": "汇集"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Con il tempo crescono le conoscenze, le competenze e gli strumenti per studiare il nostro pianeta.",
+      "zh": "随着时间推移，研究我们星球的知识、技能和工具不断发展。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Ma l’ING non è l’unica origine dell’INGV di oggi: anche altri istituti fanno parte di questa storia.",
+      "zh": "不过，ING并不是今天INGV的唯一来源，其他研究所也参与了这段历史。",
+      "glosses": [
+        {
+          "surface": "origine",
+          "lemma": "origine",
+          "zh": "起源"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Tra questi c’è l’Osservatorio Vesuviano, fondato nel 1841, molto prima dell’ING.",
+      "zh": "其中包括成立于1841年的维苏威火山观测站，比ING早得多。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Ci sono inoltre tre istituti del CNR, nelle città di Catania, Palermo e Milano.",
+      "zh": "此外还有位于卡塔尼亚、巴勒莫和米兰的三个国家研究委员会研究所。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Questi gruppi hanno storie e specializzazioni diverse, ma insieme costruiscono un grande istituto nazionale.",
+      "zh": "这些团队有不同的历史和专业方向，却共同组成了一个大型国家研究所。",
+      "glosses": [
+        {
+          "surface": "diverse",
+          "lemma": "diverso",
+          "zh": "不同的"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Per l’anniversario, l’INGV organizzerà una mattinata dedicata alla propria storia il 14 dicembre.",
+      "zh": "为了纪念周年，INGV计划于12月14日举办一个上午的活动，回顾自身历史。",
+      "glosses": [
+        {
+          "surface": "organizzerà",
+          "lemma": "organizzare",
+          "zh": "将举办"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Il programma prevede interventi, testimonianze e la presentazione di un libro, per ricordare il passato e riflettere sul futuro della ricerca.",
+      "zh": "活动计划包括发言、回忆分享和一本书的介绍，以回顾过去并思考研究的未来。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "comincia",
+        "lemma": "cominciare",
+        "zh": "开始",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "riunire",
+        "lemma": "riunire",
+        "zh": "汇集",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "origine",
+        "lemma": "origine",
+        "zh": "起源",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "diverse",
+        "lemma": "diverso",
+        "zh": "不同的",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "organizzerà",
+        "lemma": "organizzare",
+        "zh": "将举办",
+        "sentenceId": "s9"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "Con il tempo",
+        "zh": "随着时间推移",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "fanno parte di",
+        "zh": "是……的一部分",
+        "sentenceId": "s5"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s4",
+        "note": "随着时间推移"
+      },
+      {
+        "sentenceId": "s5",
+        "note": "是……的一部分"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quale istituzione della tua città vorresti conoscere meglio?",
+        "zh": "你想更了解你所在城市的哪一个机构？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Vorrei conoscere la storia di…",
+        "zh": "我想了解……的历史。"
+      }
+    ]
+  }
+}
