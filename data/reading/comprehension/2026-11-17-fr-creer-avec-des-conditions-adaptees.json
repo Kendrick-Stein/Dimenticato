@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-17-fr-creer-avec-des-conditions-adaptees",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "À qui le guide est-il destiné selon le texte ?",
+      "options": [
+        "Aux spectateurs, aux étudiants et aux équipes des salles.",
+        "Aux artistes, aux étudiants et aux structures culturelles.",
+        "Aux artistes, aux spectateurs et aux équipes des salles.",
+        "Aux étudiants, aux spectateurs et aux structures culturelles."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s3"
+      ],
+      "explanationZh": "第三句列出艺术工作者、学生及文化机构，其他组合不是文中的对象。",
+      "promptZh": "根据文章，这份指南面向哪些人？"
+    },
+    {
+      "id": "q2",
+      "kind": "cause",
+      "prompt": "Pourquoi le texte parle-t-il des espaces derrière la scène ?",
+      "options": [
+        "Parce que le bruit gêne les échanges entre les artistes.",
+        "Parce que les horaires des étudiants doivent être adaptés.",
+        "Parce que les artistes doivent aussi pouvoir accéder aux lieux.",
+        "Parce que les documents de formation doivent être adaptés."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s4",
+        "s5"
+      ],
+      "explanationZh": "第四句区分观众与艺术工作者的可达性，第五句因此要求考虑舞台和后台。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Quand faut-il préparer les adaptations, selon le guide ?",
+      "options": [
+        "Dès la préparation du projet.",
+        "Après la dernière représentation.",
+        "Au moment de vendre les billets.",
+        "Après la première réunion avec le public."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s10"
+      ],
+      "explanationZh": "第十句要求在项目开始时准备，而不是等演出。"
+    }
+  ]
+}

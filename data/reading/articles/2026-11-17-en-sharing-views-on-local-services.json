@@ -1,0 +1,244 @@
+{
+  "schema": 1,
+  "id": "2026-11-17-en-sharing-views-on-local-services",
+  "storyId": "scotland-local-governance-questionnaire-2026-11-13",
+  "lang": "en",
+  "date": "2026-11-17",
+  "category": "society",
+  "topics": [
+    "说说你对地方服务的看法"
+  ],
+  "title": "Sharing views on local services",
+  "titleZh": "说说你对地方服务的看法",
+  "summaryZh": "苏格兰政府邀请公众填写问卷；公众意见与地方议会、工会等组织的讨论共同帮助确定改革下一步。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：短句和具体的问卷参与步骤，组织名称及少量公共服务词汇有中文辅助。非官方CEFR认证。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Scottish Government",
+    "author": "Scottish Government",
+    "title": "Public urged to share views on local government reform",
+    "url": "https://www.gov.scot/news/public-urged-to-share-views-on-local-government-reform/",
+    "publishedAt": "2026-11-13",
+    "lang": "en"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. Scottish Government; original publication 2026-11-13; source linked above.",
+  "adaptation": "2026-11-17整理：依据机构英文叙述同语言分级改写，添加中文翻译、语境词义和原创学习练习。不是原文、官方课程或机构认可材料；不转载直接引语、第三方材料、照片或标志。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "The Scottish Government wants to hear what people think about local government and possible changes.",
+      "zh": "苏格兰政府希望听取人们对地方政府及可能改革的看法。",
+      "glosses": [
+        {
+          "surface": "changes",
+          "lemma": "change",
+          "zh": "变化；改革"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "On 13 November 2026, it announced an online questionnaire for members of the public.",
+      "zh": "2026年11月13日，政府宣布推出一份面向公众的在线问卷。",
+      "glosses": [
+        {
+          "surface": "questionnaire",
+          "lemma": "questionnaire",
+          "zh": "问卷"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "People can share their views on how local government is organised now.",
+      "zh": "人们可以谈谈自己对当前地方政府组织方式的看法。",
+      "glosses": [
+        {
+          "surface": "views",
+          "lemma": "view",
+          "zh": "看法"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "They can also say what is most important to them when local government changes.",
+      "zh": "他们还可以说明地方政府改革时自己最看重什么。",
+      "glosses": [
+        {
+          "surface": "important",
+          "lemma": "important",
+          "zh": "重要的"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "The questions ask about possible problems and opportunities, not just the good points of change.",
+      "zh": "这些问题询问可能出现的问题和机遇，而不只是改革的优点。",
+      "glosses": [
+        {
+          "surface": "opportunities",
+          "lemma": "opportunity",
+          "zh": "机遇"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "People can send their answers through the online platform until Friday, 11 December.",
+      "zh": "人们可以通过在线平台提交回答，截止日期为12月11日星期五。",
+      "glosses": [
+        {
+          "surface": "answers",
+          "lemma": "answer",
+          "zh": "回答"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "This questionnaire is part of a three-month programme of discussions about local government reform.",
+      "zh": "这份问卷是为期三个月的地方政府改革讨论计划的一部分。",
+      "glosses": [
+        {
+          "surface": "discussions",
+          "lemma": "discussion",
+          "zh": "讨论"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Ministers are also talking to organisations, including Scotland’s 32 local councils and trade unions.",
+      "zh": "部长们也在与包括苏格兰32个地方议会和工会在内的组织交谈。",
+      "glosses": [
+        {
+          "surface": "councils",
+          "lemma": "council",
+          "zh": "地方议会"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "They want to explore ways to improve public services.",
+      "zh": "他们希望探索改善公共服务的方法。",
+      "glosses": [
+        {
+          "surface": "improve",
+          "lemma": "improve",
+          "zh": "改善"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "The government will consider the views and evidence before the next stage of its work.",
+      "zh": "政府将在下一阶段工作之前考虑这些意见和证据。",
+      "glosses": [
+        {
+          "surface": "evidence",
+          "lemma": "evidence",
+          "zh": "证据"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Future changes will also need careful work on staff, property and how services are provided.",
+      "zh": "未来的改革还需要仔细考虑人员、财产以及服务的提供方式。",
+      "glosses": [
+        {
+          "surface": "staff",
+          "lemma": "staff",
+          "zh": "工作人员"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "questionnaire",
+        "lemma": "questionnaire",
+        "zh": "问卷",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "views",
+        "lemma": "view",
+        "zh": "看法",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "answers",
+        "lemma": "answer",
+        "zh": "回答",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "improve",
+        "lemma": "improve",
+        "zh": "改善",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "staff",
+        "lemma": "staff",
+        "zh": "工作人员",
+        "sentenceId": "s11"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "share their views",
+        "zh": "分享他们的看法",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "part of",
+        "zh": "……的一部分",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "before the next stage",
+        "zh": "在下一阶段之前",
+        "sentenceId": "s10"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s6",
+        "note": "can + 动词原形表达可以做什么；until引出截止时间。"
+      },
+      {
+        "sentenceId": "s10",
+        "note": "will + 动词原形说明接下来打算做的事，不代表已经完成。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "What local service would you like to improve?",
+        "zh": "你希望改善哪项地方服务？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "I would like better public services.",
+        "zh": "我希望公共服务更好。"
+      },
+      {
+        "text": "It is important to listen to local people.",
+        "zh": "倾听当地居民的意见很重要。"
+      }
+    ]
+  }
+}

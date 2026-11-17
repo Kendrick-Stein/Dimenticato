@@ -3,6 +3,41 @@
   "policy": "Outbound official playback links only. No copied media, thumbnails or full transcripts. Original Chinese guides and questions. Playback itself has not been tested; verified means official page and content evidence were retrieved.",
   "entries": [
     {
+      "id": "de-logo-2026-11-16",
+      "lang": "de",
+      "title": "logo! vom Montag, 16. November 2026",
+      "titleZh": "11月16日儿童新闻：动物交流、宽容与轮椅橄榄球",
+      "provider": "ZDF logo!",
+      "url": "https://www.logo.de/logo-vom-montag-16-november-2026-102.html",
+      "level": "未分级",
+      "levelBasis": "editorial",
+      "levelLabel": "母语儿童内容 · 非 CEFR 分级",
+      "kind": "news",
+      "addedAt": "2026-11-17",
+      "sourcePublishedAt": "2026-11-16",
+      "duration": "10:30",
+      "evidenceStatus": "metadata_only",
+      "summaryZh": "从官方完整节目入口选听动物交流、宽容和轮椅橄榄球等话题。",
+      "guideZh": "先选动物或体育段落，记下听清的主题词，再复听并用一句德语概括实际听懂的信息。节目面向母语儿童，不等同于A2课程。原站可能因所在地限制播放。",
+      "verificationZh": "已核对官方完整节目页日期、节目单与10:30时长；原站播放器静音画面及计时从00:03推进至00:14，未见地区错误。未取得对应逐字稿、未听音，音质未验收；仅提供原站导听，不设理解题。",
+      "vocabularyLabel": "主题预习词（不保证全部出现在音频中）",
+      "vocabulary": [
+        {
+          "text": "miteinander",
+          "zh": "彼此；相互"
+        },
+        {
+          "text": "die Toleranz",
+          "zh": "宽容"
+        },
+        {
+          "text": "der Rollstuhl",
+          "zh": "轮椅"
+        }
+      ],
+      "questions": []
+    },
+    {
       "id": "de-logo-2026-11-15",
       "lang": "de",
       "title": "logo! vom Sonntag, 15. November 2026",

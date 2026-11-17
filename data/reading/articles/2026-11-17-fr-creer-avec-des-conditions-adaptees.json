@@ -1,0 +1,225 @@
+{
+  "schema": 1,
+  "id": "2026-11-17-fr-creer-avec-des-conditions-adaptees",
+  "storyId": "culture-artistes-handicap-2026-11-16",
+  "lang": "fr",
+  "date": "2026-11-17",
+  "contentType": "native-adaptation",
+  "category": "culture",
+  "topics": [
+    "无障碍",
+    "艺术工作"
+  ],
+  "title": "Créer avec des conditions adaptées",
+  "titleZh": "让创作条件适合每个人",
+  "summaryZh": "一份新指南把目光从观众席转向舞台、培训和艺术工作者的日常。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：以具体场所与学习、工作条件为主，使用短句和常见情态表达；repères、protection sociale、sous-titres与adaptations等词组配中文语境释义。",
+  "source": {
+    "name": "Ministère de la Culture",
+    "title": "« Je suis avant tout artiste » : regards d’artistes en situation de handicap",
+    "url": "https://www.culture.gouv.fr/actualites/je-suis-avant-tout-artiste-regards-d-artistes-en-situation-de-handicap",
+    "publishedAt": "2026-11-16",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "Creative Commons Attribution-ShareAlike 3.0 France",
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/fr/"
+  },
+  "attribution": "原作：法国文化部，2026-11-16，原链接见来源；依据文化部法律声明4.3.1(a)的CC BY-SA 3.0 FR使用。本改写、中文对照与练习采用同一许可，不代表文化部认可。",
+  "adaptation": "法语同语言教学改写，非原文；仅改写文化部叙述与指南介绍，不复制受访者引语、图注、照片或标识。中文、词汇和练习为教学增补。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Le 16 novembre 2026, un nouveau guide présente des informations pour les artistes en situation de handicap.",
+      "zh": "2026年11月16日，一份新指南介绍了面向残障艺术工作者的信息。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Il parle de formation, de travail et de protection sociale.",
+      "zh": "它谈到培训、工作和社会保障。",
+      "glosses": [
+        {
+          "surface": "formation",
+          "lemma": "formation",
+          "zh": "培训"
+        },
+        {
+          "surface": "protection sociale",
+          "lemma": "protection sociale",
+          "zh": "社会保障"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Il peut aider les artistes, les étudiants et les structures culturelles à trouver des repères utiles.",
+      "zh": "它可以帮助艺术工作者、学生和文化机构找到有用的指引。",
+      "glosses": [
+        {
+          "surface": "repères",
+          "lemma": "repère",
+          "zh": "在这里指帮助理解和行动的指引"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Le ministère de la Culture rappelle une différence importante : une salle peut être accessible aux spectateurs, mais pas aux artistes.",
+      "zh": "文化部提醒人们注意一个重要区别：一处演出场所可能方便观众进入，却未必方便艺术工作者使用。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Il faut donc penser aussi à la scène et aux espaces derrière la scène.",
+      "zh": "因此，也需要考虑舞台和后台空间。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Dans une formation, on peut adapter les documents, le matériel, les examens ou les horaires.",
+      "zh": "在培训中，可以调整资料、设备、考试或时间安排。",
+      "glosses": [
+        {
+          "surface": "horaires",
+          "lemma": "horaire",
+          "zh": "时间安排"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Pendant une réunion ou une répétition, le bruit et la fatigue peuvent compliquer les échanges.",
+      "zh": "在会议或排练中，噪声与疲劳可能使交流变得困难。",
+      "glosses": [
+        {
+          "surface": "fatigue",
+          "lemma": "fatigue",
+          "zh": "疲劳"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Voir le visage de la personne qui parle ou avoir des sous-titres peut aider.",
+      "zh": "看见说话人的脸，或者有字幕，可能有所帮助。",
+      "glosses": [
+        {
+          "surface": "visage",
+          "lemma": "visage",
+          "zh": "脸"
+        },
+        {
+          "surface": "sous-titres",
+          "lemma": "sous-titre",
+          "zh": "字幕"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Les adaptations dépendent des besoins de la personne et des moyens de la structure.",
+      "zh": "调整措施取决于个人需要和机构具备的资源。",
+      "glosses": [
+        {
+          "surface": "besoins",
+          "lemma": "besoin",
+          "zh": "需要"
+        },
+        {
+          "surface": "adaptations",
+          "lemma": "adaptation",
+          "zh": "根据个人需要作出的调整"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Le guide invite à les préparer dès le début d’un projet, plutôt que d’attendre les représentations.",
+      "zh": "指南倡议从项目开始时就准备这些调整，而不是等到演出时。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "L’objectif est de permettre aux artistes d’apprendre, de travailler et de construire leur parcours professionnel.",
+      "zh": "目标是让艺术工作者能够学习、工作，并发展自己的职业道路。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "formation",
+        "lemma": "formation",
+        "zh": "培训",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "horaires",
+        "lemma": "horaire",
+        "zh": "时间安排",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "fatigue",
+        "lemma": "fatigue",
+        "zh": "疲劳",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "visage",
+        "lemma": "visage",
+        "zh": "脸",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "besoins",
+        "lemma": "besoin",
+        "zh": "需要",
+        "sentenceId": "s9"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "penser aussi à",
+        "zh": "也考虑到",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "dès le début",
+        "zh": "从一开始",
+        "sentenceId": "s10"
+      },
+      {
+        "text": "parcours professionnel",
+        "zh": "职业道路",
+        "sentenceId": "s11"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s4",
+        "note": "peut être… mais pas…用于对比同一场所对不同使用者的可用性。"
+      },
+      {
+        "sentenceId": "s9",
+        "note": "dépendre de表示取决于；des是de与les的缩合。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quelles adaptations peuvent faciliter une réunion ?",
+        "zh": "哪些调整可以让会议更便于参与？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Il faut penser aux besoins de chacun.",
+        "zh": "需要考虑每个人的需要。"
+      }
+    ]
+  }
+}

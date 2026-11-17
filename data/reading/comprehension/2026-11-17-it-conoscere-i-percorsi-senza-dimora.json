@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-17-it-conoscere-i-percorsi-senza-dimora",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "Quale rapporto c’è tra il conteggio e le interviste?",
+      "options": [
+        "Le interviste hanno sostituito il conteggio del gennaio successivo.",
+        "Il conteggio ha definito il campo delle interviste successive.",
+        "Entrambe le attività si sono svolte il giorno della pubblicazione.",
+        "Il conteggio ha riguardato solo chi aveva già risposto alle interviste."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s4",
+        "s5",
+        "s6"
+      ],
+      "explanationZh": "先计数确定后续调查范围，访谈在之后两天进行，并非发布日。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Perché alcune persone potevano usare una versione breve del questionario?",
+      "options": [
+        "Perché vivevano in un comune non incluso nella ricerca.",
+        "Perché erano state incontrate in strada invece che nei centri.",
+        "Perché non riuscivano a sostenere l’intera intervista.",
+        "Perché avevano già fornito dati durante il conteggio."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s7"
+      ],
+      "explanationZh": "第七句明确说明简短版本面向无法完成整场访谈的人。"
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": "Che cosa suggerisce il fatto che circa quattro persone su dieci citino più eventi?",
+      "options": [
+        "La perdita di una dimora può essere legata a diversi eventi.",
+        "Ogni intervistato ha indicato lo stesso problema principale.",
+        "Le difficoltà abitative riguardano solo chi non lavora.",
+        "Le percentuali descrivono tre gruppi completamente separati."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s9",
+        "s10",
+        "s11"
+      ],
+      "explanationZh": "多项事件可出现在同一经历中，所以不能把三个百分比理解为完全互斥的人群。"
+    },
+    {
+      "id": "q4",
+      "kind": "cause",
+      "prompt": "Perché non si possono confrontare direttamente questi risultati con le precedenti ricerche Istat?",
+      "options": [
+        "Perché le interviste nei centri e in strada avvengono in giorni diversi.",
+        "Perché alcuni intervistati indicano più eventi nella propria storia.",
+        "Perché la durata della vita senza dimora varia tra gli intervistati.",
+        "Perché metodo e copertura territoriale differiscono dalle ricerche precedenti."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s13"
+      ],
+      "explanationZh": "末句直接指出调查方法与地域覆盖不同；其他选项涉及本次调查的安排或发现，却不是不能跨调查直接比较的理由。"
+    }
+  ]
+}

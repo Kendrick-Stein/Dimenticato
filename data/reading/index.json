@@ -2,6 +2,40 @@
   "schema": 1,
   "articles": [
     {
+      "id": "2026-11-17-fr-creer-avec-des-conditions-adaptees",
+      "lang": "fr",
+      "date": "2026-11-17",
+      "title": "Créer avec des conditions adaptées",
+      "titleZh": "让创作条件适合每个人",
+      "summaryZh": "一份新指南把目光从观众席转向舞台、培训和艺术工作者的日常。",
+      "level": "A2",
+      "category": "culture",
+      "topics": [
+        "无障碍",
+        "艺术工作"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-11-16",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-17-it-conoscere-i-percorsi-senza-dimora",
+      "lang": "it",
+      "date": "2026-11-17",
+      "title": "Conoscere i percorsi delle persone senza dimora",
+      "titleZh": "了解无家可归者的生活经历",
+      "summaryZh": "Istat的新调查把统计人数与了解个人经历分开，并说明数据可以代表谁。",
+      "level": "B1",
+      "category": "society",
+      "topics": [
+        "社会调查",
+        "住房"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-11-16",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-11-16-it-novantanni-di-ricerca-sulla-terra",
       "lang": "it",
       "date": "2026-11-16",
@@ -48,6 +82,22 @@
       ],
       "sourceLang": "en",
       "sourcePublishedAt": "2026-11-14",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-17-en-sharing-views-on-local-services",
+      "lang": "en",
+      "date": "2026-11-17",
+      "title": "Sharing views on local services",
+      "titleZh": "说说你对地方服务的看法",
+      "summaryZh": "苏格兰政府邀请公众填写问卷；公众意见与地方议会、工会等组织的讨论共同帮助确定改革下一步。",
+      "level": "A2",
+      "category": "society",
+      "topics": [
+        "说说你对地方服务的看法"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-11-13",
       "contentType": "native-adaptation"
     },
     {
@@ -285,6 +335,22 @@
       ],
       "sourceLang": "it",
       "sourcePublishedAt": "2026-11-11",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-17-en-phones-out-of-reach-at-school",
+      "lang": "en",
+      "date": "2026-11-17",
+      "title": "Phones out of reach at school",
+      "titleZh": "让手机在学校里拿不到",
+      "summaryZh": "英格兰的新指导计划不仅要求手机不发出声音，也强调全天不可取用；限制个人手机与提高教育技术安全性是两条不同路线。",
+      "level": "B1",
+      "category": "education",
+      "topics": [
+        "让手机在学校里拿不到"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-11-10",
       "contentType": "native-adaptation"
     },
     {

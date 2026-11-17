@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-17-en-sharing-views-on-local-services",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "What can people discuss in the questionnaire?",
+      "options": [
+        "The good points of change, without possible problems.",
+        "The changes already made, rather than future priorities.",
+        "Their ideas, worries and hopes about possible changes.",
+        "Future changes, without views on how things work now."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s3",
+        "s4",
+        "s5"
+      ],
+      "explanationZh": "第3至5句同时包括当前组织方式、未来改革重点、问题与机遇，不排除现状或担忧，也不是只评价已完成的改革。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "When can people send their answers online?",
+      "options": [
+        "Until 11 December, as part of the wider discussions.",
+        "For three months after the questionnaire was announced.",
+        "After the three-month programme of discussions ends.",
+        "Once ministers finish talking to councils and unions."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s6",
+        "s7",
+        "s8"
+      ],
+      "explanationZh": "第6句给出的提交截止日期是12月11日；第7句的三个月指整体讨论计划，并非问卷从发布起开放三个月，也不必等待组织讨论结束。"
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": "What happens after people give their views?",
+      "options": [
+        "The government makes changes before studying the answers.",
+        "Public answers take the place of talks with organisations.",
+        "The government studies answers after the next stage starts.",
+        "The government considers answers alongside other evidence."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s7",
+        "s8",
+        "s10",
+        "s11"
+      ],
+      "explanationZh": "第7至8句表明问卷与组织讨论同时属于更广泛计划；第10句说下一阶段之前考虑意见和证据，并非先改革或进入下一阶段后再研究，也不取代组织讨论。"
+    }
+  ]
+}

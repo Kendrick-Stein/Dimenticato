@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-17-fr-creer-avec-des-conditions-adaptees",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "p1",
+      "sentenceId": "s2",
+      "start": 12,
+      "answer": "formation",
+      "options": [
+        "formation",
+        "décoration",
+        "réservation",
+        "circulation"
+      ],
+      "explanation": "formation指学习和职业培训，与travail、protection sociale并列。"
+    },
+    {
+      "id": "p2",
+      "sentenceId": "s6",
+      "start": 83,
+      "answer": "horaires",
+      "options": [
+        "portraits",
+        "billets",
+        "horaires",
+        "costumes"
+      ],
+      "explanation": "horaires指上课或工作的时间安排，使用复数。"
+    },
+    {
+      "id": "p3",
+      "sentenceId": "s7",
+      "start": 54,
+      "answer": "fatigue",
+      "options": [
+        "recette",
+        "fatigue",
+        "couleur",
+        "vitesse"
+      ],
+      "explanation": "fatigue指疲劳，与噪声一起影响交流。"
+    },
+    {
+      "id": "p4",
+      "sentenceId": "s8",
+      "start": 8,
+      "answer": "visage",
+      "options": [
+        "plafond",
+        "dossier",
+        "rideau",
+        "visage"
+      ],
+      "explanation": "visage是说话人的脸，voir le visage表示看见其面部。"
+    },
+    {
+      "id": "p5",
+      "sentenceId": "s9",
+      "start": 30,
+      "answer": "besoins",
+      "options": [
+        "besoins",
+        "spectacles",
+        "voyages",
+        "tableaux"
+      ],
+      "explanation": "besoins de la personne是个人的需要，而不是演出或旅行。"
+    }
+  ]
+}

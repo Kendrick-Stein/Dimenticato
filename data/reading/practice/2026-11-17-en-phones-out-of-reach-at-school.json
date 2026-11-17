@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-17-en-phones-out-of-reach-at-school",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "p1",
+      "sentenceId": "s1",
+      "start": 90,
+      "answer": "guidance",
+      "options": [
+        "equipment",
+        "furniture",
+        "guidance",
+        "attendance"
+      ],
+      "explanation": "guidance指官方指导意见，为不可数名词。"
+    },
+    {
+      "id": "p2",
+      "sentenceId": "s2",
+      "start": 50,
+      "answer": "distractions",
+      "options": [
+        "distractions",
+        "subjects",
+        "teachers",
+        "buildings"
+      ],
+      "explanation": "fewer distractions表示更少干扰；fewer修饰复数名词。"
+    },
+    {
+      "id": "p3",
+      "sentenceId": "s6",
+      "start": 81,
+      "answer": "storage",
+      "options": [
+        "payment",
+        "storage",
+        "delivery",
+        "travel"
+      ],
+      "explanation": "secure storage指安全存放，符合保管手机的上下文。"
+    },
+    {
+      "id": "p4",
+      "sentenceId": "s8",
+      "start": 88,
+      "answer": "concentrate",
+      "options": [
+        "depend",
+        "spend",
+        "comment",
+        "concentrate"
+      ],
+      "explanation": "concentrate on their work意为专心学习，to后用原形。"
+    },
+    {
+      "id": "p5",
+      "sentenceId": "s11",
+      "start": 132,
+      "answer": "certification",
+      "options": [
+        "advertising",
+        "certification",
+        "entertainment",
+        "translation"
+      ],
+      "explanation": "safety certification是安全认证，不是广告、娱乐或翻译。"
+    }
+  ]
+}

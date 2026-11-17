@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-17-it-conoscere-i-percorsi-senza-dimora",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "p1",
+      "sentenceId": "s3",
+      "start": 64,
+      "answer": "individuare",
+      "options": [
+        "dimenticare",
+        "individuare",
+        "affittare",
+        "chiudere"
+      ],
+      "explanation": "individuare le zone表示确定调查区域，不是租用或关闭区域。"
+    },
+    {
+      "id": "p2",
+      "sentenceId": "s4",
+      "start": 45,
+      "answer": "conteggio",
+      "options": [
+        "trasloco",
+        "contratto",
+        "conteggio",
+        "colloquio"
+      ],
+      "explanation": "conteggio指第一阶段统计人数，与随后访谈相区别。"
+    },
+    {
+      "id": "p3",
+      "sentenceId": "s7",
+      "start": 69,
+      "answer": "questionario",
+      "options": [
+        "questionario",
+        "passaporto",
+        "calendario",
+        "biglietto"
+      ],
+      "explanation": "questionario breve是简短问卷，记录主要信息。"
+    },
+    {
+      "id": "p4",
+      "sentenceId": "s10",
+      "start": 83,
+      "answer": "alloggio",
+      "options": [
+        "accordo",
+        "impiego",
+        "orario",
+        "alloggio"
+      ],
+      "explanation": "alloggio指可居住的住所，与住房困难相联系。"
+    },
+    {
+      "id": "p5",
+      "sentenceId": "s13",
+      "start": 41,
+      "answer": "confrontabili",
+      "options": [
+        "disponibili",
+        "confrontabili",
+        "personali",
+        "recenti"
+      ],
+      "explanation": "confrontabili指可以比较；句中non和随后原因强调不能与旧调查直接比较。"
+    }
+  ]
+}

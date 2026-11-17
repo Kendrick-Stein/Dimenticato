@@ -1,0 +1,280 @@
+{
+  "schema": 1,
+  "id": "2026-11-17-en-phones-out-of-reach-at-school",
+  "storyId": "dfe-phone-free-school-guidance-2026-11-10",
+  "lang": "en",
+  "date": "2026-11-17",
+  "category": "education",
+  "topics": [
+    "让手机在学校里拿不到"
+  ],
+  "title": "Phones out of reach at school",
+  "titleZh": "让手机在学校里拿不到",
+  "summaryZh": "英格兰的新指导计划不仅要求手机不发出声音，也强调全天不可取用；限制个人手机与提高教育技术安全性是两条不同路线。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：连接政策目标、现行做法及未来计划，使用对比、因果、被动与从句；主题词有中文辅助。非官方CEFR认证。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Department for Education",
+    "author": "Department for Education",
+    "title": "Strengthened guidance to take the next leap to phone-free schools",
+    "url": "https://www.gov.uk/government/news/strengthened-guidance-to-take-the-next-leap-to-phone-free-schools",
+    "publishedAt": "2026-11-10",
+    "lang": "en"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. Department for Education; original publication 2026-11-10; source linked above.",
+  "adaptation": "2026-11-17整理：依据机构英文叙述同语言分级改写，添加中文翻译、语境词义和原创学习练习。不是原文、官方课程或机构认可材料；不转载直接引语、第三方材料、照片或标志。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "On 10 November 2026, England’s Department for Education announced plans to strengthen its guidance on mobile phones in schools.",
+      "zh": "2026年11月10日，英格兰教育部宣布计划加强学校手机使用指导。",
+      "glosses": [
+        {
+          "surface": "guidance",
+          "lemma": "guidance",
+          "zh": "指导意见"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "The aim is to give pupils a school day with fewer distractions and more time to learn and connect with other people.",
+      "zh": "其目的是让学生在校期间少受干扰，有更多时间学习并与他人交流。",
+      "glosses": [
+        {
+          "surface": "distractions",
+          "lemma": "distraction",
+          "zh": "分心的事物"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Many schools already have a rule that phones must not be seen or heard, but this can still leave them in pupils’ bags.",
+      "zh": "许多学校已有规定，手机不能被看见或发出声音，但手机仍可能留在学生的书包里。",
+      "glosses": [
+        {
+          "surface": "rule",
+          "lemma": "rule",
+          "zh": "规定"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "The strengthened guidance will ask schools to go further: phones should be out of use and out of reach throughout the school day.",
+      "zh": "加强后的指导将要求学校更进一步：整个在校日内，手机应不能使用，也不能取用。",
+      "glosses": [
+        {
+          "surface": "throughout",
+          "lemma": "throughout",
+          "zh": "在……整个期间"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "This means a clear approach across the whole school, rather than simply asking pupils to keep their devices quiet during lessons.",
+      "zh": "这意味着全校采取明确一致的做法，而不只是要求学生在课堂上让设备保持安静。",
+      "glosses": [
+        {
+          "surface": "devices",
+          "lemma": "device",
+          "zh": "设备"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Some schools already collect phones at the start of the day, keep them in secure storage or use pouches that can be locked.",
+      "zh": "一些学校已在一天开始时收走手机，将其存放在安全地点，或使用可上锁的袋子。",
+      "glosses": [
+        {
+          "surface": "storage",
+          "lemma": "storage",
+          "zh": "存放；储存"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Others do not allow phones on the school site at all, so the announcement describes several existing ways to limit access.",
+      "zh": "另一些学校完全不允许携带手机入校，因此这份公告介绍了几种现有的限制取用方式。",
+      "glosses": [
+        {
+          "surface": "access",
+          "lemma": "access",
+          "zh": "取用；使用机会"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "The department says phone access can interrupt lessons and make it harder for pupils to concentrate on their work.",
+      "zh": "教育部表示，能够取用手机可能干扰课堂，让学生更难专心学习。",
+      "glosses": [
+        {
+          "surface": "concentrate",
+          "lemma": "concentrate",
+          "zh": "集中注意力"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "It also presents the school day as a break from the pressure to spend time online and a chance to meet others face to face.",
+      "zh": "教育部还将上学时间视为远离上网压力的一段休息时间，以及与他人面对面交流的机会。",
+      "glosses": [
+        {
+          "surface": "pressure",
+          "lemma": "pressure",
+          "zh": "压力"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Clearer guidance is intended to help schools, parents and pupils understand what a phone-free day should involve.",
+      "zh": "更明确的指导旨在帮助学校、家长和学生理解无手机的在校日应包含什么。",
+      "glosses": [
+        {
+          "surface": "involve",
+          "lemma": "involve",
+          "zh": "包含；涉及"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "At the same time, the government is consulting on technology used for learning in classrooms, including possible independent safety certification.",
+      "zh": "与此同时，政府正就课堂学习所用技术征求意见，其中包括可能实行的独立安全认证。",
+      "glosses": [
+        {
+          "surface": "certification",
+          "lemma": "certification",
+          "zh": "认证"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "This is a different question from whether pupils can reach their personal phones during the day.",
+      "zh": "这与学生白天能否取用个人手机是不同的问题。",
+      "glosses": [
+        {
+          "surface": "personal",
+          "lemma": "personal",
+          "zh": "个人的"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "The consultation explores how educational technology could meet strong safety standards while allowing responsible new ideas to develop.",
+      "zh": "这项意见征集探讨如何让教育技术满足严格的安全标准，同时允许负责任的新想法发展。",
+      "glosses": [
+        {
+          "surface": "standards",
+          "lemma": "standard",
+          "zh": "标准"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "These are plans and policy aims, not proof that every school has already changed its rules or that every proposed measure has succeeded.",
+      "zh": "这些是计划和政策目标，并不证明每所学校都已改变规定，也不证明每项拟议措施都已成功。",
+      "glosses": [
+        {
+          "surface": "proposed",
+          "lemma": "propose",
+          "zh": "拟议的"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "guidance",
+        "lemma": "guidance",
+        "zh": "指导意见",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "distractions",
+        "lemma": "distraction",
+        "zh": "分心的事物",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "storage",
+        "lemma": "storage",
+        "zh": "存放；储存",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "concentrate",
+        "lemma": "concentrate",
+        "zh": "集中注意力",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "certification",
+        "lemma": "certification",
+        "zh": "认证",
+        "sentenceId": "s11"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "out of reach",
+        "zh": "拿不到；无法取用",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "rather than",
+        "zh": "而不是",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "face to face",
+        "zh": "面对面",
+        "sentenceId": "s9"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s3",
+        "note": "but对比现有规定和仍可接触手机的实际情况。"
+      },
+      {
+        "sentenceId": "s13",
+        "note": "while连接两个需要同时兼顾的目标：安全与负责任的创新。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Would putting your phone out of reach help you concentrate? Why?",
+        "zh": "把手机放到拿不到的地方会帮助你集中注意力吗？为什么？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "I find it easier to focus when my phone is out of reach.",
+        "zh": "手机放在拿不到的地方时，我觉得更容易专心。"
+      },
+      {
+        "text": "Learning technology and personal phone use are different issues.",
+        "zh": "学习技术和个人手机使用是不同的问题。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-17-en-sharing-views-on-local-services",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "p1",
+      "sentenceId": "s2",
+      "start": 44,
+      "answer": "questionnaire",
+      "options": [
+        "questionnaire",
+        "timetable",
+        "ticket",
+        "receipt"
+      ],
+      "explanation": "questionnaire指供公众回答问题的问卷，与中文线索一致。"
+    },
+    {
+      "id": "p2",
+      "sentenceId": "s3",
+      "start": 23,
+      "answer": "views",
+      "options": [
+        "meals",
+        "keys",
+        "views",
+        "photos"
+      ],
+      "explanation": "share their views意为分享他们的看法；views用复数。"
+    },
+    {
+      "id": "p3",
+      "sentenceId": "s6",
+      "start": 22,
+      "answer": "answers",
+      "options": [
+        "journeys",
+        "answers",
+        "purchases",
+        "visits"
+      ],
+      "explanation": "send their answers指提交问卷回答，不是行程或购买记录。"
+    },
+    {
+      "id": "p4",
+      "sentenceId": "s9",
+      "start": 29,
+      "answer": "improve",
+      "options": [
+        "describe",
+        "close",
+        "sell",
+        "improve"
+      ],
+      "explanation": "improve public services意为改善公共服务；to后用原形。"
+    },
+    {
+      "id": "p5",
+      "sentenceId": "s11",
+      "start": 46,
+      "answer": "staff",
+      "options": [
+        "weather",
+        "staff",
+        "food",
+        "traffic"
+      ],
+      "explanation": "staff是人员统称，本句与财产、服务提供方式并列。"
+    }
+  ]
+}

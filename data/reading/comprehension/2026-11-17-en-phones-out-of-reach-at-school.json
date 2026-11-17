@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-17-en-phones-out-of-reach-at-school",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "cause",
+      "prompt": "Why does the announcement want schools to go beyond keeping phones quiet?",
+      "options": [
+        "Keeping phones quiet also keeps them beyond pupils’ reach.",
+        "Phones can remain accessible under the existing rule.",
+        "The existing rule already prevents access throughout the day.",
+        "Keeping phones in bags already removes pressure to go online."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s3",
+        "s4",
+        "s5"
+      ],
+      "explanationZh": "现有“不被看见、不发声”规定仍可能让手机留在书包里；新指导希望进一步限制取用，而非文中其他原因。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Which approach is described as already being used by some schools?",
+      "options": [
+        "Collecting phones after lessons rather than before the day.",
+        "Keeping phones locked away during lessons but not breaks.",
+        "Collecting devices when the school day begins.",
+        "Using safety certificates instead of rules about phone access."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s6"
+      ],
+      "explanationZh": "第6句明确列出上学时收走手机；其他做法未被描述为已有实践。"
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": "How do the phone guidance and technology consultation differ?",
+      "options": [
+        "One restricts personal phone access; the other explores safety standards for learning technology.",
+        "One tests personal phone safety; the other explores storage rules for classroom devices.",
+        "One restricts phones during lessons; the other extends those restrictions to school breaks.",
+        "One certifies learning technology now; the other checks whether phone restrictions have succeeded."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s4",
+        "s11",
+        "s12",
+        "s13"
+      ],
+      "explanationZh": "第4句谈全天限制个人手机取用，第11至13句另谈学习技术的安全与可能认证；并不是给手机做安全检测、把课堂禁令延长至课间，或已完成认证和成效评估。"
+    },
+    {
+      "id": "q4",
+      "kind": "main-idea",
+      "prompt": "Which statement best describes the status of these measures?",
+      "options": [
+        "They report improvements measured in every English school.",
+        "They replace all existing school rules with one storage method.",
+        "They confirm that classroom technology has passed new tests.",
+        "They set directions for phone restrictions and explore technology safeguards."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s1",
+        "s7",
+        "s10",
+        "s11",
+        "s13",
+        "s14"
+      ],
+      "explanationZh": "本文报告指导计划及意见征集，不是全校成效评估、单一保管方式或已完成的技术认证。"
+    }
+  ]
+}

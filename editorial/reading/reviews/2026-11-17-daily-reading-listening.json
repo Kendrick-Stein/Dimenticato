@@ -1,0 +1,342 @@
+{
+  "date": "2026-11-17",
+  "reviewer": "independent review worker",
+  "status": "PASS: independent content audit complete",
+  "method": {
+    "blind": "First read only nov17-blind article and options, no answerIndex/evidence/explanation. Reported answers before opening full files. Original 14/14 keys agree.",
+    "revision": "Revised options and replacement English A2 q2 reviewed with known keys; NOT a second blind solve.",
+    "sources": "Independent live official pages for EN/FR plus official legal pages for all sources. Istat article web reader failed, then direct curl succeeded and full official article checked; also compared saved HTML.",
+    "scope": "Content, bilingual text, editorial CEFR, cloze semantic/UTF16 checks, facts and licensing only. No repository edits, deployment or browser QA performed by this reviewer."
+  },
+  "findings": [
+    {
+      "severity": "resolved",
+      "issue": "Initial comprehension distractors too weak or unrelated; revised versions checked for plausible adjacent-fact confusions and unique text-supported answer."
+    },
+    {
+      "severity": "resolved",
+      "issue": "FR prompt now À qui le guide est-il destiné selon le texte ? with matching Chinese and Aux options; accurate levelReason, four new FR glossary items and three IT methodology glossary items verified. No facts or answer keys changed."
+    }
+  ],
+  "rights": {
+    "en": "Official publisher OGL policy and article footers cover institutional narrative; adaptation and translation marked, attribution retained; direct quotes/media/logos not used.",
+    "fr": "Culture legal section 4.3.1(a) specifically states CC BY-SA 3.0 FR for ministry texts. More specific policy used rather than generic Etalab footer. Article institutional prose only, excluding third-party images/captions/interview quotations; adaptation/translation/exercises explicitly same-license.",
+    "it": "Istat official note-legali allows sharing and adaptation CC BY 4.0 absent specific exceptions; official institutional statistics prose used, attribution and modification notice retained."
+  },
+  "sourceChecks": [
+    {
+      "url": "https://www.gov.uk/government/news/strengthened-guidance-to-take-the-next-leap-to-phone-free-schools",
+      "facts": "Nov10 date; out-of-use/inaccessible whole day vs not seen/heard; existing storage methods; separate classroom safety consultation; no measured-effect claim."
+    },
+    {
+      "url": "https://www.gov.scot/news/public-urged-to-share-views-on-local-government-reform/",
+      "facts": "Nov13 date; questionnaire scope; Dec11 Friday deadline; three-month overall engagement; 32 councils and unions; consider views/evidence before next stage."
+    },
+    {
+      "url": "https://www.culture.gouv.fr/actualites/je-suis-avant-tout-artiste-regards-d-artistes-en-situation-de-handicap",
+      "facts": "Nov16 guide publication; training/work/social protection; audience vs performer accessibility; training adjustments; noise/fatigue/face/subtitles from institutional narrative; needs/resources; early preparation."
+    },
+    {
+      "url": "https://www.istat.it/comunicato-stampa/le-persone-senza-dimora-profili-e-percorsi-di-vita/",
+      "facts": "Nov16 publication vs Jan2026 survey; 14 metropolitan central municipalities; Jan26 count; Jan28 facilities and Jan29 streets; special areas excluded; brief questionnaires; 31.7/26.2/23.4 percentages; roughly40 multiple events;47.6 <=2years and24.7 >6years; methods/geography prevent past-survey comparison."
+    }
+  ],
+  "limitations": [
+    "CEFR labels are editorial estimates, not certified; IT B1 is upper edge due to abstract methodology.",
+    "Cloze uniqueness is judged against full article and Chinese contextual restoration, NOT a claim all alternatives are grammatically impossible in isolated sentences.",
+    "Parent remains responsible for historical dedup, current-main concurrency, schemas/build tests, browser QA and exact publication/deployment verification."
+  ],
+  "articles": [
+    {
+      "articleId": "2026-11-17-en-phones-out-of-reach-at-school",
+      "level": "B1",
+      "wordCountWhitespace": 290,
+      "blindOriginalAnswerIndex": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "blindOriginalEvidence": [
+        [
+          "s3",
+          "s4",
+          "s5"
+        ],
+        [
+          "s6"
+        ],
+        [
+          "s4",
+          "s11",
+          "s12",
+          "s13"
+        ],
+        [
+          "s1",
+          "s4",
+          "s11",
+          "s13",
+          "s14"
+        ]
+      ],
+      "currentAnswerIndex": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "facts": "pass",
+      "bilingual": "pass; sentence meaning preserved, no number or negation mismatch found",
+      "cloze": "5/5 contextual restoration pass; exact UTF16 offsets and learningSummary matches pass",
+      "surfaceChecks": "pass",
+      "hashes": {
+        "articles": "780584354849fd38f22e36f039ab579f61337387a33854672ae10f1d8ac6a3c9",
+        "practice": "9e3c19245dcd7c157817df0e3541e23d612608edc3b7aa5e6e643211e54b3990",
+        "comprehension": "b750a380cec5d616e516a4939e8b8e5c48819b2b6e1003ebbfce582fe5c27a49"
+      }
+    },
+    {
+      "articleId": "2026-11-17-en-sharing-views-on-local-services",
+      "level": "A2",
+      "wordCountWhitespace": 150,
+      "blindOriginalAnswerIndex": [
+        2,
+        0,
+        3
+      ],
+      "blindOriginalEvidence": [
+        [
+          "s3",
+          "s4",
+          "s5"
+        ],
+        [
+          "s8"
+        ],
+        [
+          "s8",
+          "s10"
+        ]
+      ],
+      "currentAnswerIndex": [
+        2,
+        0,
+        3
+      ],
+      "facts": "pass",
+      "bilingual": "pass; sentence meaning preserved, no number or negation mismatch found",
+      "cloze": "5/5 contextual restoration pass; exact UTF16 offsets and learningSummary matches pass",
+      "surfaceChecks": "pass",
+      "hashes": {
+        "articles": "33a00af94e91f3e60aa9ce5a0cf56aa4e5eafc0b724dcaed7f8ef6ee6adc6d78",
+        "practice": "b1238f1f6a059151783538c249974670ded7cc398df47916f185f363eb38a0ae",
+        "comprehension": "a73428e45698465aa12e58f3a7d73233cc60bf88c92144c38dbbbabf0998fad7"
+      }
+    },
+    {
+      "articleId": "2026-11-17-fr-creer-avec-des-conditions-adaptees",
+      "level": "A2",
+      "wordCountWhitespace": 167,
+      "blindOriginalAnswerIndex": [
+        1,
+        2,
+        0
+      ],
+      "blindOriginalEvidence": [
+        [
+          "s3"
+        ],
+        [
+          "s4",
+          "s5"
+        ],
+        [
+          "s10"
+        ]
+      ],
+      "currentAnswerIndex": [
+        1,
+        2,
+        0
+      ],
+      "facts": "pass",
+      "bilingual": "pass; sentence meaning preserved, no number or negation mismatch found",
+      "cloze": "5/5 contextual restoration pass; exact UTF16 offsets and learningSummary matches pass",
+      "surfaceChecks": "pass",
+      "hashes": {
+        "articles": "c353dbf1ae24287de3b32a0af65146d4f2756131ef33b8b7196f7b4050942d32",
+        "practice": "7aa345977dd45947dda7a3e8e15d73c4002fd9304ffdc27dde3a41d232fb5cee",
+        "comprehension": "3bc7140dd52058b9af043773b8267fd526304f2a7c4e4e16bb8a0e6d0e40835f"
+      }
+    },
+    {
+      "articleId": "2026-11-17-it-conoscere-i-percorsi-senza-dimora",
+      "level": "B1",
+      "wordCountWhitespace": 286,
+      "blindOriginalAnswerIndex": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "blindOriginalEvidence": [
+        [
+          "s4",
+          "s6"
+        ],
+        [
+          "s7"
+        ],
+        [
+          "s9",
+          "s10",
+          "s11"
+        ],
+        [
+          "s13"
+        ]
+      ],
+      "currentAnswerIndex": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "facts": "pass",
+      "bilingual": "pass; sentence meaning preserved, no number or negation mismatch found",
+      "cloze": "5/5 contextual restoration pass; exact UTF16 offsets and learningSummary matches pass",
+      "surfaceChecks": "pass",
+      "hashes": {
+        "articles": "a37196f41ee71f1a122ba2214f5d540d68aec7e0809043710339d080265b281c",
+        "practice": "873c246ab8e8b1c5e1d3551d01b8855075df218990b34ecf5df4373db6584c4a",
+        "comprehension": "ec26030b2f3feea3d97019ea5e29e4159494f318bb23b538f3aa7852f54ae0f6"
+      }
+    }
+  ],
+  "baseline": "1b3ac4ffd5d02a1e995c9df355463dc562d4675a",
+  "publicationGate": "Passed before commit; remote deployment verified separately",
+  "coverage": {
+    "reading": {
+      "en": [
+        "A2",
+        "B1"
+      ],
+      "fr": [
+        "A2"
+      ],
+      "it": [
+        "B1"
+      ],
+      "de": []
+    },
+    "listening": [
+      "de-logo-2026-11-16"
+    ],
+    "gaps": "Other 8 reading slots and EN/FR/IT listening held: no independently qualified new source. No quota filler."
+  },
+  "tests": {
+    "harnesses": 47,
+    "passed": 488828,
+    "failed": 0,
+    "knownIssues": 0,
+    "articleCount": 194,
+    "practiceCount": 179,
+    "comprehensionCount": 155,
+    "comprehensionQuestions": 592
+  },
+  "browserQA": {
+    "preview": "Private managed preview, unchanged renderer",
+    "comprehension": "Final 14 questions answered correctly in UI across all 4 articles. Wrong answer, disabled options, evidence and reset sampled in FR. Final FR prompt retested.",
+    "practice": "FR 5/5 choice; empty spelling retained 0, correct spelling advanced 1/5; reset and vocabulary challenge checked. Remaining cloze verified structurally/editorially, not all manually played.",
+    "listening": "New card/detail/source link and return verified; Enter and screenshot-guided pointer click both open detail. Semantic click initially did not navigate, no code change.",
+    "limits": "No new mobile viewport run; no audio heard or sound quality claim. No user mastery/progress marked."
+  },
+  "preservation": "No textbook restart, old candidate write, historical data rewrite, account/permission change or forced update.",
+  "listeningReview": {
+    "schema": 1,
+    "date": "2026-11-17",
+    "scope": "German reading and four-language listening discovery; no publication performed",
+    "listening": [
+      {
+        "id": "de-logo-2026-11-16",
+        "status": "ready_for_independent_review",
+        "sourceUrl": "https://www.logo.de/logo-vom-montag-16-november-2026-102.html",
+        "dateEvidence": "Official episode heading and date 16.11.2026 | 19:50",
+        "metadataEvidence": "Official full-episode page lists steel summit, animal communication, tolerance, sheep in Nuremberg, wheelchair rugby; original Chinese guide uses only selected topics.",
+        "playbackEvidence": "Cloud browser original page showed playing muted video at 00:03 / 10:30; subsequent click and fresh state showed 00:14 / 10:30, Anhalten and Ton anschalten controls, moving presenter image. No region or security error observed.",
+        "audioQuality": "not assessed; no audio heard",
+        "transcript": "not obtained",
+        "questions": "none; vocabulary explicitly labeled topic preview, not guaranteed spoken words",
+        "rights": "Source-link-only original guide; no transcript, audio, screenshots or source exercise republication",
+        "dedup": "All 54 existing catalog entry IDs and URLs checked; no match. Existing Nov13/14/15 logo entries retained.",
+        "level": "Native children's content, explicitly ungraded, not A2-certified",
+        "limitations": "Playback may differ by region; timer advance is not audio-quality verification."
+      }
+    ],
+    "coverage": {
+      "de": "One new guide ready; no new reading passed all gates.",
+      "en": "British Council events page checked: Nov10 Let's eat already catalogued; Nov17 Dream homes remains future live invitation at 12:30 UK, not an available recording at check time; Nov24 future. No new listening guide.",
+      "fr": "TV5MONDE homepage/current exercises checked. Karl Bushby Nov13 candidate held by existing Nov16 review for TV5 AI-use terms scope; not reused. Jeux de la Francophonie A1 dated July28 falls before unresolved Nov4–7 history. RFI journal page inaccessible via search tool; no bypass, no new guide.",
+      "it": "Rai Scuola Italian-for-foreigners hub and focused November search checked. Evergreen A1–B2 lessons lack independently verified post-Nov7 publication and cleared historical dedup; calendar hit is not a new recording. No new guide."
+    },
+    "listeningSourcesChecked": [
+      "https://learnenglish.britishcouncil.org/free-resources/learning-hub/events",
+      "https://learnenglish.britishcouncil.org/free-resources/learning-hub/events/grammar-lesson-dream-homes",
+      "https://apprendre.tv5monde.com/fr",
+      "https://apprendre.tv5monde.com/fr/exercices/a1-debutant/jeux-de-la-francophonie-trois-artistes-gagnants",
+      "https://apprendre.tv5monde.com/fr/exercices/b1-intermediaire/lincroyable-voyage-de-karl-bushby",
+      "https://www.tv5monde.com/la-chaine/conditions-generales-d-utilisation",
+      "https://francaisfacile.rfi.fr/fr/podcasts/journal-fran%C3%A7ais-facile/",
+      "https://www.raiscuola.rai.it/italianoperstranieri"
+    ],
+    "germanReadingCandidates": [
+      {
+        "url": "https://erwachsenenbildung.at/aktuell/nachrichten/20955-erwachsenenbildung-beim-tag-der-offenen-tuer-im-bmfwf.php",
+        "date": "2026-11-12",
+        "author": "Andrea Bigl, bifeb",
+        "rights": "Article explicitly says Dieser Text ist unter CC BY 4.0 International lizenziert; images separately reserved.",
+        "status": "duplicate",
+        "existingId": "2026-11-13-de-bildungsberatung-beim-offenen-tag"
+      },
+      {
+        "url": "https://open-educational-resources.de/von-offenen-infrastrukturen-zu-einem-offenen-oekosystem-beobachtungen-aus-zwei-jahren-hackathoern/",
+        "rights": "Text CC BY4.0 Kathrin Rabsch",
+        "status": "duplicate",
+        "existingId": "2026-11-12-de-gemeinsam-offene-bildung-gestalten"
+      },
+      {
+        "url": "https://netzpolitik.org/2026/degitalisierung-agilitaet/",
+        "date": "2026-11-08",
+        "author": "Bianca Kastl",
+        "rights": "CC BY-NC-SA4.0",
+        "status": "held_rights",
+        "reason": "Registry allows link-only pending NC site-use compatibility; no adaptation prepared."
+      },
+      {
+        "url": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/582802/memes-in-der-politischen-bildung-mehr-als-lustige-witze-im-internet/",
+        "date": "2026-10-29",
+        "author": "Caren Miesenberger",
+        "rights": "Text explicitly CC BY-SA4.0",
+        "status": "held_historical_dedup",
+        "reason": "Precedes unresolved Nov4–7 records; not independently new after cutoff."
+      },
+      {
+        "url": "https://open-educational-resources.de/oerinfo-fachtag-2026-und-die-knoer-tagung-2026/",
+        "status": "held_historical_dedup",
+        "reason": "Originally May21 updated Oct23; November event date is not publication date."
+      },
+      {
+        "url": "https://irights.info/artikel",
+        "status": "no_new_eligible_source_verified",
+        "reason": "Latest observed German entries Oct19/16; Oct29 entry English."
+      },
+      {
+        "url": "https://erwachsenenbildung.at/aktuell/nachrichten/20975-lehrgang-politische-erwachsenenbildung-startet-im-maerz-2027.php",
+        "status": "held_access",
+        "reason": "Search open returned inaccessible; no article-text licence verification and no adaptation."
+      }
+    ],
+    "completion": "1 German listening guide supplied; 0 German readings, 0 EN/FR/IT listening additions. No audio download, republishing, restriction bypass or main-checkout writes."
+  }
+}

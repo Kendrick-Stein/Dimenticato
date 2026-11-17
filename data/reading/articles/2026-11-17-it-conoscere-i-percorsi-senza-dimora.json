@@ -1,0 +1,236 @@
+{
+  "schema": 1,
+  "id": "2026-11-17-it-conoscere-i-percorsi-senza-dimora",
+  "storyId": "istat-senza-dimora-profili-2026-11-16",
+  "lang": "it",
+  "date": "2026-11-17",
+  "contentType": "native-adaptation",
+  "category": "society",
+  "topics": [
+    "社会调查",
+    "住房"
+  ],
+  "title": "Conoscere i percorsi delle persone senza dimora",
+  "titleZh": "了解无家可归者的生活经历",
+  "summaryZh": "Istat的新调查把统计人数与了解个人经历分开，并说明数据可以代表谁。",
+  "level": "B1",
+  "levelReason": "编辑估计B1：连贯解释调查流程、原因与统计范围；使用过去时、关系从句和对比，方法词汇有中文支持。",
+  "source": {
+    "name": "Istat",
+    "title": "Le persone senza dimora: Profili e percorsi di vita",
+    "url": "https://www.istat.it/comunicato-stampa/le-persone-senza-dimora-profili-e-percorsi-di-vita/",
+    "publishedAt": "2026-11-16",
+    "lang": "it"
+  },
+  "license": {
+    "name": "Creative Commons Attribution 4.0 International",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "原作：Istat，2026-11-16，原链接见来源。依据 https://www.istat.it/note-legali/ 的CC BY 4.0使用，保留署名、许可与修改说明，不代表Istat认可。",
+  "adaptation": "意大利语同语言教学改写，非原文；增补中文对照、词汇与原创练习，不使用图像、标识或外部作品。明确区分2026年1月调查与11月发布；不将14个城市的估计推广至全意大利。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Il 16 novembre 2026, l’Istat ha pubblicato nuovi risultati sulle persone senza dimora in quattordici comuni centrali delle aree metropolitane italiane. La ricerca non copre ogni comune del Paese.",
+      "zh": "2026年11月16日，Istat发布了关于意大利十四个都市区中心城市无家可归者的新结果。研究并未覆盖该国的每个城市。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Questa ricerca, organizzata insieme alla federazione fio.PSD-ETS, riguarda le condizioni osservate nel gennaio 2026, non quelle del giorno della pubblicazione.",
+      "zh": "这项与fio.PSD-ETS联合组织的研究涉及2026年1月观察到的状况，而非发布当天的状况。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Anche le amministrazioni comunali hanno partecipato, aiutando a individuare le zone e i centri di accoglienza e a organizzare il lavoro sul territorio.",
+      "zh": "市级行政部门也参与其中，协助确定调查区域与接待中心，并组织当地工作。",
+      "glosses": [
+        {
+          "surface": "individuare",
+          "lemma": "individuare",
+          "zh": "确定、找出"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "L’indagine si è svolta in due fasi: prima un conteggio, il 26 gennaio, poi interviste dirette a un campione di persone.",
+      "zh": "调查分为两个阶段：先在1月26日计数，之后对部分人员进行直接访谈。",
+      "glosses": [
+        {
+          "surface": "conteggio",
+          "lemma": "conteggio",
+          "zh": "计数"
+        },
+        {
+          "surface": "campione",
+          "lemma": "campione",
+          "zh": "从调查对象中选出的样本"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Le interviste si sono tenute il 28 gennaio nelle strutture di accoglienza notturna e il 29 gennaio nelle aree di strada selezionate.",
+      "zh": "访谈于1月28日在夜间收容设施进行，1月29日在选定的街头区域进行。",
+      "glosses": [
+        {
+          "surface": "strutture di accoglienza notturna",
+          "lemma": "struttura di accoglienza notturna",
+          "zh": "提供夜间住宿的接待机构"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Il conteggio iniziale serviva a definire il campo dell’indagine successiva; le aree considerate speciali non sono entrate in questa seconda fase.",
+      "zh": "最初的计数用于确定后续调查范围；被划为特殊区域的地方没有进入第二阶段。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Per chi non poteva affrontare tutta l’intervista, era disponibile un questionario breve con le informazioni principali.",
+      "zh": "对于无法完成整场访谈的人，调查提供了只包含主要信息的简短问卷。",
+      "glosses": [
+        {
+          "surface": "questionario",
+          "lemma": "questionario",
+          "zh": "问卷"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Il nuovo rapporto cerca di capire i percorsi di vita, oltre a descrivere le caratteristiche delle persone coinvolte.",
+      "zh": "新报告除了描述参与者的特征，还试图了解他们的生活经历。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Il 31,7% indica problemi economici come evento che ha portato alla perdita di una dimora, spesso insieme alla mancanza di lavoro.",
+      "zh": "31.7%的人将经济问题列为导致无家可归的事件，这些问题往往与缺少工作有关。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Il 26,2% cita difficoltà abitative, come uno sfratto o la difficoltà di trovare un alloggio, mentre il 23,4% menziona la rottura dei legami familiari.",
+      "zh": "26.2%的人提及住房困难，例如被驱逐或难以找到住处；23.4%的人提到家庭关系破裂。",
+      "glosses": [
+        {
+          "surface": "alloggio",
+          "lemma": "alloggio",
+          "zh": "住处"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Circa quattro persone su dieci indicano più eventi, quindi questi percorsi non si spiegano sempre con una sola causa.",
+      "zh": "约四成的人列出不止一个事件，因此这些经历并不总能用单一原因解释。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Quasi la metà, il 47,6%, vive in strada o in una struttura notturna da non più di due anni; il 24,7% da oltre sei anni.",
+      "zh": "近一半，即47.6%的人，在街头或夜间收容设施生活不超过两年；24.7%的人已超过六年。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "L’Istat avverte che i risultati non sono confrontabili con quelli delle sue precedenti ricerche sulle persone senza dimora, perché sono cambiati il metodo e il territorio coperto.",
+      "zh": "Istat提醒，由于方法与覆盖地域改变，这些结果不能与其先前有关无家可归者的研究直接比较。",
+      "glosses": [
+        {
+          "surface": "confrontabili",
+          "lemma": "confrontabile",
+          "zh": "可比较的"
+        },
+        {
+          "surface": "territorio coperto",
+          "lemma": "territorio coperto",
+          "zh": "调查所覆盖的地域范围"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "individuare",
+        "lemma": "individuare",
+        "zh": "确定、找出",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "conteggio",
+        "lemma": "conteggio",
+        "zh": "计数",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "questionario",
+        "lemma": "questionario",
+        "zh": "问卷",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "alloggio",
+        "lemma": "alloggio",
+        "zh": "住处",
+        "sentenceId": "s10"
+      },
+      {
+        "text": "confrontabili",
+        "lemma": "confrontabile",
+        "zh": "可比较的",
+        "sentenceId": "s13"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "si è svolta",
+        "zh": "进行了",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "una sola causa",
+        "zh": "单一原因",
+        "sentenceId": "s11"
+      },
+      {
+        "text": "da non più di due anni",
+        "zh": "持续不超过两年",
+        "sentenceId": "s12"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s11",
+        "note": "quindi连接结果或解释，但此处不声称各因素已被证明具有因果效应。"
+      },
+      {
+        "sentenceId": "s13",
+        "note": "perché引出方法和范围变化这一不能比较的原因。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Perché è utile conoscere sia i numeri sia i percorsi di vita?",
+        "zh": "为什么同时了解人数与生活经历很有用？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Bisogna considerare più fattori.",
+        "zh": "需要考虑多个因素。"
+      },
+      {
+        "text": "I dati riguardano un periodo preciso.",
+        "zh": "数据涉及一个明确时期。"
+      }
+    ]
+  }
+}
