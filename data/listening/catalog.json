@@ -3,6 +3,76 @@
   "policy": "Outbound official playback links only. No copied media, thumbnails or full transcripts. Original Chinese guides and questions. Playback itself has not been tested; verified means official page and content evidence were retrieved.",
   "entries": [
     {
+      "id": "de-logo-2026-11-17",
+      "lang": "de",
+      "title": "logo! vom Dienstag, 17. November 2026",
+      "titleZh": "11月17日儿童新闻：蜜蜂、象与姜饼城",
+      "provider": "ZDF logo!",
+      "url": "https://www.logo.de/logo-vom-dienstag-17-november-2026-102.html",
+      "level": "未分级",
+      "levelBasis": "editorial",
+      "levelLabel": "母语儿童内容 · 非 CEFR 分级",
+      "kind": "news",
+      "addedAt": "2026-11-18",
+      "sourcePublishedAt": "2026-11-17",
+      "duration": "10:47",
+      "evidenceStatus": "metadata_only",
+      "summaryZh": "从官方整集入口选听蜜蜂与象、姜饼城等话题。本集仅限德国境内播放。",
+      "guideZh": "先选动物或姜饼城片段，记下听清的主题词，再复听并用一句德语概括实际听懂的信息。不必一次听懂整集。官方提示本集仅限德国境内播放。",
+      "verificationZh": "已核对官方整集日期、节目单、视频上传时间与10:47元数据时长。云端原站显示仅限德国境内播放，未绕过地区限制；未取得逐字稿，未听音或验收音质，仅提供导听入口，不设理解题。",
+      "vocabularyLabel": "主题预习词（不保证全部出现在音频中）",
+      "vocabulary": [
+        {
+          "text": "die Biene",
+          "zh": "蜜蜂"
+        },
+        {
+          "text": "der Elefant",
+          "zh": "象"
+        },
+        {
+          "text": "der Lebkuchen",
+          "zh": "姜饼"
+        }
+      ],
+      "questions": []
+    },
+    {
+      "id": "en-bc-dream-homes-2026-11-17",
+      "lang": "en",
+      "title": "Grammar lesson: Dream homes",
+      "titleZh": "谈谈理想中的家",
+      "provider": "British Council LearnEnglish",
+      "url": "https://learnenglish.britishcouncil.org/free-resources/learning-hub/events/grammar-lesson-dream-homes",
+      "level": "未分级",
+      "levelBasis": "editorial",
+      "levelLabel": "英语直播课回放 · 本页未标明 CEFR",
+      "kind": "lesson",
+      "addedAt": "2026-11-18",
+      "sourcePublishedAt": "2026-11-17",
+      "duration": "约59分钟",
+      "evidenceStatus": "official_metadata",
+      "summaryZh": "围绕住所和理想中的家学习表达，按自己的节奏分段观看官方回放。",
+      "guideZh": "先想想理想住所有哪些特点，再打开原站回放。每次观看一小段，记录自己实际听到的一个表达，并用它描述自己的家。预习词只是主题提示，不是逐字稿。",
+      "verificationZh": "已核对官方课程页的2026年11月17日日期、回放说明与官方YouTube嵌入入口。播放器显示约59分钟，但本次未确认持续播放，也未听音或验收音质；页面未标明CEFR，故保留未分级。不转载原站练习，不设未经音频或逐字稿核实的理解题。",
+      "vocabularyLabel": "主题预习词（不保证全部出现在音频中）",
+      "vocabulary": [
+        {
+          "text": "dream home",
+          "zh": "理想中的家"
+        },
+        {
+          "text": "a place to live",
+          "zh": "居住的地方"
+        },
+        {
+          "text": "useful phrases",
+          "zh": "实用表达"
+        }
+      ],
+      "questions": []
+    },
+    {
       "id": "de-logo-2026-11-16",
       "lang": "de",
       "title": "logo! vom Montag, 16. November 2026",

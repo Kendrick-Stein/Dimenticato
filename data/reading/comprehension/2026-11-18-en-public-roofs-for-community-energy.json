@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-18-en-public-roofs-for-community-energy",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Which summary best matches the article?",
+      "options": [
+        "New panels are working at 21 public sites, and their income will pay for the Wallacetown project.",
+        "Public sites offer possible new projects, with advice available and an existing project showing potential benefits.",
+        "CARES is buying 21 sites, while local groups decide how to spend money already earned by schools.",
+        "Wallacetown schools need new sites, so Local Energy Scotland is choosing hospitals and courts for them."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s7",
+        "s8",
+        "s9",
+        "s10",
+        "s11"
+      ],
+      "explanationZh": "全文先介绍21处潜在场址及可获得的支持，再用Wallacetown既有项目的预期收益作例子。其他概括把潜在项目说成已运行、把资金信息说成购地安排，或把两个不同项目的地点和用途混为一谈。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Why might a community contact Local Energy Scotland?",
+      "options": [
+        "To choose a school for the Wallacetown project.",
+        "To arrange how money from the three schools is spent.",
+        "To learn where the government is building new hospitals.",
+        "To get project advice and information about funding."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s7",
+        "s8"
+      ],
+      "explanationZh": "第7至8句列出项目建议、技术支持以及CARES资金信息；文中并未说该机构负责安排Wallacetown三所学校的收益用途、替该项目选校或建设新医院。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "What does the £1 million figure describe?",
+      "options": [
+        "Money the three schools have already raised this year.",
+        "The amount CARES has paid for every possible new site.",
+        "Expected money for local investment over 25 years.",
+        "The cost of putting panels on the two named buildings."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s10",
+        "s11"
+      ],
+      "explanationZh": "100万英镑是Wallacetown项目25年内用于当地投资的预期收入，不是已收到的钱、所有地点的资助或两座建筑的安装成本。"
+    }
+  ]
+}

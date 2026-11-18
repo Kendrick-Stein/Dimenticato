@@ -1,0 +1,272 @@
+{
+  "schema": 1,
+  "id": "2026-11-18-de-politische-bildung-fuer-erwachsene",
+  "storyId": "erwachsenenbildung-politischer-lehrgang-2026-11-13",
+  "lang": "de",
+  "date": "2026-11-18",
+  "category": "education",
+  "topics": [
+    "为成人设计政治教育活动"
+  ],
+  "title": "Politische Bildung für Erwachsene",
+  "titleZh": "为成人设计政治教育活动",
+  "summaryZh": "奥地利一项培训课程将于2027年开课，帮助成人教育工作者设计和开展政治教育活动。",
+  "level": "B1",
+  "levelReason": "编辑估计B1短篇：包含成人教育和政治教育专业复合词、关系从句、间接疑问结构及被动式，配逐句中文和语境释义。原始报道篇幅有限，正文保留154词，不为达到280–400词参考区间填充或虚构细节。非官方CEFR认证。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "erwachsenenbildung.at",
+    "author": "Heidi Buchecker, ÖGPB",
+    "title": "Lehrgang Politische Erwachsenenbildung 2027",
+    "url": "https://erwachsenenbildung.at/aktuell/nachrichten/20975-lehrgang-politische-erwachsenenbildung-startet-im-maerz-2027.php",
+    "publishedAt": "2026-11-13",
+    "lang": "de"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "原文：Heidi Buchecker, ÖGPB，发表于 erwachsenenbildung.at，2026-11-13；正文许可 CC BY 4.0，保留原文及许可链接。",
+  "adaptation": "2026-11-18整理：依据获许可原语正文作同语言教学改写，添加逐句中文翻译、词义和原创练习。不是原文、官方课程或出版方认可材料；不使用图片、标志、直接引语或其他第三方作品。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Die Österreichische Gesellschaft für Politische Bildung, kurz ÖGPB, bietet 2027 wieder einen Lehrgang an.",
+      "zh": "奥地利政治教育协会，简称ÖGPB，将在2027年再次开设一个培训课程。",
+      "glosses": [
+        {
+          "surface": "Lehrgang",
+          "lemma": "Lehrgang",
+          "zh": "培训课程",
+          "note": "der Lehrgang，复数Lehrgänge。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Er heißt „Politische Erwachsenenbildung“ und richtet sich vor allem an Menschen, die mit Erwachsenen Bildungsangebote gestalten.",
+      "zh": "它名为“政治成人教育”，主要面向为成年人设计教育活动的人。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Dazu gehören Erwachsenenbildnerinnen und Erwachsenenbildner, Trainerinnen und Trainer sowie Menschen, die Wissen an andere weitergeben.",
+      "zh": "这些人包括成人教育工作者、培训人员，以及向他人传播知识的人。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "Im Lehrgang lernen die Teilnehmenden, wie sie politische Bildungsangebote planen und durchführen können.",
+      "zh": "在课程中，参与者学习如何规划和开展政治教育活动。",
+      "glosses": [
+        {
+          "surface": "planen",
+          "lemma": "planen",
+          "zh": "规划",
+          "note": "与durchführen并列，位于können之前。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Der nächste Durchgang beginnt im März 2027 und dauert bis Oktober.",
+      "zh": "下一期课程从2027年3月开始，持续至10月。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Anmeldungen sind noch bis zum 30. November 2026 möglich.",
+      "zh": "报名仍可进行，截止日期为2026年11月30日。",
+      "glosses": [
+        {
+          "surface": "Anmeldungen",
+          "lemma": "Anmeldung",
+          "zh": "报名",
+          "note": "复数；单数die Anmeldung。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Die Termine finden in Wien und in St. Wolfgang in Oberösterreich statt.",
+      "zh": "课程活动在维也纳和上奥地利州的St. Wolfgang举行。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "In St. Wolfgang wird das Seminarzentrum des Bundesinstituts für Erwachsenenbildung, kurz bifeb, genutzt.",
+      "zh": "在St. Wolfgang，课程使用联邦成人教育研究所，简称bifeb，的研修中心。",
+      "glosses": [
+        {
+          "surface": "Seminarzentrum",
+          "lemma": "Seminarzentrum",
+          "zh": "研修中心",
+          "note": "das Seminarzentrum，复合名词。"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Der Lehrgang besteht aus fünf Hauptmodulen und einigen Wahlmodulen.",
+      "zh": "课程由五个主要模块和一些选修模块组成。",
+      "glosses": [
+        {
+          "surface": "Wahlmodulen",
+          "lemma": "Wahlmodul",
+          "zh": "选修模块",
+          "note": "复数第三格；aus后接第三格。"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Die Themen sind zum Beispiel Grundlagen der Politikwissenschaft, Zeitgeschichte und soziale Gerechtigkeit.",
+      "zh": "主题例如政治学基础、当代史和社会公正。",
+      "glosses": [
+        {
+          "surface": "Gerechtigkeit",
+          "lemma": "Gerechtigkeit",
+          "zh": "公正",
+          "note": "die soziale Gerechtigkeit指社会公正。"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Auch Intersektionalität gehört zu den Themen des Lehrgangs.",
+      "zh": "课程主题还包括交叉性。",
+      "glosses": [
+        {
+          "surface": "Intersektionalität",
+          "lemma": "Intersektionalität",
+          "zh": "交叉性",
+          "note": "学习辅助：指不同形式的不利处境或歧视如何相互交织。"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Die Teilnahme kostet 490 Euro, und am Ende steht ein Zertifikat.",
+      "zh": "参加费用为490欧元，课程结束时颁发证书。",
+      "glosses": [
+        {
+          "surface": "Zertifikat",
+          "lemma": "Zertifikat",
+          "zh": "证书",
+          "note": "das Zertifikat，复数Zertifikate。"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Der Lehrgang wurde bereits viermal durchgeführt; das Ministerium unterstützt das Angebot.",
+      "zh": "这一课程此前已举办四次；主管部门为该项目提供支持。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "Lehrgang",
+        "lemma": "Lehrgang",
+        "zh": "培训课程",
+        "note": "der Lehrgang，复数Lehrgänge。",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "planen",
+        "lemma": "planen",
+        "zh": "规划",
+        "note": "与durchführen并列，位于können之前。",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "Anmeldungen",
+        "lemma": "Anmeldung",
+        "zh": "报名",
+        "note": "复数；单数die Anmeldung。",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "Seminarzentrum",
+        "lemma": "Seminarzentrum",
+        "zh": "研修中心",
+        "note": "das Seminarzentrum，复合名词。",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "Wahlmodulen",
+        "lemma": "Wahlmodul",
+        "zh": "选修模块",
+        "note": "复数第三格；aus后接第三格。",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "Gerechtigkeit",
+        "lemma": "Gerechtigkeit",
+        "zh": "公正",
+        "note": "die soziale Gerechtigkeit指社会公正。",
+        "sentenceId": "s10"
+      },
+      {
+        "text": "Intersektionalität",
+        "lemma": "Intersektionalität",
+        "zh": "交叉性",
+        "note": "学习辅助：指不同形式的不利处境或歧视如何相互交织。",
+        "sentenceId": "s11"
+      },
+      {
+        "text": "Zertifikat",
+        "lemma": "Zertifikat",
+        "zh": "证书",
+        "note": "das Zertifikat，复数Zertifikate。",
+        "sentenceId": "s12"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "planen und durchführen",
+        "zh": "规划并开展",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "finden in Wien und in St. Wolfgang in Oberösterreich statt",
+        "zh": "在维也纳和上奥地利州St. Wolfgang举行",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "besteht aus",
+        "zh": "由……组成",
+        "sentenceId": "s9"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s7",
+        "note": "stattfinden是可分动词，主句中finden与statt分开。"
+      },
+      {
+        "sentenceId": "s9",
+        "note": "aus后接第三格；Wahlmodulen为复数第三格形式。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Welche Themen würdest du gern in einem Kurs besprechen?",
+        "zh": "你想在课程里讨论哪些主题？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Ich interessiere mich besonders für …",
+        "zh": "我尤其对……感兴趣。"
+      },
+      {
+        "text": "Der Kurs findet in … statt.",
+        "zh": "课程在……举行。"
+      }
+    ]
+  }
+}

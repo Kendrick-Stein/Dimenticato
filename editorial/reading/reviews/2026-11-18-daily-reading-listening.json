@@ -1,0 +1,300 @@
+{
+  "date": "2026-11-18",
+  "status": "Passed local editorial, structural and UI gates; publication verified separately",
+  "reviewer": "independent review worker",
+  "method": {
+    "blind": "Read only answer-stripped blind files; reported EN [1,3,2], DE [0,1,3], IT [1,3,0,2] before full keys. All original keys matched.",
+    "revisions": "Known-key re-review after EN/DE main-idea replacement, EN q2 distractor adjustment, DE B1 relabel, IT explicit denominator question and industry/services scope correction.",
+    "sources": "Independent live official source and rights checks. EN/DE source retrieval via ordinary urllib HTTP 200 after search-tool Internal Error; Istat source/rights and CC4 deed live web. No bypass. Parent browser claims separately attributed, not independently repeated."
+  },
+  "resolved": [
+    "DE correctly labeled B1 short text (154 words) rather than A2; source-length exception disclosed, no padding. Three comprehension questions retained rather than inventing fourth.",
+    "EN/DE now include whole-text main-idea questions; revised options have one text-supported answer and plausible topic confusions.",
+    "IT q2 explicitly asks denominator of 45.5%; s7/s8 and q3 explanation limit statistical shares to industry/services.",
+    "All dates, numeric values and bilingual modality checked against official institutional narrative."
+  ],
+  "articles": [
+    {
+      "articleId": "2026-11-18-en-public-roofs-for-community-energy",
+      "level": "A2",
+      "bodyWords": 150,
+      "status": "editorial_pass",
+      "cloze": "5/5 contextual answer and exact UTF16 spans pass",
+      "comprehension": {
+        "count": 3,
+        "keys": [
+          1,
+          3,
+          2
+        ],
+        "review": "Initial genuine blind solve matched all keys. Revised questions/level/scope reviewed with known keys; not another blind solve."
+      },
+      "hashes": {
+        "article": "993f29f3b1fff108e77aca9ed96c78d0063f65f1d2466054e0b481c20e9d9c77",
+        "practice": "0e2e1a1ff9fa49ee604e0b6627738ca2cb3b5c7b00460c8b98924a761dda01e2",
+        "comprehension": "22d68d139b42bc68db94b8aa90e70d40944a1d2aed8dbbc7a2dd8fb18e729e22"
+      }
+    },
+    {
+      "articleId": "2026-11-18-de-politische-bildung-fuer-erwachsene",
+      "level": "B1",
+      "bodyWords": 154,
+      "status": "editorial_pass",
+      "cloze": "5/5 contextual answer and exact UTF16 spans pass",
+      "comprehension": {
+        "count": 3,
+        "keys": [
+          0,
+          1,
+          3
+        ],
+        "review": "Initial genuine blind solve matched all keys. Revised questions/level/scope reviewed with known keys; not another blind solve."
+      },
+      "hashes": {
+        "article": "055fd4566dc37ad40f8a8cc408f49a7ced740e9e42588742c660ff1585f5438f",
+        "practice": "cba623ef2aedca91333f3e66df8b99ccb5c79161f97d8db27b62a45ffc629743",
+        "comprehension": "6a4ccf6618036167aa32e7b8bf9bd84dbbbb001034e21798be62f761ea4b3e8a"
+      }
+    },
+    {
+      "articleId": "2026-11-18-it-imprese-oltre-i-confini",
+      "level": "B1",
+      "bodyWords": 327,
+      "status": "editorial_pass",
+      "cloze": "5/5 contextual answer and exact UTF16 spans pass",
+      "comprehension": {
+        "count": 4,
+        "keys": [
+          1,
+          3,
+          0,
+          2
+        ],
+        "review": "Initial genuine blind solve matched all keys. Revised questions/level/scope reviewed with known keys; not another blind solve."
+      },
+      "hashes": {
+        "article": "c364b2061eba79475cace7ce929715318f6152f98a314a7521dfe87b9f1da852",
+        "practice": "8c2fedff4bfddbe7182358833f228792924c741c8455b3d680ffeefb59a838af",
+        "comprehension": "b29b6aa0a31d1fc425124118856913d17f23c805dfcf897fd82621120e5ed730"
+      }
+    }
+  ],
+  "listening": {
+    "status": "content passes for source-link-only guides",
+    "de": "Live official episode date/programme checked. Saved official VideoObject verifies uploadDate 2026-11-17T19:50:00+01:00, PT10M47S and regionsAllowed DE. Correct vocabulary. No transcript/media republished. Parent browser region restriction evidence inherited, not independently repeated.",
+    "en": "Live official page says recording, Date 17 November 2026, homes vocabulary/phrases, official iframe. No CEFR shown. Topic glossary and original Chinese study prompts appropriate. Duration/playback state based on parent browser, not independently checked; no audible/content/quality claim.",
+    "hash": "9fb854dd2e873d39e466722dfc4ee010941263221ad14a89dd30a2ae1760c8eb"
+  },
+  "licences": {
+    "en": "OGL official publisher policy and article footer; named institutional prose only, direct quotes/media excluded, standard OGL attribution and changes shown. National Archives endpoint 403 not bypassed.",
+    "de": "Article end explicitly licenses THIS TEXT CC BY 4.0, live deed permits share/adapt with attribution and change notice; author/portal/source/date retained, photo excluded.",
+    "it": "Istat live note-legali CC BY 4.0 unless exceptions; institutional article body without conflicting notice, adaptation/attribution/no endorsement retained, third-party works/images excluded."
+  },
+  "remainingEditorialHolds": [],
+  "limits": [
+    "Editorial approval is not publication. Coordinator must finish historical/pending dedup, source identity checks, current-main concurrency, schemas/full tests, private UI and deployed-commit verification.",
+    "CEFR is editorial estimate, not certification. IT is demanding B1 with economic glossary; DE is a short B1 exception.",
+    "No audio heard or audio-quality acceptance. DE only available in Germany; EN continuous playback unconfirmed. Guides have no comprehension questions and must not count as intensive readings.",
+    "Reviewer did not modify repository, test runtime, deploy or use user computer."
+  ],
+  "baseline": "1a233230fb46733d91c26fa20580ab52a30944c3",
+  "sourceEvidence": {
+    "en_de": [
+      {
+        "lang": "en",
+        "sourceId": "scottish-government-english-news",
+        "canonicalUrl": "https://www.gov.scot/news/new-community-energy-project-opportunities/",
+        "aliases": [],
+        "originalPublishedAt": "2026-11-18T09:00:00Z",
+        "modifiedAt": "2026-11-18T09:21:02Z",
+        "author": "Scottish Government",
+        "provenance": "Original English institutional news, Article JSON-LD author/publisher Scottish Government; dated Published and datePublished agree. No translation or syndicated-text marker observed. This is provenance evidence, not certified drafting language.",
+        "rights": "Article footer OGL v3.0 except graphic assets/otherwise stated; official Crown Copyright policy explicitly permits reuse of website information under OGL, excluding logos and third-party material. Only institutional narrative used; all direct quotations, media and logos excluded. National Archives licence page returned HTTP 403 in web tool; not retried or bypassed. Publisher grant and exact OGL reference inspected.",
+        "facts": [
+          "21 potential sites on public land/buildings; not 21 completed projects.",
+          "Examples: rooftop solar at Queen Margaret Hospital Fife and Glasgow Sheriff Court; other sites business parks/development land/research campuses.",
+          "Contact Local Energy Scotland for advice/technical support and CARES funding information.",
+          "Wallacetown: three schools; approximately GBP 1 million expected for community investment over 25 years, not realised income."
+        ],
+        "dedup": "No exact canonical URL references found anywhere in local data/reading or editorial at exact baseline. Current main confirmed same baseline by parent earlier today; open PR list empty then. First publication after Nov4–7 missing-manifest cutoff. Parent must refresh current-main and pending-manifest checks before publication.",
+        "articleId": "2026-11-18-en-public-roofs-for-community-energy",
+        "tier": "A2",
+        "bodyWords": 150
+      },
+      {
+        "lang": "de",
+        "sourceId": "erwachsenenbildung-at-news",
+        "canonicalUrl": "https://erwachsenenbildung.at/aktuell/nachrichten/20975-lehrgang-politische-erwachsenenbildung-startet-im-maerz-2027.php",
+        "aliases": [],
+        "originalPublishedAt": "2026-11-13",
+        "author": "Heidi Buchecker, ÖGPB",
+        "provenance": "German Austrian institutional/contributor article, dated text byline; no translation/republication marker observed. Original publication date as stated by publisher, not independently certified absence of all prior versions.",
+        "rights": "End of article explicitly licenses THIS TEXT under CC BY 4.0. Separately inspected CC deed permits sharing and adaptation with attribution/change notice/no implied endorsement. Photo Unsplash separately credited and excluded; only prose used.",
+        "facts": [
+          "Next course March–October2027; registration deadline Nov30,2026.",
+          "Locations Vienna and bifeb seminar centre St. Wolfgang Upper Austria.",
+          "Five main modules and some optional modules. Topics include political-science basics, contemporary history, social justice, intersectionality.",
+          "Main audience adult educators/trainers/multipliers; planning and conducting political adult-education offerings.",
+          "Fee EUR490, certificate; previously held four times; ministry supports programme."
+        ],
+        "dedup": "No article/candidate duplicate found. Only occurrence is Nov17 review held_access because article then could not be read. Today ordinary official web open and direct HTTP fetch succeeded; no access barrier bypass. This was a source access hold, not an uncertain repository write. Original dated after missing Nov4–7 cutoff. Parent must refresh all manifests before publication.",
+        "articleId": "2026-11-18-de-politische-bildung-fuer-erwachsene",
+        "tier": "B1",
+        "bodyWords": 154,
+        "levelDecision": "Independent review requested short B1: education/politics compounds, subordinate structures and passive exceed comfortable A2. Body remains 154 words from short source; no padding to reference 280–400. Three comprehension items retained rather than adding filler to target four."
+      }
+    ],
+    "it": {
+      "date": "2026-11-18",
+      "status": "Draft prepared; independent review, full historical dedup, tests and UI acceptance still required",
+      "articleId": "2026-11-18-it-imprese-oltre-i-confini",
+      "sourceId": "istat-italian-society",
+      "canonicalUrl": "https://www.istat.it/comunicato-stampa/struttura-e-competitivita-delle-imprese-multinazionali-anno-2024/",
+      "originalPublicationDate": "2026-11-10",
+      "referencePeriod": "2024",
+      "publisherAndAuthor": "Istat institutional prose; no separate named author on article",
+      "nativeLanguageEvidence": "Official Italian Istat statistical release; separate English locale; no translation or external syndication notice on selected Italian prose. This supports institutional Italian original, not a certificate of an individual author's mother tongue.",
+      "identity": "Annual structure and competitiveness of multinational enterprises, reference year 2024. Distinct from published 2021–2023 global-value-chain survey and from October 2026 consumer-price preliminary/final results.",
+      "originalDateEvidence": "Official page says Data pubblicazione: 10 Novembre 2026, document ID 140169. Official November release calendar independently lists multinational enterprises/year 2024 for November 10. A newly released annual report, not a changed date on a prior article.",
+      "rights": {
+        "policy": "https://www.istat.it/note-legali/",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "checked": "Live official policy explicitly permits sharing and modification, including commercial use, unless otherwise indicated. Requires attribution, license link, modification notice and no endorsement. Inspected full article body: no conflicting body-text notice or external quotations found.",
+        "exclusions": "No logos, images, third-party material, contact data, tables or linked report excerpts reused. Only institutional article prose adapted. Statistical definitions in Chinese are clearly teaching glosses."
+      },
+      "dedup": {
+        "baseline": "1a233230fb46733d91c26fa20580ab52a30944c3",
+        "checked": "Scanned all current data and editorial JSON for canonical URL, title and distinctive multinazionali report identity; no match. Related Catene globali del valore is a different work/reference period.",
+        "pending": "Coordinator must still check private recovery manifests and latest remote before publication. No claim complete historical manifests have been recovered."
+      },
+      "wordCount": 327,
+      "tier": "B1 standard",
+      "factsChecked": "2024 reference vs 2026 publication; 108 countries / 19,321 foreign-controlled Italian companies / >1.9m workers; employment +3.8% vs turnover -1.8%; added value near EUR 196bn and +4.1%; services +6.7% vs industry excluding construction -0.7%; company count share 0.4%, employment 10.1%, added value 17.8%, R&D 41.2%; Italian-controlled activities abroad 26,935 companies/175 countries/nearly 1.8m workers/EUR 576bn turnover; foreign share of worldwide Italian multinational employment 45.5% and turnover 36.9%; three quarters name entering new markets as main overseas investment motive, followed by quality and technical skills.",
+      "editorialLimits": "No causal claim from these shares. No current-2026 economy claim. Value added is not turnover or profit. CEFR is editorial estimate. Article, 5 cloze and 4 comprehension questions are unreviewed drafts.",
+      "revision": "Independent initial blind answers agreed. Revised q2 to identify denominator explicitly; s7/s8 and q3 explanation now expressly limit shares to industry and services. Revised version pending known-key review, not a second blind test.",
+      "finalHashes": {
+        "articles/2026-11-18-it-imprese-oltre-i-confini.json": "c364b2061eba79475cace7ce929715318f6152f98a314a7521dfe87b9f1da852",
+        "practice/2026-11-18-it-imprese-oltre-i-confini.json": "8c2fedff4bfddbe7182358833f228792924c741c8455b3d680ffeefb59a838af",
+        "comprehension/2026-11-18-it-imprese-oltre-i-confini.json": "b29b6aa0a31d1fc425124118856913d17f23c805dfcf897fd82621120e5ed730"
+      }
+    }
+  },
+  "candidateInventory": {
+    "date": "2026-11-18",
+    "reading": [
+      {
+        "lang": "it",
+        "url": "https://www.istat.it/comunicato-stampa/struttura-e-competitivita-delle-imprese-multinazionali-anno-2024/",
+        "sourceDate": "2026-11-10",
+        "status": "source checked; B1 draft prepared; awaiting independent review and remaining gates"
+      },
+      {
+        "lang": "it",
+        "url": "https://www.istat.it/comunicato-stampa/prezzi-al-consumo-ottobre-2026/",
+        "sourceDate": "2026-11-17",
+        "status": "held: final results of the same October 2026 price story already adapted from preliminary results on November 2"
+      },
+      {
+        "lang": "it",
+        "url": "https://www.istat.it/comunicato-stampa/nota-sullandamento-e-prospettive-delleconomia-italiana-anni-2026-2027-aggiornamento-novembre/",
+        "sourceDate": "2026-11-11",
+        "status": "lead only: not selected; update identity not fully cleared against earlier forecast history; no draft"
+      },
+      {
+        "lang": "it",
+        "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/clima-e-aviazione-turbometer-integra-previsioni-meteorologiche-e-analisi-climatica-per-studiare-la-turbolenza-aerea-e-gli-impatti-su-aeroporti-e-traffico-aereo",
+        "sourceDate": "2026-11-11",
+        "status": "duplicate: 2026-11-12-it-meteo-clima-e-voli"
+      },
+      {
+        "lang": "it",
+        "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/campi-flegrei-uno-studio-ingv-riscrive-la-storia-dell-eruzione-che-contribui-a-costruire-napoli",
+        "sourceDate": "2026-11-12",
+        "status": "duplicate: 2026-11-15-it-la-pietra-sotto-napoli"
+      },
+      {
+        "lang": "fr",
+        "url": "https://www.culture.gouv.fr/presse/communiques-de-presse/salon-des-maires-et-des-collectivites-locales-2026-13-ministeres-presents-pour-parler-de-simplification",
+        "sourceDate": "2026-11-17",
+        "status": "held: repeated interministerial core text; same theme/prose in ecology ministry page crawled weeks earlier, first independent post-Nov 7 publication not established",
+        "aliases": [
+          "https://www.ecologie.gouv.fr/rendez-vous/retrouvez-nos-ministeres-salon-maires-collectivites-locales-2026/faisons-simple",
+          "https://www.interieur.gouv.fr/actualites/communiques-de-presse/salon-des-maires-et-des-collectivites-locales-2026-13-ministeres-presents-pour-parler-de",
+          "https://presse.economie.gouv.fr/salon-des-maires-et-des-collectivites-locales-2026-13-ministeres-presents-pour-parler-de-simplification/"
+        ]
+      },
+      {
+        "lang": "fr",
+        "url": "https://www.inrae.fr/actualites/javier-belinchon-moreno-prix-science-ouverte-these-2026",
+        "sourceDate": "2026-11-12",
+        "status": "duplicate: 2026-11-14-fr-partager-la-recherche"
+      },
+      {
+        "lang": "fr",
+        "url": "https://www.inrae.fr/actualites/coccidiose-du-poulet-guerir-vite-atout-lanimal-lelevage",
+        "sourceDate": "2026-11-10",
+        "status": "duplicate: 2026-11-16-fr-un-poulet-et-tout-le-groupe"
+      },
+      {
+        "lang": "fr",
+        "url": "https://www.culture.gouv.fr/presse/communiques-de-presse/le-gouvernement-presente-un-projet-de-loi-visant-a-renforcer-l-investissement-publicitaire-dans-les-services-de-presse-d-information-politique-et-g",
+        "sourceDate": "2026-11-10",
+        "status": "duplicate: 2026-11-12-fr-presse-publicite"
+      },
+      {
+        "lang": "fr",
+        "url": "https://www.culture.gouv.fr/actualites/je-suis-avant-tout-artiste-regards-d-artistes-en-situation-de-handicap",
+        "sourceDate": "2026-11-16",
+        "status": "duplicate: 2026-11-17-fr-creer-avec-des-conditions-adaptees"
+      }
+    ],
+    "listening": [
+      {
+        "lang": "fr",
+        "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-fran%C3%A7ais-facile/",
+        "status": "403 Forbidden from official endpoint; no bypass; no new lesson/audio claims"
+      },
+      {
+        "lang": "fr",
+        "url": "https://apprendre.tv5monde.com/fr/exercices/a1-debutant/jeux-de-la-francophonie-trois-artistes-gagnants",
+        "sourceDate": "2026-07-28",
+        "status": "old material; prior historical pending manifests incomplete, held"
+      },
+      {
+        "lang": "fr",
+        "url": "https://apprendre.tv5monde.com/fr/exercices/a1-debutant/jeux-de-la-francophonie-2027-direction-erevan",
+        "sourceDate": "2026-06-23",
+        "status": "old material; prior historical pending manifests incomplete, held"
+      },
+      {
+        "lang": "it",
+        "url": "https://www.raiscuola.rai.it/",
+        "status": "official portal checked; visible language-course materials evergreen, no independently verified new post-Nov 7 recording found"
+      },
+      {
+        "lang": "it",
+        "url": "https://www.raiscuola.rai.it/raiscuola/articoli/2026/09/Calendario-scolastico-20262027-d1729946-b8c5-4c9d-a254-e155c0a1f9d4.html",
+        "status": "calendar hit not a newly published audio/video lesson; no entry"
+      }
+    ],
+    "gaps": "IT A2 and B2/C1 missing. FR all tiers missing. IT/FR listening missing. No quota filler. One IT B1 draft is not a published count.",
+    "nonActions": "No repository modifications or publication. No audio playback or sound-quality verification."
+  },
+  "dedup": {
+    "knownPendingManifests": "No final article ID, story ID or canonical URL matches in both recovered private pending manifests. Missing November 4–7 manifests remain missing.",
+    "newIndependentWorks": "Official first publications November 10, 13, 18 and recordings November 17 are after the missing-batch cutoff; no old reprint admitted.",
+    "historicalUnknownWrite": "Candidate queue untouched; no dependency on unresolved prior operation.",
+    "remote": "Main unchanged at baseline and open PR list empty immediately before packaging."
+  },
+  "tests": {
+    "full": "TZ=UTC npm test: 47 harnesses, 489068 passed, 0 failed, 0 known issues",
+    "listening": "900 passed",
+    "validators": "197 readings; 175 candidate metadata; 182 practice groups; 158 comprehension groups, 602 questions"
+  },
+  "browser": {
+    "preview": "Managed private preview of final files. EN all 3 comprehension and 5 cloze answered; wrong-answer lock and reset, evidence navigation, translation toggle, spelling empty/correct/reset, vocabulary challenge start/end. DE all 3 and IT all 4 comprehension answered. Listening detail/source link and history navigation checked. 390px iframe viewport reading/listening visible, body widths375px and scroll widths375px; no horizontal overflow.",
+    "limits": "German source explicitly restricted to Germany. English recorded-player continuous playback not confirmed. No heard-audio or sound-quality claim; no listening questions."
+  },
+  "gaps": "3 of 12 target readings: EN A2, DE short B1, IT B1. FR absent; remaining 9 slots absent. DE short length and 3 rather than4 questions disclosed. Two metadata-only guides EN/DE; no IT/FR listening. Qualified one-week stock not achieved, held leads retained."
+}

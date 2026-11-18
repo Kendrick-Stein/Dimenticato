@@ -1,0 +1,248 @@
+{
+  "schema": 1,
+  "id": "2026-11-18-it-imprese-oltre-i-confini",
+  "storyId": "istat-multinazionali-2024-2026-11-10",
+  "lang": "it",
+  "date": "2026-11-18",
+  "contentType": "native-adaptation",
+  "category": "work-economy",
+  "topics": [
+    "企业",
+    "就业",
+    "跨国经营"
+  ],
+  "title": "Imprese oltre i confini: due direzioni da distinguere",
+  "titleZh": "企业跨越国界：区分两个经营方向",
+  "summaryZh": "一份2026年发布、回顾2024年的报告：企业数量、就业和营业额为何不能混为一谈？",
+  "level": "B1",
+  "levelReason": "编辑估计B1：通过连贯说明、对比与因果连接解释两个企业群体及统计指标；经济术语配中文释义，数据年份与发布日期分开。",
+  "source": {
+    "name": "Istat",
+    "title": "Struttura e competitività delle imprese multinazionali – Anno 2024",
+    "url": "https://www.istat.it/comunicato-stampa/struttura-e-competitivita-delle-imprese-multinazionali-anno-2024/",
+    "publishedAt": "2026-11-10",
+    "lang": "it"
+  },
+  "license": {
+    "name": "Creative Commons Attribution 4.0 International",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "原作：Istat，2026-11-10，原文链接见来源。依据 https://www.istat.it/note-legali/ 的CC BY 4.0使用，保留署名、许可及修改说明，不代表Istat认可。",
+  "adaptation": "根据意大利语机构原文进行同语言教学改写，非原文照录；加入中文对照、词汇、阅读提示及原创练习。2024年统计期不等于2026年发布日期；不使用图片、标识、外部作品或第三方引文。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Il 10 novembre 2026 l’Istat ha pubblicato un rapporto sulle imprese multinazionali. I dati riguardano il 2024, quindi non descrivono la situazione del giorno della pubblicazione.",
+      "zh": "2026年11月10日，意大利国家统计局发布了一份关于跨国企业的报告。数据涉及2024年，因此并不描述发布当天的情况。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Il documento osserva due direzioni diverse: le imprese controllate da gruppi stranieri che lavorano in Italia e le attività delle multinazionali italiane in altri Paesi.",
+      "zh": "文件考察两个不同方向：受外国集团控制、在意大利经营的企业，以及意大利跨国企业在其他国家的经营活动。",
+      "glosses": [
+        {
+          "surface": "controllate",
+          "lemma": "controllato",
+          "zh": "受控制的，此处指企业控制关系"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Nel primo gruppo, le imprese provengono da 108 Paesi e sono presenti in Italia con 19.321 società controllate. Queste occupano oltre 1,9 milioni di persone.",
+      "zh": "第一类企业来自108个国家，在意大利拥有19,321家受控公司。这些公司雇用了超过190万人。",
+      "glosses": [
+        {
+          "surface": "occupano",
+          "lemma": "occupare",
+          "zh": "雇用，提供就业岗位"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Rispetto al 2023, il numero degli addetti è aumentato del 3,8%, mentre il fatturato è diminuito dell’1,8%. Non tutti gli indicatori, dunque, si muovono nella stessa direzione.",
+      "zh": "与2023年相比，从业人数增长了3.8%，而营业额下降了1.8%。因此，并非所有指标都朝同一方向变化。",
+      "glosses": [
+        {
+          "surface": "addetti",
+          "lemma": "addetto",
+          "zh": "从业人员"
+        },
+        {
+          "surface": "fatturato",
+          "lemma": "fatturato",
+          "zh": "营业额，不等于利润或增加值"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Il valore aggiunto ha invece raggiunto quasi 196 miliardi di euro, con una crescita del 4,1%. Anche tra i settori esistono differenze importanti da considerare.",
+      "zh": "增加值则达到近1,960亿欧元，增长了4.1%。各行业之间也存在需要考虑的重要差异。",
+      "glosses": [
+        {
+          "surface": "valore aggiunto",
+          "lemma": "valore aggiunto",
+          "zh": "增加值，生产过程中新增的价值"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Nei servizi il valore aggiunto è cresciuto del 6,7%, mentre nell’industria in senso stretto è sceso dello 0,7%. Un risultato complessivo può quindi nascondere andamenti diversi.",
+      "zh": "服务业增加值增长了6.7%，而工业（不含建筑业）增加值下降了0.7%。因此，总体结果可能掩盖不同的变化趋势。",
+      "glosses": [
+        {
+          "surface": "industria in senso stretto",
+          "lemma": "industria in senso stretto",
+          "zh": "不含建筑业的工业部门"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Nell’industria e nei servizi, le multinazionali estere rappresentano soltanto lo 0,4% delle imprese residenti in Italia, ma impiegano il 10,1% degli addetti e realizzano il 17,8% del valore aggiunto.",
+      "zh": "在工业和服务业中，外资跨国企业仅占意大利境内企业的0.4%，但雇用了10.1%的从业者，并创造了17.8%的增加值。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Nei settori dell’industria e dei servizi, la loro quota della spesa in ricerca e sviluppo arriva al 41,2%. Contare le imprese, perciò, non basta per descrivere il loro peso nelle diverse attività economiche.",
+      "zh": "在工业和服务业中，它们的研发支出份额达到41.2%。因此，仅统计企业数量不足以描述其在不同经济活动中的分量。",
+      "glosses": [
+        {
+          "surface": "ricerca e sviluppo",
+          "lemma": "ricerca e sviluppo",
+          "zh": "研究与开发"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Guardando nell’altra direzione, le multinazionali italiane operano all’estero con 26.935 società controllate in 175 Paesi. Queste società occupano quasi 1,8 milioni di persone e hanno un fatturato di 576 miliardi di euro.",
+      "zh": "从另一个方向看，意大利跨国企业通过175个国家的26,935家受控公司在海外经营。这些公司雇用了近180万人，营业额为5,760亿欧元。",
+      "glosses": [
+        {
+          "surface": "all’estero",
+          "lemma": "all’estero",
+          "zh": "在国外"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Se si considerano insieme le loro attività in Italia e all’estero, la parte estera comprende il 45,5% degli addetti e produce il 36,9% del fatturato.",
+      "zh": "如果同时考虑这些企业在意大利及海外的经营活动，海外部分占从业人数的45.5%，产生了36.9%的营业额。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Per tre multinazionali italiane su quattro, la ragione principale per investire all’estero è entrare in nuovi mercati. Seguono il miglioramento della qualità e l’acquisizione di competenze tecniche specializzate.",
+      "zh": "对四分之三的意大利跨国企业而言，在海外投资的主要原因是进入新市场。随后是改善质量，以及获得专业技术能力。",
+      "glosses": [
+        {
+          "surface": "mercati",
+          "lemma": "mercato",
+          "zh": "市场"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Per leggere questi numeri occorre quindi distinguere il Paese in cui si lavora, il gruppo che controlla l’impresa e l’indicatore utilizzato: occupazione, fatturato o valore aggiunto.",
+      "zh": "因此，阅读这些数字时，需要区分经营所在国、控制企业的集团，以及所使用的指标：就业、营业额或增加值。",
+      "glosses": [
+        {
+          "surface": "distinguere",
+          "lemma": "distinguere",
+          "zh": "区分"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "occupano",
+        "lemma": "occupare",
+        "zh": "雇用，提供就业岗位",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "addetti",
+        "lemma": "addetto",
+        "zh": "从业人员",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "fatturato",
+        "lemma": "fatturato",
+        "zh": "营业额，不等于利润或增加值",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "mercati",
+        "lemma": "mercato",
+        "zh": "市场",
+        "sentenceId": "s11"
+      },
+      {
+        "text": "distinguere",
+        "lemma": "distinguere",
+        "zh": "区分",
+        "sentenceId": "s12"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "Rispetto al 2023",
+        "zh": "与2023年相比，用rispetto a引出比较基准。",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "nella stessa direzione",
+        "zh": "朝同一个方向，可描述变化趋势。",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "tre multinazionali italiane su quattro",
+        "zh": "每四家意大利跨国企业中的三家，即四分之三。",
+        "sentenceId": "s11"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s4",
+        "note": "mentre在这里表示对比：就业人数上升，营业额却下降；不是把两个指标视为同义。"
+      },
+      {
+        "sentenceId": "s10",
+        "note": "se si considerano引出统计口径；理解比例时先确认分母包含意大利和海外两部分。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Perché il numero delle imprese non basta per descrivere il loro ruolo economico?",
+        "zh": "为什么仅看企业数量不足以描述它们的经济作用？"
+      },
+      {
+        "text": "Quali vantaggi e difficoltà può avere un’impresa che entra in un nuovo mercato?",
+        "zh": "进入新市场的企业可能有哪些优势和困难？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Bisogna distinguere due situazioni.",
+        "zh": "需要区分两种情况。"
+      },
+      {
+        "text": "Questo dato riguarda un periodo preciso.",
+        "zh": "这项数据涉及一个明确时期。"
+      }
+    ]
+  }
+}

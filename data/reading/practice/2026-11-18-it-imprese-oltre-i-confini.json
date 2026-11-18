@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-18-it-imprese-oltre-i-confini",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "p1",
+      "sentenceId": "s3",
+      "start": 118,
+      "answer": "occupano",
+      "options": [
+        "occupano",
+        "visitano",
+        "conoscono",
+        "invitano"
+      ],
+      "explanation": "occupano在企业统计语境表示雇用，与中文“雇用了”及后面的人员数量一致；主语是复数società。"
+    },
+    {
+      "id": "p2",
+      "sentenceId": "s4",
+      "start": 34,
+      "answer": "addetti",
+      "options": [
+        "clienti",
+        "fornitori",
+        "addetti",
+        "dirigenti"
+      ],
+      "explanation": "addetti指企业从业人员，和前句的就业人数衔接，不是客户或仅管理层。"
+    },
+    {
+      "id": "p3",
+      "sentenceId": "s4",
+      "start": 74,
+      "answer": "fatturato",
+      "options": [
+        "capitale",
+        "fatturato",
+        "profitto",
+        "bilancio"
+      ],
+      "explanation": "fatturato是营业额，正文明确与就业人数和增加值分开；不能替换为利润profitto。"
+    },
+    {
+      "id": "p4",
+      "sentenceId": "s11",
+      "start": 110,
+      "answer": "mercati",
+      "options": [
+        "uffici",
+        "porti",
+        "confini",
+        "mercati"
+      ],
+      "explanation": "entrare in nuovi mercati表示进入新市场，是报告所列的主要投资动机。"
+    },
+    {
+      "id": "p5",
+      "sentenceId": "s12",
+      "start": 41,
+      "answer": "distinguere",
+      "options": [
+        "distinguere",
+        "sommare",
+        "prevedere",
+        "sostituire"
+      ],
+      "explanation": "distinguere表示区分；需要分清国家、控制关系和指标，不是把它们相加或替换。"
+    }
+  ]
+}

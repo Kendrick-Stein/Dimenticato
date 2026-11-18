@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-18-en-public-roofs-for-community-energy",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "p1",
+      "sentenceId": "s2",
+      "start": 26,
+      "answer": "sites",
+      "options": [
+        "sites",
+        "teams",
+        "lessons",
+        "journeys"
+      ],
+      "explanation": "sites是可能的项目地点，复数与21一致；按中文恢复原句。"
+    },
+    {
+      "id": "p2",
+      "sentenceId": "s4",
+      "start": 30,
+      "answer": "roofs",
+      "options": [
+        "doors",
+        "roofs",
+        "floors",
+        "windows"
+      ],
+      "explanation": "roofs指屋顶；原文说机会位于屋顶，不是门窗或楼层。"
+    },
+    {
+      "id": "p3",
+      "sentenceId": "s5",
+      "start": 13,
+      "answer": "solar",
+      "options": [
+        "medical",
+        "local",
+        "solar",
+        "legal"
+      ],
+      "explanation": "solar panels指太阳能板；solar是修饰panels的形容词。"
+    },
+    {
+      "id": "p4",
+      "sentenceId": "s7",
+      "start": 82,
+      "answer": "support",
+      "options": [
+        "visits",
+        "tickets",
+        "news",
+        "support"
+      ],
+      "explanation": "technical support意为技术支持；此处support不可数。"
+    },
+    {
+      "id": "p5",
+      "sentenceId": "s8",
+      "start": 24,
+      "answer": "funding",
+      "options": [
+        "training",
+        "funding",
+        "weather",
+        "transport"
+      ],
+      "explanation": "funding对应资金支持，区别于培训、天气和交通。"
+    }
+  ]
+}

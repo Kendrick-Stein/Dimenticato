@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-18-de-politische-bildung-fuer-erwachsene",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "p1",
+      "sentenceId": "s1",
+      "start": 93,
+      "answer": "Lehrgang",
+      "options": [
+        "Vertrag",
+        "Lehrgang",
+        "Bericht",
+        "Verein"
+      ],
+      "explanation": "Lehrgang是培训课程；einen后为第四格阳性单数。"
+    },
+    {
+      "id": "p2",
+      "sentenceId": "s4",
+      "start": 74,
+      "answer": "planen",
+      "options": [
+        "bezahlen",
+        "absagen",
+        "planen",
+        "vergessen"
+      ],
+      "explanation": "planen对应规划，与开展durchführen并列，受können支配使用原形。"
+    },
+    {
+      "id": "p3",
+      "sentenceId": "s6",
+      "start": 0,
+      "answer": "Anmeldungen",
+      "options": [
+        "Anmeldungen",
+        "Prüfungen",
+        "Vorträge",
+        "Zertifikate"
+      ],
+      "explanation": "Anmeldungen表示报名；复数与sind一致，中文线索不是考试、讲座或证书。"
+    },
+    {
+      "id": "p4",
+      "sentenceId": "s9",
+      "start": 55,
+      "answer": "Wahlmodulen",
+      "options": [
+        "Hauptmodulen",
+        "Städten",
+        "Gebühren",
+        "Wahlmodulen"
+      ],
+      "explanation": "Wahlmodulen是选修模块；aus后用第三格复数，词尾为-n。"
+    },
+    {
+      "id": "p5",
+      "sentenceId": "s12",
+      "start": 53,
+      "answer": "Zertifikat",
+      "options": [
+        "Formular",
+        "Zertifikat",
+        "Stundenplan",
+        "Lehrbuch"
+      ],
+      "explanation": "Zertifikat指证书；中性单数搭配ein，与报名表、课表和教材不同。"
+    }
+  ]
+}

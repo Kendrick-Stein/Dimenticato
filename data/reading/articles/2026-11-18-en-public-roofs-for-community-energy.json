@@ -1,0 +1,232 @@
+{
+  "schema": 1,
+  "id": "2026-11-18-en-public-roofs-for-community-energy",
+  "storyId": "scotland-community-energy-sites-2026-11-18",
+  "lang": "en",
+  "date": "2026-11-18",
+  "category": "environment",
+  "topics": [
+    "公共屋顶上的社区能源机会"
+  ],
+  "title": "Public roofs for community energy",
+  "titleZh": "公共屋顶上的社区能源机会",
+  "summaryZh": "苏格兰公布21处潜在项目地点，并为社区提供技术与资金信息；潜在机会不等于已经建成。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：具体地点、项目状态及求助方式，短句为主；能源词汇配中文释义。非官方认证。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Scottish Government",
+    "author": "Scottish Government",
+    "title": "New community energy project opportunities",
+    "url": "https://www.gov.scot/news/new-community-energy-project-opportunities/",
+    "publishedAt": "2026-11-18",
+    "lang": "en"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. Scottish Government; original publication 2026-11-18; source linked above.",
+  "adaptation": "2026-11-18整理：依据获许可原语正文作同语言教学改写，添加逐句中文翻译、词义和原创练习。不是原文、官方课程或出版方认可材料；不使用图片、标志、直接引语或其他第三方作品。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "On 18 November 2026, the Scottish Government announced new opportunities for local energy projects.",
+      "zh": "2026年11月18日，苏格兰政府公布了地方能源项目的新机会。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "It identified 21 possible sites on public land and in public buildings across Scotland.",
+      "zh": "它在苏格兰各地的公共土地和公共建筑中确定了21处可能的项目地点。",
+      "glosses": [
+        {
+          "surface": "sites",
+          "lemma": "site",
+          "zh": "地点；场址",
+          "note": "此处为复数。"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "These are places where communities could develop projects, not 21 completed energy schemes.",
+      "zh": "这些是社区可以开发项目的地点，并非21个已完成的能源项目。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "Some opportunities are on the roofs of hospitals and courts.",
+      "zh": "有些机会位于医院和法院的屋顶上。",
+      "glosses": [
+        {
+          "surface": "roofs",
+          "lemma": "roof",
+          "zh": "屋顶",
+          "note": "roof的复数是roofs。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "For example, solar panels could be put on Queen Margaret Hospital in Fife or Glasgow Sheriff Court.",
+      "zh": "例如，可以考虑在法夫的Queen Margaret医院或格拉斯哥Sheriff Court法院安装太阳能板。",
+      "glosses": [
+        {
+          "surface": "solar",
+          "lemma": "solar",
+          "zh": "太阳能的",
+          "note": "solar panels指太阳能板。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Other possible sites include business parks, development land and research campuses.",
+      "zh": "其他可能的地点包括商业园区、待开发土地和研究园区。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Interested communities can contact Local Energy Scotland for advice and technical support.",
+      "zh": "有兴趣的社区可以联系Local Energy Scotland，获取建议和技术支持。",
+      "glosses": [
+        {
+          "surface": "support",
+          "lemma": "support",
+          "zh": "支持",
+          "note": "technical support指技术支持；此处为不可数名词。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "They can also ask about funding through the government’s Community and Renewable Energy Scheme, called CARES.",
+      "zh": "它们还可以了解政府的社区与可再生能源计划，即CARES，提供的资金支持。",
+      "glosses": [
+        {
+          "surface": "funding",
+          "lemma": "funding",
+          "zh": "资金支持",
+          "note": "指资助，不是预期收入。"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Community energy is not a completely new idea in Scotland.",
+      "zh": "社区能源在苏格兰并非一个全新的想法。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "In Wallacetown, solar panels on three schools are expected to raise about £1 million for local investment over 25 years.",
+      "zh": "在Wallacetown，三所学校的太阳能板预计将在25年内为当地投资带来约100万英镑。",
+      "glosses": [
+        {
+          "surface": "expected",
+          "lemma": "expect",
+          "zh": "预计的",
+          "note": "be expected to表示预期，不是已经实现。"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "That figure is an expected result over many years, not money already received.",
+      "zh": "这个数字是多年内的预期成果，而不是已经收到的资金。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "sites",
+        "lemma": "site",
+        "zh": "地点；场址",
+        "note": "此处为复数。",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "roofs",
+        "lemma": "roof",
+        "zh": "屋顶",
+        "note": "roof的复数是roofs。",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "solar",
+        "lemma": "solar",
+        "zh": "太阳能的",
+        "note": "solar panels指太阳能板。",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "support",
+        "lemma": "support",
+        "zh": "支持",
+        "note": "technical support指技术支持；此处为不可数名词。",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "funding",
+        "lemma": "funding",
+        "zh": "资金支持",
+        "note": "指资助，不是预期收入。",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "expected",
+        "lemma": "expect",
+        "zh": "预计的",
+        "note": "be expected to表示预期，不是已经实现。",
+        "sentenceId": "s10"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "could develop",
+        "zh": "可以开发",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "contact Local Energy Scotland",
+        "zh": "联系Local Energy Scotland",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "over 25 years",
+        "zh": "在25年期间",
+        "sentenceId": "s10"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s3",
+        "note": "could表示可能性，不说明项目已经实施。"
+      },
+      {
+        "sentenceId": "s10",
+        "note": "are expected to表示预期；over引出收入累积的时间跨度。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Which public building near you could use solar panels?",
+        "zh": "你附近哪座公共建筑可以使用太阳能板？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Our community could use …",
+        "zh": "我们的社区可以利用……。"
+      },
+      {
+        "text": "We would need advice about …",
+        "zh": "我们需要有关……的建议。"
+      }
+    ]
+  }
+}

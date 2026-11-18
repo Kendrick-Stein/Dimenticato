@@ -2,6 +2,22 @@
   "schema": 1,
   "articles": [
     {
+      "id": "2026-11-18-en-public-roofs-for-community-energy",
+      "lang": "en",
+      "date": "2026-11-18",
+      "title": "Public roofs for community energy",
+      "titleZh": "公共屋顶上的社区能源机会",
+      "summaryZh": "苏格兰公布21处潜在项目地点，并为社区提供技术与资金信息；潜在机会不等于已经建成。",
+      "level": "A2",
+      "category": "environment",
+      "topics": [
+        "公共屋顶上的社区能源机会"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-11-18",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-11-17-fr-creer-avec-des-conditions-adaptees",
       "lang": "fr",
       "date": "2026-11-17",
@@ -82,6 +98,22 @@
       ],
       "sourceLang": "en",
       "sourcePublishedAt": "2026-11-14",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-18-de-politische-bildung-fuer-erwachsene",
+      "lang": "de",
+      "date": "2026-11-18",
+      "title": "Politische Bildung für Erwachsene",
+      "titleZh": "为成人设计政治教育活动",
+      "summaryZh": "奥地利一项培训课程将于2027年开课，帮助成人教育工作者设计和开展政治教育活动。",
+      "level": "B1",
+      "category": "education",
+      "topics": [
+        "为成人设计政治教育活动"
+      ],
+      "sourceLang": "de",
+      "sourcePublishedAt": "2026-11-13",
       "contentType": "native-adaptation"
     },
     {
@@ -335,6 +367,24 @@
       ],
       "sourceLang": "it",
       "sourcePublishedAt": "2026-11-11",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-18-it-imprese-oltre-i-confini",
+      "lang": "it",
+      "date": "2026-11-18",
+      "title": "Imprese oltre i confini: due direzioni da distinguere",
+      "titleZh": "企业跨越国界：区分两个经营方向",
+      "summaryZh": "一份2026年发布、回顾2024年的报告：企业数量、就业和营业额为何不能混为一谈？",
+      "level": "B1",
+      "category": "work-economy",
+      "topics": [
+        "企业",
+        "就业",
+        "跨国经营"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-11-10",
       "contentType": "native-adaptation"
     },
     {

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-18-de-politische-bildung-fuer-erwachsene",
+  "lang": "de",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Welche Zusammenfassung passt zum gesamten Text?",
+      "options": [
+        "Eine Weiterbildung bereitet Menschen auf politische Bildungsarbeit mit Erwachsenen vor; der Text erklärt auch Inhalt und Organisation.",
+        "Ein allgemeiner Politikkurs richtet sich an alle Erwachsenen; der Text beschreibt die fünf frei wählbaren Themen und die Anmeldung.",
+        "Ein Studiengang bildet neue Politikwissenschaftler aus; der Text stellt die beiden Hochschulorte und den Studienabschluss vor.",
+        "Eine Weiterbildung für Beschäftigte des Ministeriums beginnt im November; der Text erklärt die Ausbildung für ihre Beratungsarbeit."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6",
+        "s7",
+        "s9",
+        "s10",
+        "s12"
+      ],
+      "explanationZh": "全文把教学目标、主要对象、课程内容和组织信息联系起来：为成人教育工作者等提供政治教育活动设计与实施培训，并说明时间、地点、模块和费用。不是面向所有成人的一般政治课，也不是大学学位课程或仅供部委雇员的培训；11月是报名截止月份，而非开课时间。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Wie passen Anmeldefrist und Kursbeginn zusammen?",
+      "options": [
+        "Die Anmeldung endet im März, danach beginnt der Kurs im Oktober.",
+        "Die Anmeldung endet im November, danach beginnt der Kurs im März.",
+        "Die Anmeldung endet im Oktober, danach beginnt der Kurs im November.",
+        "Die Anmeldung endet im November, danach beginnt der Kurs im Oktober."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s5",
+        "s6"
+      ],
+      "explanationZh": "报名截止为2026年11月30日，课程在2027年3月开始；10月是课程结束时间。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Welche Beschreibung des Lehrgangs stimmt?",
+      "options": [
+        "Er hat fünf Wahlmodule und findet nur in Wien statt.",
+        "Er hat fünf Hauptmodule und findet nur in St. Wolfgang statt.",
+        "Er hat einige Hauptmodule und fünf Wahlmodule in Wien.",
+        "Er hat fünf Hauptmodule sowie Wahlmodule an zwei Orten."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s7",
+        "s8",
+        "s9"
+      ],
+      "explanationZh": "第7至9句明确两地为维也纳和St. Wolfgang，结构为五个主要模块加若干选修模块，其他选项混淆了地点或模块类型。"
+    }
+  ]
+}

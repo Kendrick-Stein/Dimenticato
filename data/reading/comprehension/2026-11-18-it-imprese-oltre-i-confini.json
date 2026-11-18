@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-18-it-imprese-oltre-i-confini",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "Quale combinazione descrive le imprese a controllo estero in Italia nel confronto con il 2023?",
+      "options": [
+        "Meno addetti e più fatturato.",
+        "Più addetti e meno fatturato.",
+        "Più addetti e più fatturato.",
+        "Meno addetti e meno fatturato."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s4"
+      ],
+      "explanationZh": "第四句说明从业人数增长3.8%，营业额下降1.8%，两项指标变化方向相反。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Rispetto a quale totale è calcolato il 45,5% degli addetti?",
+      "options": [
+        "Agli addetti delle imprese straniere presenti in Italia.",
+        "Agli addetti delle imprese residenti di tutti i settori italiani.",
+        "Agli addetti dei servizi delle multinazionali straniere.",
+        "Agli addetti delle multinazionali italiane, in Italia e all’estero."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s9",
+        "s10"
+      ],
+      "explanationZh": "第九句转向意大利跨国企业，第十句将其意大利与海外活动合在一起，45.5%表示这个整体中在海外工作的人员份额。"
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": "Quale conclusione è sostenuta dal confronto tra numero di imprese e attività economiche?",
+      "options": [
+        "Una piccola quota di imprese può avere quote maggiori di occupazione e ricerca.",
+        "La quota degli addetti permette di conoscere direttamente la quota del fatturato.",
+        "Una crescita dei servizi implica un aumento anche del valore aggiunto industriale.",
+        "Il numero delle società estere indica quante imprese italiane investono fuori dal Paese."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s7",
+        "s8"
+      ],
+      "explanationZh": "在工业和服务业范围内，外资企业只占企业数0.4%，却占从业者10.1%和研发支出41.2%，支持A。各指标并不相等；其他选项混淆指标、行业或两个企业群体。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "Quale ordine delle motivazioni degli investimenti all’estero è riportato per le multinazionali italiane?",
+      "options": [
+        "Prima la qualità; poi l’accesso ai mercati e le competenze tecniche.",
+        "Prima le competenze tecniche; poi la qualità e l’accesso ai mercati.",
+        "Prima l’accesso ai mercati; poi la qualità e le competenze tecniche.",
+        "Prima l’accesso ai mercati; poi la riduzione degli addetti e del fatturato."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s11"
+      ],
+      "explanationZh": "第十一句把进入新市场列为四分之三企业的主要原因，随后是改善质量和获得专业技术能力；不是降低就业或营业额。"
+    }
+  ]
+}
