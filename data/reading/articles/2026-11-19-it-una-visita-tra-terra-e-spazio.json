@@ -1,0 +1,213 @@
+{
+  "schema": 1,
+  "id": "2026-11-19-it-una-visita-tra-terra-e-spazio",
+  "storyId": "ingv-nse-2026-participation-2026-11-18",
+  "lang": "it",
+  "date": "2026-11-19",
+  "contentType": "native-adaptation",
+  "category": "technology",
+  "topics": [
+    "参观活动",
+    "太空",
+    "职业"
+  ],
+  "title": "Una visita tra Terra e spazio",
+  "titleZh": "一次连接地球与太空的参观",
+  "summaryZh": "读懂罗马太空展的展馆分工和学生讲座时间。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：以时间、地点、活动安排为主，使用现在时与简短说明；少量卫星和大气词汇配中文辅助。",
+  "source": {
+    "name": "INGV",
+    "title": "SPAZIO | L’INGV rafforza il proprio ruolo a NSE-New Space Economy Expoforum 2026",
+    "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/note-stampa/spazio-l-ingv-rafforza-il-proprio-ruolo-a-nse-new-space-economy-expoforum-2026",
+    "publishedAt": "2026-11-18",
+    "lang": "it"
+  },
+  "license": {
+    "name": "Creative Commons Attribution 4.0 International",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "原作：INGV，2026-11-18。原文链接见来源；文章页脚与 https://www.ingv.it/note-legali 确认机构文本采用 CC BY 4.0。保留署名、许可和修改说明，不代表原机构认可。",
+  "adaptation": "根据意大利语机构原文进行同语言教学改写，非原文照录；加入中文、词汇、学习总结与原创练习。描述2026年11月25日至27日的计划安排，不暗示活动已经完成。不使用图片、视频、标识、第三方引文或外链材料。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Dal 25 al 27 novembre 2026, a Fiera Roma, si svolge un evento dedicato allo spazio: NSE-New Space Economy Expoforum.",
+      "zh": "2026年11月25日至27日，罗马会展中心举办一场太空主题活动：NSE新太空经济展览论坛。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "L’INGV, l’Istituto Nazionale di Geofisica e Vulcanologia, partecipa con uno stand, incontri scientifici e attività per i giovani.",
+      "zh": "意大利国家地球物理与火山研究所（INGV）参与其中，提供展台、科学交流活动以及面向年轻人的活动。",
+      "glosses": [
+        {
+          "surface": "stand",
+          "lemma": "stand",
+          "zh": "展台"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Il suo stand si trova nel Padiglione 9. Qui i visitatori possono scoprire come i satelliti aiutano a osservare la Terra.",
+      "zh": "该研究所的展台位于9号馆。在这里，参观者可以了解卫星如何帮助观测地球。",
+      "glosses": [
+        {
+          "surface": "satelliti",
+          "lemma": "satellite",
+          "zh": "卫星"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "I dati dei satelliti servono a studiare, per esempio, i vulcani, i terremoti e i cambiamenti dell’ambiente.",
+      "zh": "卫星数据可用于研究火山、地震以及环境变化等现象。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Si parla anche del tempo meteorologico nello spazio. Questo può avere effetti sulle comunicazioni e sul trasporto aereo.",
+      "zh": "部分活动内容涉及太空天气及其对通信和航空运输可能产生的影响。",
+      "glosses": [
+        {
+          "surface": "tempo meteorologico nello spazio",
+          "lemma": "tempo meteorologico nello spazio",
+          "zh": "太空天气，指太空环境状况"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Gli incontri della Conferenza Scientifica si tengono invece nel Padiglione 10. Le due aree hanno quindi funzioni diverse.",
+      "zh": "科学会议的交流活动则在10号馆举行。因此，这两个区域具有不同功能。",
+      "glosses": [
+        {
+          "surface": "invece",
+          "lemma": "invece",
+          "zh": "则，表示对比"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Il 26 novembre, dalle 10:45 alle 11:35, un incontro presenta le professioni dello spazio all’INGV. È un’occasione per conoscere competenze e percorsi professionali diversi.",
+      "zh": "11月26日10:45至11:35，一场活动介绍INGV的太空相关职业。这是了解不同技能与职业路径的机会。",
+      "glosses": [
+        {
+          "surface": "professioni",
+          "lemma": "professione",
+          "zh": "职业"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Il giorno seguente ci sono due lezioni per gli studenti. La prima, alle 11:50, parla dei fenomeni luminosi nell’alta atmosfera.",
+      "zh": "第二天安排了两场面向学生的讲座。第一场在11:50举行，介绍高层大气中的发光现象。",
+      "glosses": [
+        {
+          "surface": "seguente",
+          "lemma": "seguente",
+          "zh": "接下来的"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "La seconda inizia alle 12:15 e parla dei satelliti radar. I loro dati aiutano a trovare la plastica in mare e a fare mappe dei danni nelle aree urbane dopo forti terremoti.",
+      "zh": "第二场于12:15开始，介绍雷达卫星。这些卫星的数据帮助寻找海洋中的塑料，并绘制强震后城市地区的受损情况图。",
+      "glosses": [
+        {
+          "surface": "danni",
+          "lemma": "danno",
+          "zh": "损害"
+        },
+        {
+          "surface": "radar",
+          "lemma": "radar",
+          "zh": "雷达，此处修饰使用雷达观测的卫星"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "stand",
+        "lemma": "stand",
+        "zh": "展台",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "satelliti",
+        "lemma": "satellite",
+        "zh": "卫星",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "professioni",
+        "lemma": "professione",
+        "zh": "职业",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "seguente",
+        "lemma": "seguente",
+        "zh": "接下来的",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "danni",
+        "lemma": "danno",
+        "zh": "损害",
+        "sentenceId": "s9"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "si svolge un evento",
+        "zh": "举办一场活动，svolgersi表示活动举行。",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "dalle 10:45 alle 11:35",
+        "zh": "从10:45到11:35，用da…a…表示时间范围。",
+        "sentenceId": "s7"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s6",
+        "note": "invece对比两个地点：展台在9号馆，科学会议在10号馆。"
+      },
+      {
+        "sentenceId": "s8",
+        "note": "il giorno seguente承接前句的11月26日，指11月27日。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quale attività del programma ti interessa di più? Perché?",
+        "zh": "活动安排中你最感兴趣的是哪一项？为什么？"
+      },
+      {
+        "text": "Quando visiti una fiera, come scegli gli incontri?",
+        "zh": "参观展会时，你如何选择要参加的活动？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Vorrei partecipare all’incontro delle…",
+        "zh": "我想参加……点的活动。"
+      },
+      {
+        "text": "In quale padiglione si trova lo stand?",
+        "zh": "展台在哪个馆？"
+      }
+    ]
+  }
+}

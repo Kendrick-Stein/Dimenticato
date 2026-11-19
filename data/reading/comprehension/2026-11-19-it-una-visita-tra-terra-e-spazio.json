@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-19-it-una-visita-tra-terra-e-spazio",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Qual è lo scopo principale del testo?",
+      "options": [
+        "Spiegare come diventare ricercatore all’INGV.",
+        "Presentare le attività dell’INGV a un evento sullo spazio.",
+        "Raccontare la storia dei satelliti usati dall’INGV.",
+        "Descrivere i risultati di uno studio dell’INGV sui terremoti."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s1",
+        "s2",
+        "s7",
+        "s8",
+        "s9"
+      ],
+      "explanationZh": "全文介绍INGV在太空主题活动中的展台、科学交流、职业介绍和学生讲座；没有讲解成为研究员的步骤、卫星历史或某项地震研究结果。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Quando si tiene l’incontro sulle professioni dello spazio?",
+      "options": [
+        "Il 25 novembre alle 11:50.",
+        "Il 27 novembre alle 12:15.",
+        "Il 26 novembre dalle 10:45 alle 11:35.",
+        "Il 27 novembre dalle 10:45 alle 11:35."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s7"
+      ],
+      "explanationZh": "第七句给出职业介绍活动的日期与时间：11月26日10:45至11:35。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Quale argomento è previsto nella seconda lezione per gli studenti?",
+      "options": [
+        "I percorsi professionali all’INGV.",
+        "L’organizzazione dei due padiglioni.",
+        "I fenomeni luminosi nell’alta atmosfera.",
+        "L’uso dei dati dei satelliti radar."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s8",
+        "s9"
+      ],
+      "explanationZh": "第九句说明第二场学生讲座介绍雷达卫星数据用途；高层大气发光现象属于第一场。"
+    }
+  ]
+}

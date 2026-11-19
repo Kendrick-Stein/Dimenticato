@@ -3,6 +3,41 @@
   "policy": "Outbound official playback links only. No copied media, thumbnails or full transcripts. Original Chinese guides and questions. Playback itself has not been tested; verified means official page and content evidence were retrieved.",
   "entries": [
     {
+      "id": "de-logo-2026-11-18",
+      "lang": "de",
+      "title": "logo! vom Mittwoch, 18. November 2026",
+      "titleZh": "11月18日儿童新闻：用电、卫生与动物迁徙",
+      "provider": "ZDF logo!",
+      "url": "https://www.logo.de/logo-vom-mittwoch-18-november-2026-102.html",
+      "level": "未分级",
+      "levelBasis": "editorial",
+      "levelLabel": "母语儿童内容 · 非 CEFR 分级",
+      "kind": "news",
+      "addedAt": "2026-11-19",
+      "sourcePublishedAt": "2026-11-18",
+      "duration": "10:21",
+      "evidenceStatus": "metadata_only",
+      "summaryZh": "从官方整集入口选听用电、卫生或动物迁徙等主题，按兴趣分段练习。",
+      "guideZh": "先选择一个感兴趣的话题，记录听清的关键词。第二遍再用一句德语概括实际听懂的信息，不必一次听懂整集。原站播放可能受所在地限制。",
+      "verificationZh": "已核对官方完整节目日期、节目单和10:21元数据时长。云端原站播放器静音自动播放，计时从00:02推进至00:22，并暂停于00:23；只证明本次播放器计时推进，未听音或核验音质，也不证明所有地区都可播放。未取得对应逐字稿，仅提供导听入口，不设理解题。",
+      "vocabularyLabel": "主题预习词（不保证全部出现在音频中）",
+      "vocabulary": [
+        {
+          "text": "der Strom",
+          "zh": "电；电力"
+        },
+        {
+          "text": "die Toilette",
+          "zh": "厕所"
+        },
+        {
+          "text": "die Wanderung",
+          "zh": "迁徙；迁移（本主题语境）"
+        }
+      ],
+      "questions": []
+    },
+    {
       "id": "de-logo-2026-11-17",
       "lang": "de",
       "title": "logo! vom Dienstag, 17. November 2026",

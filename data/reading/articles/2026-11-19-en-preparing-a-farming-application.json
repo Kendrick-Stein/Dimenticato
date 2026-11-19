@@ -1,0 +1,246 @@
+{
+  "schema": 1,
+  "id": "2026-11-19-en-preparing-a-farming-application",
+  "storyId": "scotland-ffis-investment-2026-11-18",
+  "lang": "en",
+  "date": "2026-11-19",
+  "category": "work-economy",
+  "topics": [
+    "先准备，再申请农业投资支持"
+  ],
+  "title": "Preparing a farming application",
+  "titleZh": "先准备，再申请农业投资支持",
+  "summaryZh": "苏格兰一轮农业投资支持将开放申请；指南提前发布，所有申请在截止后评估，并非先到先得。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：具体金额、日期与准备步骤，主要使用短句、will和can结构；将专业评估术语改为常用说法，少量农业与资助词汇配中文释义。非官方CEFR认证。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Scottish Government",
+    "author": "Scottish Government",
+    "title": "£14.25 million farming investment scheme",
+    "url": "https://www.gov.scot/news/14-25-million-farming-investment-scheme/",
+    "publishedAt": "2026-11-18",
+    "lang": "en"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. Scottish Government; original publication 2026-11-18; source linked above.",
+  "adaptation": "2026-11-19整理：依据获许可英文机构叙述作同语言教学改写，添加中文翻译、语境释义和原创练习。不是原文或官方申请建议，不代表机构认可。不使用直接引语、第三方材料、图片或标志。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Scottish farmers and crofters will soon be able to apply for money to improve their farms.",
+      "zh": "苏格兰农民和croft小农场经营者很快可以申请资金来改善农场。",
+      "glosses": [
+        {
+          "surface": "crofters",
+          "lemma": "crofter",
+          "zh": "croft小农场经营者",
+          "note": "croft是苏格兰一种特定形式的小型农场，此词不泛指所有小农户。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "The Scottish Government announced this round of the Future Farming Investment Scheme on 18 November 2026.",
+      "zh": "苏格兰政府于2026年11月18日公布了未来农业投资计划的这一轮安排。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "This round has a total budget of £14.25 million for farm and croft businesses.",
+      "zh": "这一轮为农场和croft小农场经营单位提供的总预算为1425万英镑。",
+      "glosses": [
+        {
+          "surface": "budget",
+          "lemma": "budget",
+          "zh": "预算",
+          "note": "a total budget指总预算，不是每个申请人的所得。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "The scheme aims to help farms work better and protect nature and the climate.",
+      "zh": "该计划旨在帮助农场提高运营效率，同时保护自然和气候。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "It offers payments of up to £20,000 in advance, but the level of support depends on the farm and investment.",
+      "zh": "它提供最高2万英镑的预付款，但支持水平取决于农场和投资类型。",
+      "glosses": [
+        {
+          "surface": "payments",
+          "lemma": "payment",
+          "zh": "付款；款项",
+          "note": "复数；payments in advance是预付款。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Applications open on 30 November 2026 and close on 29 January 2027.",
+      "zh": "申请于2026年11月30日开放，2027年1月29日截止。",
+      "glosses": [
+        {
+          "surface": "Applications",
+          "lemma": "application",
+          "zh": "申请",
+          "note": "句首大写，复数；此处指资助申请。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "The government will look at all the applications after the closing date, not in the order they arrive.",
+      "zh": "政府将在截止日期后查看所有申请，而不是按到达顺序处理。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Information is already available, so farmers can prepare before applications open.",
+      "zh": "相关信息已经发布，因此农民可以在申请开放前做好准备。",
+      "glosses": [
+        {
+          "surface": "prepare",
+          "lemma": "prepare",
+          "zh": "准备",
+          "note": "can后接动词原形。"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "It lists the things farmers can apply for, with details about prices and how many items they can buy.",
+      "zh": "它列出了农民可以申请的项目，并说明价格以及可以购买的数量。",
+      "glosses": [
+        {
+          "surface": "items",
+          "lemma": "item",
+          "zh": "物品；项目",
+          "note": "how many items表示物品数量。"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "It also explains how the government will compare applications and put them in order.",
+      "zh": "它还解释了政府将如何比较申请并进行排序。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "The government changed the scheme after feedback on the first round, to make the information clearer.",
+      "zh": "政府根据第一轮的反馈调整了计划，以使相关信息更清晰。",
+      "glosses": [
+        {
+          "surface": "feedback",
+          "lemma": "feedback",
+          "zh": "反馈意见",
+          "note": "通常不可数。"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "crofters",
+        "lemma": "crofter",
+        "zh": "croft小农场经营者",
+        "note": "croft是苏格兰一种特定形式的小型农场，此词不泛指所有小农户。",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "budget",
+        "lemma": "budget",
+        "zh": "预算",
+        "note": "a total budget指总预算，不是每个申请人的所得。",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "payments",
+        "lemma": "payment",
+        "zh": "付款；款项",
+        "note": "复数；payments in advance是预付款。",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "Applications",
+        "lemma": "application",
+        "zh": "申请",
+        "note": "句首大写，复数；此处指资助申请。",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "prepare",
+        "lemma": "prepare",
+        "zh": "准备",
+        "note": "can后接动词原形。",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "items",
+        "lemma": "item",
+        "zh": "物品；项目",
+        "note": "复数；这里说明可购买的数量。",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "feedback",
+        "lemma": "feedback",
+        "zh": "反馈意见",
+        "note": "通常不可数。",
+        "sentenceId": "s11"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "in advance",
+        "zh": "提前",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "after the closing date",
+        "zh": "在截止日期之后",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "put them in order",
+        "zh": "将它们排序",
+        "sentenceId": "s10"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s5",
+        "note": "up to表示最高限额，不保证每家农场都得到该金额；in advance表示提前。"
+      },
+      {
+        "sentenceId": "s7",
+        "note": "will look at是将来表达；after the closing date说明处理申请的时间。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Do you prefer to prepare early or close to a deadline?",
+        "zh": "你喜欢提前准备，还是临近截止日期再准备？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "I need to check the guidance first.",
+        "zh": "我需要先查看指南。"
+      },
+      {
+        "text": "The closing date is …",
+        "zh": "截止日期是……。"
+      }
+    ]
+  }
+}

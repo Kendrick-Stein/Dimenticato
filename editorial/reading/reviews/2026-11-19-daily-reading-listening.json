@@ -1,0 +1,385 @@
+{
+  "date": "2026-11-19",
+  "status": "Local gates passed; publication verified separately",
+  "baseline": "91e05b2be735216aa935e5d7a32d7d635ffa2b25",
+  "scope": "Two independent A2 readings and one metadata-only German listening guide. No code changes, candidate queue changes or historical content edits.",
+  "identity": [
+    {
+      "id": "2026-11-19-en-preparing-a-farming-application",
+      "storyId": "scotland-ffis-investment-2026-11-18",
+      "canonicalUrl": "https://www.gov.scot/news/14-25-million-farming-investment-scheme/",
+      "aliases": [],
+      "originalDate": "2026-11-18",
+      "bodyHash": "d02572b1dd11fdd631ab2f3a7bad8433a5ec889af9cfa981654095f6d586e65d",
+      "dedup": "No published canonical URL, story ID or body hash match; no canonical URL, story ID or article ID in either recovered private pending manifest. First publication November 18 is after missing November 4–7 batch cutoff. Historical missing manifests remain missing."
+    },
+    {
+      "id": "2026-11-19-it-una-visita-tra-terra-e-spazio",
+      "storyId": "ingv-nse-2026-participation-2026-11-18",
+      "canonicalUrl": "https://www.ingv.it/stampa-urp/ufficio-stampa/note-stampa/spazio-l-ingv-rafforza-il-proprio-ruolo-a-nse-new-space-economy-expoforum-2026",
+      "aliases": [],
+      "originalDate": "2026-11-18",
+      "bodyHash": "b823d51e37a1bcfbd3fe7aa2b08b075931b67e9b22f4d7e17687c4404bb814b1",
+      "dedup": "No published canonical URL, story ID or body hash match; no canonical URL, story ID or article ID in either recovered private pending manifest. First publication November 18 is after missing November 4–7 batch cutoff. Historical missing manifests remain missing."
+    }
+  ],
+  "reviews": {
+    "en": {
+      "status": "editorial-pass",
+      "articleId": "2026-11-19-en-preparing-a-farming-application",
+      "reviewType": "known-key revision after initial blind solve [2,0,3], not second blind review",
+      "wordCount": 170,
+      "level": "A2 supported reading, editorial estimate",
+      "levelReason": "Revised concrete dates, money, preparation steps and mostly active short clauses; specialist croft/budget/payment terms have Chinese support. Institutional scheme name is unavoidable proper name. Not a certified CEFR assessment.",
+      "factsRights": "Independently verified original institution article and publisher OGL policy, saved en-source-independent.html. Revised s2 correctly refers to this round; no factual drift in simplification.",
+      "bilingual": "All eleven sentence pairs, seven glossary/summary words, three phrases, two learning notes and speaking prompts checked; correct meaning and references.",
+      "practice": "Five UTF-16 offsets exactly match answers, four unique options each; correct contextual meanings/morphology. Alternatives excluded by original article wording and Chinese context, not necessarily ungrammatical in isolation.",
+      "comprehension": "All three revised questions still uniquely resolve to [2,0,3]. Evidence and Chinese explanations verified. q2 replaced full-budget distractor. q1/q3 overlap but assess whole-text summary vs date/application-order relationship; acceptable.",
+      "listening": {
+        "id": "de-logo-2026-11-18",
+        "status": "metadata-only guide pass",
+        "independentSource": "logo-independent.html; ordinary GET 200 after web open tool internal error",
+        "verified": "Official date 2026-11-18, duration PT10M21S, electricity tax/measles/world toilet day/showjumping/crab migration topics; no regionsAllowed field in VideoObject",
+        "playback": "Parent independently reports muted player advancing 00:02 to 00:22 then paused00:23. Reviewer has not heard audio or independently observed playback. Copy clearly limits claim to timer progression, no audio quality or universal geographic availability.",
+        "rightsScope": "Official link with original short guide and vocabulary preview, no transcript/media/exercises reproduced, questions empty, ungraded native children programme."
+      },
+      "hashes": {
+        "2026-11-19-en-preparing-a-farming-application.article.json": "fd5a295b3683f160b67cd3ac3930d084592caabc770f9797f42cff141823cc5b",
+        "2026-11-19-en-preparing-a-farming-application.practice.json": "4d12ab4663a31fedc44659966f330c0378f5af77bc5ac054994cd57ed912fa2e",
+        "2026-11-19-en-preparing-a-farming-application.comprehension.json": "7b1fe3c5714adb6c6b54aac802d6672abb373eeb9431b06a30d2b1eca976bac5",
+        "listening-new.json": "39b9555109e41a6445518415fee79c4a6d3b451c82d244821d70646eeb098a0e"
+      },
+      "remainingGates": "Parent responsible for dedup/current main/isolation/validators/browser QA/publication/deployment; this review does not establish live publication."
+    },
+    "it": {
+      "status": "editorial-pass",
+      "articleId": "2026-11-19-it-una-visita-tra-terra-e-spazio",
+      "reviewType": "Known-key final revision after initial blind solve recorded in it-initial-blind.json; not a second blind review",
+      "wordCount": 188,
+      "level": "A2 supported reading; editorial estimate, not certified",
+      "levelAssessment": "Short active statements, present tense for scheduled events, concrete places/dates and activities. Specialist satellite/atmospheric vocabulary retained with Chinese support; revised complex participles/passive and long technical clauses simplified. Proper institutional name is not counted as general learner vocabulary.",
+      "sourceReview": {
+        "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/note-stampa/spazio-l-ingv-rafforza-il-proprio-ruolo-a-nse-new-space-economy-expoforum-2026",
+        "independentEvidence": "it-source-independent.html",
+        "retrieval": "ordinary live GET 200 after web tool internal error; no access restriction bypass",
+        "publication": "2026-11-18",
+        "event": "2026-11-25 to2026-11-27; scheduled not completed",
+        "rights": "Article and official note-legali footer explicitly CC BY4.0 for INGV institutional content. Institutional narrative only; no image/media/third-party quotation reused; attribution, licence and changes disclosed.",
+        "facts": "Pavilion9 stand/Pavilion10 conference; November26 careers10:45–11:35; November27 student talks11:50 atmospheric luminous phenomena and12:15 radar satellites/plastics/urban earthquake damage verified."
+      },
+      "bilingual": "All nine text units, contextual glosses, five summary words, two phrases, two sentence notes and speaking prompts reviewed. No material mistranslation; updated s9 retains urban-area scope.",
+      "practice": "Five exact UTF-16 matches checked with JavaScript, four distinct options each. p1 now all compatible with uno. Original wording and Chinese context uniquely identify each answer; no claim all distractors ungrammatical in isolation.",
+      "comprehension": "Final keys [1,2,3]. Revised q1 now whole-text main-idea, plausible same-topic distractors and matching evidence/explanation; q2 time/date and q3 lecture topic independently supported. Correct kind main-idea confirmed.",
+      "hashes": {
+        "articles/2026-11-19-it-una-visita-tra-terra-e-spazio.json": "8fde45023d719bfbd5abd7363b8efaa2c4be7abee4f588e5937f540e85b3601d",
+        "practice/2026-11-19-it-una-visita-tra-terra-e-spazio.json": "1194489d63c5ba88a36d140b793987648c24b94fb896bf42c7b136e09bdcfa19",
+        "comprehension/2026-11-19-it-una-visita-tra-terra-e-spazio.json": "aeb5a762351a6443d90bad4610ea8d9782a3ab4d95d72ef08a79f324932a9200"
+      },
+      "remainingGates": "Parent handles source-registry scope, dedup/concurrency/isolation, validators, browser QA and verified publication/deployment."
+    }
+  },
+  "sources": {
+    "en_de": {
+      "date": "2026-11-19",
+      "stage": "private_drafts_awaiting_independent_review",
+      "baseline": "91e05b2 (parent confirmed current main; open PR list empty)",
+      "scope": "Private files only; no external writes, repo edits, audio download, embedding, or browser tests by source worker.",
+      "sourceReadings": [
+        {
+          "lang": "en",
+          "sourceId": "scottish-government-english-news",
+          "url": "https://www.gov.scot/news/14-25-million-farming-investment-scheme/",
+          "canonicalUrl": "https://www.gov.scot/news/14-25-million-farming-investment-scheme/",
+          "aliases": [],
+          "originalDate": "2026-11-18",
+          "datePublished": "2026-11-18T10:00:00Z",
+          "dateModified": "2026-11-18T10:40:12Z",
+          "author": "Scottish Government",
+          "identity": "Original new institutional announcement of the 2026 FFIS application round, not a refresh/reprint marker. Named publisher and English institutional provenance; not an author mother-tongue certificate.",
+          "rightsEvidence": [
+            "https://www.gov.scot/news/14-25-million-farming-investment-scheme/",
+            "https://www.gov.scot/crown-copyright/"
+          ],
+          "rights": "Article footer OGL3 except graphic assets/otherwise stated; current publisher copyright policy permits reuse of information under OGL excluding third parties/logos. Only institutional narrative adapted; all direct quotations and media excluded. Attribution and modification notice retained. This is learning material, not grant application advice.",
+          "facts": [
+            "GBP14.25m total budget for2026 round; upfront payments up toGBP20,000, grant rates depend on business/investment.",
+            "Applications Nov30,2026–Jan29,2027; all assessed after closing, not first-come-first-served.",
+            "Early guidance lists eligible investment specifications/scores/costs/quantity limits and assessment/ranking.",
+            "Revised after first-round feedback for clearer applicant information; aim efficiency/sustainability/nature/climate-friendly farming."
+          ],
+          "dedup": "No canonical URL slug found in any JSON under current local Nov19 repo. Parent reports current main91e05b2 and no open PRs. First-publication timestamp later than missing Nov4–7 records; this only resolves historical cutoff for this work, not all old manifests.",
+          "draftId": "2026-11-19-en-preparing-a-farming-application",
+          "bodyWords": 170,
+          "level": "A2 editorial estimate",
+          "status": "draft_not_approved"
+        }
+      ],
+      "listening": [
+        {
+          "lang": "de",
+          "url": "https://www.logo.de/logo-vom-mittwoch-18-november-2026-102.html",
+          "id": "de-logo-2026-11-18",
+          "originalDate": "2026-11-18",
+          "uploadDate": "2026-11-18T19:50:00.000+01:00",
+          "duration": "PT10M21S",
+          "evidence": "Official full-episode page date19:50; homepage10:21; VideoObject uploadDate/duration agree. Metadata inspected, no video/audio playback or quality verification. Full broadcast identity new; individual segments not certified new.",
+          "rights": "Ordinary original-site link plus original general study directions only; no media/text/transcript/images/source exercises reused or embedded. ZDF terms reviewed, not treated as republication permission.",
+          "rightsUrl": "https://www.zdf.de/nutzungsbedingungen",
+          "dedup": "No canonical URL slug found under current Nov19 repo; differs from yesterday Nov17 full episode. New after missing historic cutoff.",
+          "status": "metadata_only_draft_browser_check_pending",
+          "browserCheck": {
+            "provenance": "Parent /root/content_status reported official browser check; not independently repeated by source worker.",
+            "observation": "Muted autoplay00:02→00:22, paused00:23, total10:21; no regional warning observed.",
+            "limits": "No audio heard/quality validation; no global playback claim. No questions."
+          }
+        }
+      ],
+      "checks": [
+        {
+          "lang": "de",
+          "kind": "reading",
+          "url": "https://erwachsenenbildung.at/aktuell/nachrichten.php",
+          "status": "no_new_eligible_work",
+          "reason": "Latest observed course article Nov13 and open-day article Nov12 already published; no newer independent eligible article observed. Web listing crawled two days ago; not a proof of exhaustive current absence."
+        },
+        {
+          "lang": "de",
+          "kind": "reading",
+          "url": "https://irights.info/artikel",
+          "status": "no_new_eligible_work",
+          "reason": "Latest observed Nov11 LLM post is repost explicitly first published OERinfo, which showedSep21/Nov3. Historic overlap remains; no re-adaptation."
+        },
+        {
+          "lang": "de",
+          "kind": "reading",
+          "url": "https://open-educational-resources.de/",
+          "status": "unverified_access",
+          "reason": "Web reader timed out; no access bypass and no new publication inferred."
+        },
+        {
+          "lang": "de",
+          "kind": "reading",
+          "url": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/",
+          "status": "no_new_eligible_work",
+          "reason": "Latest featured Memes article remains previously held Oct29 work; Nov18 item is event date, not proof of original new publication. No daily filler."
+        },
+        {
+          "lang": "en",
+          "kind": "listening",
+          "url": "https://learnenglish.britishcouncil.org/free-resources/learning-hub/events",
+          "status": "no_new_eligible_work",
+          "reason": "Latest recorded Dream homes Nov17 already published yesterday; Nov24 Thanksgiving/Black Friday is future event, not a completed replay."
+        },
+        {
+          "lang": "en",
+          "kind": "reading_reserve",
+          "url": "https://www.gov.scot/news/",
+          "status": "discovery_only",
+          "reason": "Nov19 preventative-budgeting announcement observed in list; not promoted or drafted because only one English draft requested this pass; full source facts and reuse scope not reviewed."
+        }
+      ],
+      "gaps": "No DE reading drafted. No EN listening addition. All unfilled tiers intentionally omitted. No full tests or independent editorial audit yet.",
+      "files": {
+        "listening-new.json": "39b9555109e41a6445518415fee79c4a6d3b451c82d244821d70646eeb098a0e",
+        "2026-11-19-en-preparing-a-farming-application.article.json": "fd5a295b3683f160b67cd3ac3930d084592caabc770f9797f42cff141823cc5b",
+        "2026-11-19-en-preparing-a-farming-application.practice.json": "4d12ab4663a31fedc44659966f330c0378f5af77bc5ac054994cd57ed912fa2e",
+        "2026-11-19-en-preparing-a-farming-application.comprehension.json": "7b1fe3c5714adb6c6b54aac802d6672abb373eeb9431b06a30d2b1eca976bac5",
+        "2026-11-19-en-preparing-a-farming-application.blind.json": "70008ec0773c428a4b54997b438ae65f8e7b9099b32a2bd52da3568bcca11e06",
+        "en-source.html": "fb77ca8e1f7154c3fe5d936eb869c89f954ac77b168145df3ac4a573a4c5e7df"
+      },
+      "revision": {
+        "status": "awaiting_known_key_review",
+        "originalBlindAnswers": [
+          2,
+          0,
+          3
+        ],
+        "changes": "Simplified specialized vocabulary and passive syntax to ordinary A2 wording; category work-economy; q2 no full-budget absurd option; source facts preserved, some list detail omitted. s2 now explicitly says this round, not original launch of the overall scheme.",
+        "boundary": "Original blind solve recorded. Revised text/questions have not had second blind solve; needs known-key recheck."
+      }
+    },
+    "it": {
+      "date": "2026-11-19",
+      "baseline": "91e05b2",
+      "source": {
+        "name": "INGV",
+        "title": "SPAZIO | L’INGV rafforza il proprio ruolo a NSE-New Space Economy Expoforum 2026",
+        "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/note-stampa/spazio-l-ingv-rafforza-il-proprio-ruolo-a-nse-new-space-economy-expoforum-2026",
+        "publishedAt": "2026-11-18",
+        "lang": "it"
+      },
+      "identity": "INGV own Italian institutional notice of its 2026 NSE participation and student sessions; distinct from prior years and other institutions attending same event",
+      "firstPublication": "2026-11-18 explicitly on article; search listing corroborates; original downloaded HTML preserved",
+      "dateScope": "event November25–27, publication November18; no claim event already happened",
+      "rights": {
+        "policy": "https://www.ingv.it/note-legali",
+        "license": "CC BY 4.0",
+        "articleFooterVerified": true,
+        "footerText": "I contenuti pubblicati su queste pagine dall’Istituto Nazionale di Geofisica e Vulcanologia sono distribuiti sotto licenza Creative Commons Attribution 4.0 International License.",
+        "noConflictingTextCreditObserved": true,
+        "excluded": [
+          "images",
+          "video",
+          "logos",
+          "linked PDFs",
+          "outside programme details",
+          "quotes"
+        ]
+      },
+      "sourceAccess": {
+        "webOpen": "internal error on article open; search returned full text",
+        "directHTTPS": "successful ordinary urllib GET,106147 bytes; source-ingv.html retained",
+        "noBypass": true
+      },
+      "dedup": {
+        "scope": [
+          "baseline data/reading",
+          "baseline editorial",
+          "known Nov18 private inventory"
+        ],
+        "query": "nse-new-space|aristotle|professioni dello spazio",
+        "matchesInReadingOrEditorial": 0,
+        "historicalIsolation": "New identified November18 publication after unknown Nov4–7 window; no prior unknown operation retried"
+      },
+      "facts": [
+        "Fiera Roma November25–27,2026",
+        "INGV stand Pavilion9",
+        "scientific conference Pavilion10",
+        "space professions November26 10:45–11:35",
+        "student lectures November27 11:50 and12:15",
+        "first upper-atmosphere luminous phenomena; second radar data for marine plastic accumulation and post-earthquake urban damage mapping"
+      ],
+      "quality": "A2 editorial estimate,188 whitespace words,5 cloze and3 comprehension; independent blind review required; not published"
+    }
+  },
+  "candidateInventory": {
+    "date": "2026-11-19",
+    "baseline": "91e05b2",
+    "items": [
+      {
+        "language": "it",
+        "title": "INGV NSE18Nov",
+        "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/note-stampa/spazio-l-ingv-rafforza-il-proprio-ruolo-a-nse-new-space-economy-expoforum-2026",
+        "status": "selected-private",
+        "reason": "verified original Italian CC BY4 institutional article; first publicationNov18;188word A2"
+      },
+      {
+        "language": "it",
+        "title": "INGV ARISTOTLE17Nov",
+        "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/news/ingv-il-progetto-aristotle-celebra-i-10-anni-di-attivita-al-forum-europeo-della-protezione-civile",
+        "status": "reserve-not-converted",
+        "reason": "full institutional original read; choose at most1 IT; do not treat translated FR alias as native"
+      },
+      {
+        "language": "it",
+        "title": "INGV Cervellati8Nov",
+        "url": "https://www.ingv.it/stampa-urp/ufficio-stampa/comunicati-stampa/l-ingv-ricorda-roberto-cervellati",
+        "status": "not-selected",
+        "reason": "original/footer checked; obituary too thin for useful non-padded exercises"
+      },
+      {
+        "language": "it",
+        "title": "Istat trade13Nov",
+        "url": "https://www.istat.it/comunicato-stampa/commercio-con-lestero-e-prezzi-allimport-settembre-2026/",
+        "status": "not-selected",
+        "reason": "full text checked; September2026 reference; Nov16 review already not-selected for numerical-topic overlap"
+      },
+      {
+        "language": "it",
+        "title": "Istat CPI17Nov",
+        "url": "https://www.istat.it/comunicato-stampa/prezzi-al-consumo-ottobre-2026/",
+        "status": "same-story-held",
+        "reason": "October CPI preliminary story already publishedNov2; final update not independent new work"
+      },
+      {
+        "language": "it",
+        "title": "Archivi listing",
+        "url": "https://archivi.cultura.gov.it/archivio-notizie/",
+        "status": "access-gap",
+        "reason": "web timeout; ordinary direct GET503. No bypass; search event dates not original-publication proof"
+      },
+      {
+        "language": "fr",
+        "title": "Culture recent index",
+        "url": "https://www.culture.gouv.fr/actualites",
+        "status": "duplicates-or-cutoff",
+        "reason": "latest Nov16 disability artists alreadyNov17; next Nov6 translation award before isolation line"
+      },
+      {
+        "language": "fr",
+        "title": "Culture Occitanie",
+        "url": "https://www.culture.gouv.fr/regions/drac-occitanie/actualites/actualite-a-la-une",
+        "status": "cutoff",
+        "reason": "Montpellier Nov18–19 forum article publishedNov5; Rodez Nov19–20 publishedOct23; event dates not publication"
+      },
+      {
+        "language": "fr",
+        "title": "Salon des maires",
+        "url": "https://www.culture.gouv.fr/presse/communiques-de-presse/salon-des-maires-et-des-collectivites-locales-2026-13-ministeres-presents-pour-parler-de-simplification",
+        "status": "identity-hold",
+        "reason": "interministerial copied core article; prior crawl before cutoff; dates different across ministry mirrors; cannot clear first-original date"
+      },
+      {
+        "language": "fr",
+        "title": "INRAE actualites",
+        "url": "https://www.inrae.fr/actualites",
+        "status": "no-new-qualified",
+        "reason": "known melon/science ouverteNov12 and coccidiosisNov10 already published; dynamic listing and searches no additional qualified original found"
+      },
+      {
+        "language": "fr",
+        "title": "INRAE seafood symposium",
+        "url": "https://www.inrae.fr/evenements/symposium-international-sciences-alimentaires-produits-mer",
+        "status": "not-eligible",
+        "reason": "outside allowed actualites prefix; Nov18–19 event date, crawled last month, no new publication proof"
+      },
+      {
+        "language": "fr",
+        "title": "INGV French aliases",
+        "url": "https://www.ingv.it/fr/",
+        "status": "not-native",
+        "reason": "translations of Italian originals; not independent French sources"
+      },
+      {
+        "language": "it-listening",
+        "title": "Rai Italian portal",
+        "url": "https://www.raiscuola.rai.it/italianoperstranieri",
+        "status": "held",
+        "reason": "checked official portal; mainly evergreen courses; no newly identifiable independent post-cutoff programme clearing unknown old queue"
+      },
+      {
+        "language": "fr-listening",
+        "title": "TV5MONDE",
+        "url": "https://apprendre.tv5monde.com/fr",
+        "status": "held",
+        "reason": "checked official portal; displayed older works incl July28 artists,June23 Erevan and2024 travel/clothes; no eligible new identified work"
+      },
+      {
+        "language": "fr-listening",
+        "title": "RFI",
+        "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-fran%C3%A7ais-facile/",
+        "status": "access-gap",
+        "reason": "official endpoint returned403 in preceding Nov18 pass; no bypass, no fresh programme verified this pass"
+      }
+    ],
+    "gaps": [
+      "FR reading none selected",
+      "IT listening none selected",
+      "FR listening none selected"
+    ],
+    "scopeNote": "No claim exhaustive worldwide absence; fixed-source checks and identity/rights requirements govern gaps. No audio fetched or transcribed, no listening exercises fabricated.",
+    "searches": [
+      "culture.gouv.fr Publié le18novembre2026",
+      "inrae.fr actualites19novembre2026",
+      "ingv.it18Novembre2026",
+      "archivi.cultura.gov.it18novembre2026",
+      "ingv.it SPAZIO Expoforum2026",
+      "ingv.it ARISTOTLE17Novembre2026"
+    ],
+    "siteIndexCaution": "INGV press-only list missed note-stampa/news. Search homepage current but web open returned old2024 capture; resolved using actual new article ordinary HTTPS and explicit publication date."
+  },
+  "tests": "47 harnesses; 489217 passed, 0 failed, 0 known issues. Reading, candidates, practice, comprehension, listening and full aggregate tests; git diff check passed.",
+  "browser": "Managed private preview of final article/companion files. Both articles: all six comprehension and all ten cloze answers successful. EN wrong answer locks choices; reset and correct answers verified. Spelling empty submission, correct input and reset; translation toggle; vocabulary challenge start/end. IT evidence control focused actual sentence without route change. Listening detail/source href/date folds/back/forward checked. At 390 CSS px iframe viewport, reading and listening body width and scroll width both 375 px; visually no horizontal overflow. Official logo player muted timer advanced 00:02 to 00:22, paused at 00:23 of 10:21; not heard or sound-quality verified.",
+  "gaps": "Two of twelve reading slots filled: EN A2 and IT A2. DE/FR reading and other tiers omitted. Only DE listening added; no new IT/FR/EN listening. Candidate reserve retained separately from uncertain historical candidate file, not a full week of approved stock. Unselected leads are not claimed reviewed or globally unavailable.",
+  "isolation": "Original unknown candidates operation remains unresolved. Candidate blob f371ee57ace6678d5c8ef153182bf2b4bab3e82a untouched; no overlap/dependency."
+}

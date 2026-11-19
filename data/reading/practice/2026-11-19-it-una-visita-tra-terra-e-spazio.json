@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-19-it-una-visita-tra-terra-e-spazio",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "p1",
+      "sentenceId": "s2",
+      "start": 76,
+      "answer": "stand",
+      "options": [
+        "stand",
+        "sportello",
+        "strumento",
+        "studio"
+      ],
+      "explanation": "stand表示展台，和中文及参展语境一致。"
+    },
+    {
+      "id": "p2",
+      "sentenceId": "s3",
+      "start": 81,
+      "answer": "satelliti",
+      "options": [
+        "turisti",
+        "satelliti",
+        "giornali",
+        "volantini"
+      ],
+      "explanation": "卫星satelliti用于从太空观测地球；不是参观者或印刷材料。"
+    },
+    {
+      "id": "p3",
+      "sentenceId": "s7",
+      "start": 64,
+      "answer": "professioni",
+      "options": [
+        "vacanze",
+        "colazioni",
+        "professioni",
+        "partenze"
+      ],
+      "explanation": "professioni指职业，与下句competenze和percorsi professionali呼应。"
+    },
+    {
+      "id": "p4",
+      "sentenceId": "s8",
+      "start": 10,
+      "answer": "seguente",
+      "options": [
+        "precedente",
+        "festivo",
+        "libero",
+        "seguente"
+      ],
+      "explanation": "seguente表示接下来的，即11月26日之后的11月27日。"
+    },
+    {
+      "id": "p5",
+      "sentenceId": "s9",
+      "start": 127,
+      "answer": "danni",
+      "options": [
+        "danni",
+        "viaggi",
+        "prezzi",
+        "turni"
+      ],
+      "explanation": "danni表示损害；讲座介绍利用雷达数据绘制强震后受损情况。"
+    }
+  ]
+}

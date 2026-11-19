@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-19-en-preparing-a-farming-application",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "p1",
+      "sentenceId": "s3",
+      "start": 23,
+      "answer": "budget",
+      "options": [
+        "budget",
+        "profit",
+        "payment",
+        "cost"
+      ],
+      "explanation": "budget对应政府安排的总预算；不是已实现利润、单笔付款或成本。"
+    },
+    {
+      "id": "p2",
+      "sentenceId": "s5",
+      "start": 10,
+      "answer": "payments",
+      "options": [
+        "applications",
+        "payments",
+        "investments",
+        "reports"
+      ],
+      "explanation": "payments of up to £20,000 in advance指最高2万英镑的预付款；复数。"
+    },
+    {
+      "id": "p3",
+      "sentenceId": "s6",
+      "start": 0,
+      "answer": "Applications",
+      "options": [
+        "Payments",
+        "Interviews",
+        "Applications",
+        "Courses"
+      ],
+      "explanation": "Applications指申请，句首大写；原句说明申请窗口开放和截止日期。"
+    },
+    {
+      "id": "p4",
+      "sentenceId": "s8",
+      "start": 49,
+      "answer": "prepare",
+      "options": [
+        "compete",
+        "borrow",
+        "travel",
+        "prepare"
+      ],
+      "explanation": "prepare对应提前准备；can后使用原形。"
+    },
+    {
+      "id": "p5",
+      "sentenceId": "s11",
+      "start": 40,
+      "answer": "feedback",
+      "options": [
+        "feedback",
+        "funding",
+        "equipment",
+        "training"
+      ],
+      "explanation": "feedback指第一轮得到的反馈，不是额外资金、设备或培训。"
+    }
+  ]
+}

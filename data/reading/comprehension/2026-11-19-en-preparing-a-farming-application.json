@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-19-en-preparing-a-farming-application",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Which summary best matches the article?",
+      "options": [
+        "The scheme rewards the earliest applications, and its guidance will arrive after the closing date.",
+        "The scheme gives every farm the same amount, and farmers can choose any investment they like.",
+        "The scheme offers money to improve farms, with information now and checks after applications close.",
+        "The scheme has finished its new round, and the article explains how successful farms spent the money."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s3",
+        "s5",
+        "s6",
+        "s7",
+        "s8",
+        "s9"
+      ],
+      "explanationZh": "全文介绍新一轮投资支持、已提前发布的指南和截止后统一评估。不是先到先得、每户等额、任意投资都合格或已完成拨款的回顾。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "What does the information for farmers explain?",
+      "options": [
+        "What farmers can apply for and how the government will compare applications.",
+        "Which farmers have already received money and what they bought.",
+        "How money is paid to farms as soon as each application arrives.",
+        "Which investments farmers chose last year and how much profit they made."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s9",
+        "s10"
+      ],
+      "explanationZh": "第9至10句说明可申请的项目、价格和数量以及申请比较与排序方式；没有介绍已获款者、来一份申请就付款的安排或去年的利润。"
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": "How should a farmer understand the application dates?",
+      "options": [
+        "Farmers can read the information only after applications open.",
+        "The government will check November applications before January applications.",
+        "The first applicants are promised the largest payments from the scheme.",
+        "Farmers can prepare now, but sending an application first does not mean it will be checked first."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s6",
+        "s7",
+        "s8"
+      ],
+      "explanationZh": "第8句说明可以提前准备，第7句明确截止后评估而非按到达顺序，所以先提交并不意味着先评估，也不保证获得更多钱。"
+    }
+  ]
+}

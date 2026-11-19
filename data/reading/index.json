@@ -2,6 +2,40 @@
   "schema": 1,
   "articles": [
     {
+      "id": "2026-11-19-en-preparing-a-farming-application",
+      "lang": "en",
+      "date": "2026-11-19",
+      "title": "Preparing a farming application",
+      "titleZh": "先准备，再申请农业投资支持",
+      "summaryZh": "苏格兰一轮农业投资支持将开放申请；指南提前发布，所有申请在截止后评估，并非先到先得。",
+      "level": "A2",
+      "category": "work-economy",
+      "topics": [
+        "先准备，再申请农业投资支持"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-11-18",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-19-it-una-visita-tra-terra-e-spazio",
+      "lang": "it",
+      "date": "2026-11-19",
+      "title": "Una visita tra Terra e spazio",
+      "titleZh": "一次连接地球与太空的参观",
+      "summaryZh": "读懂罗马太空展的展馆分工和学生讲座时间。",
+      "level": "A2",
+      "category": "technology",
+      "topics": [
+        "参观活动",
+        "太空",
+        "职业"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-11-18",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-11-18-en-public-roofs-for-community-energy",
       "lang": "en",
       "date": "2026-11-18",
