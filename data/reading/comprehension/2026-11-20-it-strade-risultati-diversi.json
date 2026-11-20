@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-20-it-strade-risultati-diversi",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "Quale periodo descrivono i nuovi dati?",
+      "options": [
+        "Tutto il 2025.",
+        "Da gennaio a giugno 2026.",
+        "Da luglio a dicembre 2026.",
+        "Tutto il 2026."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s1",
+        "s2"
+      ],
+      "explanationZh": "新数据只涵盖2026年1月至6月，不是全年。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Rispetto ai primi sei mesi del 2025, dove aumentano i morti?",
+      "options": [
+        "Sulle strade delle città.",
+        "Sulle altre strade fuori città.",
+        "Sulle autostrade.",
+        "Sulle strade delle città e sulle altre strade fuori città."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s7",
+        "s8"
+      ],
+      "explanationZh": "高速公路死亡人数上升；城市道路和其他城外道路则下降。"
+    },
+    {
+      "id": "q3",
+      "kind": "main-idea",
+      "prompt": "Quale frase riassume il confronto con i primi sei mesi del 2025?",
+      "options": [
+        "Diminuiscono sia i feriti sia i morti.",
+        "Aumentano sia i feriti sia i morti.",
+        "Diminuiscono i feriti, ma aumentano i morti.",
+        "Aumentano i feriti, ma diminuiscono i morti."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s3",
+        "s4"
+      ],
+      "explanationZh": "总体上受伤人数增加，死亡人数下降；这两个指标不能混为一谈。"
+    }
+  ]
+}

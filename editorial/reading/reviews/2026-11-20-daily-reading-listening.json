@@ -1,0 +1,343 @@
+{
+  "date": "2026-11-20",
+  "status": "All local gates passed; publication verification recorded separately",
+  "baseline": "0b841026bb5f1bbab23d4e413b47db3d47be91e4",
+  "scope": "Two A2 readings with ten cloze and six comprehension questions, one Italian metadata-only listening guide. No code or historical edits.",
+  "reviews": {
+    "en": {
+      "date": "2026-11-20",
+      "status": "editorial-pass",
+      "reviewType": "Known-key final revision after independent initial blind review [1,3,0]; not a second blind review.",
+      "source": "https://www.gov.uk/government/news/minister-acts-to-keep-exquisite-mughal-calligraphy-collection-from-leaving-the-uk",
+      "originalDate": "2026-11-16",
+      "facts": {
+        "s1to4": "Two Mughal calligraphy volumes with royal artists, works thought over 400 years old, 29 leaves total and plant/animal gold decoration. Age refers to works, not current binding.",
+        "s5to8": "Final s5 and Chinese distinguish temporary intervention from permanent removal as in official lead. Initial 15 February 2027 deadline is inclusive. UK museums/galleries seeking purchase funds and individual purchase/donation both accurately represented as options.",
+        "s9to10": "Source supports possible research into the construction of collections and hoped-for public access. Neither acquisition nor display guaranteed."
+      },
+      "rights": {
+        "outcome": "pass",
+        "scope": "Only institution-authored narrative and factual metadata are adapted. No source image or artwork reproduction, quotations including from committee/minister, logos, third-party reporting or auction material. GOV.UK From metadata and allowed URL prefix match DCMS registry. OGL3 footer and GOV.UK terms rechecked; official National Archives OGL indexed text confirms adaptation permitted with attribution and exclusions for unlicensed third-party rights. Source/author/date/licence and change note present.",
+        "termsUrl": "https://www.gov.uk/help/terms-conditions",
+        "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      },
+      "bilingual": "Whole article title, summary, ten sentence units, seven word/gloss entries, phrases, two sentence notes, and speaking prompts checked. S5 final Chinese accurately conveys permanent removal rather than any departure. For good has explicit Chinese support.",
+      "level": "Supported A2 editorial estimate, not certified. Concrete objects, numbered facts and dates, mostly short clauses, familiar can/could modality. Cultural terms, present perfect, one conditional and the idiom for good with translations/glosses fit scaffolded reading, not strict unassisted A2 certification.",
+      "bodyWordCount": 162,
+      "bodySha256": "29962fa6b9104dbe6064d4753849963648248c37170e7b97c002c93b8d09c003",
+      "practice": {
+        "offsets": [
+          {
+            "id": "p1",
+            "sentence": "s1",
+            "start": 50,
+            "exactSlice": "handwriting",
+            "answerIndex": 2
+          },
+          {
+            "id": "p2",
+            "sentence": "s4",
+            "start": 22,
+            "exactSlice": "leaves",
+            "answerIndex": 1
+          },
+          {
+            "id": "p3",
+            "sentence": "s5",
+            "start": 31,
+            "exactSlice": "stopped",
+            "answerIndex": 3
+          },
+          {
+            "id": "p4",
+            "sentence": "s7",
+            "start": 30,
+            "exactSlice": "gallery",
+            "answerIndex": 0
+          },
+          {
+            "id": "p5",
+            "sentence": "s9",
+            "start": 29,
+            "exactSlice": "researchers",
+            "answerIndex": 3
+          }
+        ],
+        "verdict": "All exact UTF-16 slices verified in JavaScript. Four distinct choices per item; one exact answer and sentence meaning in the display. p4/p5 can admit other grammatical nouns in isolation, but the UI displays Chinese sentence (reading-practice-app.js) and that context together with the article uniquely resolves gallery/researchers. p3 uses revised start31 and explanation."
+      },
+      "comprehension": {
+        "keys": [
+          1,
+          3,
+          0
+        ],
+        "evidence": [
+          {
+            "id": "q1",
+            "evidence": [
+              "s5",
+              "s7",
+              "s10"
+            ]
+          },
+          {
+            "id": "q2",
+            "evidence": [
+              "s4"
+            ]
+          },
+          {
+            "id": "q3",
+            "evidence": [
+              "s7",
+              "s8"
+            ]
+          }
+        ],
+        "verdict": "Matches blind choices. q1 final explanation now retains permanent-removal qualification. q1 main idea evidence adequate, q2 motifs direct, q3 possible private donation direct. Prompts and Chinese explanations faithful."
+      },
+      "hashes": {
+        "2026-11-20-en-time-for-two-old-books.article.json": "e74c1f40d7d84a5f22b9fb5e4ae9e27f5afaebd01b78bc18651dd7fe7b5d29ee",
+        "2026-11-20-en-time-for-two-old-books.practice.json": "df99e16e9ec88d0f7691e63955130272960b94eb96386373dd51f846cd92e5d0",
+        "2026-11-20-en-time-for-two-old-books.comprehension.json": "194e173f4069d90fc96af8852e4f65f6621d4dae92ba42fc50c17a821470957e",
+        "source.html": "04665e54077dc119534896af3a2390a4bc2067cb0f7075355d601cd1541273da",
+        "terms.html": "dc54a36dbb8a25cd96790538c4e35046fffc03b56229f6ce5e28883dd288d01e"
+      },
+      "remainingGates": "Current main/private pending dedup, user-facing browser verification, validators/isolation and publication/deployment are coordinator responsibilities."
+    },
+    "it": {
+      "status": "editorial-pass",
+      "reviewer": "coordinator, independent of author",
+      "blindAnswers": [
+        1,
+        2,
+        3
+      ],
+      "blindEvidence": [
+        [
+          "s1",
+          "s2"
+        ],
+        [
+          "s7",
+          "s8"
+        ],
+        [
+          "s3",
+          "s4"
+        ]
+      ],
+      "sequence": "Read article and stripped prompts/options first; keys and explanations only after blind answers. Final q2 revision is known-key recheck, not a second blind review.",
+      "facts": "Official Istat page and PDF opening match every claim. Same 2025 semester, separate 2019 first-half comparator, 30-day deaths, preliminary estimates, differing motorway vs other-road death trends. No causal claims.",
+      "rights": "Istat official text CC BY 4.0 unless excluded. ACI survey cooperation acknowledged. Excluded all third-party context data, quotes, media, graphs and logos.",
+      "level": "160 words; A2 supported reading, editorial estimate: short present-tense statements, simple comparison; statistical terms glossed in Chinese.",
+      "bilingual": "All ten pairs, glosses, summary and speaking checked.",
+      "practice": "Five exact surfaces and UTF-16 offsets; original wording plus Chinese context gives unique answers. Meaning and morphology explanations made specific.",
+      "comprehension": "Three final keys [1,2,3] match evidence and Chinese explanation; q2 no universal distractors.",
+      "hashes": {
+        "articles": "f8a410ce81f504ea880eb6ea5465da58f147de793ac7aa9d0ed8bd16935f7132",
+        "practice": "7de333c15e1270557e9f61213c0ee32aa02e463d3660bd2774d51141e73211a4",
+        "comprehension": "c5a7e3d4a26b80bd8749401b1c054a1889fef99eea1c41ec15e00bd153567ad4"
+      }
+    },
+    "listening": {
+      "status": "editorial-pass metadata-only",
+      "sourceAdmission": "Narrow Istat official Dati alla Mano outbound-link guide admitted for this episode under normal editorial source review; not extension of the reading registry or a media reuse licence.",
+      "source": "https://www.istat.it/news-dati-alla-mano/ragazzi-e-giovani-adulti/",
+      "host": "https://www.spreaker.com/episode/ragazzi-e-giovani-adulti--76450165",
+      "independentEvidence": "Coordinator independently read official article, Istat rights page and browser host author/date/duration. Official page links host.",
+      "rights": "No media, transcript, image, source exercise or thematic audio adaptation. Generic independent learning guide and ordinary vocabulary meanings. Third-party music not reused; no podcast CC claim.",
+      "quality": "Ungraded native statistical interview, no comprehension questions. Distinct episode date vs announcement date.",
+      "playback": "Visible timer 00:07 to 00:24; paused at 00:30 of 15:57. Audio not heard/quality not verified. No universal geographic accessibility claim.",
+      "hash": "e8d67714f770c29a3f68d73c085832fa6eefa2c6fb749371066e37aba9120ddf",
+      "uiRevision": "Existing UI does not render vocabularyLabel; preview disclaimer therefore included directly in guideZh, no code changed."
+    }
+  },
+  "sources": {
+    "enDe": {
+      "status": "private candidate, independent review and publication gates outstanding",
+      "date": "2026-11-20",
+      "baseline": "0b841026bb5f1bbab23d4e413b47db3d47be91e4",
+      "articleId": "2026-11-20-en-time-for-two-old-books",
+      "storyId": "dcms-mughal-calligraphy-export-deferral-2026-11-16",
+      "source": {
+        "name": "Department for Digital, Culture, Media and Sport / GOV.UK",
+        "author": "Department for Digital, Culture, Media and Sport; Reviewing Committee on the Export of Works of Art and Objects of Cultural Interest; Arts Council England; Baroness Twycross (GOV.UK From metadata)",
+        "title": "Minister acts to keep exquisite Mughal calligraphy collection from leaving the UK",
+        "url": "https://www.gov.uk/government/news/minister-acts-to-keep-exquisite-mughal-calligraphy-collection-from-leaving-the-uk",
+        "publishedAt": "2026-11-16",
+        "lang": "en"
+      },
+      "registryId": "govuk-dcms-english-news",
+      "datePublished": "2026-11-16T14:00:03+00:00",
+      "dateModified": "2026-11-16T14:00:03+00:00",
+      "aliases": [
+        "https://stateintegrity.org.uk/news/2026/11/16/minister-acts-to-keep-exquisite-mughal-calligraphy-collection-from-leaving-the-u",
+        "https://www.theartnewspaper.com/2026/11/17/uk-government-places-export-bans-on-mughal-calligraphy-works-valued-at-%C2%A3900000"
+      ],
+      "rightsEvidence": [
+        "https://www.gov.uk/help/terms-conditions",
+        "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      ],
+      "rights": "Ordinary HTTPS GET retained source and terms; official article footer OGL3 except where otherwise stated, and Crown copyright. Only original English DCMS institutional narrative, no reuse of quotations, images, logos, third-party republisher text or auction data. Exact From metadata identifies DCMS, RCEWA, Arts Council England and Baroness Twycross; credit and change notice retained.",
+      "dedup": "Repository rg at baseline returned no hits under data/reading, editorial or docs/reading-reviews for mughal|Kashmiri|calligraphy|export bar. Before-date search did not surface an earlier same 2026 export decision. Source decision not the 2020 Sotheby's sale of the same objects, not earlier decisions for other artworks. Same-event third-party leads preserved as aliases only; neither relied on for facts nor used as licence. Nov16 first issue is later than gap cutoff; parent must check recovered private/PR current inventory and body dedup.",
+      "bodySha256": "29962fa6b9104dbe6064d4753849963648248c37170e7b97c002c93b8d09c003",
+      "bodyHashRule": "UTF-8 original-language sentence text joined by LF, no trailing LF",
+      "bodyWords": 162,
+      "hashes": {
+        "blind.json": "8ec64994f99d5432fe71c67a3ca1256f2311482c42e4f869a8ffee3b7db8c237",
+        "2026-11-20-en-time-for-two-old-books.practice.json": "df99e16e9ec88d0f7691e63955130272960b94eb96386373dd51f846cd92e5d0",
+        "blind-review.json": "f03ab21e8cab4fb670a1ef2375f2c1a52b25d953859dd72aaa2227f7da7ce0ee",
+        "source.html": "04665e54077dc119534896af3a2390a4bc2067cb0f7075355d601cd1541273da",
+        "2026-11-20-en-time-for-two-old-books.comprehension.json": "194e173f4069d90fc96af8852e4f65f6621d4dae92ba42fc50c17a821470957e",
+        "2026-11-20-en-time-for-two-old-books.article.json": "e74c1f40d7d84a5f22b9fb5e4ae9e27f5afaebd01b78bc18651dd7fe7b5d29ee",
+        "terms.html": "dc54a36dbb8a25cd96790538c4e35046fffc03b56229f6ce5e28883dd288d01e"
+      },
+      "facts": {
+        "s1–s4": "Two volumes, Mughal artists and age estimate, 29 folios with gold plant/animal designs in institutional paragraphs.",
+        "s5–s8": "Temporary export bar and initial deadline including 15 February 2027; timeline purpose and institutional/private acquisition pathways.",
+        "s9–s10": "Research and public-access hopes; neither acquisition nor display guaranteed."
+      },
+      "holds": [
+        {
+          "language": "en",
+          "source": "https://www.gov.uk/government/news/sport-and-in-person-gaming-used-to-help-tackle-loneliness-among-boys-and-young-men",
+          "reason": "Earlier public August grant call describes the same gaming pilot; preserve distinct 19 November combined investment announcement as possible reserve, not selected."
+        },
+        {
+          "language": "en",
+          "source": "https://www.dorsetcouncil.gov.uk/news/one-million-gifts-of-reading-campaign-brings-dorset-s-year-of-reading-to-a-close",
+          "reason": "November 19 local library engagement coverage, not in existing registry; no article-level clearance checked."
+        },
+        {
+          "language": "de",
+          "source": "https://open-educational-resources.de/von-offenen-infrastrukturen-zu-einem-offenen-oekosystem-beobachtungen-aus-zwei-jahren-hackathoern/",
+          "reason": "OERinfo visible dates 3 and 10 Nov; first date uncertain and potentially inside missing history."
+        },
+        {
+          "language": "de",
+          "source": "https://erwachsenenbildung.at/aktuell/nachrichten/20956-erasmus-projekt-gestartet-roots-amp-fruits-der-bildungshaeuser.php",
+          "reason": "Nov16 published but partner project started Oct1; photo licence doesn't grant institutional article reuse; first-work and text rights not cleared."
+        },
+        {
+          "language": "de",
+          "source": "https://www.bpb.de/lernen/digitale-bildung/werkstatt/",
+          "reason": "Current featured Memes already held prior; Nov18 is event time for Bildungssalon, not verified fresh article publication."
+        },
+        {
+          "language": "de",
+          "source": "https://irights.info/artikel",
+          "reason": "Top Nov11 open LLM article is OERinfo repost of older work; no new mature candidate."
+        }
+      ],
+      "revision": "Post-blind s5 and dependent p3 offset, explanation, phrase and q1 explanation explicitly limit temporary export bar to permanent departure; independent known-key review pending."
+    },
+    "it": "# Nov20 Italian proposal, NOT independently reviewed or published\n\nCandidate source: https://www.istat.it/comunicato-stampa/incidenti-stradali-stima-preliminare-gennaio-giugno-2026/\nFull official report: https://www.istat.it/wp-content/uploads/2026/11/REPORT_INCIDENTISTRADALI_PRIMO_SEMESTRE_2026.pdf\nRights: https://www.istat.it/note-legali/\nLicense: https://creativecommons.org/licenses/by/4.0/\n\n## Freshness / independent work\nChecked 2026-11-20. Official page explicitly labels Data pubblicazione 18 Novembre 2026 and reference period Gennaio-giugno 2026. PDF itself begins 18 novembre 2026 and covers the new preliminary 2026 first-half estimates. Page also reports graphs replaced at12:46 on Nov18; this is an intra-day correction to graphs, not evidence of an older text. No earlier publication date found. Latest displayed publication date and the report's date agree; this is positive first-publication evidence, not simply a URL/year guess. Original Italian on institutional Italian site; not an English/translated locale.\n\nSearched current data/reading + editorial/reading for URL, title, incidenti-stradali, ACI and read the existing closest article 2026-10-23-it-strade-leggere-i-confronti. Existing work is provincial extension of 2025 annual results, original October15, national data originally July24. New work is Jan-Jun2026 preliminary release, after Nov4–7 missing records; not an old backfill or alternative level of the same source work. Nevertheless thematic overlap exists: both explain comparison periods and opposite injury/death trends. New edition primarily highlights motorway vs urban/other road contrast, which is not the old province contrast. Coordinator should reject if topic repetition outweighs this incremental value; do not force a quota.\n\n## Rights and third parties\nIstat legal notice license section explicitly allows modification and commercial redistribution under CC BY4 unless otherwise marked. Its third-party exclusion applies to third-party content, logos/images/trademarks. Full 8-page report text inspected, no contrary copyright/licence/rights reservation found. Main crash results and tables are attributed to Istat's road injury accident survey. Methodological note mentions ACI participation and local authorities; this is acknowledged in adaptation attribution rather than erased.\n\nSpecific exclusions: report page1 footnote2 identifies ACI automobile register, municipal data, Autostrade per l'Italia and Anas as sources of CONTEXT data. Proposed adaptation excludes all vehicle registration/market, sharing/mobility and traffic-volume material from those sources. Excludes graphics, logos, and separately sourced quoted road-accident definition (Vienna Convention/UNECE/ITF/Eurostat). No claim that ACI's external site or external works inherit Istat CC BY. Used institutional narration and statistical facts only. Thirty-day death inclusion also appears explicitly in Istat's opening paragraph, so no outside definition needs reproducing.\n\n## Claim map\ns1–s2: official publication date and reference period; preliminary status stated in title/opening.\ns3–s4: official opening, accidents and injuries higher than Jan-Jun2025, deaths lower.\ns5: official opening specifies deaths within30days; PDF glossary confirms.\ns6–s8: official fourth paragraph, motorway deaths increase, urban/extraurban deaths decrease, comparison first half2025.\ns9–s10: official second/third paragraphs, 2019 baseline and death decrease vs that semester; continued road-safety work needed.\nNo exact counts or percentages in reading, only dates and death-counting interval. Body160 whitespace words. Dates in narrative are source date rather than edition date; edition Nov20.\n\n## Artifacts\narticle.json, practice.json (5cloze), comprehension.json (3questions), source.pdf, source.txt, source-page.html, rights.html. Private files only. Build script retained as initial draft only; final JSON includes reviewer revisions, do not rerun build.py. Await independent source/content/answer-blind review and coordinator schema/batch/UI gates.\n",
+    "listening": {
+      "date": "2026-11-20",
+      "repoBaseline": "0b841026",
+      "scope": "Read-only repo research; no publication, CUA, media download, transcription or playback. One optional proposal, not publication-ready.",
+      "checked": [
+        "docs/listening-module.md",
+        "data/listening/catalog.json",
+        "editorial/listening/reviews filenames",
+        "editorial/reading/reviews/2026-11-19-daily-reading-listening.json",
+        "private Nov19 next-run note"
+      ],
+      "sourceAdmission": {
+        "it": "Recommend narrowly admitting Istat official announcement outbound links with wholly original short guide and metadata. Existing Istat READING registry /comunicato-stampa/ does not authorize this /news-dati-alla-mano/ listening source; coordinator must record explicit listening-scope admission. No media/reproduction licence claimed.",
+        "de": "Hold generated thematic guide pending source-scope judgment; plain outbound navigation possibly suitable but no second proposal supplied."
+      },
+      "sources": [
+        {
+          "lang": "it",
+          "url": "https://www.istat.it/news-dati-alla-mano/ragazzi-e-giovani-adulti/",
+          "hostUrl": "https://www.spreaker.com/episode/ragazzi-e-giovani-adulti--76450165",
+          "identity": "Istat Dati alla Mano episode76450165 Ragazzi e giovani adulti",
+          "evidence": "Official Istat article publication19Nov; explicit Spreaker episode link. Host says18Nov2026,15m57s, author/organization Istat, interview Cristina Freguja. Source article typo Critina avoided.",
+          "rightsUrl": "https://www.istat.it/note-legali/",
+          "rights": "Istat site default CC BY4.0 with third-party exclusions. Host explicitly credits third-party sound and music; do not infer podcast licence from website licence. Proposed link stays official Istat announcement; no embedded/hosted audio, image, transcript, or source exercise. Spreaker terms retrieval only shell, no blanket clearance inferred.",
+          "status": "conditional original outbound guide; parent playback, source admission and private-pending dedup required"
+        },
+        {
+          "lang": "de",
+          "url": "https://www.deutschlandfunk.de/nl-podcast-19-11-100.html",
+          "date": "2026-11-19",
+          "duration": "05:28",
+          "rightsUrl": "https://www.deutschlandfunk.de/nutzungsbedingungen-102.html",
+          "rights": "Official terms require prior written consent for reproduction, modification, compilation, republication, storage or translation of content; restrict use to private noncommercial purposes; explicitly permit share-function links. No permission for article/audio adaptations inferred.",
+          "status": "metadata verified; no thematic derivative drafted; no CEFR inference from Einfache Sprache"
+        },
+        {
+          "lang": "fr",
+          "url": "https://www.inrae.fr/actualites/ressources-eau-usages-quels-futurs-plausibles",
+          "aliases": [
+            "https://www.youtube.com/watch?v=wWh4GtyF5l0",
+            "https://www.inrae.fr/evenements/sciences-tous-eau"
+          ],
+          "evidence": "Official replay article18Nov for17Nov conference. Metadata no recording duration. Official player click returned tool Cache miss; no site block/playback failure inference. Prior source admission unresolved; reading registry not listening permission.",
+          "status": "hold duration/playback/source admission; no new proposal"
+        },
+        {
+          "lang": "en",
+          "url": "https://learnenglish.britishcouncil.org/free-resources/learning-hub/events",
+          "evidence": "Latest event24Nov Thanksgiving/BlackFriday is future. Most recent past event17Nov Dream homes already in catalog.",
+          "status": "no independent new selection in bounded pass"
+        }
+      ],
+      "dedup": {
+        "checked": "Full data and editorial recursively searched for ragazzi-e-giovani,76450165,nl-podcast-19-11,Thirel,wWh4GtyF5l0: no matches. Catalog already contains EN Dream homes.",
+        "limits": "No claim all hidden pending records inspected on this pass. Parent must check both recovered pending manifests/current main. Historical Nov4–7 manifests remain missing. New dated episode18Nov and DLF daily19Nov are later creations; do not treat old statistics/topic as new reading work."
+      },
+      "remainingGates": [
+        "source admission decision",
+        "parent private pending identity check",
+        "actual browser playback/runtime acceptance as automation requires",
+        "independent editorial check",
+        "catalog UI/deep links/mobile checks",
+        "publication and live verification"
+      ]
+    }
+  },
+  "dedup": {
+    "openPRs": 0,
+    "currentRepository": [
+      {
+        "term": "mughal",
+        "matches": []
+      },
+      {
+        "term": "calligraphy",
+        "matches": []
+      },
+      {
+        "term": "incidenti-stradali-stima-preliminare-gennaio-giugno-2026",
+        "matches": [
+          "data/reading/articles/2026-11-20-it-strade-risultati-diversi.json"
+        ]
+      },
+      {
+        "term": "ragazzi-e-giovani-adulti",
+        "matches": [
+          "data/listening/catalog.json"
+        ]
+      },
+      {
+        "term": "76450165",
+        "matches": []
+      }
+    ],
+    "private": "Both recovered November 10 pending manifests read completely; no Mughal/calligraphy, new first-half road release, episode title or media ID match. Unknown November 4–7 manifests remain missing. Each admitted work first created after that window.",
+    "workDistinction": "Istat January–June 2026 preliminary statistics are distinct from published 2025 annual provincial statistics; limited topic resemblance acknowledged. EN selected new export deferral decision, not historical art/auction coverage. IT listening new episode, not old statistics as new reading."
+  },
+  "frReading": {
+    "url": "https://www.culture.gouv.fr/presse/communiques-de-presse/adoption-de-la-loi-visant-a-renforcer-l-effectivite-du-droit-voisin-des-editeurs-et-des-agences-de-presse",
+    "originalDate": "2026-11-19",
+    "status": "reserve, not selected or fully admitted",
+    "reason": "Official institutional text read; CC BY-SA 3.0 FR section 4.3.1(a) noted. New legislative adoption is specialized legal-policy material; underlying bill history not fully cleared. No padding a basic reading. INRAE replay is a listening lead, not a thin reading; Estaragne and Etna old underlying-work holds retained."
+  },
+  "tests": "47 harnesses; 489366 passed, zero failed and zero known issues. All article/candidate/practice/comprehension validators, reading/practice/comprehension/loading/listening tests; TZ=UTC npm test; git diff --check. Rerun after final listening disclaimer.",
+  "browser": "Final subset served in managed private preview. Both readings: all six comprehension and ten cloze answers confirmed correct. EN wrong-answer lock, comprehension reset, translation off, spelling empty no progress then correct answer, practice reset, vocabulary game start/end. IT evidence focus returned to actual sentence without route change. New listening detail, folds, source href, date, return/back/forward; four language switches reached expected URL and pressed state. Final guide disclaimer visible. Card click initially did not navigate in tool; keyboard Enter on same link succeeded. Existing listening exercise submitted 3/3, repeat submission disabled, reset cleared choices. 390 CSS px iframe: reading and listening body client/scroll width both 375, screenshots inspected with no horizontal overflow. Official player timer 00:07 to 00:24, paused at 00:30/15:57; no audible quality claim.",
+  "gaps": "Two of twelve target reading slots: EN A2 and IT A2. All other tiers and FR/DE readings absent. IT listening one guide, zero questions. FR/DE/EN listening no addition; candidates held for scope/identity or not selected. Not a full week of approved reserve.",
+  "isolation": "Unknown historical candidate operation remains unresolved and untouched. No candidate queue mutation or paused textbook work."
+}

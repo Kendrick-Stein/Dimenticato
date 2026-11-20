@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-20-en-time-for-two-old-books",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "p1",
+      "sentenceId": "s1",
+      "start": 50,
+      "answer": "handwriting",
+      "options": [
+        "printing",
+        "painting",
+        "handwriting",
+        "drawing"
+      ],
+      "explanation": "这里的书法是手写文字的艺术，不是印刷、绘画或素描。"
+    },
+    {
+      "id": "p2",
+      "sentenceId": "s4",
+      "start": 22,
+      "answer": "leaves",
+      "options": [
+        "covers",
+        "leaves",
+        "letters",
+        "lines"
+      ],
+      "explanation": "两册古书合计29张书叶；leaves在这里不是树叶。"
+    },
+    {
+      "id": "p3",
+      "sentenceId": "s5",
+      "start": 31,
+      "answer": "stopped",
+      "options": [
+        "asked",
+        "told",
+        "helped",
+        "stopped"
+      ],
+      "explanation": "stop … from doing 描述暂时阻止这些书被永久带出英国。"
+    },
+    {
+      "id": "p4",
+      "sentenceId": "s7",
+      "start": 30,
+      "answer": "gallery",
+      "options": [
+        "gallery",
+        "library",
+        "school",
+        "market"
+      ],
+      "explanation": "这里的 gallery 是美术馆，和 museum 并列。"
+    },
+    {
+      "id": "p5",
+      "sentenceId": "s9",
+      "start": 29,
+      "answer": "researchers",
+      "options": [
+        "visitors",
+        "owners",
+        "collectors",
+        "researchers"
+      ],
+      "explanation": "本句说有机会研究古书合集制作方法的是研究人员。"
+    }
+  ]
+}

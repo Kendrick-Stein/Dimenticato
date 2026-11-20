@@ -1,0 +1,207 @@
+{
+  "schema": 1,
+  "id": "2026-11-20-it-strade-risultati-diversi",
+  "storyId": "istat-road-accidents-preliminary-first-half-2026-2026-11-18",
+  "lang": "it",
+  "date": "2026-11-20",
+  "contentType": "native-adaptation",
+  "category": "society",
+  "topics": [
+    "道路安全",
+    "初步统计",
+    "比较"
+  ],
+  "title": "Strade diverse, risultati diversi",
+  "titleZh": "不同道路，不同结果",
+  "summaryZh": "同一份交通报告里，为什么有的指标上升、有的下降？",
+  "level": "A2",
+  "levelReason": "编辑估计A2：使用现在时、时间范围、简单比较和转折；事故与初步统计相关词汇附中文，不要求计算或理解置信区间。",
+  "source": {
+    "name": "Istat",
+    "title": "Incidenti stradali – Stima preliminare – Gennaio-giugno 2026",
+    "url": "https://www.istat.it/comunicato-stampa/incidenti-stradali-stima-preliminare-gennaio-giugno-2026/",
+    "publishedAt": "2026-11-18",
+    "lang": "it"
+  },
+  "license": {
+    "name": "Creative Commons Attribution 4.0 International",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "原作：Istat，2026-11-18；道路事故调查有ACI参与。原文及完整报告由Istat发布，适用 https://www.istat.it/note-legali/ 所列 CC BY 4.0，许可链接见上。已进行教学改写、翻译和练习编写；不表示Istat或ACI认可本材料。",
+  "adaptation": "根据意大利语机构文本进行同语言教学改写，非原文照录。保留初步估计、上半年范围与死亡统计口径；不采用ACI车辆登记、共享出行、Anas及高速公路运营方的背景材料，不使用第三方定义引文、图片、图表、标识或外链内容。中文与练习为新增教学内容。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Il 18 novembre 2026, l’Istat pubblica una prima stima degli incidenti stradali in Italia nei primi sei mesi dell’anno.",
+      "zh": "2026年11月18日，意大利国家统计局发布了对该年上半年意大利道路交通事故的初步估计。",
+      "glosses": [
+        {
+          "surface": "stima",
+          "lemma": "stima",
+          "zh": "估计"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "Questi dati non sono ancora definitivi: descrivono la situazione da gennaio a giugno, non quella di tutto l’anno.",
+      "zh": "这些数据尚未最终确定：它们描述的是1月至6月的情况，而非全年的情况。",
+      "glosses": [
+        {
+          "surface": "definitivi",
+          "lemma": "definitivo",
+          "zh": "最终确定的"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Rispetto allo stesso periodo del 2025, gli incidenti con persone ferite o morte aumentano.",
+      "zh": "与2025年同期相比，造成人员受伤或死亡的事故增加了。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "Anche il numero delle persone ferite cresce, mentre quello delle persone morte diminuisce.",
+      "zh": "受伤人数也增加了，而死亡人数减少了。",
+      "glosses": [
+        {
+          "surface": "mentre",
+          "lemma": "mentre",
+          "zh": "而；表示对比"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "Nel rapporto, il numero dei morti comprende anche chi muore entro trenta giorni dall’incidente.",
+      "zh": "报告中的死亡人数也包括事故发生后三十天内死亡的人。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Il risultato, però, cambia secondo il tipo di strada: non tutte le strade mostrano lo stesso andamento.",
+      "zh": "不过，结果因道路类型而异：并非所有道路都呈现相同的变化趋势。",
+      "glosses": [
+        {
+          "surface": "andamento",
+          "lemma": "andamento",
+          "zh": "变化趋势"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Sulle autostrade i morti aumentano rispetto ai primi sei mesi del 2025.",
+      "zh": "与2025年上半年相比，高速公路上的死亡人数增加了。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Sulle strade delle città e sulle altre strade fuori città, invece, diminuiscono.",
+      "zh": "相反，在城市道路以及城市以外的其他道路上，死亡人数减少了。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Esiste anche un confronto con i primi sei mesi del 2019, l’anno di riferimento per un programma europeo sulla sicurezza stradale.",
+      "zh": "报告还与2019年上半年进行了比较，该年是一项欧洲道路安全计划的参考年份。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Rispetto a quel periodo, i morti sono meno numerosi, ma il lavoro per rendere le strade più sicure deve continuare.",
+      "zh": "与那个时期相比，死亡人数更少了，但让道路更加安全的工作必须继续。",
+      "glosses": [
+        {
+          "surface": "sicure",
+          "lemma": "sicuro",
+          "zh": "安全的"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "stima",
+        "lemma": "stima",
+        "zh": "估计",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "definitivi",
+        "lemma": "definitivo",
+        "zh": "最终确定的",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "mentre",
+        "lemma": "mentre",
+        "zh": "而；表示对比",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "andamento",
+        "lemma": "andamento",
+        "zh": "变化趋势",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "sicure",
+        "lemma": "sicuro",
+        "zh": "安全的",
+        "sentenceId": "s10"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "Rispetto allo stesso periodo",
+        "zh": "与同一时期相比",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "entro trenta giorni",
+        "zh": "在三十天以内",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "fuori città",
+        "zh": "在城市以外",
+        "sentenceId": "s8"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s4",
+        "note": "mentre连接两种相反趋势，此处不是表示同时发生。"
+      },
+      {
+        "sentenceId": "s8",
+        "note": "invece承接前句并表达相反情况；diminuiscono的主语仍是i morti。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quali strade usi di solito per andare al lavoro o a scuola?",
+        "zh": "你平时上班或上学走哪些道路？"
+      },
+      {
+        "text": "Che cosa rende una strada sicura, secondo te?",
+        "zh": "你认为哪些因素能让道路安全？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Di solito passo per…",
+        "zh": "我通常经过……"
+      },
+      {
+        "text": "Secondo me, è importante…",
+        "zh": "我认为，……很重要。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "schema": 1,
+  "id": "2026-11-20-en-time-for-two-old-books",
+  "storyId": "dcms-mughal-calligraphy-export-deferral-2026-11-16",
+  "lang": "en",
+  "date": "2026-11-20",
+  "category": "culture",
+  "topics": [
+    "莫卧儿书法",
+    "古书如何留在博物馆"
+  ],
+  "title": "Time to find a home for two old books",
+  "titleZh": "给两本古书一点时间寻找新归宿",
+  "summaryZh": "两册莫卧儿书法作品获暂缓出口。英国的博物馆或美术馆因此有时间筹资，但归属尚未确定。",
+  "level": "A2",
+  "levelReason": "编辑估计A2：主要是短的事实句以及 can、could 表达，围绕两本古书的外观、去向和时间线，少量艺术和政策用语配中文提示。非官方认证。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Department for Digital, Culture, Media and Sport / GOV.UK",
+    "author": "Department for Digital, Culture, Media and Sport; Reviewing Committee on the Export of Works of Art and Objects of Cultural Interest; Arts Council England; Baroness Twycross (GOV.UK From metadata)",
+    "title": "Minister acts to keep exquisite Mughal calligraphy collection from leaving the UK",
+    "url": "https://www.gov.uk/government/news/minister-acts-to-keep-exquisite-mughal-calligraphy-collection-from-leaving-the-uk",
+    "publishedAt": "2026-11-16",
+    "lang": "en"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. Department for Digital, Culture, Media and Sport / GOV.UK, 16 November 2026; original and licence linked above.",
+  "adaptation": "2026-11-20整理：依据机构叙述作同语言分级改写，另加中文译文、释义与原创练习。不是原文，不使用图片、标志、委员会引语、第三方报道或拍卖资料。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Two old books in the UK show the art of beautiful handwriting, also called calligraphy.",
+      "zh": "英国有两本古书展示了优美书写的艺术，也就是书法。",
+      "glosses": [
+        {
+          "surface": "handwriting",
+          "lemma": "handwriting",
+          "zh": "笔迹；手写文字",
+          "note": "通常不可数；此处指手写文字。"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "The writing comes from the time of the Mughal Empire in South Asia. Some of it is by artists who worked for Mughal emperors.",
+      "zh": "这些书法作品来自南亚的莫卧儿帝国时期。有些作品出自为莫卧儿皇帝效力的艺术家之手。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Experts think the works are more than four hundred years old.",
+      "zh": "专家认为，这些作品已有四百多年的历史。",
+      "glosses": [
+        {
+          "surface": "Experts",
+          "lemma": "expert",
+          "zh": "专家",
+          "note": "复数；句首大写。"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "The two books have 29 leaves altogether, with gold designs that show plants and animals.",
+      "zh": "两本书共有29张书叶，上面的金色纹饰描绘了植物和动物。",
+      "glosses": [
+        {
+          "surface": "leaves",
+          "lemma": "leaf",
+          "zh": "书叶",
+          "note": "leaf的复数；这里指纸张，一张有正反两面。"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "For now, the UK government has stopped the books from leaving the country for good.",
+      "zh": "英国政府暂时不允许这两本书被永久带出英国。",
+      "glosses": [
+        {
+          "surface": "stopped",
+          "lemma": "stop",
+          "zh": "阻止",
+          "note": "stop的过去分词；stop A from doing意为阻止A做某事。"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "The first period of the pause runs through 15 February 2027.",
+      "zh": "第一阶段的暂缓措施持续至2027年2月15日（含当天）。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "During this time, a museum or gallery in the UK can look for money to buy the books.",
+      "zh": "在这段时间里，英国的博物馆或美术馆可以设法筹款购买这两本书。",
+      "glosses": [
+        {
+          "surface": "gallery",
+          "lemma": "gallery",
+          "zh": "美术馆",
+          "note": "此处指可收藏或陈列艺术品的机构。"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "A person could also buy the books and give them to the nation.",
+      "zh": "个人也可以购买这两本书，将它们捐给国家。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "If the books stay in the UK, researchers could study how people made collections like these.",
+      "zh": "如果书留在英国，研究人员就有机会研究过去的人们如何编成这类合集。",
+      "glosses": [
+        {
+          "surface": "researchers",
+          "lemma": "researcher",
+          "zh": "研究人员",
+          "note": "复数。"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "The government hopes the public will be able to see the books, but a pause does not mean a museum has already bought them.",
+      "zh": "政府希望公众能够看到这两本书，但暂缓出口不等于博物馆已经买下了它们。",
+      "glosses": [
+        {
+          "surface": "public",
+          "lemma": "public",
+          "zh": "公众",
+          "note": "the public是固定搭配，意为公众。"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "handwriting",
+        "lemma": "handwriting",
+        "zh": "笔迹；手写文字",
+        "note": "通常不可数；此处指手写文字。",
+        "sentenceId": "s1"
+      },
+      {
+        "text": "Experts",
+        "lemma": "expert",
+        "zh": "专家",
+        "note": "复数；句首大写。",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "leaves",
+        "lemma": "leaf",
+        "zh": "书叶",
+        "note": "leaf的复数；这里指纸张，一张有正反两面。",
+        "sentenceId": "s4"
+      },
+      {
+        "text": "stopped",
+        "lemma": "stop",
+        "zh": "阻止",
+        "note": "stop的过去分词；stop A from doing意为阻止A做某事。",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "gallery",
+        "lemma": "gallery",
+        "zh": "美术馆",
+        "note": "此处指可收藏或陈列艺术品的机构。",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "researchers",
+        "lemma": "researcher",
+        "zh": "研究人员",
+        "note": "复数。",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "public",
+        "lemma": "public",
+        "zh": "公众",
+        "note": "the public是固定搭配，意为公众。",
+        "sentenceId": "s10"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "For now",
+        "zh": "暂时；目前",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "for good",
+        "zh": "永久地；永远",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "look for money",
+        "zh": "设法筹款",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "give them to the nation",
+        "zh": "把它们捐给国家",
+        "sentenceId": "s8"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s5",
+        "note": "stop somebody or something from doing 表示阻止某人或某物做某事；for good 表示永久地，不是“为了好处”。"
+      },
+      {
+        "sentenceId": "s9",
+        "note": "If 引导条件，could 表示在该条件下有可能做到的事。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "What old object would you like to see in a museum? Why?",
+        "zh": "你想在博物馆看到什么古物？为什么？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "I would like to see … because …",
+        "zh": "我想看看……，因为……。"
+      },
+      {
+        "text": "This object tells us about …",
+        "zh": "这件物品让我们了解……。"
+      }
+    ]
+  }
+}

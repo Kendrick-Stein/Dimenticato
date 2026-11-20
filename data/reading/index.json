@@ -2,6 +2,24 @@
   "schema": 1,
   "articles": [
     {
+      "id": "2026-11-20-it-strade-risultati-diversi",
+      "lang": "it",
+      "date": "2026-11-20",
+      "title": "Strade diverse, risultati diversi",
+      "titleZh": "不同道路，不同结果",
+      "summaryZh": "同一份交通报告里，为什么有的指标上升、有的下降？",
+      "level": "A2",
+      "category": "society",
+      "topics": [
+        "道路安全",
+        "初步统计",
+        "比较"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-11-18",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-11-19-en-preparing-a-farming-application",
       "lang": "en",
       "date": "2026-11-19",
@@ -49,6 +67,23 @@
       ],
       "sourceLang": "en",
       "sourcePublishedAt": "2026-11-18",
+      "contentType": "native-adaptation"
+    },
+    {
+      "id": "2026-11-20-en-time-for-two-old-books",
+      "lang": "en",
+      "date": "2026-11-20",
+      "title": "Time to find a home for two old books",
+      "titleZh": "给两本古书一点时间寻找新归宿",
+      "summaryZh": "两册莫卧儿书法作品获暂缓出口。英国的博物馆或美术馆因此有时间筹资，但归属尚未确定。",
+      "level": "A2",
+      "category": "culture",
+      "topics": [
+        "莫卧儿书法",
+        "古书如何留在博物馆"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-11-16",
       "contentType": "native-adaptation"
     },
     {

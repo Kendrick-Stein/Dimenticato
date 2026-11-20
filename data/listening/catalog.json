@@ -1,7 +1,42 @@
 {
-  "verifiedAt": "2026-11-11",
+  "verifiedAt": "2026-11-20",
   "policy": "Outbound official playback links only. No copied media, thumbnails or full transcripts. Original Chinese guides and questions. Playback itself has not been tested; verified means official page and content evidence were retrieved.",
   "entries": [
+    {
+      "id": "it-istat-ragazzi-giovani-adulti-2026-11-18",
+      "lang": "it",
+      "title": "Ragazzi e giovani adulti",
+      "titleZh": "Istat 播客：青少年与年轻成年人",
+      "provider": "Istat · Dati alla Mano",
+      "url": "https://www.istat.it/news-dati-alla-mano/ragazzi-e-giovani-adulti/",
+      "level": "未分级",
+      "levelBasis": "editorial",
+      "levelLabel": "母语统计访谈 · 非 CEFR 分级",
+      "kind": "news",
+      "addedAt": "2026-11-20",
+      "sourcePublishedAt": "2026-11-18",
+      "duration": "15:57",
+      "evidenceStatus": "metadata_only",
+      "summaryZh": "通过 Istat 官方页面进入关于意大利年轻人生活的播客。",
+      "guideZh": "先听一小段，分开记录听清的数字和话题词，再复听核对。不要为了凑全句猜测未听懂的内容；可只练习一个片段。 下列词语仅供主题预习，不保证全部出现在录音中。",
+      "verificationZh": "Istat 公告发布于 11 月 19 日，官方托管页标注节目发布于 11 月 18 日、时长 15:57。播放器计时从 00:07 推进至 00:24，后于 00:30 暂停；这不代表音质已核验。未取得对应逐字稿，不设理解题。",
+      "vocabularyLabel": "主题预习词（不保证全部出现在音频中）",
+      "vocabulary": [
+        {
+          "text": "le abitudini",
+          "zh": "习惯"
+        },
+        {
+          "text": "i giovani adulti",
+          "zh": "年轻成年人"
+        },
+        {
+          "text": "il lavoro",
+          "zh": "工作"
+        }
+      ],
+      "questions": []
+    },
     {
       "id": "de-logo-2026-11-18",
       "lang": "de",

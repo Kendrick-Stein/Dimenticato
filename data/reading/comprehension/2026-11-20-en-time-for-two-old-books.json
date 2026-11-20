@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-20-en-time-for-two-old-books",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "What is the main story in the article?",
+      "promptZh": "这篇文章主要讲了什么？",
+      "options": [
+        "How two old books travelled to the UK.",
+        "How a pause gives UK buyers time.",
+        "How a gallery paid for two old books.",
+        "How artists made gold designs."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s5",
+        "s7",
+        "s10"
+      ],
+      "explanationZh": "暂时不让书永久离开英国，给潜在买家筹款时间；文章没有讲述来英过程，也没有说已买下。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "What can you see in the gold designs?",
+      "promptZh": "金色纹饰描绘了什么？",
+      "options": [
+        "Mountains and rivers.",
+        "Buildings and gardens.",
+        "Ships and bridges.",
+        "Plants and animals."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s4"
+      ],
+      "explanationZh": "正文说金色纹饰里有植物和动物。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Besides a museum or gallery, who could buy the books for the nation?",
+      "promptZh": "除了博物馆或美术馆，还有谁可以为国家买下这两本书？",
+      "options": [
+        "A person who plans to give them to the nation.",
+        "An artist who plans to make a copy for a gallery.",
+        "A researcher who plans to show them abroad.",
+        "A visitor who plans to keep them at home."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s7",
+        "s8"
+      ],
+      "explanationZh": "正文指出，个人可以购买这些书并将其捐赠给国家。其他选项都没有把书交给国家。"
+    }
+  ]
+}

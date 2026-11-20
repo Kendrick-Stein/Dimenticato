@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-20-it-strade-risultati-diversi",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "p1",
+      "sentenceId": "s1",
+      "start": 48,
+      "answer": "stima",
+      "options": [
+        "stima",
+        "visita",
+        "scelta",
+        "pausa"
+      ],
+      "explanation": "stima 是阴性单数名词，与 una prima 搭配，表示“初步估计”，不是参观、选择或休息。"
+    },
+    {
+      "id": "p2",
+      "sentenceId": "s2",
+      "start": 28,
+      "answer": "definitivi",
+      "options": [
+        "disponibili",
+        "definitivi",
+        "nazionali",
+        "generali"
+      ],
+      "explanation": "definitivi 与阳性复数主语 dati 一致，表示尚未最终确定；不是数据不可获得、非全国或不一般。"
+    },
+    {
+      "id": "p3",
+      "sentenceId": "s4",
+      "start": 45,
+      "answer": "mentre",
+      "options": [
+        "perché",
+        "quando",
+        "mentre",
+        "se"
+      ],
+      "explanation": "mentre 在这里连接受伤人数上升与死亡人数下降的对比，不表示原因、时间或条件。"
+    },
+    {
+      "id": "p4",
+      "sentenceId": "s6",
+      "start": 93,
+      "answer": "andamento",
+      "options": [
+        "indirizzo",
+        "appuntamento",
+        "argomento",
+        "andamento"
+      ],
+      "explanation": "andamento 是阳性单数名词，与 lo stesso 搭配，此处表示变化趋势，而非地址、约会或话题。"
+    },
+    {
+      "id": "p5",
+      "sentenceId": "s10",
+      "start": 92,
+      "answer": "sicure",
+      "options": [
+        "sicure",
+        "lunghe",
+        "larghe",
+        "nuove"
+      ],
+      "explanation": "sicure 与阴性复数 strade 一致，表达“使道路更安全”，不是更长、更宽或更新。"
+    }
+  ]
+}
