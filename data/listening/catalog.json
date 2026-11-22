@@ -1,7 +1,42 @@
 {
-  "verifiedAt": "2026-11-20",
+  "verifiedAt": "2026-11-22",
   "policy": "Outbound official playback links only. No copied media, thumbnails or full transcripts. Original Chinese guides and questions. Playback itself has not been tested; verified means official page and content evidence were retrieved.",
   "entries": [
+    {
+      "id": "de-nachrichtenleicht-2026-11-20",
+      "lang": "de",
+      "title": "Nachrichten in Einfacher Sprache vom 20.11.2026",
+      "titleZh": "德国简明新闻：Galeria 百货门店关闭",
+      "provider": "Deutschlandfunk · Nachrichtenleicht",
+      "url": "https://www.deutschlandfunk.de/nl-podcast-20-11-100.html",
+      "level": "未分级",
+      "levelBasis": "editorial",
+      "levelLabel": "简明德语新闻 · 非 CEFR 分级",
+      "kind": "news",
+      "addedAt": "2026-11-22",
+      "sourcePublishedAt": "2026-11-20",
+      "duration": "05:29",
+      "evidenceStatus": "metadata_only",
+      "summaryZh": "本集有几条简明德语新闻，这次选听 Galeria 百货门店关闭一条。",
+      "guideZh": "第一遍，听出哪条新闻在讲百货商店。第二遍，记下一项你听到的细节，再试着用一句德语复述。如果整集偏难，只练这一条就好。下列词语供主题预习，不保证每个词都会在录音里出现。",
+      "verificationZh": "德国广播电台官网标注节目发布于 2026 年 11 月 20 日、时长 05:29，简介列出 Galeria 门店关闭。官方音频可获取并解码；未核对逐句内容，也未验证各地区的播放情况。本条仅提供原站链接与原创导听，不设理解题。",
+      "vocabularyLabel": "主题预习词（不是录音逐字词表）",
+      "vocabulary": [
+        {
+          "text": "das Kaufhaus",
+          "zh": "百货商店"
+        },
+        {
+          "text": "schließen",
+          "zh": "关闭"
+        },
+        {
+          "text": "die Filiale",
+          "zh": "分店"
+        }
+      ],
+      "questions": []
+    },
     {
       "id": "it-istat-ragazzi-giovani-adulti-2026-11-18",
       "lang": "it",

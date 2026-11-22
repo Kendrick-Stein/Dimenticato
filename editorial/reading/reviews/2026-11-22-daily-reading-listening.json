@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-22",
+  "status": "passed-local-gates",
+  "baseline": "cdc6dcf57205148f0a6891cf8d588422fbab09d0",
+  "scope": {
+    "reading": [],
+    "listening": [
+      "de-nachrichtenleicht-2026-11-20"
+    ]
+  },
+  "reviews": [
+    {
+      "id": "de-nachrichtenleicht-2026-11-20",
+      "kind": "listening-guide",
+      "sourcePublishedAt": "2026-11-20",
+      "source": "https://www.deutschlandfunk.de/nl-podcast-20-11-100.html",
+      "rights": "https://www.deutschlandfunk.de/nutzungsbedingungen-102.html",
+      "reuse": "Official programme-page link and original editorial Chinese guide and vocabulary only. No provider audio, copied transcript, translation, imagery or embed.",
+      "evidence": "Official dated listing and 05:29 track; stream decoded without a bypass; canonical browser player advanced 00:05 to 00:18. Actual spoken words and end-user region availability not verified. No questions, no claimed CEFR.",
+      "dedup": "Inspected exact published baseline, earlier held lead, available archived records, and current open PR list. No identical episode found. New official recording dated after missing early-November records; thematic overlap with different releases excluded from guide focus. Incomplete old history remains incomplete."
+    }
+  ],
+  "catalogSha256": "69b96d9ec6e7223078088da4dced1004bdb997c30700ee349aae4d7e6df47693",
+  "tests": {
+    "listening": "933 passed",
+    "reading": "All article, candidate, practice and comprehension validators and focused tests passed.",
+    "full": "47 harnesses / 489377 passed",
+    "diff": "clean"
+  },
+  "browser": {
+    "private": "Guide route, vocabulary/source folds, original link opened a new tab, four language routes, Back/Forward, filter empty/reset, 390 px container with no horizontal overflow, no scored form or embedded media; existing quiz scores, locks repeat and resets."
+  }
+}
