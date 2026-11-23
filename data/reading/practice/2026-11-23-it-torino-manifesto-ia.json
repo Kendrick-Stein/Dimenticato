@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-23-it-torino-manifesto-ia",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "sentenceId": "s12",
+      "start": 62,
+      "answer": "soddisfarne",
+      "options": [
+        "soddisfarla",
+        "soddisfarli",
+        "soddisfarne",
+        "soddisfarci"
+      ],
+      "explanation": "ne 指代前文的 due esigenze，una 指其中一项；ne 接在不定式 soddisfare 后，词尾 -e 脱落。"
+    },
+    {
+      "id": "q2",
+      "sentenceId": "s6",
+      "start": 59,
+      "answer": "responsabilità",
+      "options": [
+        "responsabilità",
+        "scadenza",
+        "copertura",
+        "durata"
+      ],
+      "explanation": "责任；阴性名词，重音落在 -à，单复数同形。这里说的是谁承担决定的责任。"
+    },
+    {
+      "id": "q3",
+      "sentenceId": "s15",
+      "start": 39,
+      "answer": "in cui",
+      "options": [
+        "a cui",
+        "di cui",
+        "da cui",
+        "in cui"
+      ],
+      "explanation": "in cui 引导关系从句，修饰 il modo，说明系统以何种方式被构建和检查。"
+    },
+    {
+      "id": "q4",
+      "sentenceId": "s24",
+      "start": 97,
+      "answer": "dovranno",
+      "options": [
+        "dovrà",
+        "dovremo",
+        "dovranno",
+        "dovrete"
+      ],
+      "explanation": "将需要、将应当；四项均为 dovere 的简单将来时，只有第三人称复数 dovranno 与关系从句先行词 i criteri 一致。"
+    },
+    {
+      "id": "q5",
+      "sentenceId": "s28",
+      "start": 123,
+      "answer": "tradotte",
+      "options": [
+        "tradotto",
+        "tradotti",
+        "tradotta",
+        "tradotte"
+      ],
+      "explanation": "转化、落实；tradurre 的过去分词，在将来时被动结构中与阴性复数主语 tali indicazioni 一致。"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "date": "2026-11-23",
+  "status": "passed-editorial-technical-and-private-browser-prepublication-gates",
+  "baseline": "3accece0895617ad34a2141dd9354ebb543bc0a9",
+  "scope": {
+    "reading": [
+      "2026-11-23-it-torino-manifesto-ia"
+    ],
+    "listening": [
+      "de-logo-2026-11-22"
+    ]
+  },
+  "reading": {
+    "id": "2026-11-23-it-torino-manifesto-ia",
+    "storyId": "torino-ai-manifesto-adoption-2026-11-17",
+    "source": "https://www.comune.torino.it/novita/comunicati/nove-principi-per-unia-etica-inclusiva-sostenibile-torino-approva-manifesto",
+    "originalDate": "2026-11-17",
+    "author": "Ufficio stampa Giunta comunale",
+    "originalLanguage": "it",
+    "releaseNumber": 483,
+    "sourceAdmission": "New separately reviewed registry entry scoped to the one canonical release, verified with the existing registry validator before fresh original inspection and final conversion. Other municipal releases and subpaths are outside this decision.",
+    "rights": "CC BY 4.0 original Italian institutional narrative only. Official terms confirm redistribution and adaptation with attribution. Excluded quotations, logos, photos, third-party material, and annexes. Credits identify institutional source, exact original and licence; educational changes disclosed.",
+    "terms": "https://www.comune.torino.it/note-legali",
+    "coverage": "Source §§ on adoption, civic disclosure and human responsibility, nine principles, ethical Board and intended staff guidance. Bilingual reviewer checked all 29 pairs and teaching notes; clarified the two selected requirements are not the official order, the antecedent of pregiudizi, and safety versus three sustainability dimensions in Chinese. Hypothetical service clearly marked; neither promised guidance nor outcomes presented as implemented.",
+    "level": "B2 extended, editorial estimate, 542 Italian body words. Linked argument, contrasts, institutional lexis, hypothesis and review of tense/agreement and pronoun reference.",
+    "comprehension": {
+      "count": 4,
+      "blindChoices": [
+        "B",
+        "D",
+        "A",
+        "C"
+      ],
+      "matchingEvidence": [
+        "s1–s3, s25–s29",
+        "s9–s11",
+        "s13–s16",
+        "s21–s23"
+      ],
+      "final": "Independent reviewer first solved the key-free packet, then verified matching final choices, supporting sentences and Chinese explanations against exact revised article bytes. Fifth candidate omitted because one cautious option was readily guessable."
+    },
+    "practice": {
+      "count": 5,
+      "blindChoices": [
+        "C",
+        "A",
+        "D",
+        "C",
+        "D"
+      ],
+      "offsets": [
+        62,
+        59,
+        39,
+        97,
+        123
+      ],
+      "final": "Separate reviewer used the exact final masked sentences without article/key and found no naturally plausible alternative. All UTF-16 slices, option correspondence, summary surfaces, and Chinese explanations checked."
+    },
+    "dedup": "Pinned baseline, available archive, reviews and open PRs have no same work; July preapproval editorial stage distinguished from Nov 17 formal adoption. Contemporary official resolution and syndication refer to the same adoption, not separate material. This first Nov 17 work follows the early-Nov missing-record span; missing archives and unrelated pending writes not deemed resolved."
+  },
+  "listening": {
+    "id": "de-logo-2026-11-22",
+    "source": "https://www.logo.de/logo-vom-sonntag-22-november-2026-102.html",
+    "sourceDate": "2026-11-22",
+    "terms": "https://www.zdf.de/nutzungsbedingungen",
+    "rights": "Outbound publisher link and original short Chinese guide/vocabulary only, no copied presentation, transcription, media or embed. Independent review passed exact catalog bytes and found no same dated edition in available comparisons.",
+    "evidence": "Official programme date and star-sounds segment listed. Anonymous original player advanced 00:06 to 00:13 muted, runtime displayed 10:25; duration deliberately omitted from entry because official static listing differs by one second. No actual speech or sound-quality, region availability, CEFR or question claims.",
+    "questions": 0
+  },
+  "sha256": {
+    "data/reading/sources.json": "56e5dcfa8227bfd76721699ee63eb0bc34c9d004cdcf407526c7a6eba91e2378",
+    "data/reading/index.json": "f346a70f0c704b9f3c7a05b38fe90f9de09f79220ae158e84c6c5fba3f3bfea4",
+    "data/listening/catalog.json": "1036954a5432909d55f2239bc35924b75fbe56c2c9e2c1b7511394e2271e8b53",
+    "data/reading/articles/2026-11-23-it-torino-manifesto-ia.json": "cb6c3a66ee4359c904892f5829b4e5cdbefdd9ccb2a3e80b8c486f1053246864",
+    "data/reading/practice/2026-11-23-it-torino-manifesto-ia.json": "94ecd10431c604f52d438ef1977ee6d34dca92a2c1c357d2f91f79a039507e43",
+    "data/reading/comprehension/2026-11-23-it-torino-manifesto-ia.json": "8c9088fb68fc9c804a894bb80e7f035533f3c72ca0bae5ae8ee9366a33d1c9b4"
+  },
+  "tests": {
+    "validators": "Reading article, candidates, practice, comprehension passed; 202 articles, 175 queue metadata rows, 187 practice companions, 163 comprehension companions/618 questions.",
+    "focused": "Article 106, candidates 223, practice 6380, comprehension 7178, loading 9 and listening 944 all passed.",
+    "full": "TZ=UTC npm test: 47 harnesses, 489468 passed, zero failures or known issues.",
+    "gitDiff": "Clean whitespace check; changes scoped to six immutable/additive content and index/catalog/registry paths plus this review."
+  },
+  "browser": {
+    "private": "Exact working-tree data through private managed relay. Torino index/deep link/back, 29 rows, body translation toggle, exact primary link; comprehension correct/wrong feedback and 1/4 score, focus evidence s2/return, isolated redo; 5 cloze, choice/spelling, empty ignored, redo. DE deep link, official new-tab link, vocabulary/source folds, no embed/media/scored form. At 390 px frame both pages measured client and scroll width 375 px, no document overflow.",
+    "publication": "This review attests prepublication gates only, not remote write or deployment."
+  }
+}

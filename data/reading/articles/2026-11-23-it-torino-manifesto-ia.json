@@ -1,0 +1,339 @@
+{
+  "schema": 1,
+  "id": "2026-11-23-it-torino-manifesto-ia",
+  "storyId": "torino-ai-manifesto-adoption-2026-11-17",
+  "lang": "it",
+  "date": "2026-11-23",
+  "category": "society",
+  "topics": [
+    "公共服务",
+    "人工智能",
+    "人的责任"
+  ],
+  "title": "Chi risponde, chi decide? Il manifesto di Torino sull’intelligenza artificiale",
+  "titleZh": "谁在回应，谁来决定？都灵的人工智能宣言",
+  "summaryZh": "都灵市政府批准一份人工智能宣言，其中两项原则是告知市民回答来自哪里，以及明确决定由谁负责。宣言共列九项原则；这次通稿还说明了下一步，未提供实施成效数据。",
+  "level": "B2",
+  "levelReason": "编辑估计，非官方认证。九项市政原则与落实之间的结构对照，两组概念比较、正式词组、虚拟式/条件式、代词指代与最后一题证据推断，整体适合 B2；关键概念由例子和对照框架支撑。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Città di Torino",
+    "author": "Ufficio stampa Giunta comunale",
+    "title": "Nove principi per un’IA etica, inclusiva e sostenibile: Torino approva il manifesto sull’intelligenza artificiale",
+    "url": "https://www.comune.torino.it/novita/comunicati/nove-principi-per-unia-etica-inclusiva-sostenibile-torino-approva-manifesto",
+    "publishedAt": "2026-11-17",
+    "lang": "it"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "Città di Torino - www.comune.torino.it, Ufficio stampa Giunta comunale, comunicato n. 483, 17 novembre 2026. CC BY 4.0.",
+  "adaptation": "2026-11-23 整理：仅依据都灵市政府新闻办公室通稿正文作意大利语分级改写，另加中文译文、假设情境、学习提示和原创练习。不是通稿原文，不暗示市政府认可；未采用第三方引语、附件、照片、标识或音视频。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Il 17 novembre 2026 la Giunta comunale di Torino ha approvato un manifesto sull’intelligenza artificiale.",
+      "zh": "2026 年 11 月 17 日，都灵市政府执行委员会批准了一份关于人工智能的宣言。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Sono nove i principi che, secondo il comunicato della Città, dovranno orientare le politiche pubbliche e i servizi rivolti alla popolazione.",
+      "zh": "据市政府新闻稿，宣言提出了九项原则，用于指导公共政策和面向居民的服务。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "Il documento indica una direzione: l’amministrazione intende usare queste tecnologie quando rispondono a un bisogno concreto e possono offrire un vantaggio alla collettività, senza sostituire le persone che ne portano la responsabilità.",
+      "zh": "文件指明了一个方向：市政府打算在技术能够回应具体需求并为公众带来益处时使用它，同时不让它取代承担责任的人。",
+      "glosses": []
+    },
+    {
+      "id": "s4",
+      "text": "Per capire la differenza tra trasparenza e responsabilità, conviene partire da due domande: chi sta rispondendo e chi prende la decisione?",
+      "zh": "要理解透明度和责任的区别，可以先问两个问题：谁在回应，谁在作决定？",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Se a rispondere è un sistema di intelligenza artificiale, chi si rivolge al Comune deve esserne informato.",
+      "zh": "如果回应来自人工智能系统，联系市政府的人应被告知。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Se una macchina interviene in un procedimento pubblico, la responsabilità delle decisioni resta invece in capo alle persone.",
+      "zh": "如果机器参与公共行政流程，决定的责任仍由人承担。",
+      "glosses": [
+        {
+          "surface": "in capo alle persone",
+          "lemma": "in capo a",
+          "zh": "由人承担",
+          "note": "用于正式说明责任归属。"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "La prima esigenza riguarda ciò che il cittadino deve sapere; la seconda indica chi deve rispondere delle decisioni prese.",
+      "zh": "前一个要求关乎市民应知道什么，后一个则明确由谁对作出的决定负责。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Un esempio ipotetico aiuta a chiarire la distinzione.",
+      "zh": "一个假设性例子有助于理解这种区别。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Immaginiamo che un assistente digitale spieghi come presentare una domanda.",
+      "zh": "设想有一位数字助手说明如何提交申请。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "Avvertire l’utente che sta interagendo con un sistema automatico gli permette di capire da dove viene la risposta.",
+      "zh": "告诉用户正在与自动化系统互动，可以让用户知道答复从何而来。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Questo avviso, però, non chiarirebbe da solo chi dovrebbe valutare la domanda e assumersi la responsabilità del suo esito.",
+      "zh": "但仅有这项告知，还不能说明谁应审查申请并对结果负责。",
+      "glosses": [
+        {
+          "surface": "assumersi la responsabilità",
+          "lemma": "assumersi la responsabilità",
+          "zh": "承担责任"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Le due esigenze possono presentarsi nello stesso servizio, ma soddisfarne una non significa aver soddisfatto anche l’altra.",
+      "zh": "两项要求可能同时出现在同一项服务中，但满足一项不等于也满足了另一项。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "Il manifesto distingue inoltre l’accessibilità dall’equità.",
+      "zh": "宣言还区分了可及性和公平性。",
+      "glosses": []
+    },
+    {
+      "id": "s14",
+      "text": "La prima richiede che l’accesso non dipenda dalla lingua parlata, dalla disponibilità economica o dal possesso di competenze tecniche.",
+      "zh": "前者要求能否使用不应取决于所说的语言、经济条件或是否掌握技术技能。",
+      "glosses": []
+    },
+    {
+      "id": "s15",
+      "text": "L’equità riguarda invece anche il modo in cui si costruiscono e si controllano i sistemi: occorre individuare eventuali pregiudizi nei dati e negli algoritmi, verificare come tali pregiudizi incidano sui risultati e intervenire quando emergono rischi di discriminazione.",
+      "zh": "后者则也关系到系统如何构建和检查：需要识别数据和算法中的潜在偏差，检验它们如何影响结果，并在出现歧视风险时采取措施。",
+      "glosses": [
+        {
+          "surface": "pregiudizi",
+          "lemma": "pregiudizio",
+          "zh": "偏差、成见",
+          "note": "阳性复数；此处指数据或算法中的偏差。"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "Rendere un servizio più semplice da usare non basta, dunque, a garantire che funzioni in modo equo.",
+      "zh": "因此，让服务更容易使用，并不足以保证它能公平地运行。",
+      "glosses": []
+    },
+    {
+      "id": "s17",
+      "text": "Altri due principi riguardano la formazione e la partecipazione.",
+      "zh": "另外两项原则涉及培训和公众参与。",
+      "glosses": []
+    },
+    {
+      "id": "s18",
+      "text": "La Città considera importante offrire occasioni in cui le persone possano familiarizzare con questi strumenti, ma anche comprenderne i limiti.",
+      "zh": "市政府认为，有必要提供机会，让人们熟悉这些工具，也能理解它们的局限。",
+      "glosses": []
+    },
+    {
+      "id": "s19",
+      "text": "Il manifesto prevede inoltre che cittadini e comunità contribuiscano alla progettazione delle soluzioni, anziché limitarsi a utilizzarle una volta pronte.",
+      "zh": "宣言还提出，市民和各社群应参与方案设计，而不是只在方案完成后使用它们。",
+      "glosses": []
+    },
+    {
+      "id": "s20",
+      "text": "Nel manifesto la condivisione dei dati è associata al rispetto della riservatezza; completano il quadro la sicurezza, la sostenibilità ambientale, sociale e culturale e una sperimentazione condotta con supervisione umana.",
+      "zh": "宣言把共享数据与尊重隐私联系起来；此外，还涉及安全、环境／社会／文化三个层面的可持续性，以及在人类监督下进行试验。",
+      "glosses": [
+        {
+          "surface": "riservatezza",
+          "lemma": "riservatezza",
+          "zh": "隐私、保密"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "text": "Il documento è il risultato del lavoro di un gruppo multidisciplinare istituito dalla Città nel 2023 per esaminare l’uso etico delle tecnologie emergenti.",
+      "zh": "这份文件源于市政府于 2023 年成立的一个跨学科小组。该小组研究如何以符合伦理的方式使用新兴技术。",
+      "glosses": []
+    },
+    {
+      "id": "s22",
+      "text": "Al suo interno un tavolo di lavoro si è occupato in particolare dell’intelligenza artificiale generativa nei servizi pubblici.",
+      "zh": "其中一个工作组专门研究了生成式人工智能在公共服务中的应用。",
+      "glosses": []
+    },
+    {
+      "id": "s23",
+      "text": "Per la stesura del manifesto, il tavolo ha lavorato in raccordo con gli uffici comunali che si occupano dei sistemi informativi e dei progetti speciali.",
+      "zh": "为起草宣言，工作组与负责信息系统和特殊项目的市政府部门开展了协调。",
+      "glosses": []
+    },
+    {
+      "id": "s24",
+      "text": "La finalità del documento è affiancare la strategia digitale di Torino, precisando i criteri che dovranno guidarne le scelte.",
+      "zh": "文件旨在补充都灵的数字战略，明确今后需要用哪些标准来指导决策。",
+      "glosses": [
+        {
+          "surface": "affiancare",
+          "lemma": "affiancare",
+          "zh": "补充并配合"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "text": "Il comunicato annuncia l’approvazione del manifesto, non l’avvio di un nuovo servizio.",
+      "zh": "新闻稿宣布的是宣言获批，而非新服务启动。",
+      "glosses": []
+    },
+    {
+      "id": "s26",
+      "text": "Nel comunicato si distinguono i principi già approvati dagli strumenti operativi ancora da diffondere.",
+      "zh": "新闻稿区分了已经通过的原则和仍待公布的实施措施。",
+      "glosses": []
+    },
+    {
+      "id": "s27",
+      "text": "Tra questi figurano le linee guida per il personale: il comunicato ne annuncia il prossimo rilascio, accompagnato da un percorso di formazione interna.",
+      "zh": "这些措施包括面向工作人员的指引。新闻稿称指引将于近期公布，并辅以内部培训。",
+      "glosses": []
+    },
+    {
+      "id": "s28",
+      "text": "Per valutare il passaggio dalle intenzioni alla pratica, sarà quindi utile osservare in che modo tali indicazioni verranno tradotte nel lavoro degli uffici.",
+      "zh": "因此，要判断这些意图如何落到实处，可以观察相关指引今后怎样用于各部门的工作。",
+      "glosses": [
+        {
+          "surface": "tradotte",
+          "lemma": "tradurre",
+          "zh": "落实（被动，阴性复数）"
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "text": "Il comunicato non riporta dati sugli effetti del manifesto sui servizi.",
+      "zh": "新闻稿没有提供宣言对服务产生何种影响的数据。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "pregiudizi",
+        "zh": "偏差、成见",
+        "sentenceId": "s15",
+        "lemma": "pregiudizio"
+      },
+      {
+        "text": "riservatezza",
+        "zh": "隐私、保密",
+        "sentenceId": "s20"
+      },
+      {
+        "text": "affiancare",
+        "zh": "补充并配合",
+        "sentenceId": "s24"
+      },
+      {
+        "text": "soddisfarne",
+        "zh": "满足其中的（几项或一项）",
+        "sentenceId": "s12",
+        "lemma": "soddisfare",
+        "note": "不定式去词尾 -e，再接代词 ne；这里的 una 表示一项。"
+      },
+      {
+        "text": "responsabilità",
+        "zh": "责任",
+        "sentenceId": "s6",
+        "note": "以重读元音结尾，单复数同形；这里是单数。"
+      },
+      {
+        "text": "in cui",
+        "zh": "在其中；与 il modo 连用表示“……的方式”",
+        "sentenceId": "s15",
+        "note": "il modo in cui + 从句，表示做某事的方式。"
+      },
+      {
+        "text": "dovranno",
+        "zh": "将需要；将应当",
+        "sentenceId": "s24",
+        "lemma": "dovere",
+        "note": "简单将来时第三人称复数。"
+      },
+      {
+        "text": "tradotte",
+        "zh": "被转化；被落实",
+        "sentenceId": "s28",
+        "lemma": "tradurre",
+        "note": "过去分词，配合阴性复数主语。"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "in capo alle persone",
+        "zh": "由人承担",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "assumersi la responsabilità",
+        "zh": "承担责任",
+        "sentenceId": "s11"
+      },
+      {
+        "text": "soddisfarne una",
+        "zh": "满足其中一项；ne 回指上述两项要求。",
+        "sentenceId": "s12"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s28",
+        "note": "verranno tradotte 是将来时被动；tradurre 在这里不是翻译语言，而是落实指引。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Se un assistente digitale del Comune spiegasse come presentare una domanda, chi dovrebbe valutare la richiesta e che cosa dovrebbe sapere il cittadino?",
+        "zh": "假设市政府的数字助手讲解如何提交申请，应由谁审查申请，市民应知道什么？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "assumersi la responsabilità",
+        "zh": "承担责任",
+        "note": "Per introdurre ciò di cui ci si assume la responsabilità: di + nome o infinito. 例如 assumersi la responsabilità dell’esito / di decidere.",
+        "sentenceId": "s11"
+      }
+    ]
+  }
+}

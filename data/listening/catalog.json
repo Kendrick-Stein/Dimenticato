@@ -1,7 +1,41 @@
 {
-  "verifiedAt": "2026-11-22",
+  "verifiedAt": "2026-11-23",
   "policy": "Outbound official playback links only. No copied media, thumbnails or full transcripts. Original Chinese guides and questions. Playback itself has not been tested; verified means official page and content evidence were retrieved.",
   "entries": [
+    {
+      "id": "de-logo-2026-11-22",
+      "lang": "de",
+      "title": "logo! vom Sonntag, 22. November 2026",
+      "titleZh": "德国儿童新闻：听听星星是什么声音",
+      "provider": "ZDF logo!",
+      "url": "https://www.logo.de/logo-vom-sonntag-22-november-2026-102.html",
+      "level": "未分级",
+      "levelBasis": "editorial",
+      "levelLabel": "母语儿童新闻 · 非 CEFR 分级",
+      "kind": "news",
+      "addedAt": "2026-11-23",
+      "sourcePublishedAt": "2026-11-22",
+      "evidenceStatus": "metadata_only",
+      "summaryZh": "从 ZDF 官方整集里挑出有关星星声音的片段，做一次短听练习。",
+      "guideZh": "第一遍先听出说到星星的是哪一段；第二遍记下一条真正听懂的信息。可以试着用一句德语复述，不确定的地方留空。下列词用于预习，不是节目原话。",
+      "verificationZh": "ZDF 节目页标注 2026 年 11 月 22 日，节目单包含星星声音主题。云端原站播放器在静音状态下从 00:06 推进到 00:13；未核验实际语音、音质或其他地区的播放情况。只提供原站链接和原创导听，不设理解题。",
+      "vocabularyLabel": "主题预习词（不保证出现在节目中）",
+      "vocabulary": [
+        {
+          "text": "der Stern",
+          "zh": "星星"
+        },
+        {
+          "text": "der Klang",
+          "zh": "声音；音色"
+        },
+        {
+          "text": "klingen",
+          "zh": "听起来；发出声响"
+        }
+      ],
+      "questions": []
+    },
     {
       "id": "de-nachrichtenleicht-2026-11-20",
       "lang": "de",

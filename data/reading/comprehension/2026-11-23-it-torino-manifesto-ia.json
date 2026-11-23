@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-23-it-torino-manifesto-ia",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Quale distinzione organizza il testo nel suo insieme?",
+      "options": [
+        "Le differenze tra i servizi comunali già avviati e quelli già dismessi.",
+        "I principi per usare l’IA e le misure necessarie per metterli in pratica.",
+        "Le responsabilità dei cittadini e quelle delle imprese fornitrici.",
+        "I risultati attuali dei servizi e quelli rilevati prima del manifesto."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s2",
+        "s4",
+        "s13",
+        "s25",
+        "s26",
+        "s27",
+        "s28"
+      ],
+      "explanationZh": "文章先以几组对比解释人工智能使用原则，随后区分已经批准的原则和落实这些原则仍需的员工指引与培训。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Nell’esempio della domanda, che cosa permette di capire l’avviso dato all’utente?",
+      "options": [
+        "Quale ufficio ha valutato la domanda.",
+        "Quale sarà l’esito della domanda.",
+        "Chi si assumerà la responsabilità della decisione.",
+        "Da dove viene la risposta dell’assistente."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s9",
+        "s10",
+        "s11"
+      ],
+      "explanationZh": "在假设例子中，告知用户正在与自动化系统互动可以说明答复来源，但不说明谁承担决定责任，也不预告申请结果。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "Secondo l’articolo, quale intervento riguarda l’equità del sistema?",
+      "options": [
+        "Verificare se i dati o gli algoritmi possono produrre discriminazioni.",
+        "Offrire ai cittadini corsi per comprendere i limiti dell’intelligenza artificiale.",
+        "Abbassare il costo di accesso a uno strumento comunale.",
+        "Chiedere ai cittadini di partecipare alla progettazione del servizio."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s13",
+        "s14",
+        "s15",
+        "s16"
+      ],
+      "explanationZh": "文中将经济门槛归入可及性，将检查数据和算法的偏差、应对歧视风险归入公平性。"
+    },
+    {
+      "id": "q4",
+      "kind": "detail",
+      "prompt": "Su quale ambito si è concentrato uno dei tavoli del gruppo istituito nel 2023?",
+      "options": [
+        "Sulla misurazione degli effetti dei servizi già avviati.",
+        "Sulla pubblicazione delle linee guida per gli utenti.",
+        "Sull’uso dell’intelligenza artificiale generativa nei servizi pubblici.",
+        "Sul finanziamento dei sistemi informativi comunali."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s21",
+        "s22"
+      ],
+      "explanationZh": "2023 年设立的是研究新兴技术伦理的跨学科小组，其中一个工作组具体关注生成式人工智能在公共服务中的应用。"
+    }
+  ]
+}

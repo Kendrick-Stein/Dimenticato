@@ -636,6 +636,23 @@
       "requiredPublisherNames": [
         "HM Treasury"
       ]
+    },
+    {
+      "id": "comune-torino-comunicato-483",
+      "name": "Città di Torino",
+      "url": "https://www.comune.torino.it/",
+      "languages": [
+        "it"
+      ],
+      "allowedUrlPrefixes": [
+        "https://www.comune.torino.it/novita/comunicati/nove-principi-per-unia-etica-inclusiva-sostenibile-torino-approva-manifesto"
+      ],
+      "rightsPolicyUrl": "https://www.comune.torino.it/note-legali",
+      "articleReviewRequired": true,
+      "conditions": "Exact canonical Comunicato n. 483 page only; this entry is not permission for descendants, other city releases or domains. Only the original Italian institutional prose of the Ufficio stampa Giunta comunale after article-level review under CC BY 4.0; exclude third-party quotations, symbols, logos, photographs, audiovisual media, annexes, and links. Preserve the city attribution, original source and licence links, and mark changes.",
+      "requiredPublisherNames": [
+        "Città di Torino"
+      ]
     }
   ],
   "archiveOnly": {

@@ -70,6 +70,24 @@
       "contentType": "native-adaptation"
     },
     {
+      "id": "2026-11-23-it-torino-manifesto-ia",
+      "lang": "it",
+      "date": "2026-11-23",
+      "title": "Chi risponde, chi decide? Il manifesto di Torino sull’intelligenza artificiale",
+      "titleZh": "谁在回应，谁来决定？都灵的人工智能宣言",
+      "summaryZh": "都灵市政府批准一份人工智能宣言，其中两项原则是告知市民回答来自哪里，以及明确决定由谁负责。宣言共列九项原则；这次通稿还说明了下一步，未提供实施成效数据。",
+      "level": "B2",
+      "category": "society",
+      "topics": [
+        "公共服务",
+        "人工智能",
+        "人的责任"
+      ],
+      "sourceLang": "it",
+      "sourcePublishedAt": "2026-11-17",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-11-20-en-time-for-two-old-books",
       "lang": "en",
       "date": "2026-11-20",
