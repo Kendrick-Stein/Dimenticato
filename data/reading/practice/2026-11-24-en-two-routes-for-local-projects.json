@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-24-en-two-routes-for-local-projects",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "p1",
+      "sentenceId": "s5",
+      "start": 17,
+      "answer": "apply",
+      "options": [
+        "applying",
+        "applies",
+        "apply",
+        "applied"
+      ],
+      "explanation": "情态动词 can 后接原形 apply；apply for 表示提出申请。"
+    },
+    {
+      "id": "p2",
+      "sentenceId": "s3",
+      "start": 54,
+      "answer": "routes",
+      "options": [
+        "routes",
+        "routed",
+        "route",
+        "routing"
+      ],
+      "explanation": "two 后接可数名词复数 routes，指两种资助渠道。"
+    },
+    {
+      "id": "p3",
+      "sentenceId": "s7",
+      "start": 64,
+      "answer": "deliver",
+      "options": [
+        "delivers",
+        "deliver",
+        "delivered",
+        "delivering"
+      ],
+      "explanation": "目的不定式 to 后用动词原形 deliver，意为落实资助计划。"
+    },
+    {
+      "id": "p4",
+      "sentenceId": "s8",
+      "start": 49,
+      "answer": "directly",
+      "options": [
+        "directed",
+        "direction",
+        "directly",
+        "directness"
+      ],
+      "explanation": "directly 表示不走前一渠道的公开申请，而是直接拨给地方当局。"
+    },
+    {
+      "id": "p5",
+      "sentenceId": "s12",
+      "start": 4,
+      "answer": "previous",
+      "options": [
+        "previously",
+        "previous",
+        "precedes",
+        "precedence"
+      ],
+      "explanation": "previous 表示上一轮，与本轮对比。"
+    }
+  ]
+}

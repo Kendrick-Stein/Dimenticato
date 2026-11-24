@@ -1,0 +1,245 @@
+{
+  "schema": 1,
+  "id": "2026-11-24-en-two-routes-for-local-projects",
+  "storyId": "scot-community-cohesion-fund-expansion-2026-11-23",
+  "lang": "en",
+  "date": "2026-11-24",
+  "category": "society",
+  "topics": [
+    "社区交流",
+    "社区资助"
+  ],
+  "title": "Two ways to fund local projects",
+  "titleZh": "当地项目的两种资助渠道",
+  "summaryZh": "苏格兰的社区资助一部分向当地团体开放申请，另一部分直接拨给地方当局试验项目。",
+  "level": "B1",
+  "levelReason": "编辑估计 B1：需要追踪两种资金渠道、区分计划与已发生的事，并理解关系从句、目的结构与对照表达。非官方认证。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Scottish Government",
+    "author": "Scottish Government",
+    "title": "Building Stronger Communities",
+    "url": "https://www.gov.scot/news/building-stronger-communities-2/",
+    "publishedAt": "2026-11-23",
+    "lang": "en"
+  },
+  "license": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright 2026. Scottish Government, original published 23 November 2026.",
+  "adaptation": "2026年11月24日整理：根据苏格兰政府原创机构新闻改写，并新增中文对照与原创教学活动。不使用引语、图片、标志或第三方材料；不是官方申请指南。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "When neighbours rarely meet, it can be hard for them to get to know one another.",
+      "zh": "邻居们很少见面时，就很难彼此熟悉。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "On 23 November 2026, the Scottish Government opened applications for one fund and announced a separate set of awards.",
+      "zh": "2026 年 11 月 23 日，苏格兰政府开放一项基金的申请，并另外宣布了一批拨款。",
+      "glosses": []
+    },
+    {
+      "id": "s3",
+      "text": "More than £800,000 is available in total, but the two routes do not work in the same way.",
+      "zh": "可用资金总额超过80万英镑，但两种资助渠道的运作方式并不相同。",
+      "glosses": [
+        {
+          "surface": "routes",
+          "lemma": "route",
+          "zh": "渠道；途径"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "The first route is the Community Cohesion Fund, whose £500,000 budget for local groups had already been announced in September.",
+      "zh": "第一种渠道是社区凝聚基金。早在 9 月，政府已经宣布将为当地团体提供 50 万英镑。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "These groups can apply for part of the money to deal with problems such as loneliness or to help people talk about the needs of their area.",
+      "zh": "这些团体可以申请其中一部分资金，用于应对孤独等问题，或帮助居民讨论当地的需求。",
+      "glosses": [
+        {
+          "surface": "apply",
+          "lemma": "apply",
+          "zh": "申请"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Projects can also offer help with work or housing, two practical concerns that may affect people in the same neighbourhood.",
+      "zh": "项目还可以提供就业或住房方面的帮助；这两项实际问题都可能影响同一个社区的居民。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "The Scottish Government is working with the STV Appeal again to deliver this fund.",
+      "zh": "苏格兰政府再次与STV Appeal合作落实这项资助。",
+      "glosses": [
+        {
+          "surface": "deliver",
+          "lemma": "deliver",
+          "zh": "落实；执行"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Under the second route, almost £305,000 is going directly to twelve local authorities so that they can test different approaches.",
+      "zh": "在第二种渠道下，近30.5万英镑直接拨给12个地方当局，让它们试验不同的做法。",
+      "glosses": [
+        {
+          "surface": "directly",
+          "lemma": "directly",
+          "zh": "直接地"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "For instance, in Midlothian, the council will try three ways of bringing people together through meals and stories.",
+      "zh": "例如，米德洛锡安地方议会将围绕共餐与讲故事，试验三种促进人们交流的做法。",
+      "glosses": []
+    },
+    {
+      "id": "s10",
+      "text": "West Dunbartonshire has a different plan: an online language module in libraries.",
+      "zh": "西邓巴顿郡的计划不同：在图书馆推出一个在线语言学习单元。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "These are examples of what councils plan to try, not evidence that one method already works better than another.",
+      "zh": "这些只是地方议会计划试验的例子，并不证明某种做法已经比另一种更有效。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "The previous round of the Community Cohesion Fund was smaller: £300,000 went to 38 organisations working in 26 council areas.",
+      "zh": "上一轮社区凝聚基金规模较小：30万英镑拨给了在26个地方议会辖区开展工作的38家机构。",
+      "glosses": [
+        {
+          "surface": "previous",
+          "lemma": "previous",
+          "zh": "先前的；上一轮的"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "One of them, Govan HELP, received £10,000 and used it for activities to support the wellbeing of local parents.",
+      "zh": "其中一家机构Govan HELP获得了1万英镑，用于开展关注当地家长身心健康的活动。",
+      "glosses": [
+        {
+          "surface": "wellbeing",
+          "lemma": "wellbeing",
+          "zh": "身心健康"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "That example shows what a local organisation did with an earlier grant, while the plans for Midlothian and West Dunbartonshire show what two councils intend to test under the new arrangements.",
+      "zh": "这个例子说明一家当地机构如何使用上一轮拨款；米德洛锡安和西邓巴顿郡的计划则说明两个地方议会打算在新安排下试验什么。",
+      "glosses": []
+    },
+    {
+      "id": "s15",
+      "text": "The distinction matters when reading the figures: the larger fund gives local groups a chance to apply, while the smaller sum is already set aside for council trials.",
+      "zh": "读这些数字时要注意这个区别：规模较大的基金让当地团体有机会申请，而规模较小的款项已经留作地方议会试验之用。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "routes",
+        "lemma": "route",
+        "zh": "渠道；途径",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "apply",
+        "lemma": "apply",
+        "zh": "申请",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "deliver",
+        "lemma": "deliver",
+        "zh": "落实；执行",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "directly",
+        "lemma": "directly",
+        "zh": "直接地",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "previous",
+        "lemma": "previous",
+        "zh": "先前的；上一轮的",
+        "sentenceId": "s12"
+      },
+      {
+        "text": "wellbeing",
+        "lemma": "wellbeing",
+        "zh": "身心健康",
+        "sentenceId": "s13"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "deal with problems",
+        "zh": "应对问题",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "test different approaches",
+        "zh": "试验不同做法",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "set aside for",
+        "zh": "留作……使用",
+        "sentenceId": "s15"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s8",
+        "note": "so that 引出拨款的目的；they 指地方当局。"
+      },
+      {
+        "sentenceId": "s14",
+        "note": "while 在此用于对比已发生的例子和未来计划，不表示两件事同时发生。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Which activity could help people get to know each other in your neighbourhood? Why?",
+        "zh": "哪种活动能帮助你所在社区的居民互相熟悉？为什么？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Our group could organise …",
+        "zh": "我们的团体可以组织……。"
+      },
+      {
+        "text": "This would give people a chance to …",
+        "zh": "这会给大家机会……。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "date": "2026-11-24",
+  "status": "passed-editorial-technical-and-private-browser-prepublication-gates",
+  "baseline": "12111a1335416b41b73aa4adf6f5a587439e2946",
+  "scope": {
+    "reading": [
+      "2026-11-24-en-two-routes-for-local-projects"
+    ],
+    "listening": [
+      "fr-arte-karambolage-alphabet-telephonique-2026-11-22"
+    ]
+  },
+  "reading": {
+    "id": "2026-11-24-en-two-routes-for-local-projects",
+    "storyId": "scot-community-cohesion-fund-expansion-2026-11-23",
+    "source": "https://www.gov.scot/news/building-stronger-communities-2/",
+    "originalDate": "2026-11-23",
+    "publisher": "Scottish Government",
+    "registry": "scottish-government-english-news; exact HTTPS origin and /news/ path tested, English institutional original",
+    "terms": "https://www.gov.scot/crown-copyright/",
+    "rights": "Open Government Licence v3.0 applies to institutional narrative and original statement of facts. No third-party or ministerial quotations, assets or official application guidance reproduced; attribution, source and adaptation credit included.",
+    "facts": "The original 23 Nov 00:01 release was retrieved directly (HTTP 200). The September 17 announcement had stated the £500,000 expansion but not opened applications. November applications and separately assigned direct awards of approximately £305,000 to twelve local authorities are new. The West Dunbartonshire and Midlothian activities are proposals; prior Govan HELP £10,000 is not a newly awarded project.",
+    "bilingual": "An independent reviewer matched all 15 sentences, title, summary and teaching mapping against primary facts; no unresolved translation or factual issue. 301 words; B1 editorial estimate.",
+    "dedup": "Checked pinned current 202-item index including 56 English articles, 175 editorial candidates, available prior notes/reviews and open PRs. November source and programme anchors did not appear. Scottish energy and earlier library stories are different works. Older missing archive and unknown old queue write remain isolated, not retried, not considered resolved.",
+    "practice": {
+      "count": 5,
+      "answerIndices": [
+        2,
+        0,
+        1,
+        2,
+        1
+      ],
+      "offsets": [
+        17,
+        54,
+        64,
+        49,
+        4
+      ],
+      "verdict": "Independent initial reviewer identified direct as a valid adverb alongside directly. Replaced it with directed; a different independent reviewer then solved the exact final five masked sentences and found no ordinary alternatives. The items primarily test form, not standalone B1 vocabulary diagnosis."
+    },
+    "comprehension": {
+      "count": 4,
+      "answerIndices": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "evidence": [
+        [
+          "s7",
+          "s13"
+        ],
+        [
+          "s9",
+          "s10"
+        ],
+        [
+          "s12"
+        ],
+        [
+          "s2",
+          "s4",
+          "s5"
+        ]
+      ],
+      "verdict": "Initial version rejected because a questions-only review could infer all options. Revised question-only review treated two guesses as contaminated by previous cloze context, found q2 random and q4 guess wrong; independent passage blind answer C/A/D/B. Final q2 uses a balanced two-by-two option grid; known-key independent final recheck matched unchanged article and remaining questions, unique q2 A, and supporting evidence/Chinese explanation rechecked."
+    }
+  },
+  "listening": {
+    "id": "fr-arte-karambolage-alphabet-telephonique-2026-11-22",
+    "source": "https://www.arte.tv/fr/videos/136412-000-A/l-alphabet-telephonique-la-fin-des-malentendus-au-telephone-ou-pas/",
+    "sourceDate": "2026-11-22",
+    "parentSource": "https://www.arte.tv/fr/videos/133252-011-A/karambolage/",
+    "terms": "https://corporate.arte.tv/fr/conditions-generales-dutilisation-cgu/",
+    "rights": "Canonical publisher link only and original short Chinese study method and preview vocabulary. No programme description, audio, captions, imagery, transcript, embed or programme exercise copied. All provider region/access rules preserved.",
+    "metadata": "ARTE exact player metadata showed French original VOF, audioLanguage fr, publication start 22 Nov at 18:30 UTC, 338 seconds. Parent 22 Nov episode, alternate German version and captions are the same work family and were not used as separate content. Programme credit Nikola Obermann, director Sabine Allard. No exact clip or parent match in pinned earlier artifacts.",
+    "player": "After normal pre-roll, anonymous cloud exact original displayed 05:38 and advanced 00:04 to 00:09 with French audio checked, German alternate off. No audible linguistic content or quality and no other regional availability asserted.",
+    "questions": 0
+  },
+  "sha256": {
+    "data/reading/index.json": "669b59e6fc1b965ae89188c3edbc1ab4280801a1167a50c268b7274b65592f90",
+    "data/listening/catalog.json": "11c377cc3158217ce838be4d1509c7e87661f360b8241edbc1d43a58dab15d9d",
+    "data/reading/articles/2026-11-24-en-two-routes-for-local-projects.json": "be5e69f07b13e4267f653e99b1b1538c975fe7ac9d768812b767d0a71ca282f9",
+    "data/reading/practice/2026-11-24-en-two-routes-for-local-projects.json": "6df8baacb82bb5370c1290cd51afd8a5d6847d4dc42875c6adaf2273bbe4e8fd",
+    "data/reading/comprehension/2026-11-24-en-two-routes-for-local-projects.json": "789d26516b0d5ece9bbee3160462843abd20930ac26f5845d0fd1be04ff075ab"
+  },
+  "tests": {
+    "validators": "203 reading articles; 175 metadata-only candidates; 188 cloze companions; 164 comprehension companions with 622 questions. All validators passed.",
+    "focused": "Reading 106, candidates 223, comprehension 7224, loading 9, practice 6414, listening 955 all passed.",
+    "full": "TZ=UTC npm test: 47 harnesses, 489559 passed, zero failures or known issues.",
+    "gitDiff": "Clean; only five frozen data/index paths and this audit; no historical article, queue, registry or code change."
+  },
+  "browser": {
+    "private": "Managed private preview of exact five SHA-pinned data files. EN index and browser-back deep route; correct title/source/licence, all 15 bilingual rows and 4+5 exercise cards; unified translation toggle; first comprehension correct+wrong 1/4 and locked choices; evidence focus s7/return; cloze apply choice, empty spelling ignored and spelling apply correct, independent resets. FR exact route French locale, bilingual heading, original provider new-tab link, 05:38, three glossary terms, source and collection dates, no on-site playback/embed/form, no document overflow at default viewport. No mobile emulation. Provider playback verification as recorded above.",
+    "public": "This review attests prepublication gates only. No remote publication asserted."
+  }
+}

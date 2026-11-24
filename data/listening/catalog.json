@@ -1,7 +1,42 @@
 {
-  "verifiedAt": "2026-11-23",
+  "verifiedAt": "2026-11-24",
   "policy": "Outbound official playback links only. No copied media, thumbnails or full transcripts. Original Chinese guides and questions. Playback itself has not been tested; verified means official page and content evidence were retrieved.",
   "entries": [
+    {
+      "id": "fr-arte-karambolage-alphabet-telephonique-2026-11-22",
+      "lang": "fr",
+      "title": "L'alphabet téléphonique : la fin des malentendus au téléphone, ou pas",
+      "titleZh": "电话里怎么拼名字？",
+      "provider": "ARTE · Karambolage",
+      "url": "https://www.arte.tv/fr/videos/136412-000-A/l-alphabet-telephonique-la-fin-des-malentendus-au-telephone-ou-pas/",
+      "level": "未分级",
+      "levelBasis": "editorial",
+      "levelLabel": "法语原声节目 · 非 CEFR 分级",
+      "kind": "lesson",
+      "addedAt": "2026-11-24",
+      "sourcePublishedAt": "2026-11-22",
+      "duration": "05:38",
+      "evidenceStatus": "metadata_only",
+      "summaryZh": "用一段关于电话拼字的短片，练习辨认话语里的字母和词。",
+      "guideZh": "在原站选择法语音轨。挑一小段听两遍：第一遍抓大意，第二遍把听清的字母和词分开记。最后试着用法语把自己的名字拼一遍。",
+      "verificationZh": "ARTE 原站标注 2026 年 11 月 22 日上线，时长 05:38。云端播放器在法语音轨下从 00:04 推进到 00:09；未核验实际语音或音质，其他地区能否播放以原站为准。本条仅提供原站链接和原创导听，不设理解题。",
+      "vocabularyLabel": "主题预习词（不保证出现在节目中）",
+      "vocabulary": [
+        {
+          "text": "épeler",
+          "zh": "逐个字母拼读"
+        },
+        {
+          "text": "une lettre",
+          "zh": "字母"
+        },
+        {
+          "text": "répéter",
+          "zh": "重复；再说一遍"
+        }
+      ],
+      "questions": []
+    },
     {
       "id": "de-logo-2026-11-22",
       "lang": "de",

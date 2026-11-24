@@ -2,6 +2,23 @@
   "schema": 1,
   "articles": [
     {
+      "id": "2026-11-24-en-two-routes-for-local-projects",
+      "lang": "en",
+      "date": "2026-11-24",
+      "title": "Two ways to fund local projects",
+      "titleZh": "当地项目的两种资助渠道",
+      "summaryZh": "苏格兰的社区资助一部分向当地团体开放申请，另一部分直接拨给地方当局试验项目。",
+      "level": "B1",
+      "category": "society",
+      "topics": [
+        "社区交流",
+        "社区资助"
+      ],
+      "sourceLang": "en",
+      "sourcePublishedAt": "2026-11-23",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-11-20-it-strade-risultati-diversi",
       "lang": "it",
       "date": "2026-11-20",

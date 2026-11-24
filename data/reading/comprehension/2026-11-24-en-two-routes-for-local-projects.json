@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-24-en-two-routes-for-local-projects",
+  "lang": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "Which organisation is again helping the government put the Community Cohesion Fund into practice?",
+      "options": [
+        "Govan HELP.",
+        "The Scottish Council for Voluntary Organisations.",
+        "The STV Appeal.",
+        "The Big Lottery Fund."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s7",
+        "s13"
+      ],
+      "explanationZh": "第 7 句明确指出政府再次与 STV Appeal 合作落实资助。Govan HELP 是上一轮获得资助的机构，不是发放伙伴（第 13 句）。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Which notes correctly match the places to the projects they plan to try?",
+      "options": [
+        "Midlothian: meals and stories; West Dunbartonshire: online language learning.",
+        "Midlothian: courses for newcomers; West Dunbartonshire: online language learning.",
+        "Midlothian: meals and stories; West Dunbartonshire: workshops for parents.",
+        "Midlothian: courses for newcomers; West Dunbartonshire: workshops for parents."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s9",
+        "s10"
+      ],
+      "explanationZh": "第 9 句说米德洛锡安计划通过共餐和讲故事促进交流，第 10 句说西邓巴顿郡计划在图书馆推出线上语言学习单元。两个地点和做法都要匹配。"
+    },
+    {
+      "id": "q3",
+      "kind": "detail",
+      "prompt": "What do the figures from the earlier round count?",
+      "options": [
+        "26 organisations active in 38 council areas.",
+        "38 organisations active in 38 council areas.",
+        "26 organisations active in 26 council areas.",
+        "38 organisations active in 26 council areas."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s12"
+      ],
+      "explanationZh": "第 12 句将获资助机构的数量（38）和它们开展活动所覆盖的地方议会辖区数量（26）分开。"
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": "What was the difference between the September and November announcements about the Community Cohesion Fund?",
+      "options": [
+        "September named the successful groups; November gave the amount available.",
+        "September gave the amount available; November opened the fund to applications.",
+        "September opened the fund to applications; November named the successful groups.",
+        "September opened the fund to applications; November gave the amount available."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s2",
+        "s4",
+        "s5"
+      ],
+      "explanationZh": "9 月公布的是社区凝聚基金的金额；11 月才开放申请。11 月通稿公布的另一批直接拨款不能当作这项基金的申请结果。"
+    }
+  ]
+}
