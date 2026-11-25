@@ -3,6 +3,44 @@
   "policy": "Outbound official playback links only. No copied media, thumbnails or full transcripts. Original Chinese guides and questions. Playback itself has not been tested; verified means official page and content evidence were retrieved.",
   "entries": [
     {
+      "id": "it-rsi-facile-2026-11-25",
+      "lang": "it",
+      "title": "Notizie in lingua facile · 25 novembre 2026",
+      "titleZh": "RSI 简明新闻｜11 月 25 日词汇与表达",
+      "provider": "RSI · Rete Uno",
+      "url": "https://www.rsi.ch/rete-uno/programmi/informazione/notizie-in-lingua-facile/Notizie-in-lingua-facile--4193178.html",
+      "level": "未分级",
+      "levelBasis": "editorial",
+      "levelLabel": "简明意语新闻 · 非 CEFR 分级",
+      "kind": "news",
+      "addedAt": "2026-11-25",
+      "sourcePublishedAt": "2026-11-25",
+      "duration": "约 3 分钟",
+      "evidenceStatus": "metadata_only",
+      "guideZh": "点原站链接，往播放器下方找到第二条提契诺新闻，标题以「Nuova regola」开头。",
+      "verificationZh": "核对了 RSI 官方单集日期、时长、录音入口和意大利语稿件。未核验播放或音质；仅提供官方链接及词语释义。",
+      "vocabularyLabel": "原站稿件中的词",
+      "vocabulary": [
+        {
+          "text": "il Gran Consiglio",
+          "zh": "提契诺州大议会"
+        },
+        {
+          "text": "riguardare",
+          "zh": "涉及，关系到"
+        },
+        {
+          "text": "prendere le decisioni",
+          "zh": "作决定"
+        },
+        {
+          "text": "prima del tempo previsto",
+          "zh": "在原定时间之前"
+        }
+      ],
+      "questions": []
+    },
+    {
       "id": "it-rsi-facile-2026-11-24",
       "lang": "it",
       "title": "Notizie in lingua facile · 24 novembre 2026",
