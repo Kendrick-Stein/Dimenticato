@@ -2,6 +2,23 @@
   "schema": 1,
   "articles": [
     {
+      "id": "2026-11-25-fr-nez-des-insectes",
+      "lang": "fr",
+      "date": "2026-11-25",
+      "title": "Un nez inspiré des insectes",
+      "titleZh": "受昆虫启发的人工鼻",
+      "summaryZh": "法国国家农业、食品与环境研究院的年度大奖花落一位昆虫嗅觉研究者。她的研究帮助开发了能提前发现棕榈树害虫的装置。",
+      "level": "A2",
+      "category": "environment",
+      "topics": [
+        "昆虫",
+        "植物保护"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-11-24",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-11-24-en-two-routes-for-local-projects",
       "lang": "en",
       "date": "2026-11-24",

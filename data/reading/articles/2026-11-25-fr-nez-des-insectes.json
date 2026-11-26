@@ -1,0 +1,231 @@
+{
+  "schema": 1,
+  "id": "2026-11-25-fr-nez-des-insectes",
+  "storyId": "inrae-lauriers-2026-2026-11-24",
+  "lang": "fr",
+  "date": "2026-11-25",
+  "category": "environment",
+  "topics": [
+    "昆虫",
+    "植物保护"
+  ],
+  "title": "Un nez inspiré des insectes",
+  "titleZh": "受昆虫启发的人工鼻",
+  "summaryZh": "法国国家农业、食品与环境研究院的年度大奖花落一位昆虫嗅觉研究者。她的研究帮助开发了能提前发现棕榈树害虫的装置。",
+  "level": "A2",
+  "levelReason": "编辑估计 A2：篇幅短，主要使用现在时和常见动词；少量科研主题词配有中文释义。不代表官方认证。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "INRAE",
+    "author": "INRAE",
+    "title": "De la compréhension du vivant à la capacité d’agir : Palmarès des Lauriers INRAE 2026",
+    "url": "https://www.inrae.fr/actualites/comprehension-du-vivant-capacite-dagir-palmares-lauriers-inrae-2026",
+    "publishedAt": "2026-11-24",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "Licence Ouverte 2.0 (Etalab)",
+    "url": "https://www.data.gouv.fr/pages/legal/licences/etalab-2-0"
+  },
+  "attribution": "Source : INRAE, communiqué du 24 novembre 2026, section Grand Prix. Réutilisation sous Licence Ouverte 2.0 (Etalab), sans approbation de l’INRAE.",
+  "adaptation": "2026 年 11 月 25 日整理。围绕原通稿的大奖段落作同语简写，附中文对照及原创练习；未使用照片、标志或第三方引语。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "En novembre 2026, l’INRAE annonce les noms des personnes qui reçoivent ses prix de recherche.",
+      "zh": "2026 年 11 月，法国国家农业、食品与环境研究院公布了科研奖的获奖名单。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Cette année, le grand prix revient à Emmanuelle Jacquin-Joly.",
+      "zh": "今年的大奖授予埃马纽埃尔·雅坎-若利。",
+      "glosses": [
+        {
+          "surface": "revient",
+          "lemma": "revenir",
+          "zh": "归于；授予"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Depuis plus de trente ans, cette chercheuse étudie la façon dont les insectes perçoivent les odeurs.",
+      "zh": "三十多年来，这位研究人员一直在研究昆虫如何感知气味。",
+      "glosses": [
+        {
+          "surface": "perçoivent",
+          "lemma": "percevoir",
+          "zh": "感知"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "Pour son équipe, la question n’est pas seulement de savoir si un insecte sent une odeur.",
+      "zh": "她的团队关注的不只是昆虫能不能闻到某种气味。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Elle veut aussi comprendre comment certaines odeurs changent ce que fait l’insecte.",
+      "zh": "团队还想弄清一些气味如何改变昆虫的行为。",
+      "glosses": [
+        {
+          "surface": "odeurs",
+          "lemma": "odeur",
+          "zh": "气味"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "Les chercheurs étudient donc les parties du corps de l’insecte qui lui permettent de sentir.",
+      "zh": "因此，研究人员会研究昆虫身体中使它能够感知气味的部分。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "Ce travail a aussi aidé à créer un nez artificiel inspiré des insectes.",
+      "zh": "这项工作还帮助人们研制了一个受昆虫启发的人工鼻。",
+      "glosses": [
+        {
+          "surface": "artificiel",
+          "lemma": "artificiel",
+          "zh": "人工的"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "Grâce à cet appareil, on peut repérer plus tôt un insecte qui s’attaque aux palmiers.",
+      "zh": "借助这个装置，人们可以更早发现一种侵害棕榈树的昆虫。",
+      "glosses": [
+        {
+          "surface": "repérer",
+          "lemma": "repérer",
+          "zh": "发现；辨认"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "Le nez artificiel sert à signaler la présence de cet insecte : il ne le tue pas.",
+      "zh": "人工鼻的作用是提示这种昆虫的存在，而不是杀死它。",
+      "glosses": [
+        {
+          "surface": "présence",
+          "lemma": "présence",
+          "zh": "存在；出现"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Mieux connaître les insectes est une façon de chercher d’autres moyens de protéger les plantes.",
+      "zh": "更了解昆虫，是寻找其他植物保护方法的一条途径。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Un objectif de ces recherches est de trouver des solutions qui pourraient remplacer certains insecticides.",
+      "zh": "这些研究的目标之一，是寻找有望替代部分杀虫剂的办法。",
+      "glosses": [
+        {
+          "surface": "remplacer",
+          "lemma": "remplacer",
+          "zh": "替代"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "revient",
+        "lemma": "revenir",
+        "zh": "归于；授予",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "perçoivent",
+        "lemma": "percevoir",
+        "zh": "感知",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "odeurs",
+        "lemma": "odeur",
+        "zh": "气味",
+        "sentenceId": "s5"
+      },
+      {
+        "text": "artificiel",
+        "lemma": "artificiel",
+        "zh": "人工的",
+        "sentenceId": "s7"
+      },
+      {
+        "text": "repérer",
+        "lemma": "repérer",
+        "zh": "发现；辨认",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "présence",
+        "lemma": "présence",
+        "zh": "存在；出现",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "remplacer",
+        "lemma": "remplacer",
+        "zh": "替代",
+        "sentenceId": "s11"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "Grâce à cet appareil",
+        "zh": "借助这个装置",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "sert à signaler",
+        "zh": "用于提示",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "une façon de chercher",
+        "zh": "一种寻找……的方式",
+        "sentenceId": "s10"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s3",
+        "note": "depuis + 时长配现在时，表示某件事持续到现在。"
+      },
+      {
+        "sentenceId": "s9",
+        "note": "servir à + 不定式说明用途；le 回指前半句的 cet insecte。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quel problème aimeriez-vous détecter plus tôt avec un appareil ?",
+        "zh": "你希望用装置更早发现什么问题？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Grâce à cet appareil",
+        "zh": "借助这个装置",
+        "note": "后接一句话，说借助装置能做什么。",
+        "sentenceId": "s8"
+      }
+    ]
+  }
+}

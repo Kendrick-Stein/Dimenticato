@@ -1,0 +1,85 @@
+{
+  "date": "2026-11-26",
+  "status": "passed-editorial-technical-and-private-browser-prepublication-gates",
+  "baseline": "729d03c6da6bc7c7bdc451c08a7cdbf1b5ed2263",
+  "scope": {
+    "reading": [
+      "2026-11-25-fr-nez-des-insectes"
+    ],
+    "listening": [
+      "de-tagesschau-einfache-sprache-2026-11-24"
+    ]
+  },
+  "reading": {
+    "id": "2026-11-25-fr-nez-des-insectes",
+    "storyId": "inrae-lauriers-2026-2026-11-24",
+    "source": "https://www.inrae.fr/actualites/comprehension-du-vivant-capacite-dagir-palmares-lauriers-inrae-2026",
+    "originalDate": "2026-11-24",
+    "tier": "A2, editorial estimate",
+    "bodyWords": 158,
+    "sentencePairs": 11,
+    "rights": "INRAE institutional article reused under its Etalab Open Licence 2.0 terms. No third-party quotes, imagery or logos reproduced. Original source and simplification/translation disclosed.",
+    "facts": "The November 24 award is the new event; the underlying detector research predates the award. The modified ending describes a goal, not measured pesticide reduction.",
+    "independentReview": {
+      "practiceAnswerIndices": [
+        2,
+        1,
+        3,
+        0,
+        2
+      ],
+      "practiceEvidence": [
+        "s2",
+        "s3",
+        "s7",
+        "s8",
+        "s11"
+      ],
+      "comprehensionAnswerIndices": [
+        0,
+        2,
+        1
+      ],
+      "comprehensionEvidence": [
+        [
+          "s4",
+          "s5"
+        ],
+        [
+          "s7",
+          "s8",
+          "s9"
+        ],
+        [
+          "s2",
+          "s3",
+          "s7",
+          "s8",
+          "s9",
+          "s10",
+          "s11"
+        ]
+      ],
+      "note": "Independent blind answers and updated s11/p5/q2 recheck on the unchanged November 25 files."
+    }
+  },
+  "listening": {
+    "id": "de-tagesschau-einfache-sprache-2026-11-24",
+    "source": "https://www.ardmediathek.de/video/tagesschau-in-einfacher-sprache/tagesschau-in-einfacher-sprache/tagesschau24/Y3JpZDovL3RhZ2Vzc2NoYXUuZGUvNjliNGZlMDktOTY5NC00Y2E5LWFkZmYtNTJlYzQwMjcyODNhX2dhbnplU2VuZHVuZw",
+    "sourceDate": "2026-11-24",
+    "scope": "Official link and three original preview expressions; no copied captions/audio, embedded player, or comprehension questions. Playback and sound not assessed."
+  },
+  "dedup": "Unchanged reading files rebased from the November 25 reviewed slice. No open PR from the repository search. Preserved all 64 existing listening rows in order, including the two separate RSI episodes. Unresolved older publishing records were not rewritten or considered resolved.",
+  "technical": {
+    "harnesses": 47,
+    "assertionsPassed": 489661,
+    "privateBrowser": "Chromium, 390 and 1280 CSS px: list-to-detail routes, translation, answers and answer locking, evidence focus, separate resets, spelling, German vocabulary disclosure, Back/Forward, publisher URL and new-tab request (stubbed publisher response), no horizontal overflow."
+  },
+  "sha256": {
+    "data/reading/articles/2026-11-25-fr-nez-des-insectes.json": "09c9cfd078bd1e9b132772413e4edc747127fede2e7b596d051d79848139fa02",
+    "data/reading/practice/2026-11-25-fr-nez-des-insectes.json": "922ce3bfc5aa6d83f6380c7a198bc4c81816e4b973340f4baf9a7ee41b126473",
+    "data/reading/comprehension/2026-11-25-fr-nez-des-insectes.json": "b1710d09a42e1deb274b0c6741f9931de212a681112aeb533672b56b358dd637",
+    "data/reading/index.json": "fd9eb6fb94b64c989a832ee0b1f3b1da9f8d8dd02bb9e6ae624f000d7fbfb495",
+    "data/listening/catalog.json": "0552ee3dd9f80cf06c27df1536a000d7b0d474bfc232acfc11ececc7e91f30ae"
+  }
+}

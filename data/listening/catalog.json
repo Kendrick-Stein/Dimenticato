@@ -83,6 +83,40 @@
       "questions": []
     },
     {
+      "id": "de-tagesschau-einfache-sprache-2026-11-24",
+      "lang": "de",
+      "title": "tagesschau in Einfacher Sprache, 24.11.2026",
+      "titleZh": "简明德语新闻：11 月 24 日",
+      "provider": "ARD · tagesschau24",
+      "url": "https://www.ardmediathek.de/video/tagesschau-in-einfacher-sprache/tagesschau-in-einfacher-sprache/tagesschau24/Y3JpZDovL3RhZ2Vzc2NoYXUuZGUvNjliNGZlMDktOTY5NC00Y2E5LWFkZmYtNTJlYzQwMjcyODNhX2dhbnplU2VuZHVuZw",
+      "level": "未分级",
+      "levelBasis": "editorial",
+      "levelLabel": "官方简明德语 · 非 CEFR 分级",
+      "kind": "news",
+      "addedAt": "2026-11-25",
+      "sourcePublishedAt": "2026-11-24",
+      "evidenceStatus": "metadata_only",
+      "summaryZh": "一集简明德语新闻。可以从月亮或电影获奖片段开始，练习抓主题和关键词。",
+      "guideZh": "先挑一个感兴趣的片段，听第一遍时只记一个主题词。第二遍再记两个细节，试着用一句德语概括。需要时可在原站打开德语字幕。",
+      "verificationZh": "ARD 官方节目页列出日期、主题和字幕入口。本站仅收录原站入口与原创导听，不设理解题。",
+      "vocabularyLabel": "主题预习词（不保证出现在节目中）",
+      "vocabulary": [
+        {
+          "text": "der Vollmond",
+          "zh": "满月"
+        },
+        {
+          "text": "die Auszeichnung",
+          "zh": "奖项；表彰"
+        },
+        {
+          "text": "der Haushalt",
+          "zh": "预算；家庭（依语境而定）"
+        }
+      ],
+      "questions": []
+    },
+    {
       "id": "fr-arte-karambolage-alphabet-telephonique-2026-11-22",
       "lang": "fr",
       "title": "L'alphabet téléphonique : la fin des malentendus au téléphone, ou pas",

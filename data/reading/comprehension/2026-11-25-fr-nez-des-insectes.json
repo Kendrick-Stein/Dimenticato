@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-25-fr-nez-des-insectes",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "detail",
+      "prompt": "Qu’est-ce que l’équipe veut comprendre en plus de la capacité des insectes à sentir ?",
+      "options": [
+        "L’effet des odeurs sur les actions des insectes.",
+        "L’effet de la lumière sur les actions des insectes.",
+        "L’effet du bruit sur les actions des insectes.",
+        "L’effet du froid sur les actions des insectes."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s4",
+        "s5"
+      ],
+      "explanationZh": "文章说团队还想知道某些气味如何改变昆虫的行为，并未把光、声音或低温列为研究因素。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "À quoi sert cet appareil ?",
+      "options": [
+        "Repérer plus tôt une maladie des palmiers.",
+        "Repérer plus tôt des insectes dans des céréales.",
+        "Repérer plus tôt un insecte qui attaque les palmiers.",
+        "Repérer plus tôt une maladie des céréales."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s8",
+        "s9"
+      ],
+      "explanationZh": "第 8、9 句明确说明装置用于更早发现一种侵害棕榈树的昆虫，不是识别植物疾病，也未提到谷物。"
+    },
+    {
+      "id": "q3",
+      "kind": "main-idea",
+      "prompt": "Quelle idée relie le prix, les études et l’appareil dans ce texte ?",
+      "options": [
+        "Une étude des plantes aide à mieux choisir les aliments.",
+        "Une étude des insectes aide à mieux protéger les plantes.",
+        "Une étude des insectes aide à mieux classer les plantes.",
+        "Une étude des plantes aide à mieux élever les insectes."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s2",
+        "s3",
+        "s7",
+        "s10"
+      ],
+      "explanationZh": "获奖工作研究昆虫嗅觉，并帮助研制检测装置，这条线索连接到保护植物；不是植物分类、选择食物或养昆虫。"
+    }
+  ]
+}

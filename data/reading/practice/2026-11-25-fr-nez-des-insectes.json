@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-25-fr-nez-des-insectes",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "p1",
+      "sentenceId": "s2",
+      "start": 27,
+      "answer": "revient",
+      "options": [
+        "revenons",
+        "reviennent",
+        "revient",
+        "reviens"
+      ],
+      "explanation": "主语 le grand prix 为第三人称单数，revenir 的现在时用 revient。"
+    },
+    {
+      "id": "p2",
+      "sentenceId": "s3",
+      "start": 78,
+      "answer": "perçoivent",
+      "options": [
+        "perçoit",
+        "perçoivent",
+        "percevez",
+        "percevons"
+      ],
+      "explanation": "les insectes 为第三人称复数，percevoir 的现在时用 perçoivent。"
+    },
+    {
+      "id": "p3",
+      "sentenceId": "s7",
+      "start": 39,
+      "answer": "artificiel",
+      "options": [
+        "artificielles",
+        "artificiels",
+        "artificielle",
+        "artificiel"
+      ],
+      "explanation": "un nez 为阳性单数，形容词用 artificiel。"
+    },
+    {
+      "id": "p4",
+      "sentenceId": "s8",
+      "start": 30,
+      "answer": "repérer",
+      "options": [
+        "repérer",
+        "repère",
+        "repérez",
+        "repèrent"
+      ],
+      "explanation": "pouvoir 的变位形式 peut 后面接不定式 repérer。"
+    },
+    {
+      "id": "p5",
+      "sentenceId": "s11",
+      "start": 74,
+      "answer": "remplacer",
+      "options": [
+        "remplacez",
+        "remplace",
+        "remplacer",
+        "remplacent"
+      ],
+      "explanation": "情态动词 pourraient 后面接不定式 remplacer。"
+    }
+  ]
+}
