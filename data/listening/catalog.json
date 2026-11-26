@@ -1,7 +1,45 @@
 {
-  "verifiedAt": "2026-11-25",
+  "verifiedAt": "2026-11-26",
   "policy": "Outbound official playback links only. No copied media, thumbnails or full transcripts. Original Chinese guides and questions. Playback itself has not been tested; verified means official page and content evidence were retrieved.",
   "entries": [
+    {
+      "id": "it-rsi-facile-2026-11-26",
+      "lang": "it",
+      "title": "Notizie in lingua facile · 26 novembre 2026",
+      "titleZh": "RSI 简明新闻｜11 月 26 日词汇与表达",
+      "provider": "RSI · Rete Uno",
+      "url": "https://www.rsi.ch/rete-uno/programmi/informazione/notizie-in-lingua-facile/Notizie-in-lingua-facile--4199592.html",
+      "level": "未分级",
+      "levelBasis": "editorial",
+      "levelLabel": "简明意语新闻 · 非 CEFR 分级",
+      "kind": "news",
+      "addedAt": "2026-11-26",
+      "sourcePublishedAt": "2026-11-26",
+      "duration": "约 3 分钟",
+      "evidenceStatus": "metadata_only",
+      "guideZh": "点开 RSI 原文与音频，往播放器下方滑，找到「Il costo della vita aumenta di più nella Svizzera italiana」。",
+      "verificationZh": "核对了 RSI 官方单集日期、时长、录音入口和意大利语稿件。未核验播放或音质；仅提供官方链接及词语释义。",
+      "vocabularyLabel": "原站稿件中的词",
+      "vocabulary": [
+        {
+          "text": "il costo della vita",
+          "zh": "生活成本"
+        },
+        {
+          "text": "un pieno di benzina",
+          "zh": "一箱汽油（加满一箱）"
+        },
+        {
+          "text": "l’olio da riscaldamento",
+          "zh": "取暖用燃油"
+        },
+        {
+          "text": "la spesa al supermercato",
+          "zh": "在超市采购；超市购物开销"
+        }
+      ],
+      "questions": []
+    },
     {
       "id": "it-rsi-facile-2026-11-25",
       "lang": "it",
