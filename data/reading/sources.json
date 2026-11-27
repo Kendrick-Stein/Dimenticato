@@ -653,6 +653,23 @@
       "requiredPublisherNames": [
         "Città di Torino"
       ]
+    },
+    {
+      "id": "comune-bagnacavallo-cappuccine-2026",
+      "name": "Comune di Bagnacavallo",
+      "url": "https://www.comune.bagnacavallo.ra.it/",
+      "languages": [
+        "it"
+      ],
+      "allowedUrlPrefixes": [
+        "https://www.comune.bagnacavallo.ra.it/Novita/Comunicati/Le-Cappuccine-celebrano-cinquant-anni-e-inaugurano-gli-spazi-rinnovati"
+      ],
+      "rightsPolicyUrl": "https://www.comune.bagnacavallo.ra.it/Note-legali",
+      "articleReviewRequired": true,
+      "conditions": "Exact release only: Italian municipal press-office prose under CC BY 4.0 after article-level review; omit images, third-party material and quotations. Preserve attribution and indicate changes.",
+      "requiredPublisherNames": [
+        "Comune di Bagnacavallo"
+      ]
     }
   ],
   "archiveOnly": {

@@ -1,0 +1,85 @@
+{
+  "date": "2026-11-27",
+  "status": "passed-editorial-technical-and-private-browser-prepublication-gates",
+  "baseline": "22ea0ec80f678381498795e61da67397ffe3edc2",
+  "scope": {
+    "reading": [
+      "2026-11-27-it-due-giorni-alle-cappuccine"
+    ],
+    "listening": [
+      "de-tagesschau-einfache-sprache-2026-11-26"
+    ]
+  },
+  "reading": {
+    "id": "2026-11-27-it-due-giorni-alle-cappuccine",
+    "storyId": "comune-bagnacavallo-cappuccine-cinquanta-2026-11-24",
+    "source": "https://www.comune.bagnacavallo.ra.it/Novita/Comunicati/Le-Cappuccine-celebrano-cinquant-anni-e-inaugurano-gli-spazi-rinnovati",
+    "sourceAliases": [
+      "https://patrimonioculturale.regione.emilia-romagna.it/novita/notizie/in-evidenza/bagnacavallo-cinquanta"
+    ],
+    "originalDate": "2026-11-24",
+    "tier": "A2, editorial estimate",
+    "bodyWords": 164,
+    "sentencePairs": 13,
+    "rights": "Original institutional wording by Comune di Bagnacavallo – Ufficio Stampa, municipal legal notice defaults to CC BY 4.0 with third-party exceptions. Only own text adapted; no images, quotations, annexes or marks. Regional recap is the same work for deduplication, not a separate lesson.",
+    "rightsEvidence": "https://www.comune.bagnacavallo.ra.it/Note-legali",
+    "facts": "Scheduled Fri 17:00 meeting and Sat open day, not confirmation they occurred. Sat 10:00 children, 15:00 printing, 15:00–18:00 photo collection, 16:30 art tour; library opens 08:30 and museum 10:00.",
+    "normalizedBodySha256": "5de1d5cdbb44e6bab82c509264635c6d09ed99e4f12ae65f94bb7163001b868a",
+    "independentReview": {
+      "scope": "Final masked article and both sets, re-solved without answer keys after removing exact echo in p5, bounding afternoon in q2, and clarifying s7 and q3. Corroborated source/date/rights and Italian/Chinese. No remaining ambiguity reported.",
+      "practiceAnswerIndices": [
+        1,
+        3,
+        0,
+        2,
+        3
+      ],
+      "comprehensionAnswerIndices": [
+        0,
+        2,
+        1
+      ],
+      "comprehensionEvidence": [
+        [
+          "s2",
+          "s7"
+        ],
+        [
+          "s6",
+          "s8",
+          "s10",
+          "s13"
+        ],
+        [
+          "s12",
+          "s13"
+        ]
+      ],
+      "exactSha256": {
+        "articles": "d2b3cea1b189952667ba6acee11bc41b9b5f8fb91da944686089bd48d6d95cf5",
+        "practice": "dba5e6924ef4e26753d8370e8967430efb12058cfc0d52453e5ed13616540022",
+        "comprehension": "a44a9a84745ef44282b620d936fec2a9561907cd1ba11c0c61f80c4ba830bb60"
+      }
+    }
+  },
+  "listening": {
+    "id": "de-tagesschau-einfache-sprache-2026-11-26",
+    "source": "https://www.tagesschau.de/tagesschau_in_einfacher_sprache/video-1690480.html",
+    "sourceAliases": [
+      "https://www.tagesschau.de/tagesschau_in_einfacher_sprache/tse-1528.html"
+    ],
+    "originalDate": "2026-11-26",
+    "evidence": "ARD player asset 1690480 with 26.11.2026 in episode title. Direct publisher page returned 200. Same-asset MP3 returned audio/mpeg and probed as 473.064 seconds; no speech-content or audio-quality claim. Outer archive page standalone Stand date does not date the episode.",
+    "rights": "Link to publisher only. No media, transcripts, translations, image or embed. Three original generic listening expressions; no comprehension quiz."
+  },
+  "deduplication": "No exact story, source, body or episode match in current 204 articles, 66 listening rows, reserve, registry and existing review files; prior stored pending identifiers did not match and open PR search was empty. Missing historic pending manifest remains unknown, not reconstructed. Both sources originally appeared after that batch. All old rows are preserved byte/logical equivalent within their existing order.",
+  "coverage": {
+    "readingPublishedSubset": "IT A2 only; all other eleven language/tier slots left open",
+    "listeningPublishedSubset": "one DE metadata-only; no other additions",
+    "held": "FR DILA A17008 source and export verified; adaptation and independent editorial gates still pending. EN Scottish community ownership discovery only. No current material added just to meet quotas."
+  },
+  "prepublication": {
+    "automated": "All eight localized validators/tests and TZ=UTC npm test; 47 harnesses 489752 passed, 0 failed, no known issues. git diff --check.",
+    "browser": "Private isolated Chromium at 375 and 1280 px, exact candidate bytes. Reading deep link, 13 sentence pairs, translation toggle, comprehension wrong/correct/lock/evidence/redo, cloze and spelling/redo. DE official navigation new tab verified with stub response; real publisher URL verified separately. Back/Forward, no overflow or runtime error. No playback quality check."
+  }
+}

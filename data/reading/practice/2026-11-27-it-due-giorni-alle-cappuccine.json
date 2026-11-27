@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-27-it-due-giorni-alle-cappuccine",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "p1",
+      "sentenceId": "s2",
+      "start": 21,
+      "answer": "festeggia",
+      "options": [
+        "festeggiano",
+        "festeggia",
+        "festeggio",
+        "festeggiate"
+      ],
+      "explanation": "中心是第三人称单数，festeggiare 的现在时用 festeggia。"
+    },
+    {
+      "id": "p2",
+      "sentenceId": "s3",
+      "start": 13,
+      "answer": "rinnovato",
+      "options": [
+        "rinnovata",
+        "rinnovati",
+        "rinnovate",
+        "rinnovato"
+      ],
+      "explanation": "ha rinnovato 是近过去时；直接宾语在过去分词后，此处用 rinnovato。"
+    },
+    {
+      "id": "p3",
+      "sentenceId": "s6",
+      "start": 13,
+      "answer": "prevede",
+      "options": [
+        "prevede",
+        "prevedo",
+        "prevediamo",
+        "prevedono"
+      ],
+      "explanation": "主语 Il programma 是第三人称单数；prevede 表示「按计划安排」。"
+    },
+    {
+      "id": "p4",
+      "sentenceId": "s9",
+      "start": 17,
+      "answer": "visitatori",
+      "options": [
+        "visitatore",
+        "visitatrice",
+        "visitatori",
+        "visitatrici"
+      ],
+      "explanation": "i 对应阳性复数，这里用 visitatori 泛指参观者。"
+    },
+    {
+      "id": "p5",
+      "sentenceId": "s13",
+      "start": 14,
+      "answer": "apre",
+      "options": [
+        "aprono",
+        "apri",
+        "apriamo",
+        "apre"
+      ],
+      "explanation": "主语 La biblioteca 为第三人称单数，此处用 apre。"
+    }
+  ]
+}

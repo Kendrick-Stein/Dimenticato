@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-27-it-due-giorni-alle-cappuccine",
+  "lang": "it",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Quali sono i due motivi delle giornate alle Cappuccine?",
+      "promptZh": "卡普奇内中心为何举办这两天的活动？",
+      "options": [
+        "Festeggiare un anniversario e presentare gli spazi rinnovati.",
+        "Festeggiare un anniversario e aprire una nuova biblioteca.",
+        "Presentare una raccolta nuova e lanciare un corso di stampa.",
+        "Presentare gli spazi rinnovati e spostare il museo."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s2",
+        "s7"
+      ],
+      "explanationZh": "中心既庆祝开放五十周年，也借此介绍翻新后的空间。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Che cosa si può fare sabato tra le tre e le sei del pomeriggio?",
+      "promptZh": "周六下午三点到六点可以做什么？",
+      "options": [
+        "Ascoltare le storie lette dai volontari.",
+        "Andare all’incontro sulla storia del centro.",
+        "Visitare gli spazi della raccolta fotografica.",
+        "Entrare al museo per la sua apertura del mattino."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s6",
+        "s8",
+        "s10",
+        "s13"
+      ],
+      "explanationZh": "摄影收藏区的参观时段是 15:00 到 18:00；儿童故事与博物馆开门都在上午，中心历史介绍则在周五。"
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": "Se arrivi sabato alle nove del mattino, dove puoi entrare subito?",
+      "promptZh": "如果周六早上九点到，你马上能去哪儿？",
+      "options": [
+        "Sia la biblioteca sia il museo.",
+        "La biblioteca, ma non il museo.",
+        "Il museo, ma non la biblioteca.",
+        "Né la biblioteca né il museo."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s12",
+        "s13"
+      ],
+      "explanationZh": "九点晚于图书馆的开门时间 8:30，却早于博物馆的开门时间 10:00。"
+    }
+  ]
+}

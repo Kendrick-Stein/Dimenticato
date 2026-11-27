@@ -3,6 +3,41 @@
   "policy": "Outbound official playback links only. No copied media, thumbnails or full transcripts. Original Chinese guides and questions. Playback itself has not been tested; verified means official page and content evidence were retrieved.",
   "entries": [
     {
+      "id": "de-tagesschau-einfache-sprache-2026-11-26",
+      "lang": "de",
+      "title": "tagesschau in Einfacher Sprache, 26.11.2026",
+      "titleZh": "简明德语新闻：11 月 26 日",
+      "provider": "ARD · tagesschau24",
+      "url": "https://www.tagesschau.de/tagesschau_in_einfacher_sprache/video-1690480.html",
+      "level": "未分级",
+      "levelBasis": "editorial",
+      "levelLabel": "官方简明德语 · 非 CEFR 分级",
+      "kind": "news",
+      "addedAt": "2026-11-27",
+      "sourcePublishedAt": "2026-11-26",
+      "duration": "约 8 分钟",
+      "evidenceStatus": "metadata_only",
+      "summaryZh": "一集简明德语新闻。适合练习从新闻标题和开场辨认主题。",
+      "guideZh": "先抓住每条新闻的主题，第二遍再记下一项细节。听完后试着只用一句德语说明发生了什么。",
+      "verificationZh": "已核对 ARD 节目标识、日期及其同集音轨的文件格式与时长；未作听辨，本站仅提供原站入口与原创导听，不设理解题。",
+      "vocabularyLabel": "听新闻常用表达（不保证出现在本期）",
+      "vocabulary": [
+        {
+          "text": "die Meldung",
+          "zh": "（一条）新闻消息"
+        },
+        {
+          "text": "es geht um …",
+          "zh": "讲的是……；涉及……"
+        },
+        {
+          "text": "zusammenfassen",
+          "zh": "概括；总结"
+        }
+      ],
+      "questions": []
+    },
+    {
       "id": "it-rsi-facile-2026-11-26",
       "lang": "it",
       "title": "Notizie in lingua facile · 26 novembre 2026",

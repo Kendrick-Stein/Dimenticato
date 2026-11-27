@@ -1,0 +1,211 @@
+{
+  "schema": 1,
+  "id": "2026-11-27-it-due-giorni-alle-cappuccine",
+  "storyId": "comune-bagnacavallo-cappuccine-cinquanta-2026-11-24",
+  "lang": "it",
+  "date": "2026-11-27",
+  "category": "culture",
+  "topics": [
+    "文化场馆",
+    "周末活动"
+  ],
+  "title": "Due giorni alle Cappuccine",
+  "titleZh": "文化中心的两天庆典",
+  "summaryZh": "意大利一座文化中心以两天的活动庆祝开放 50 周年，也让居民看看翻新后的空间。跟着周六的安排练习听懂和说清时间。",
+  "level": "A2",
+  "levelReason": "编辑估计 A2：用简短的句子串联场馆、活动和时间；少量文化场馆词汇配中文释义。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Comune di Bagnacavallo",
+    "author": "Comune di Bagnacavallo – Ufficio Stampa",
+    "title": "Le Cappuccine celebrano cinquant’anni e inaugurano gli spazi rinnovati",
+    "url": "https://www.comune.bagnacavallo.ra.it/Novita/Comunicati/Le-Cappuccine-celebrano-cinquant-anni-e-inaugurano-gli-spazi-rinnovati",
+    "publishedAt": "2026-11-24",
+    "lang": "it"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "Comune di Bagnacavallo – Ufficio Stampa, 24 novembre 2026, CC BY 4.0. Adattamento didattico e traduzione cinese a cura di Dimenticato.",
+  "adaptation": "2026 年 11 月 27 日整理。以意大利语简写开放日安排，配中文对照和原创练习。依据公告描述计划，不代表活动已举行；不使用原图或第三方引文。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Il centro culturale Le Cappuccine si trova a Bagnacavallo, in Emilia-Romagna.",
+      "zh": "莱卡普奇内文化中心位于艾米利亚-罗马涅大区的巴尼亚卡瓦洛。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "Ha aperto nel 1976 e festeggia i suoi cinquant’anni con due giornate di festa.",
+      "zh": "它于 1976 年开放，将用两天的活动庆祝开放 50 周年。",
+      "glosses": [
+        {
+          "surface": "festeggia",
+          "lemma": "festeggiare",
+          "zh": "庆祝；纪念"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "Il Comune ha rinnovato diversi spazi del centro.",
+      "zh": "市政府翻新了中心的多个空间。",
+      "glosses": [
+        {
+          "surface": "rinnovato",
+          "lemma": "rinnovare",
+          "zh": "翻新"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "I lavori hanno interessato anche gli spazi della raccolta fotografica.",
+      "zh": "翻新工程也涉及摄影收藏区。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Ora è più facile entrare e muoversi negli spazi del centro.",
+      "zh": "现在进入中心、在里面走动都更方便了。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "Il programma prevede un incontro venerdì 27 novembre alle cinque del pomeriggio.",
+      "zh": "按计划，11 月 27 日星期五下午五点有一场活动。",
+      "glosses": [
+        {
+          "surface": "prevede",
+          "lemma": "prevedere",
+          "zh": "按计划安排"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "Durante l’incontro si parla della storia del centro e si presentano gli spazi rinnovati.",
+      "zh": "这场活动会介绍中心的历史，并展示翻新后的空间。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Sabato alle dieci, nella nuova sala, alcuni volontari leggono storie ai bambini.",
+      "zh": "星期六十点，几位志愿者会在新的教学活动室给孩子们读故事。",
+      "glosses": []
+    },
+    {
+      "id": "s9",
+      "text": "Nel pomeriggio i visitatori possono vedere come si fa una stampa in un laboratorio.",
+      "zh": "下午，参观者可以在工作室观看版画是怎么印出来的。",
+      "glosses": [
+        {
+          "surface": "visitatori",
+          "lemma": "visitatore",
+          "zh": "参观者"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Dalle tre alle sei del pomeriggio si possono visitare i nuovi spazi della raccolta fotografica.",
+      "zh": "下午三点到六点，可以参观摄影收藏区的新空间。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Alle quattro e mezza del pomeriggio c’è una visita guidata alla raccolta di quadri del museo.",
+      "zh": "下午四点半，博物馆会安排一场绘画收藏导览。",
+      "glosses": []
+    },
+    {
+      "id": "s12",
+      "text": "Sabato la biblioteca e il museo sono aperti anche al mattino, ma hanno orari diversi.",
+      "zh": "星期六，图书馆和博物馆上午也开放，但开放时间不同。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "La biblioteca apre alle otto e mezza; il museo, invece, alle dieci.",
+      "zh": "图书馆八点半开门，博物馆则是十点。",
+      "glosses": [
+        {
+          "surface": "apre",
+          "lemma": "aprire",
+          "zh": "开门"
+        }
+      ]
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "festeggia",
+        "lemma": "festeggiare",
+        "zh": "庆祝；纪念",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "rinnovato",
+        "lemma": "rinnovare",
+        "zh": "翻新",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "prevede",
+        "lemma": "prevedere",
+        "zh": "按计划安排",
+        "sentenceId": "s6"
+      },
+      {
+        "text": "visitatori",
+        "lemma": "visitatore",
+        "zh": "参观者",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "apre",
+        "lemma": "aprire",
+        "zh": "开门",
+        "sentenceId": "s13"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "Dalle tre alle sei",
+        "zh": "从三点到六点",
+        "sentenceId": "s10",
+        "note": "dalle … alle … 表示两个具体时间点之间的时段。"
+      },
+      {
+        "text": "una visita guidata",
+        "zh": "一次导览",
+        "sentenceId": "s11"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s12",
+        "note": "anche 表示「也」，ma 引出两处开放时间不同。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Quale attività vuoi fare sabato? A che ora ci vai?",
+        "zh": "周六你想参加哪项活动？你几点去？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "Alle quattro e mezza del pomeriggio",
+        "zh": "下午四点半",
+        "note": "用 alle + 时间说明活动几点开始。",
+        "sentenceId": "s11"
+      }
+    ]
+  }
+}
