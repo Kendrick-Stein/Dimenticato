@@ -1,7 +1,49 @@
 {
-  "verifiedAt": "2026-11-26",
+  "verifiedAt": "2026-11-27",
   "policy": "Outbound official playback links only. No copied media, thumbnails or full transcripts. Original Chinese guides and questions. Playback itself has not been tested; verified means official page and content evidence were retrieved.",
   "entries": [
+    {
+      "id": "it-rsi-facile-2026-11-27",
+      "lang": "it",
+      "title": "Notizie in lingua facile · 27 novembre 2026",
+      "titleZh": "RSI 简明新闻｜11 月 27 日词汇与表达",
+      "provider": "RSI · Rete Uno",
+      "url": "https://www.rsi.ch/rete-uno/programmi/informazione/notizie-in-lingua-facile/Notizie-in-lingua-facile--4199490.html",
+      "level": "未分级",
+      "levelBasis": "editorial",
+      "levelLabel": "简明意语新闻 · 非 CEFR 分级",
+      "kind": "news",
+      "addedAt": "2026-11-27",
+      "sourcePublishedAt": "2026-11-27",
+      "duration": "约 3 分钟",
+      "evidenceStatus": "metadata_only",
+      "guideZh": "打开 RSI 原文与音频，往播放器下方滑，找到「I più ricchi hanno sempre più soldi in Svizzera」。",
+      "verificationZh": "核对了 RSI 官方单集日期、时长、录音入口和意大利语稿件。未核验播放或音质；仅提供官方链接及词语释义。",
+      "vocabularyLabel": "原站稿件中的词",
+      "vocabulary": [
+        {
+          "text": "il patrimonio",
+          "zh": "资产；财富总额"
+        },
+        {
+          "text": "la classifica",
+          "zh": "排行榜；排名"
+        },
+        {
+          "text": "la compagnia di navigazione",
+          "zh": "航运公司"
+        },
+        {
+          "text": "superare",
+          "zh": "超过（某一数值）"
+        },
+        {
+          "text": "il miliardo",
+          "zh": "十亿"
+        }
+      ],
+      "questions": []
+    },
     {
       "id": "de-tagesschau-einfache-sprache-2026-11-26",
       "lang": "de",
