@@ -670,6 +670,23 @@
       "requiredPublisherNames": [
         "Comune di Bagnacavallo"
       ]
+    },
+    {
+      "id": "dila-service-public-a17008",
+      "name": "Direction de l’information légale et administrative (DILA)",
+      "url": "https://www.service-public.gouv.fr/",
+      "languages": [
+        "fr"
+      ],
+      "allowedUrlPrefixes": [
+        "https://www.service-public.gouv.fr/particuliers/actualites/A17008"
+      ],
+      "rightsPolicyUrl": "https://www.data.gouv.fr/datasets/actualites-entreprendre-service-public-gouv-fr",
+      "articleReviewRequired": true,
+      "conditions": "Only A17008 as verified in the DILA open business export. Adapt text with credit, original date and modifications; exclude images and third-party material.",
+      "requiredPublisherNames": [
+        "Service Public / Direction de l’information légale et administrative (DILA)"
+      ]
     }
   ],
   "archiveOnly": {

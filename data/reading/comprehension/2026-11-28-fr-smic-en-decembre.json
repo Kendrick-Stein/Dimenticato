@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-28-fr-smic-en-decembre",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main-idea",
+      "prompt": "Quelle distinction organise le texte ?",
+      "promptZh": "文章主要区分了什么？",
+      "options": [
+        "Une hausse avancée d’un mois et les règles habituelles de révision.",
+        "Une hausse réservée au temps plein et une baisse pour le temps partiel.",
+        "Une hausse du montant net et le maintien du montant brut.",
+        "Une hausse nationale uniforme et des dates différentes selon le territoire."
+      ],
+      "answerIndex": 0,
+      "evidence": [
+        "s2",
+        "s3",
+        "s12",
+        "s14"
+      ],
+      "explanationZh": "这次 12 月提前上调与通常的 1 月调整、常规调整因素分开介绍。"
+    },
+    {
+      "id": "q2",
+      "kind": "detail",
+      "prompt": "Qu’apprend une personne à temps plein en métropole en comparant les minima bruts de décembre et de novembre ?",
+      "promptZh": "法国本土的全职工作者比较 12 月与 11 月的税前最低工资，能得出什么？",
+      "options": [
+        "Son minimum mensuel baisse de 30,33 euros.",
+        "Son minimum mensuel reste à 1 897,35 euros.",
+        "Son minimum mensuel augmente de 30,33 euros.",
+        "Son minimum mensuel augmente de 24,01 euros."
+      ],
+      "answerIndex": 2,
+      "evidence": [
+        "s6",
+        "s7"
+      ],
+      "explanationZh": "按每周 35 小时计算，税前月最低工资升到 1,897.35 欧元，比此前多 30.33 欧元。"
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": "Une personne compare les nouveaux minima horaires de Paris et de Mayotte. Quelle conclusion peut-elle tirer ?",
+      "promptZh": "比较巴黎和马约特新标准的小时最低工资，可以得出什么结论？",
+      "options": [
+        "Les deux montants sont identiques mais s’appliquent à des dates différentes.",
+        "Les deux montants diffèrent et s’appliquent à des dates différentes.",
+        "Les deux montants et leurs dates d’application sont identiques.",
+        "Les deux montants diffèrent mais s’appliquent à la même date."
+      ],
+      "answerIndex": 3,
+      "evidence": [
+        "s3",
+        "s4",
+        "s10",
+        "s11"
+      ],
+      "explanationZh": "巴黎适用法国本土的 12.51 欧元，马约特为 9.71 欧元，两地新标准同一天生效。"
+    },
+    {
+      "id": "q4",
+      "kind": "cause",
+      "prompt": "Pourquoi le montant net publié ne permet-il pas de connaître à l’avance son propre montant net ?",
+      "promptZh": "为什么不能用公布的净额预先确定自己会拿到的净额？",
+      "options": [
+        "Parce que le nouveau minimum horaire ne concerne que les emplois à temps partiel.",
+        "Parce que les cotisations applicables ne sont pas identiques pour tous les salariés.",
+        "Parce que le minimum brut change tous les mois en fonction du lieu de travail.",
+        "Parce que la hausse de décembre n’apparaîtra sur la paie qu’en janvier."
+      ],
+      "answerIndex": 1,
+      "evidence": [
+        "s5",
+        "s8",
+        "s9"
+      ],
+      "explanationZh": "净额需要扣除所适用的社保缴费，员工之间可能不同，公布的数值只作参考。"
+    }
+  ]
+}

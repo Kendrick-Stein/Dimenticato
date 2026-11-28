@@ -3,6 +3,41 @@
   "policy": "Outbound official playback links only. No copied media, thumbnails or full transcripts. Original Chinese guides and questions. Playback itself has not been tested; verified means official page and content evidence were retrieved.",
   "entries": [
     {
+      "id": "de-tagesschau-einfache-sprache-2026-11-27",
+      "lang": "de",
+      "title": "tagesschau in Einfacher Sprache, 27.11.2026",
+      "titleZh": "简明德语新闻：11 月 27 日",
+      "provider": "ARD · tagesschau24",
+      "url": "https://www.tagesschau.de/tagesschau_in_einfacher_sprache/audio-3623056.html",
+      "level": "未分级",
+      "levelBasis": "editorial",
+      "levelLabel": "官方简明德语 · 非 CEFR 分级",
+      "kind": "news",
+      "addedAt": "2026-11-28",
+      "sourcePublishedAt": "2026-11-27",
+      "duration": "约 9 分钟",
+      "evidenceStatus": "metadata_only",
+      "summaryZh": "ARD 的简明德语新闻音频版。",
+      "guideZh": "第一遍听到话题转换就记一个关键词。第二遍选一条新闻，用一句德语说清谁做了什么。",
+      "verificationZh": "已核对 ARD 单集日期与音频文件格式及时长；未核听内容，不设理解题。",
+      "vocabularyLabel": "听新闻时可用的表达（不保证出现在本期）",
+      "vocabulary": [
+        {
+          "text": "zuerst",
+          "zh": "首先"
+        },
+        {
+          "text": "danach",
+          "zh": "之后"
+        },
+        {
+          "text": "zum Schluss",
+          "zh": "最后"
+        }
+      ],
+      "questions": []
+    },
+    {
       "id": "it-rsi-facile-2026-11-27",
       "lang": "it",
       "title": "Notizie in lingua facile · 27 novembre 2026",

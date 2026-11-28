@@ -2,6 +2,23 @@
   "schema": 1,
   "articles": [
     {
+      "id": "2026-11-28-fr-smic-en-decembre",
+      "lang": "fr",
+      "date": "2026-11-28",
+      "title": "Le Smic change en décembre",
+      "titleZh": "法国最低工资提前到 12 月调整",
+      "summaryZh": "从一张工资单读懂法国最低工资：新标准何时适用，税前和净额有什么区别，为什么不能混用法国本土与马约特的数字。",
+      "level": "B1",
+      "category": "work-economy",
+      "topics": [
+        "工资单",
+        "法国最低工资"
+      ],
+      "sourceLang": "fr",
+      "sourcePublishedAt": "2026-11-26",
+      "contentType": "native-adaptation"
+    },
+    {
       "id": "2026-11-27-it-due-giorni-alle-cappuccine",
       "lang": "it",
       "date": "2026-11-27",

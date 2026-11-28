@@ -1,0 +1,228 @@
+{
+  "schema": 1,
+  "id": "2026-11-28-fr-smic-en-decembre",
+  "storyId": "dila-smic-2026-11-26-a17008",
+  "lang": "fr",
+  "date": "2026-11-28",
+  "category": "work-economy",
+  "topics": [
+    "工资单",
+    "法国最低工资"
+  ],
+  "title": "Le Smic change en décembre",
+  "titleZh": "法国最低工资提前到 12 月调整",
+  "summaryZh": "从一张工资单读懂法国最低工资：新标准何时适用，税前和净额有什么区别，为什么不能混用法国本土与马约特的数字。",
+  "level": "B1",
+  "levelReason": "编辑估计 B1：需连接生效时间、工资口径、适用地域以及常规调整与提前调整的区别。",
+  "contentType": "native-adaptation",
+  "source": {
+    "name": "Service Public / Direction de l’information légale et administrative (DILA)",
+    "author": "Direction de l’information légale et administrative (DILA)",
+    "title": "Quelle revalorisation pour le Smic à compter du 1er décembre ?",
+    "url": "https://www.service-public.gouv.fr/particuliers/actualites/A17008",
+    "publishedAt": "2026-11-26",
+    "lang": "fr"
+  },
+  "license": {
+    "name": "Licence Ouverte 2.0 (Etalab)",
+    "url": "https://www.etalab.gouv.fr/licence-ouverte-open-licence/"
+  },
+  "attribution": "DILA / Service Public (diffusion : Entreprendre.Service-Public.gouv.fr), 26 novembre 2026, Licence Ouverte 2.0. Adaptation pédagogique et traduction chinoise : Dimenticato.",
+  "adaptation": "2026 年 11 月 28 日整理。依据 DILA 公开导出的法语原文改编，加入工资单解释、中译与原创练习；未使用原配图。仅供语言练习。",
+  "sentences": [
+    {
+      "id": "s1",
+      "text": "Le montant du salaire minimum français, appelé Smic, peut changer même si le contrat d’un salarié reste le même.",
+      "zh": "法国最低工资简称 Smic。即使员工的劳动合同不变，最低工资金额也可能调整。",
+      "glosses": []
+    },
+    {
+      "id": "s2",
+      "text": "D’habitude, le montant est revu le premier janvier, mais cette année le gouvernement a annoncé une hausse anticipée.",
+      "zh": "通常，这一金额会在 1 月 1 日重新核定，但今年政府宣布将提前上调。",
+      "glosses": [
+        {
+          "surface": "anticipée",
+          "lemma": "anticipé",
+          "zh": "提前的"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "La nouvelle somme s’applique dès le premier décembre 2026, et non à partir du début de l’année suivante.",
+      "zh": "新标准从 2026 年 12 月 1 日起适用，而不是等到下一年年初。",
+      "glosses": [
+        {
+          "surface": "s’applique",
+          "lemma": "s’appliquer",
+          "zh": "适用；生效"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "En France métropolitaine, le minimum brut pour une heure passe de 12,31 à 12,51 euros.",
+      "zh": "在法国本土，每小时税前最低工资从 12.31 欧元升至 12.51 欧元。",
+      "glosses": []
+    },
+    {
+      "id": "s5",
+      "text": "Sur une fiche de paie, le montant brut est indiqué avant les déductions, tandis que le montant net est calculé après les cotisations salariales.",
+      "zh": "在工资单上，brut 指扣除个人社保缴费之前的金额，net 则是扣除这类缴费后算出的净额。",
+      "glosses": []
+    },
+    {
+      "id": "s6",
+      "text": "En métropole, pour un emploi à temps plein de 35 heures par semaine, le minimum mensuel brut atteint 1 897,35 euros après la hausse.",
+      "zh": "在法国本土，对每周工作 35 小时的全职岗位来说，上调后的月最低税前工资为 1,897.35 欧元。",
+      "glosses": []
+    },
+    {
+      "id": "s7",
+      "text": "La différence avec le mois précédent est de 30,33 euros brut pour cette même durée de travail.",
+      "zh": "在工时相同的情况下，这比上个月的税前最低工资多 30.33 欧元。",
+      "glosses": []
+    },
+    {
+      "id": "s8",
+      "text": "Le montant net publié à titre indicatif ne permet pas de prévoir exactement la somme reçue par chaque personne.",
+      "zh": "公布的净工资只是参考，不能准确预测每个人实际收到多少钱。",
+      "glosses": [
+        {
+          "surface": "indicatif",
+          "lemma": "indicatif",
+          "zh": "参考性的"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "En effet, le montant réel peut varier selon les cotisations qui s’appliquent au salarié.",
+      "zh": "因为实际金额会随员工适用的社保缴费而变化。",
+      "glosses": [
+        {
+          "surface": "cotisations",
+          "lemma": "cotisation",
+          "zh": "社会保险缴费"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Attention aussi au lieu de travail : à Mayotte, le nouveau minimum horaire brut est de 9,71 euros.",
+      "zh": "还要留意工作地点：在马约特，新标准为每小时税前 9.71 欧元。",
+      "glosses": []
+    },
+    {
+      "id": "s11",
+      "text": "Les deux chiffres horaires ne sont donc pas interchangeables, même si leur date d’entrée en vigueur est la même.",
+      "zh": "因此，虽然生效日期相同，但两个小时工资标准不能互换。",
+      "glosses": [
+        {
+          "surface": "interchangeables",
+          "lemma": "interchangeable",
+          "zh": "可以互换的"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Pour la révision ordinaire, l’évolution des prix fait partie des éléments étudiés, car une hausse des prix réduit ce que le même salaire permet d’acheter.",
+      "zh": "在常规调整时，物价走势是需要考虑的因素之一，因为涨价会减少同样一份工资能买到的东西。",
+      "glosses": []
+    },
+    {
+      "id": "s13",
+      "text": "La règle tient aussi compte d’une partie du gain de pouvoir d’achat des salaires horaires de base des ouvriers et employés.",
+      "zh": "这项规则也会计入工人和普通雇员基本小时工资购买力增幅的一部分。",
+      "glosses": []
+    },
+    {
+      "id": "s14",
+      "text": "Ces éléments décrivent le mécanisme régulier ; ils ne suffisent pas à expliquer à eux seuls la décision particulière annoncée pour décembre.",
+      "zh": "这些因素说明的是常规调整机制，不能仅凭它们解释这次宣布的 12 月特别调整。",
+      "glosses": []
+    },
+    {
+      "id": "s15",
+      "text": "Cette fois, l’augmentation est de 1,6 % et le décret du 25 novembre fixe les nouveaux montants.",
+      "zh": "这次的涨幅是 1.6%，新金额由 11 月 25 日的法令确定。",
+      "glosses": []
+    }
+  ],
+  "learningSummary": {
+    "words": [
+      {
+        "text": "anticipée",
+        "lemma": "anticipé",
+        "zh": "提前的",
+        "sentenceId": "s2"
+      },
+      {
+        "text": "s’applique",
+        "lemma": "s’appliquer",
+        "zh": "适用；生效",
+        "sentenceId": "s3"
+      },
+      {
+        "text": "indicatif",
+        "lemma": "indicatif",
+        "zh": "参考性的",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "cotisations",
+        "lemma": "cotisation",
+        "zh": "社会保险缴费",
+        "sentenceId": "s9"
+      },
+      {
+        "text": "interchangeables",
+        "lemma": "interchangeable",
+        "zh": "可以互换的",
+        "sentenceId": "s11"
+      }
+    ],
+    "phrases": [
+      {
+        "text": "à titre indicatif",
+        "zh": "仅供参考",
+        "sentenceId": "s8"
+      },
+      {
+        "text": "entrée en vigueur",
+        "zh": "生效",
+        "sentenceId": "s11"
+      },
+      {
+        "text": "tient aussi compte",
+        "zh": "也把……考虑在内",
+        "sentenceId": "s13",
+        "note": "tenir compte de + 名词"
+      }
+    ],
+    "sentences": [
+      {
+        "sentenceId": "s3",
+        "note": "dès 强调从这个时间点起；et non 用来明确排除另一时间点。"
+      }
+    ]
+  },
+  "speaking": {
+    "questions": [
+      {
+        "text": "Comment expliqueriez-vous la différence entre un salaire brut et un salaire net ?",
+        "zh": "你会怎样解释税前工资与净工资的区别？"
+      }
+    ],
+    "expressions": [
+      {
+        "text": "peut varier selon",
+        "zh": "可能因……而有所不同",
+        "sentenceId": "s9",
+        "note": "跟名词表示变化取决于什么。"
+      }
+    ]
+  }
+}

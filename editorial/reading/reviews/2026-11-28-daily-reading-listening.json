@@ -1,0 +1,91 @@
+{
+  "date": "2026-11-28",
+  "status": "passed-editorial-technical-and-private-browser-prepublication-gates",
+  "baseline": "7684c2f16ba11a2e0e0935bfe0952f3f024aa6df",
+  "scope": {
+    "reading": [
+      "2026-11-28-fr-smic-en-decembre"
+    ],
+    "listening": [
+      "de-tagesschau-einfache-sprache-2026-11-27"
+    ]
+  },
+  "reading": {
+    "id": "2026-11-28-fr-smic-en-decembre",
+    "storyId": "dila-smic-2026-11-26-a17008",
+    "source": "https://www.service-public.gouv.fr/particuliers/actualites/A17008",
+    "corroboration": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000055143987",
+    "originalDate": "2026-11-26",
+    "tier": "B1 (editorial estimate)",
+    "bodyWords": 287,
+    "sentencePairs": 15,
+    "rights": "Only the exact November 26 DILA open export member was used; original credit and date, modifications disclosed. No stock photograph or external media.",
+    "rightsEvidence": "https://www.data.gouv.fr/datasets/actualites-entreprendre-service-public-gouv-fr",
+    "export": "https://lecomarquage.service-public.fr/actu/3.5/pro/zip/actualite_20261126_103430.zip",
+    "exportMember": "actualites/A17008.xml",
+    "memberSha256": "ee46abf34d4bd7efd3cb49bc19a09ff99134faf4164b2036f573945bb55697f9",
+    "normalizedBodySha256": "2f1040de549392c7cb91a5cc47ca353f109b122d5c07b13465c9b1c3b96d7e73",
+    "independentReview": {
+      "scope": "Blind reviewer received masked article and rank-choice items only; repeated after eliminating retrospective ambiguity and specifying metropolitan scope in both languages. Checked official XML and decree context. Final blind input and separately verified keys are recorded.",
+      "maskedInputSha256": "b8e5bc9bc5f19561e4fab3136754bb856fc475b16ac813e94af4399c949d12f6",
+      "practiceAnswerIndices": [
+        2,
+        3,
+        0,
+        1,
+        1
+      ],
+      "comprehensionAnswerIndices": [
+        0,
+        2,
+        3,
+        1
+      ],
+      "comprehensionEvidence": [
+        [
+          "s2",
+          "s3",
+          "s12",
+          "s14"
+        ],
+        [
+          "s6",
+          "s7"
+        ],
+        [
+          "s3",
+          "s4",
+          "s10",
+          "s11"
+        ],
+        [
+          "s5",
+          "s8",
+          "s9"
+        ]
+      ],
+      "exactSha256": {
+        "articles": "026e74f65c6efcfa1f5c132d78b427f06f746702b579b21c2f6d3e3942d40739",
+        "practice": "95618958224918e9673cc9cc911445cf7cb4210a1a5bdbcc470f8a575df9648c",
+        "comprehension": "4c4d8efdbeea09d545ac60a36cf650ec0f5dbae6ba04b07b2b5f55b36cfad62c"
+      }
+    }
+  },
+  "listening": {
+    "id": "de-tagesschau-einfache-sprache-2026-11-27",
+    "source": "https://www.tagesschau.de/tagesschau_in_einfacher_sprache/audio-3623056.html",
+    "originalDate": "2026-11-27",
+    "evidence": "Official date and co-located audio asset matched. One MP3 stream, 514.56 seconds, audio/mpeg over HTTPS. No audible-content or quality claim. Publisher page linked only, with three general expressions and no questions."
+  },
+  "deduplication": "Pinned main, reading articles and index, source registry, candidate reserve, reviews, listening catalog and open PR listing checked against A17008 dated November 26, decree 2026-1082 and ARD asset identity; previous reserve mention is not a published match. New dated sources postdate unresolved old draft batches; none of their operations were retried. Existing catalog rows preserved.",
+  "coverage": {
+    "reading": "FR B1 only; no sufficiently validated additions at the other 11 slots.",
+    "listening": "One DE source-link only; no new entries for FR, IT or EN.",
+    "held": "FR train bicycle story remains an A2 lead; operator facts verified, but detailed DILA article was inaccessible in web reader and exact reuse/export evidence not established."
+  },
+  "prepublication": {
+    "automated": "47 harnesses — 489854 passed, 0 failed, 0 known issues",
+    "browser": "375px: French article, terms, bilingual toggle, both quizzes, evidence, reset and history; German route, original link and popup, no overflow or runtime error\n1280px: French article, terms, bilingual toggle, both quizzes, evidence, reset and history; German route, original link and popup, no overflow or runtime error",
+    "browserBoundary": "Private isolated Chromium exact payload. Popup URL with local stub, publisher reached separately over normal TLS. No phone hardware or audio-quality claim."
+  }
+}

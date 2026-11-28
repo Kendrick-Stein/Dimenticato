@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "articleId": "2026-11-28-fr-smic-en-decembre",
+  "lang": "fr",
+  "questions": [
+    {
+      "id": "p1",
+      "sentenceId": "s2",
+      "start": 106,
+      "answer": "anticipée",
+      "options": [
+        "anticipées",
+        "anticipé",
+        "anticipée",
+        "anticipés"
+      ],
+      "explanation": "修饰阴性单数 une hausse，因此用 anticipée。"
+    },
+    {
+      "id": "p2",
+      "sentenceId": "s3",
+      "start": 18,
+      "answer": "s’applique",
+      "options": [
+        "s’appliquent",
+        "s’appliquer",
+        "s’appliquaient",
+        "s’applique"
+      ],
+      "explanation": "主语 la nouvelle somme 是第三人称单数；此处用现在时说明新规生效日期。"
+    },
+    {
+      "id": "p3",
+      "sentenceId": "s8",
+      "start": 30,
+      "answer": "indicatif",
+      "options": [
+        "indicatif",
+        "indicatifs",
+        "indicative",
+        "indicatives"
+      ],
+      "explanation": "à titre indicatif 是固定表达，indicatif 与阳性单数 titre 一致。"
+    },
+    {
+      "id": "p4",
+      "sentenceId": "s9",
+      "start": 48,
+      "answer": "cotisations",
+      "options": [
+        "cotisation",
+        "cotisations",
+        "cotisant",
+        "cotisants"
+      ],
+      "explanation": "les 与复数 cotisations 一致，且这里指缴费，不是缴费人。"
+    },
+    {
+      "id": "p5",
+      "sentenceId": "s11",
+      "start": 44,
+      "answer": "interchangeables",
+      "options": [
+        "interchangeable",
+        "interchangeables",
+        "interchangeabilité",
+        "interchangeant"
+      ],
+      "explanation": "描述复数 les deux chiffres；形容词用复数 interchangeables。"
+    }
+  ]
+}
